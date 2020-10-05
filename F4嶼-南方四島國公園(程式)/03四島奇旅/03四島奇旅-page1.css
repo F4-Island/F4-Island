@@ -1,0 +1,115 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.page1 {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.page1 .logo-box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.page1 .container nav {
+  width: 800px;
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+  background-color: palevioletred;
+}
+
+.page1 .container nav a {
+  text-decoration: none;
+}
+
+.page1 .container nav a {
+  text-decoration: none;
+}
+
+.page1 .container nav .title {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.page1 .container nav .name {
+  font-family: Microsoft JhengHei;
+  font-weight: 400;
+  font-size: 26px;
+  color: white;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0.5;
+}
+
+.page1 .container nav .name .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page1 .container nav .name:hover .icon {
+  opacity: 1;
+}
+
+.page1 .container nav .name:hover {
+  opacity: 1;
+}
+
+.page1 .container nav .name-1 {
+  opacity: 1;
+}
+
+.page1 .container nav .name-1 .icon {
+  opacity: 1;
+}
+
+.page1 .container .content-box {
+  padding: 100px 0;
+  font-family: Microsoft JhengHei;
+  font-weight: 400;
+  font-size: 29px;
+  color: gray;
+  letter-spacing: 2px;
+}
+
+.page1 .container .content-box .content {
+  padding-bottom: 80px;
+}
+
+.page1 .container .content-box .content .img-box img {
+  border-radius: 40% 50% 40% 50%;
+  width: 90%;
+}
+
+.page1 .burger-box {
+  width: 200px;
+  height: 200px;
+  background-color: palevioletred;
+}
+/*# sourceMappingURL=03四島奇旅-page1.css.map */

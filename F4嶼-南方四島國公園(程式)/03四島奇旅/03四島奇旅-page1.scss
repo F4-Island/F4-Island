@@ -1,0 +1,76 @@
+@import "../default";
+@import "../mixin";
+*{
+    box-sizing: border-box;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+.page1{
+    @include nav-word-l;
+    // background-color: yellowgreen;
+    .logo-box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+    .container{
+        nav{
+            @include navbar-style;
+            a{
+                text-decoration: none;
+            }
+            .title{
+                @include nav-word-l; 
+            }
+            .name{
+                @include nav-word-s;
+                display: flex;
+                align-items: center;
+                transition:1s;
+                opacity: 0.5;
+                .icon{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: white;
+                    margin-right: 10px;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                &:hover .icon{
+                    opacity: 1;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            //針對不同頁面強調所對應的navbar標題
+            .name-1{
+                opacity: 1;
+                .icon{
+                    opacity: 1;
+                }
+            }
+        }
+        .content-box{
+            padding: 100px 0;
+            @include c-word;
+            .content{
+                padding-bottom: 80px;
+                .img-box{
+                    img{
+                        border-radius: 40% 50% 40% 50%;
+                        width: 90%;
+                    }
+                }
+            }   
+        }
+    }
+    .burger-box{
+        width: 200px;
+        height: 200px;
+        background-color: palevioletred;
+    }
+}

@@ -1,0 +1,89 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.page {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.page .logo-box {
+  background-color: black;
+}
+
+.page .container nav {
+  width: 800px;
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+  background-color: palevioletred;
+}
+
+.page .container nav a {
+  text-decoration: none;
+}
+
+.page .container nav a {
+  text-decoration: none;
+}
+
+.page .container nav .title {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.page .container nav .name {
+  font-family: Microsoft JhengHei;
+  font-weight: 400;
+  font-size: 26px;
+  color: white;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0.5;
+}
+
+.page .container nav .name .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page .container nav .name:hover .icon {
+  opacity: 1;
+}
+
+.page .container nav .name:hover {
+  opacity: 1;
+}
+
+.page .container nav .name-1 {
+  opacity: 1;
+}
+
+.page .container nav .name-1 .icon {
+  opacity: 1;
+}
+/*# sourceMappingURL=01認識我們-page1.css.map */

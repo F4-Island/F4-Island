@@ -1,0 +1,34 @@
+
+@mixin navbar-style {
+    width: 800px;
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+    background-color: palevioletred;
+        a{
+            text-decoration: none;
+        }
+}
+
+@mixin nav-word-l {
+    font-family: Microsoft JhengHei;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+@mixin nav-word-s {
+    font-family: Microsoft JhengHei;
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+@mixin c-word {
+    font-family: Microsoft JhengHei;
+    font-weight: 400;
+    font-size: 29px;
+    color: gray;
+    letter-spacing: 2px;
+}
