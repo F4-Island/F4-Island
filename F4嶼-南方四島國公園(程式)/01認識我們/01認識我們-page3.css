@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -85,5 +86,112 @@
 
 .page .container nav .name-active .icon {
   opacity: 1;
+}
+
+.content-box {
+  height: 70vh;
+}
+
+.content-box .img-slider {
+  background-color: skyblue;
+  position: relative;
+}
+
+.content-box .img-slider .img-slide {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.content-box .img-slider .img-slide .text {
+  width: 50%;
+}
+
+.content-box .img-slider .img-slide .text h1 {
+  color: white;
+}
+
+.content-box .img-slider .img-slide .text p {
+  color: white;
+}
+
+.content-box .img-slider .slide01 {
+  position: absolute;
+  background-image: url(../img/03四島奇旅/03東吉嶼/東吉燈塔.jpg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content-box .img-slider .slide02 {
+  position: absolute;
+  background-image: url(../img/03四島奇旅/04西吉嶼/北岸海蝕洞.jpg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content-box .img-slider .slide03 {
+  position: absolute;
+  background-image: url(../img/03四島奇旅/01東嶼坪嶼/梯田式菜宅.jpg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content-box .img-slider .slide04 {
+  position: absolute;
+  background-image: url(../img/03四島奇旅/02西嶼坪嶼/華娘廟-1.jpg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content-box .btn-list {
+  background-color: skyblue;
+  padding: 5%;
+}
+
+.content-box .btn-list ul {
+  list-style-type: none;
+  height: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+.content-box .btn-list ul li {
+  width: 40%;
+  height: 60%;
+  background-color: yellow;
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 999;
+}
+
+.content-box .btn-list ul li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  z-index: 999;
+}
+
+.content-box .btn-list ul li::after {
+  content: " ";
+  bottom: 3%;
+  right: 3%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 /*# sourceMappingURL=01認識我們-page3.css.map */
