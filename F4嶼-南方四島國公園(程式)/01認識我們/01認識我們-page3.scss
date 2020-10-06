@@ -10,7 +10,9 @@
 .page{
     @include nav-word-l;
     .logo-box{
-        background-color: black;
+        img{
+           background-color: black; 
+        }
     }
     .container{
         nav{
@@ -44,13 +46,15 @@
                 }
             }
             //針對不同頁面強調所對應的navbar標題
-            .name-1{
+            .name-active{
                 opacity: 1;
                 .icon{
                     opacity: 1;
                 }
             }
-        }
+        } 
+    }    
+}
+.content-box{
     
-    }
 }
