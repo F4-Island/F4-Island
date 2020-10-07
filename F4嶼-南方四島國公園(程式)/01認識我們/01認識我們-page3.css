@@ -22,10 +22,11 @@
 }
 
 .page .container nav {
-  width: 100%;
+  width: 80%;
   height: 60px;
   border-radius: 0 0 15px 15px;
-  background-color: palevioletred;
+  background-color: #a1c143;
+  padding: 0 5%;
 }
 
 .page .container nav a {
