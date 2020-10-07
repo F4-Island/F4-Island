@@ -89,109 +89,121 @@
 }
 
 .content-box {
+  width: 100vw;
   height: 70vh;
-}
-
-.content-box .img-slider {
   background-color: skyblue;
-  position: relative;
 }
 
-.content-box .img-slider .img-slide {
-  width: 100%;
+.content-box .tab {
+  padding: 3% 0;
+  float: right;
+  width: 30%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-
-.content-box .img-slider .img-slide .text {
-  width: 50%;
-}
-
-.content-box .img-slider .img-slide .text h1 {
-  color: white;
-}
-
-.content-box .img-slider .img-slide .text p {
-  color: white;
-}
-
-.content-box .img-slider .slide01 {
-  position: absolute;
-  background-image: url(../img/03四島奇旅/03東吉嶼/東吉燈塔.jpg);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.content-box .img-slider .slide02 {
-  position: absolute;
-  background-image: url(../img/03四島奇旅/04西吉嶼/北岸海蝕洞.jpg);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.content-box .img-slider .slide03 {
-  position: absolute;
-  background-image: url(../img/03四島奇旅/01東嶼坪嶼/梯田式菜宅.jpg);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.content-box .img-slider .slide04 {
-  position: absolute;
-  background-image: url(../img/03四島奇旅/02西嶼坪嶼/華娘廟-1.jpg);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.content-box .btn-list {
-  background-color: skyblue;
-  padding: 5%;
-}
-
-.content-box .btn-list ul {
-  list-style-type: none;
-  height: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 0;
-}
-
-.content-box .btn-list ul li {
-  width: 40%;
-  height: 60%;
-  background-color: yellow;
-  margin: 0 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  z-index: 999;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.content-box .btn-list ul li a {
+.content-box .tab .tablinks {
+  width: 40%;
+  height: 30%;
+  margin: 0 2%;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: block;
+  background-color: yellow;
   position: relative;
-  text-decoration: none;
-  color: black;
-  font-size: 28px;
-  z-index: 999;
+  z-index: 99;
 }
 
-.content-box .btn-list ul li::after {
-  content: " ";
-  bottom: 3%;
-  right: 3%;
+.content-box .tab .tablinks h1 {
   position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 26px;
+}
+
+.content-box .tab .tablinks:hover::before {
+  background-color: #1c99af;
+  -webkit-transform: translate(10px, 10px);
+          transform: translate(10px, 10px);
+}
+
+.content-box .tab .tablinks:hover h1 {
+  color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.content-box .tab .tablinks .active {
+  background-color: #ccc;
+}
+
+.content-box .tab .tablinks::before {
+  content: "";
   width: 100%;
   height: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   background-color: white;
+  z-index: -1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content-box .tabcontent {
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-left: none;
+  display: none;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content-box .tabcontent p {
+  width: 50%;
+  text-align: justify;
+}
+
+.content-box .tab1 {
+  background-image: url(../img/03四島奇旅/01東嶼坪嶼/梯田式菜宅.jpg);
+}
+
+.content-box .tab2 {
+  background-image: url(../img/03四島奇旅/02西嶼坪嶼/華娘廟-1.jpg);
+}
+
+.content-box .tab3 {
+  background-image: url(../img/03四島奇旅/03東吉嶼/東吉之眼.jpg);
+}
+
+.content-box .tab4 {
+  background-image: url(../img/03四島奇旅/04西吉嶼/北岸海蝕洞.jpg);
+}
+
+.content-box .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /*# sourceMappingURL=01認識我們-page3.css.map */
