@@ -1,0 +1,148 @@
+@import "../default";
+@import "../mixin";
+*{
+    box-sizing: border-box;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+// 波浪效果
+body {
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(118, 218, 255);
+    overflow: hidden;
+
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        min-width: 300vw;
+        min-height: 300vw;
+        background-color: #fff;
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    &:before {
+        bottom: 10vh;
+        border-radius: 45%;
+        animation-duration: 8s;
+    }
+ 
+    &:after {
+        bottom: 12vh;
+        opacity: .6;
+        border-radius: 45%;
+        animation-duration: 10s;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, 0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(-50%, -2%) rotateZ(180deg);
+    }
+    100% {
+        transform: translate(-50%, 0%) rotateZ(360deg);
+    }
+}
+// logo
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+// menu開關
+.menu{
+    @include menu;
+}
+
+// menu效果
+.menu-btnline.active,
+.menu-text.active,
+.menu-btn.active{
+    display: none;
+}
+
+.menu.active
+{
+    background-color: #a1c143;
+}
+// 展開的menu// 未展開尺寸
+.l-menu{
+    @include l-menu;
+}
+
+// 展開尺寸
+.l-menu.active{
+    @include  l-menu-active;
+}  
+  
+
+
+.page1{
+    @include nav-word-l;
+    
+    .container{
+        nav{
+            @include navbar-style;
+            width: 65%;
+            a{
+                text-decoration: none;
+            }
+            .title{
+                @include nav-word-l; 
+            }
+            .name{
+                @include nav-word-s;
+                display: flex;
+                align-items: center;
+                transition:1s;
+                opacity: 0.5;
+                .icon{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: red;
+                    margin-right: 10px;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                &:hover .icon{
+                    opacity: 1;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            //針對不同頁面強調所對應的navbar標題
+            .name-1{
+                opacity: 1;
+                .icon{
+                    opacity: 1;
+                }
+            }
+        }
+        .content-box{
+            padding: 100px 0;
+            @include c-word;
+            .content{
+                padding-bottom: 80px;
+                .img-box{
+                    img{
+                        border-radius: 40% 50% 40% 50%;
+                        width: 90%;
+                    }
+                }
+            }   
+        }
+    }
+   
+}
