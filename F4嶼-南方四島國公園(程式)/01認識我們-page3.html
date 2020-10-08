@@ -133,6 +133,25 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
         }
+
+        // menu開關
+        $('.menu-btn').click(function () {
+            $('.menu *').removeClass('active');
+            $(this).addClass('active')
+            $('.menu-btnline').eq($(this).index()).addClass('active')
+            $('.menu-text').eq($(this).index()).addClass('active')
+
+        })
+        $('.menu').click(function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active')
+                $('.l-menu').removeClass('active')
+            } else {
+                $(this).addClass('active')
+                $('.l-menu').addClass('active')
+            }
+
+        })
     </script>
 </body>
 
