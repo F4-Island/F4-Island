@@ -7,6 +7,10 @@
     box-sizing: content-box;
 }
 
+body {
+    background-color: #318eda;
+}
+
 // loading遮蓋區
 .loading-wrapper{
     @include loading-wrapper;
@@ -99,19 +103,5 @@
                 }
             }
         }
-        .content-box{
-            padding: 100px 0;
-            @include c-word;
-            .content{
-                padding-bottom: 80px;
-                .img-box{
-                    img{
-                        border-radius: 40% 50% 40% 50%;
-                        width: 90%;
-                    }
-                }
-            }   
-        }
     }
-   
 }

@@ -8,34 +8,70 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <div class="page d-flex w-100">
-        <div class="logo-box w-25">
-            <img class="w-50" src="./img/00頁首/F4嶼-logo.svg" alt="">
+    <img class="logo" width="12%" src="./img/00頁首/F4嶼-logo.svg" alt="">
+
+    <!-- menu -->
+    <div class="menu">
+        <div class="menu-btn">
+            <div class="menu-btnline">│││</div>
+            <div class="menu-text">menu</div>
         </div>
-        <div class="container d-flex flex-column align-items-center w-50">
+        <div class="menu-btn active">
+            <div class="menu-btnline active">—</div>
+            <div class="menu-text active">close</div>
+        </div>
+    </div>
+
+    <div class="l-menu">
+        <div class="menu-list">
+            <li>
+                <a href="01認識我們-page1.html">
+                    <span>認識我們</span>
+                </a>
+            </li>
+            <li>
+                <a href="02生態探險-page1.html">
+                    <span>生態探索</span>
+                </a>
+            </li>
+            <li>
+                <a href="03四島奇旅-page1.html">
+                    <span>四島奇旅</span>
+                </a>
+            </li>
+            <li>
+                <a href="04出發四島-page1.html">
+                    <span>出發四島</span>
+                </a>
+            </li>
+        </div>   
+    </div>
+
+    <div class="page">
+        <div class="container d-flex flex-column align-items-center">
             <nav id="navbar" class="sticky-top d-flex justify-content-around align-items-center">
                 <div class="title ">
-                    <span>認識我們</span>
+                    <span>四島奇旅</span>
                 </div>
                 <a href="./03四島奇旅-page1.html" class="name name-1">
                     <div class="icon"></div>
-                    <span>地理位置</span>
+                    <span>項目一號</span>
                 </a>
                 <a href="./03四島奇旅-page2.html" class="name ">
                     <div class="icon"></div>
-                    <span>歷史及發展</span>
+                    <span>項目二號</span>
                 </a>
-                <a href="./03四島奇旅-page3.html" class="name name-active">
+                <a href="./03四島奇旅-page3.html" class="name ">
                     <div class="icon"></div>
-                    <span>認識四島</span>
+                    <span>項目三</span>
                 </a>
                 <a href="./03四島奇旅-page4.html" class="name ">
                     <div class="icon"></div>
-                    <span>附屬島嶼</span>
+                    <span>項目四號</span>
                 </a>
             </nav>
         </div>
-        <div class="burger-box w-25">Burger</div>
+    </div>
     </div>
 
     <div class="content-box">
@@ -97,7 +133,7 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
         }
-        </script>
+    </script>
 </body>
 
 </html>
