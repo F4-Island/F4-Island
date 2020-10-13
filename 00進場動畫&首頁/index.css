@@ -145,54 +145,56 @@ body {
   position: absolute;
   top: 38%;
   right: 5%;
+  -webkit-filter: drop-shadow(40px 40px 10px #59a7b3);
+          filter: drop-shadow(40px 40px 10px #59a7b3);
 }
 
 .wholeMap .west {
   position: absolute;
-  top: 42%;
-  left: 40%;
+  top: 52%;
+  right: 36%;
 }
 
 .wholeMap .littleEast {
   position: absolute;
-  top: 33%;
-  left: 15%;
+  top: 40%;
+  left: 18%;
 }
 
 .wholeMap .littleWest {
   position: absolute;
-  top: 20%;
-  left: 15%;
+  top: 25%;
+  left: 18%;
 }
 
 .wholeMap .island1 {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 6%;
+  left: 7%;
 }
 
 .wholeMap .island2 {
   position: absolute;
   top: 15%;
-  left: 16%;
+  left: 15%;
 }
 
 .wholeMap .island3 {
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 14%;
 }
 
 .wholeMap .island4 {
   position: absolute;
-  top: 51%;
-  left: 24%;
+  top: 53%;
+  left: 26%;
 }
 
 .wholeMap .island5 {
   position: absolute;
   top: 55%;
-  left: 5%;
+  left: 6%;
 }
 
 .wholeMap .island6 {
@@ -209,73 +211,74 @@ body {
 
 .wholeMap .island8 {
   position: absolute;
-  top: 50%;
-  left: 70%;
+  top: 47%;
+  right: 23%;
 }
 
 .wholeMap .fish-l {
   position: absolute;
   top: 30%;
-  left: 1%;
+  left: 4%;
 }
 
 .wholeMap .fish-r {
   position: absolute;
-  top: 60%;
-  left: 55%;
+  top: 68%;
+  right: 30%;
 }
 
 .wholeMap .rock {
   position: absolute;
-  bottom: 10%;
-  left: 3%;
+  bottom: 15%;
+  left: 6%;
 }
 
 .wholeMap .animal {
   position: absolute;
-  bottom: 10%;
-  left: 13%;
+  bottom: 15%;
+  left: 15%;
 }
 
 .wholeMap .plant {
   position: absolute;
-  bottom: 10%;
-  left: 24%;
+  bottom: 15%;
+  left: 25%;
 }
 
 .wholeMap .carol {
   position: absolute;
-  bottom: 10%;
-  left: 31%;
+  bottom: 15%;
+  left: 35%;
 }
 
 .wholeMap .birds {
   position: absolute;
-  top: 7%;
-  left: 60%;
+  top: 12%;
+  right: 27%;
 }
 
 .wholeMap .cloud {
   position: absolute;
   top: 20%;
-  right: 0;
+  right: 1%;
 }
 
 .wholeMap .boat {
   position: absolute;
-  bottom: 1%;
-  right: 10%;
+  bottom: 8%;
+  right: 12%;
+  z-index: 1;
 }
 
 .wholeMap .email {
   position: absolute;
-  bottom: 13%;
+  bottom: 15%;
   right: 2%;
 }
 
 .wholeMap .fb {
   position: absolute;
-  bottom: 13%;
+  bottom: 15%;
   right: 6%;
 }
 
