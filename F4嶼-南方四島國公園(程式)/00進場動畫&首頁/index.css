@@ -124,4 +124,85 @@ body {
 .l-menu.active li a span {
   opacity: 1;
 }
+
+.wholeMap {
+  background-color: #80c5d6;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wholeMap .logo {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.wholeMap .east {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
+.wholeMap .west {
+  position: absolute;
+  top: 46%;
+  left: 40%;
+}
+
+.wholeMap .littleEast {
+  position: absolute;
+  top: 33%;
+  left: 15%;
+}
+
+.wholeMap .littleWest {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+
+.wholeMap .island1 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.wholeMap .island2 {
+  position: absolute;
+  top: 15%;
+  left: 16%;
+}
+
+.wholeMap .island3 {
+  position: absolute;
+  top: 38%;
+  left: 14%;
+}
+
+.wholeMap .island4 {
+  position: absolute;
+  top: 51%;
+  left: 24%;
+}
+
+.wholeMap .island5 {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+
+.wholeMap .island6 {
+  position: absolute;
+  top: 65%;
+  left: 19%;
+}
+
+.wholeMap .island7 {
+  position: absolute;
+  top: 58%;
+  left: 33%;
+}
 /*# sourceMappingURL=index.css.map */

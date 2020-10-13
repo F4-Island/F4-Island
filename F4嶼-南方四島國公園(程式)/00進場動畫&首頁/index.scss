@@ -58,3 +58,72 @@ body {
 .l-menu.active{
     @include  l-menu-active;
 } 
+
+// 內容
+.wholeMap{
+    background-color: $bg-blue;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    .logo{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .east{
+        position: absolute;
+        top: 40%;
+        right: 5%;
+    }
+    .west{
+        position: absolute;
+        top: 46%;
+        left: 40%;
+    }
+    .littleEast{
+        position: absolute;
+        top: 33%;
+        left: 15%;
+    }
+    .littleWest{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+    }
+    .island1{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    .island2{
+        position: absolute;
+        top: 15%;
+        left: 16%;
+    }
+    .island3{
+        position: absolute;
+        top: 38%;
+        left: 14%;
+    }
+    .island4{
+        position: absolute;
+        top: 51%;
+        left: 24%;
+    }
+    .island5{
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+    .island6{
+        position: absolute;
+        top: 65%;
+        left: 19%;
+    }
+    .island7{
+        position: absolute;
+        top: 58%;
+        left: 33%;
+    }
+}
