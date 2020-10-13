@@ -39,7 +39,7 @@ body {
   background-color: #de675e;
   text-shadow: none;
   border-radius: 50%;
-  z-index: 20;
+  z-index: 101;
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
