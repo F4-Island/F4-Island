@@ -30,6 +30,7 @@ body {
 }
 
 .menu {
+  width: 100%;
   position: fixed;
   top: -30px;
   right: -30px;
@@ -142,13 +143,13 @@ body {
 
 .wholeMap .east {
   position: absolute;
-  top: 40%;
+  top: 38%;
   right: 5%;
 }
 
 .wholeMap .west {
   position: absolute;
-  top: 46%;
+  top: 42%;
   left: 40%;
 }
 
@@ -204,5 +205,83 @@ body {
   position: absolute;
   top: 58%;
   left: 33%;
+}
+
+.wholeMap .island8 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+}
+
+.wholeMap .fish-l {
+  position: absolute;
+  top: 30%;
+  left: 1%;
+}
+
+.wholeMap .fish-r {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+}
+
+.wholeMap .rock {
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+}
+
+.wholeMap .animal {
+  position: absolute;
+  bottom: 10%;
+  left: 13%;
+}
+
+.wholeMap .plant {
+  position: absolute;
+  bottom: 10%;
+  left: 24%;
+}
+
+.wholeMap .carol {
+  position: absolute;
+  bottom: 10%;
+  left: 31%;
+}
+
+.wholeMap .birds {
+  position: absolute;
+  top: 7%;
+  left: 60%;
+}
+
+.wholeMap .cloud {
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.wholeMap .boat {
+  position: absolute;
+  bottom: 1%;
+  right: 10%;
+}
+
+.wholeMap .email {
+  position: absolute;
+  bottom: 13%;
+  right: 2%;
+}
+
+.wholeMap .fb {
+  position: absolute;
+  bottom: 13%;
+  right: 6%;
+}
+
+.wholeMap .wave {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
 }
 /*# sourceMappingURL=index.css.map */

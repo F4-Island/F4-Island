@@ -34,6 +34,7 @@ body {
 
 // menu開關
 .menu{
+    width: 100%;
     @include menu;
 }
 
@@ -73,12 +74,12 @@ body {
     }
     .east{
         position: absolute;
-        top: 40%;
+        top: 38%;
         right: 5%;
     }
     .west{
         position: absolute;
-        top: 46%;
+        top: 42%;
         left: 40%;
     }
     .littleEast{
@@ -125,5 +126,70 @@ body {
         position: absolute;
         top: 58%;
         left: 33%;
+    }
+    .island8{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+    }
+    .fish-l{
+        position: absolute;
+        top: 30%;
+        left: 1%;
+    }
+    .fish-r{
+        position: absolute;
+        top: 60%;
+        left: 55%;
+    }
+    .rock{
+        position: absolute;
+        bottom: 10%;
+        left: 3%;
+    }
+    .animal{
+        position: absolute;
+        bottom: 10%;
+        left: 13%;
+    }
+    .plant{
+        position: absolute;
+        bottom: 10%;
+        left: 24%;
+    }
+    .carol{
+        position: absolute;
+        bottom: 10%;
+        left: 31%;
+    }
+    .birds{
+        position: absolute;
+        top: 7%;
+        left: 60%;
+    }
+    .cloud{
+        position: absolute;
+        top: 20%;
+        right: 0;
+    }
+    .boat{
+        position: absolute;
+        bottom: 1%;
+        right: 10%;
+    }
+    .email{
+        position: absolute;
+        bottom: 13%;
+        right: 2%;
+    }
+    .fb{
+        position: absolute;
+        bottom: 13%;
+        right: 6%;
+    }
+    .wave{
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
     }
 }
