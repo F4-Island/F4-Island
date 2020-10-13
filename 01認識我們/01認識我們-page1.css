@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -186,9 +187,11 @@
 }
 
 .position {
-  background-color: #318eda;
-  width: 80%;
-  height: 60vh;
+  background-image: url(../img/01認識我們/地理位置-pic.png);
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  height: 600px;
   margin: 10% auto;
   position: relative;
   color: white;
@@ -196,11 +199,31 @@
 }
 
 .position .container .position-text1 {
-  background-color: rgba(3, 12, 43, 0.3);
+  background-color: rgba(4, 9, 27, 0.4);
   position: absolute;
   left: 5%;
   bottom: 5%;
   width: 40%;
   padding: 10px;
+}
+
+.position .container .position-text2 {
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  width: 30%;
+  height: 320px;
+  background-image: url(../img/01認識我們/對話框與珊瑚.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+}
+
+.position .container .position-text2 span {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 50%;
 }
 /*# sourceMappingURL=01認識我們-page1.css.map */
