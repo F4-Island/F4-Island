@@ -92,66 +92,74 @@ body {
     }
 }
 
-// 地理位置
-.position {
-    background-image: url(../img/01認識我們/地理位置-pic.png);
-    background-color:white;
-    background-size: 105%;
-    background-position: center;
-    width: 60%;
-    height: 60vh;
-    margin: 5% auto;
-    position: relative;
-    color: white;
-    border-radius: 50px;
-    // 海鷗
-    .seagull {
-        position: absolute;
-        right: -8%;
-    }
-    // 仙人掌
-    .cactus {
-        position: absolute;
-        bottom: -12%;
-        left: 6%;
-        z-index: 1;
-    }
+// 海鷗
+.seagull {
+    position: fixed;
+    right: 30%;
+    top: 15%;
+}
 
-    .container {
-        .position-text1 {
-            background-color: rgba(4, 9, 27, 0.4);
-            position: absolute;
-            left: 5%;
-            bottom: 5%;
-            width: 40%;
-            padding: 10px;
-            z-index: 2;
-        }
-        .position-text2 {
-            // background-color: rgba(4, 9, 27, 0.4);
-            position: absolute;
-            right: 2%;
-            bottom: 2%;
-            width: 30%;
-            height: 320px;
-            background-image: url(../img/01認識我們/對話框與珊瑚.png);
-            background-size: 85%;
-            background-repeat: no-repeat;
-            background-position: center;
-            padding: 15px;
-            span {
-                width: 70%;
-                position: absolute;
-                left: 15%;
-                top: 50%;
+// 歷史及發展
+
+.unit {
+    margin-top: 8%;
+    color: white;
+    text-align: center;
+    .row {
+        .history ,
+        .development{
+            height: 40vh;
+            background-color: brown;
+            border-radius: 10%;
+            width: 35%;
+            transition: 1s;
+
+            // display: flex;
+            // align-items: center;
+            h2{
+                line-height: 40vh;
+                text-align: center;
+                display: block;
+                transition: 1s;
             }
-            // 小船
-            .boat {
-                position: absolute;
-                right: -20%;
-                bottom: -40%;
+            .text{
+                padding: 5%;
+                width: 100%;
+                height: 100%;
+                letter-spacing: 10px;
+                display: none;
+                align-items: center;
+                background-color:darkgray;
+                transition: 1s;
+                border-radius: 10%;
+            }
+            &:hover {
+                width: 40%;
+                height: 45vh;
+                transform: 1s;
+                h2{
+                    display: none;
+                }
+                .text{
+                    display: block;
+                }
             }
         }
+
+        // .development {
+        //     height: 40vh;
+        //     background-color: rgb(19, 55, 121);
+        //     border-radius: 10%;
+        //     width: 35%;
+        //     transition: 1s;
+        //     &:hover {
+        //         width: 40%;
+        //     }
+        //     h2{
+        //         line-height: 40vh;
+        //         text-align: center;
+        //     }
+        // }
     }
 }
 
@@ -160,4 +168,16 @@ body {
     width: 100vw;
     position: fixed;
     bottom: 0;
+}
+
+// 小船
+.boat {
+    position: fixed;
+    right: 5%;
+    bottom: 8%;
+}
+
+
+.text-active{
+    display: 1;
 }
