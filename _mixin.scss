@@ -140,3 +140,7 @@
     transform: translate(-75px , -75px);
     border-radius: 100px;
 }
+
+@mixin page-title-style {
+    color: rgb(34,86,121);
+}

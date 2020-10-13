@@ -136,7 +136,7 @@ body {
   opacity: 1;
 }
 
-.page1 {
+.page-navbar {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -144,7 +144,7 @@ body {
   letter-spacing: 2px;
 }
 
-.page1 .container nav {
+.page-navbar .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
@@ -152,15 +152,15 @@ body {
   padding: 0 5%;
 }
 
-.page1 .container nav a {
+.page-navbar .container nav a {
   text-decoration: none;
 }
 
-.page1 .container nav a {
+.page-navbar .container nav a {
   text-decoration: none;
 }
 
-.page1 .container nav .title {
+.page-navbar .container nav .title {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -168,7 +168,7 @@ body {
   letter-spacing: 2px;
 }
 
-.page1 .container nav .name {
+.page-navbar .container nav .name {
   font-family: Microsoft JhengHei;
   font-weight: 400;
   font-size: 21px;
@@ -186,7 +186,7 @@ body {
   opacity: 0.5;
 }
 
-.page1 .container nav .name .icon {
+.page-navbar .container nav .name .icon {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -197,17 +197,17 @@ body {
   transition: 0.5s;
 }
 
-.page1 .container nav .name:hover {
+.page-navbar .container nav .name:hover {
   opacity: 1;
   font-weight: 900;
 }
 
-.page1 .container nav .name-1 {
+.page-navbar .container nav .name-1 {
   font-weight: 600;
   opacity: 1;
 }
 
-.page1 .container nav .name-1 .icon {
+.page-navbar .container nav .name-1 .icon {
   opacity: 1;
 }
 /*# sourceMappingURL=template.css.map */
