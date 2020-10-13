@@ -31,7 +31,7 @@ body {
   height: 35px;
   text-align: center;
   margin: auto;
-  border: 2px solid white;
+  background-color: #de675e;
   border-radius: 100px;
   -webkit-transition: 3s;
   transition: 3s;

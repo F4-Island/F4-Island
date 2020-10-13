@@ -1,0 +1,206 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 25px;
+}
+
+.menu {
+  position: fixed;
+  top: -30px;
+  right: -30px;
+  width: 10vw;
+  height: 10vw;
+  background-color: #de675e;
+  text-shadow: none;
+  border-radius: 50%;
+  z-index: 20;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.menu .menu-btn {
+  width: 100%;
+  height: 100%;
+}
+
+.menu .menu-btn .menu-btnline {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  font-size: 10px;
+  display: block;
+}
+
+.menu .menu-btn .menu-text {
+  position: absolute;
+  top: 55%;
+  right: 45%;
+  display: block;
+  font-size: 1vw;
+}
+
+.menu-btnline.active,
+.menu-text.active,
+.menu-btn.active {
+  display: none;
+}
+
+.menu.active {
+  background-color: #a1c143;
+}
+
+.l-menu {
+  width: 0vw;
+  height: 0vw;
+  position: absolute;
+  top: 1vw;
+  right: 2vw;
+  z-index: 5;
+  background-color: #1c72b2;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.l-menu .menu-list {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  list-style: none;
+}
+
+.l-menu .menu-list li {
+  list-style: none;
+}
+
+.l-menu .menu-list li a span {
+  font-size: 1.18vw;
+  color: #fff;
+  display: block;
+  line-height: 3;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.l-menu.active {
+  width: 20vw;
+  height: 20vw;
+  opacity: 1;
+}
+
+.l-menu.active li a span {
+  opacity: 1;
+}
+
+.page1 {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.page1 .container nav {
+  width: 70%;
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+  background-color: #a1c143;
+  padding: 0 5%;
+}
+
+.page1 .container nav a {
+  text-decoration: none;
+}
+
+.page1 .container nav a {
+  text-decoration: none;
+}
+
+.page1 .container nav .title {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.page1 .container nav .name {
+  font-family: Microsoft JhengHei;
+  font-weight: 400;
+  font-size: 21px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.page1 .container nav .name .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 10px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page1 .container nav .name:hover {
+  opacity: 1;
+  font-weight: 900;
+}
+
+.page1 .container nav .name-1 {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.page1 .container nav .name-1 .icon {
+  opacity: 1;
+}
+
+.position {
+  background-color: #318eda;
+  width: 80%;
+  height: 60vh;
+  margin: 10% auto;
+  position: relative;
+  color: white;
+  border-radius: 30px;
+}
+
+.position .container .position-text1 {
+  background-color: rgba(3, 12, 43, 0.3);
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  width: 40%;
+  padding: 10px;
+}
+/*# sourceMappingURL=01認識我們-page1.css.map */

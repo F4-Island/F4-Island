@@ -1,0 +1,112 @@
+@import "../default";
+@import"../mixin";
+*{
+    box-sizing: border-box;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+// logo
+.logo{
+    position: fixed;
+    top: 20px;
+    left: 25px;
+}
+
+// menu開關
+.menu{
+    @include menu;
+}
+
+// menu效果
+.menu-btnline.active,
+.menu-text.active,
+.menu-btn.active{
+    display: none;
+}
+
+.menu.active
+{
+    background-color: #a1c143;
+}
+// 展開的menu// 未展開尺寸
+.l-menu{
+    @include l-menu;
+}
+
+// 展開尺寸
+.l-menu.active{
+    @include  l-menu-active;
+}  
+
+.page1{
+    @include nav-word-l;
+    // background-color: blue;
+
+    .container{
+        nav{
+            @include navbar-style;
+            a{
+                text-decoration: none;
+            }
+            .title{
+                @include nav-word-l; 
+            }
+            .name{
+                @include nav-word-s;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                transition:0.3s;
+                opacity: 0.5;
+                .icon{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color:red;
+                    margin-right: 10px;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                // &:hover .icon{
+                //     opacity: 1;
+                // }
+                &:hover {
+                    opacity: 1;
+                    font-weight: 900;
+                }
+            }
+            //針對不同頁面強調所對應的navbar標題
+            .name-1{
+                font-weight: 600;
+                opacity: 1;
+                .icon{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.position{
+    // 改圖片
+    background-color: #318eda; 
+    width: 80%; 
+    height: 60vh;
+    margin: 10% auto;
+    position: relative;
+    color: white;
+    border-radius: 30px;
+    .container{
+        .position-text1{
+            background-color: rgba(3, 12, 43, 0.3);
+            position: absolute;
+            left: 5%;
+            bottom: 5%;
+            width: 40%;
+            padding: 10px;
+
+        }
+    }
+}
