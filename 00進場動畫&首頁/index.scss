@@ -76,46 +76,47 @@ body {
         position: absolute;
         top: 38%;
         right: 5%;
+        filter: drop-shadow(40px 40px 10px rgb(89, 167, 179));
     }
     .west{
         position: absolute;
-        top: 42%;
-        left: 40%;
+        top: 52%;
+        right: 36%;
     }
     .littleEast{
         position: absolute;
-        top: 33%;
-        left: 15%;
+        top: 40%;
+        left: 18%;
     }
     .littleWest{
         position: absolute;
-        top: 20%;
-        left: 15%;
+        top: 25%;
+        left: 18%;
     }
     .island1{
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 6%;
+        left: 7%;
     }
     .island2{
         position: absolute;
         top: 15%;
-        left: 16%;
+        left: 15%;
     }
     .island3{
         position: absolute;
-        top: 38%;
+        top: 40%;
         left: 14%;
     }
     .island4{
         position: absolute;
-        top: 51%;
-        left: 24%;
+        top: 53%;
+        left: 26%;
     }
     .island5{
         position: absolute;
         top: 55%;
-        left: 5%;
+        left: 6%;
     }
     .island6{
         position: absolute;
@@ -129,62 +130,63 @@ body {
     }
     .island8{
         position: absolute;
-        top: 50%;
-        left: 70%;
+        top: 47%;
+        right: 23%;
     }
     .fish-l{
         position: absolute;
         top: 30%;
-        left: 1%;
+        left: 4%;
     }
     .fish-r{
         position: absolute;
-        top: 60%;
-        left: 55%;
+        top: 68%;
+        right: 30%;
     }
     .rock{
         position: absolute;
-        bottom: 10%;
-        left: 3%;
+        bottom: 15%;
+        left: 6%;
     }
     .animal{
         position: absolute;
-        bottom: 10%;
-        left: 13%;
+        bottom: 15%;
+        left: 15%;
     }
     .plant{
         position: absolute;
-        bottom: 10%;
-        left: 24%;
+        bottom: 15%;
+        left: 25%;
     }
     .carol{
         position: absolute;
-        bottom: 10%;
-        left: 31%;
+        bottom: 15%;
+        left: 35%;
     }
     .birds{
         position: absolute;
-        top: 7%;
-        left: 60%;
+        top: 12%;
+        right: 27%;
     }
     .cloud{
         position: absolute;
         top: 20%;
-        right: 0;
+        right: 1%;
     }
     .boat{
         position: absolute;
-        bottom: 1%;
-        right: 10%;
+        bottom: 8%;
+        right: 12%;
+        z-index: 1;
     }
     .email{
         position: absolute;
-        bottom: 13%;
+        bottom: 15%;
         right: 2%;
     }
     .fb{
         position: absolute;
-        bottom: 13%;
+        bottom: 15%;
         right: 6%;
     }
     .wave{
