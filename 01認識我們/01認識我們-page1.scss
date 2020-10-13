@@ -1,70 +1,73 @@
 @import "../default";
-@import"../mixin";
-*{
+@import "../mixin";
+* {
     box-sizing: border-box;
 }
 .selector-for-some-widget {
     box-sizing: content-box;
-  }
+}
+
+body {
+    background-color: #e3ece6;
+}
 
 // logo
-.logo{
+.logo {
     position: fixed;
     top: 20px;
     left: 25px;
 }
 
 // menu開關
-.menu{
+.menu {
     @include menu;
 }
 
 // menu效果
 .menu-btnline.active,
 .menu-text.active,
-.menu-btn.active{
+.menu-btn.active {
     display: none;
 }
 
-.menu.active
-{
+.menu.active {
     background-color: #a1c143;
 }
 // 展開的menu// 未展開尺寸
-.l-menu{
+.l-menu {
     @include l-menu;
 }
 
 // 展開尺寸
-.l-menu.active{
-    @include  l-menu-active;
-}  
+.l-menu.active {
+    @include l-menu-active;
+}
 
-.page1{
+.page1 {
     @include nav-word-l;
     // background-color: blue;
 
-    .container{
-        nav{
+    .container {
+        nav {
             @include navbar-style;
-            a{
+            a {
                 text-decoration: none;
             }
-            .title{
-                @include nav-word-l; 
+            .title {
+                @include nav-word-l;
             }
-            .name{
+            .name {
                 @include nav-word-s;
                 font-weight: 400;
                 display: flex;
                 align-items: center;
-                transition:0.3s;
+                transition: 0.3s;
                 opacity: 0.5;
-                .icon{
+                .icon {
                     width: 15px;
                     height: 15px;
                     border-radius: 50%;
-                    background-color:red;
+                    background-color: red;
                     margin-right: 10px;
                     opacity: 0;
                     transition: 0.5s;
@@ -78,10 +81,10 @@
                 }
             }
             //針對不同頁面強調所對應的navbar標題
-            .name-1{
+            .name-1 {
                 font-weight: 600;
                 opacity: 1;
-                .icon{
+                .icon {
                     opacity: 1;
                 }
             }
@@ -90,28 +93,40 @@
 }
 
 // 地理位置
-.position{
-    // 改圖片
+.position {
     background-image: url(../img/01認識我們/地理位置-pic.png);
     background-size: cover;
     background-position: center;
-    width: 70%; 
-    height: 600px;
-    margin: 10% auto;
+    width: 65%;
+    height: 680px;
+    margin: 5% auto;
     position: relative;
     color: white;
-    border-radius: 30px;
-    .container{
-        .position-text1{
+    border-radius: 50px;
+    // 海鷗
+    .seagull {
+        position: absolute;
+        right: -8%;
+    }
+    // 仙人掌
+    .cactus {
+        position: absolute;
+        bottom: -12%;
+        left: 6%;
+        z-index: 1;
+    }
+
+    .container {
+        .position-text1 {
             background-color: rgba(4, 9, 27, 0.4);
             position: absolute;
             left: 5%;
             bottom: 5%;
             width: 40%;
             padding: 10px;
-
+            z-index: 2;
         }
-        .position-text2{
+        .position-text2 {
             // background-color: rgba(4, 9, 27, 0.4);
             position: absolute;
             right: 2%;
@@ -119,17 +134,29 @@
             width: 30%;
             height: 320px;
             background-image: url(../img/01認識我們/對話框與珊瑚.png);
-            background-size: 90%;
+            background-size: 85%;
             background-repeat: no-repeat;
             background-position: center;
             padding: 10px;
-            span{
+            span {
                 width: 70%;
-               position: absolute;
-               left: 15%;
-               top: 50%;
+                position: absolute;
+                left: 15%;
+                top: 50%;
             }
-
+            // 小船
+            .boat {
+                position: absolute;
+                right: -20%;
+                bottom: -40%;
+            }
         }
     }
+}
+
+// 波浪
+.wave {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
 }

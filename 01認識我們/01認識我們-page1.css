@@ -9,6 +9,10 @@
           box-sizing: content-box;
 }
 
+body {
+  background-color: #e3ece6;
+}
+
 .logo {
   position: fixed;
   top: 20px;
@@ -190,12 +194,24 @@
   background-image: url(../img/01認識我們/地理位置-pic.png);
   background-size: cover;
   background-position: center;
-  width: 70%;
-  height: 600px;
-  margin: 10% auto;
+  width: 65%;
+  height: 680px;
+  margin: 5% auto;
   position: relative;
   color: white;
-  border-radius: 30px;
+  border-radius: 50px;
+}
+
+.position .seagull {
+  position: absolute;
+  right: -8%;
+}
+
+.position .cactus {
+  position: absolute;
+  bottom: -12%;
+  left: 6%;
+  z-index: 1;
 }
 
 .position .container .position-text1 {
@@ -205,6 +221,7 @@
   bottom: 5%;
   width: 40%;
   padding: 10px;
+  z-index: 2;
 }
 
 .position .container .position-text2 {
@@ -214,7 +231,7 @@
   width: 30%;
   height: 320px;
   background-image: url(../img/01認識我們/對話框與珊瑚.png);
-  background-size: 90%;
+  background-size: 85%;
   background-repeat: no-repeat;
   background-position: center;
   padding: 10px;
@@ -225,5 +242,17 @@
   position: absolute;
   left: 15%;
   top: 50%;
+}
+
+.position .container .position-text2 .boat {
+  position: absolute;
+  right: -20%;
+  bottom: -40%;
+}
+
+.wave {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
 }
 /*# sourceMappingURL=01認識我們-page1.css.map */
