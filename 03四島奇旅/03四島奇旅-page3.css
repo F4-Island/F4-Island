@@ -241,22 +241,22 @@ body {
   text-align: justify;
 }
 
-.content-box .field {
+.content-box .tower {
   position: absolute;
-  top: 30%;
+  top: 25%;
   right: 0;
-}
-
-.content-box .coral {
-  position: absolute;
-  top: 50%;
-  left: 0;
 }
 
 .content-box .fish {
   position: absolute;
-  top: 75%;
+  top: 55%;
   right: 40%;
+}
+
+.content-box .coral {
+  position: absolute;
+  top: 80%;
+  left: 0;
 }
 
 footer {
