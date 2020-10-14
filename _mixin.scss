@@ -161,3 +161,30 @@
     line-height: 0.5vw;
     letter-spacing: 1px;
 }
+
+//00頁首地標
+@mixin mainIsland-hint {
+    background-image: url(../img/00頁首/四島地標圖.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 104px;
+    height: 165px;
+    font-size: larger;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+
+@mixin subIsland-hint {
+    background-image: url(../img/00頁首/附屬地標圖.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 104px;
+    height: 165px;
+    font-size: larger;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0;
+}
