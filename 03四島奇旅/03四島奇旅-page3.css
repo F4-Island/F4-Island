@@ -241,6 +241,7 @@ body {
   text-align: justify;
 }
 
+<<<<<<< Updated upstream
 .content-box .tower {
   position: absolute;
   top: 25%;
@@ -257,6 +258,24 @@ body {
   position: absolute;
   top: 80%;
   left: 0;
+=======
+.content-box .field {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.content-box .coral {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.content-box .fish {
+  position: absolute;
+  top: 75%;
+  right: 40%;
+>>>>>>> Stashed changes
 }
 
 footer {
