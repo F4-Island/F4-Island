@@ -55,3 +55,93 @@ body {
     @include  l-menu-active;
 }  
   
+
+
+.page-navbar{
+    @include nav-word-l;
+
+    .container{
+        nav{
+            @include navbar-style;
+            a{
+                text-decoration: none;
+            }
+            .title{
+                @include nav-word-l; 
+            }
+            .name{
+                @include nav-word-s;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                transition:0.3s;
+                opacity: 0.5;
+                .icon{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color:red;
+                    margin-right: 10px;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                // &:hover .icon{
+                //     opacity: 1;
+                // }
+                &:hover {
+                    opacity: 1;
+                    font-weight: 900;
+                }
+            }
+            //針對不同頁面強調所對應的navbar標題
+            .name-1{
+                font-weight: 600;
+                opacity: 1;
+                .icon{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.content-box{
+    padding-top: 5%;
+    position: relative;
+    .page-title{
+        margin-bottom: 1%;
+        h1{
+           @include page-title-style; 
+        }     
+    }
+    .content{
+        margin-bottom: 7%;
+        .text-box{
+            p{
+            font-size: 22px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+            text-align: justify;
+            } 
+        }
+    }
+    .temple{
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+    .plant{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    } 
+}
+footer{
+    margin-top: 200px;
+    position: relative;
+    img{
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+} 
