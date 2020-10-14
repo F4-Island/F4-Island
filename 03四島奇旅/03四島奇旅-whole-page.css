@@ -1,6 +1,8 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .selector-for-some-widget {
@@ -9,7 +11,9 @@
 }
 
 body {
-  background-color: #e3ece6;
+  background-image: url(../img/03四島奇旅/四島奇旅底圖.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .loading-wrapper {
@@ -89,7 +93,7 @@ body {
 .l-menu {
   width: 0vw;
   height: 0vw;
-  position: fixed;
+  position: absolute;
   top: 1vw;
   right: 2vw;
   z-index: 5;
@@ -197,23 +201,25 @@ body {
   transition: 0.5s;
 }
 
-.page-navbar .container nav .name:hover {
+.page-navbar .container nav .name .active-icon {
   opacity: 1;
   font-weight: 900;
 }
 
-.page-navbar .container nav .name-1 {
+.page-navbar .container nav .active-nav {
   font-weight: 600;
-  opacity: 1;
-}
-
-.page-navbar .container nav .name-1 .icon {
   opacity: 1;
 }
 
 .content-box {
   padding-top: 5%;
   position: relative;
+}
+
+.content-box .fake-anchor {
+  position: absolute;
+  top: -60px;
+  left: 0;
 }
 
 .content-box .page-title {
@@ -241,6 +247,54 @@ body {
   text-align: justify;
 }
 
+.content-box .field {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.content-box .coral-1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.content-box .fish-1 {
+  position: absolute;
+  top: 75%;
+  right: 40%;
+}
+
+.content-box .temple {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+.content-box .plant {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.content-box .tower {
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+.content-box .fish {
+  position: absolute;
+  top: 55%;
+  right: 40%;
+}
+
+.content-box .coral {
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+
 .content-box .hole {
   position: absolute;
   top: 20%;
@@ -263,4 +317,4 @@ footer img {
   position: absolute;
   bottom: 0;
 }
-/*# sourceMappingURL=03四島奇旅-page4.css.map */
+/*# sourceMappingURL=03四島奇旅-whole-page.css.map */
