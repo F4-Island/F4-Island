@@ -67,7 +67,7 @@ body {
 .l-menu {
   width: 0vw;
   height: 0vw;
-  position: absolute;
+  position: fixed;
   top: 1vw;
   right: 2vw;
   z-index: 5;
@@ -205,7 +205,7 @@ body {
 .unit .row .development {
   height: 40vh;
   background-color: brown;
-  border-radius: 10%;
+  border-radius: 5%;
   width: 35%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -215,17 +215,15 @@ body {
 .unit .row .development h2 {
   line-height: 40vh;
   text-align: center;
-  display: block;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .unit .row .history .text,
 .unit .row .development .text {
-  padding: 5%;
+  padding: 15%;
   width: 100%;
   height: 100%;
-  letter-spacing: 10px;
+  font-size: 16px;
+  letter-spacing: 8px;
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -233,15 +231,13 @@ body {
   background-color: darkgray;
   -webkit-transition: 1s;
   transition: 1s;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .unit .row .history:hover,
 .unit .row .development:hover {
   width: 40%;
-  height: 45vh;
-  -webkit-transform: 1s;
-          transform: 1s;
+  height: 60vh;
 }
 
 .unit .row .history:hover h2,
@@ -252,6 +248,25 @@ body {
 .unit .row .history:hover .text,
 .unit .row .development:hover .text {
   display: block;
+}
+
+.unit .row .history.active {
+  width: 40%;
+  height: 60vh;
+  -webkit-transform: 1s;
+          transform: 1s;
+}
+
+.unit .row .history.active .title1.active {
+  display: none;
+  -webkit-transform: 1s;
+          transform: 1s;
+}
+
+.unit .row .history.active .text1.active {
+  display: block;
+  -webkit-transform: 1s;
+          transform: 1s;
 }
 
 .wave {
@@ -266,7 +281,17 @@ body {
   bottom: 8%;
 }
 
-.text-active {
-  display: 1;
+footer {
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 0.5vw;
+  line-height: 0.5vw;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=01認識我們-page2.css.map */

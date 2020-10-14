@@ -81,19 +81,19 @@
                 <div class="title ">
                     <span>四島奇旅</span>
                 </div>
-                <a href="./03四島奇旅-page1.html" class="name name-1">
+                <a href="#section1" class="name ">
                     <div class="icon"></div>
                     <span>東嶼坪嶼</span>
                 </a>
-                <a href="./03四島奇旅-page2.html" class="name ">
+                <a href="#section2" class="name ">
                     <div class="icon"></div>
                     <span>西嶼坪嶼</span>
                 </a>
-                <a href="./03四島奇旅-page3.html" class="name ">
+                <a href="#section3" class="name ">
                     <div class="icon"></div>
                     <span>東吉嶼</span>
                 </a>
-                <a href="./03四島奇旅-page4.html" class="name ">
+                <a href="#section4" class="name ">
                     <div class="icon"></div>
                     <span>西吉嶼</span>
                 </a>
@@ -101,6 +101,7 @@
         </div>
     </div>
     <div class="container content-box">
+        <div id="section1" class="fake-anchor"></div>
         <div class="page-title d-flex align-items-center justify-content-center">
             <h1 class="mb-0">東嶼坪嶼</h1>
         </div>
@@ -159,6 +160,7 @@
         <img class="illustration fish-1" src="./img/03四島奇旅/01東嶼坪嶼/動物插圖.png" alt="">
     </div>
     <div class="container content-box">
+        <div id="section2" class="fake-anchor"></div>
         <div class="page-title d-flex align-items-center justify-content-center">
             <h1 class="mb-0">西嶼坪嶼</h1>
         </div>
@@ -191,6 +193,7 @@
         <img class="illustration plant" src="./img/03四島奇旅/02西嶼坪嶼/植物插圖.png" alt="">
     </div>
     <div class="container content-box">
+        <div id="section3" class="fake-anchor"></div>
         <div class="page-title d-flex align-items-center justify-content-center">
             <h1 class="mb-0">東吉嶼</h1>
         </div>
@@ -249,6 +252,7 @@
         <img class="illustration coral" src="./img/03四島奇旅/01東嶼坪嶼/珊瑚插圖.png" alt="">
     </div>
     <div class="container content-box">
+        <div id="section4" class="fake-anchor"></div>
         <div class="page-title d-flex align-items-center justify-content-center">
             <h1 class="mb-0">西吉嶼</h1>
         </div>
@@ -326,6 +330,18 @@ $('.menu').click(function () {
         $('.l-menu').addClass('active')
     }
 
+})
+
+
+$('.name').click(function(){
+    if($(this).hasClass('active-nav')){
+        $(this).removeClass('active-nav')
+        $('.icon').removeClass('active-icon')
+    }else{
+        $(this).addClass('active-nav')
+        $('.icon').addClass('active-icon')
+        $('.icon').getElementByClass
+    }
 })
 
 </script>

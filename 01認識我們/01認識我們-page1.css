@@ -68,7 +68,7 @@ body {
 .l-menu {
   width: 0vw;
   height: 0vw;
-  position: absolute;
+  position: fixed;
   top: 1vw;
   right: 2vw;
   z-index: 5;
@@ -218,7 +218,7 @@ body {
   background-color: rgba(4, 9, 27, 0.4);
   position: absolute;
   left: 5%;
-  bottom: 5%;
+  top: 8%;
   width: 40%;
   padding: 10px;
   z-index: 2;
@@ -254,5 +254,19 @@ body {
   width: 100vw;
   position: fixed;
   bottom: 0;
+}
+
+footer {
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 0.5vw;
+  line-height: 0.5vw;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=01認識我們-page1.css.map */

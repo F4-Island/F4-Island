@@ -2,6 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .selector-for-some-widget {
@@ -200,23 +201,25 @@ body {
   transition: 0.5s;
 }
 
-.page-navbar .container nav .name:hover {
+.page-navbar .container nav .name .active-icon {
   opacity: 1;
   font-weight: 900;
 }
 
-.page-navbar .container nav .name-1 {
+.page-navbar .container nav .active-nav {
   font-weight: 600;
-  opacity: 1;
-}
-
-.page-navbar .container nav .name-1 .icon {
   opacity: 1;
 }
 
 .content-box {
   padding-top: 5%;
   position: relative;
+}
+
+.content-box .fake-anchor {
+  position: absolute;
+  top: -60px;
+  left: 0;
 }
 
 .content-box .page-title {
