@@ -10,7 +10,9 @@
 }
 
 body {
-  background-color: #e3ece6;
+  background-image: url(../img/01認識我們/地理位置-底圖.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .logo {
@@ -215,13 +217,22 @@ body {
 }
 
 .position .container .position-text1 {
-  background-color: rgba(4, 9, 27, 0.4);
+  background-color: rgba(14, 26, 39, 0.8);
   position: absolute;
   left: 5%;
   top: 8%;
   width: 40%;
   padding: 10px;
   z-index: 2;
+  border-radius: 10px;
+}
+
+.position .container .position-text1 h3 {
+  color: #24999F;
+}
+
+.position .container .position-text1 h3 span {
+  font-family: Arno Pro;
 }
 
 .position .container .position-text2 {
@@ -229,7 +240,7 @@ body {
   right: 2%;
   bottom: 2%;
   width: 30%;
-  height: 320px;
+  height: 250px;
   background-image: url(../img/01認識我們/對話框與珊瑚.png);
   background-size: 85%;
   background-repeat: no-repeat;
@@ -241,7 +252,7 @@ body {
   width: 70%;
   position: absolute;
   left: 15%;
-  top: 50%;
+  top: 35%;
 }
 
 .position .container .position-text2 .boat {
