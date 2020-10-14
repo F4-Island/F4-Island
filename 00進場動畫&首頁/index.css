@@ -276,6 +276,8 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 80px;
 }
 
@@ -299,6 +301,8 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .wholeMap .island3 {
@@ -321,6 +325,8 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .wholeMap .island4 {
@@ -343,6 +349,8 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .wholeMap .island5 {
@@ -365,6 +373,8 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .wholeMap .island6 {
@@ -387,6 +397,8 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .wholeMap .island7 {
@@ -409,6 +421,8 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .wholeMap .island8 {
@@ -431,6 +445,8 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .wholeMap .active {
@@ -455,10 +471,42 @@ body {
   left: 6%;
 }
 
+.wholeMap .rock-hint {
+  position: absolute;
+  bottom: 27%;
+  left: 5%;
+  background-image: url(../img/00頁首/生態hover.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 151px;
+  height: 100px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 88px;
+  color: white;
+}
+
 .wholeMap .animal {
   position: absolute;
   bottom: 15%;
   left: 15%;
+}
+
+.wholeMap .animal-hint {
+  position: absolute;
+  bottom: 27%;
+  left: 15%;
+  background-image: url(../img/00頁首/生態hover.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 151px;
+  height: 100px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 88px;
+  color: white;
 }
 
 .wholeMap .plant {
@@ -467,10 +515,42 @@ body {
   left: 25%;
 }
 
+.wholeMap .plant-hint {
+  position: absolute;
+  bottom: 27%;
+  left: 25%;
+  background-image: url(../img/00頁首/生態hover.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 151px;
+  height: 100px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 88px;
+  color: white;
+}
+
 .wholeMap .carol {
   position: absolute;
   bottom: 15%;
   left: 35%;
+}
+
+.wholeMap .carol-hint {
+  position: absolute;
+  bottom: 27%;
+  left: 35%;
+  background-image: url(../img/00頁首/生態hover.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 151px;
+  height: 100px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 88px;
+  color: white;
 }
 
 .wholeMap .birds {

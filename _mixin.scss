@@ -187,4 +187,18 @@
     text-align: center;
     line-height: 100px;
     opacity: 0;
+    transition: 1s;
+}
+
+@mixin others-hint{
+        background-image: url(../img/00頁首/生態hover.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 151px;
+        height: 100px;
+        font-size: larger;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 88px;
+        color: white;
 }

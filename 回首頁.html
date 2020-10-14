@@ -117,10 +117,13 @@
         <img class="fish-r" src="./img/00頁首/fish-r.png" alt="">
         <!-- 生態探索 -->
         <img class="rock" src="./img/00頁首/玄武岩.png" alt="">
-        <div class="rock-hint">玄武岩</div>
+        <div class="rock-hint">玄武岩地景</div>
         <img class="animal" src="./img/00頁首/Animal.png" alt="">
+        <div class="animal-hint">動物</div>
         <img class="plant" src="./img/00頁首/plant.png" alt="">
+        <div class="plant-hint">植物</div>
         <img class="carol" src="./img/00頁首/珊瑚.png" alt="">
+        <div class="carol-hint">珊瑚</div>
 
         <img class="birds" src="./img/00頁首/Birds.png" alt="">
         <img class="cloud" src="./img/00頁首/Cloud.png" alt="">
@@ -178,25 +181,25 @@
         // $(".island-hint").toggleClass("active");
         // });
 
-        $( ".littleIsland" ).hover(function() {
-  $( ".island-hint" ).each(function() {
+     $( ".littleIsland" ).hover(function() {
+    $( ".islandHint" ).each(function() {
     $( this ).toggleClass( "active" );
   });
 });
 
-function islandHint(evt, islandName) {
-        var i, islandHint,littleIsland;
-        islandHint = document.getElementsByClassName("island-hint");
-        for (i = 0; i < islandHint.length; i++) {
-            islandHint[i].style.opacity = "1";
-        }
-        littleIsland = document.getElementsByClassName("littleIsland");
-        for (i = 0; i < littleIsland.length; i++) {
-            littleIsland[i].className = littleIsland[i].className.replace(" active", "");
-        }
-        document.getElementById(islandName).style.opacity = "0";
-        evt.currentTarget.className += "active";
-        }
+// function islandHint(evt, islandName) {
+//         var i, islandHint,littleIsland;
+//         islandHint = document.getElementsByClassName("island-hint");
+//         for (i = 0; i < islandHint.length; i++) {
+//             islandHint[i].style.opacity = "1";
+//         }
+//         littleIsland = document.getElementsByClassName("littleIsland");
+//         for (i = 0; i < littleIsland.length; i++) {
+//             littleIsland[i].className = littleIsland[i].className.replace(" active", "");
+//         }
+//         document.getElementById(islandName).style.opacity = "0";
+//         evt.currentTarget.className += "active";
+//         }
 
     </script>
 
