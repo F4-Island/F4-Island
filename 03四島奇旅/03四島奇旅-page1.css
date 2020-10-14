@@ -211,7 +211,24 @@ body {
   opacity: 1;
 }
 
-.container .title {
+.content-box {
+  padding-top: 5%;
+}
+
+.content-box .page-title h1 {
   color: #225679;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+.content-box .content .text-box p {
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  text-align: justify;
 }
 /*# sourceMappingURL=03四島奇旅-page1.css.map */
