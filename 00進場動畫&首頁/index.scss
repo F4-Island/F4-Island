@@ -72,67 +72,175 @@ body {
         left: 50%;
         transform: translate(-50%,0);
     }
+    //東吉嶼
     .east{
         position: absolute;
         top: 38%;
         right: 5%;
         filter: drop-shadow(40px 40px 10px rgb(89, 167, 179));
     }
+    .east-shadow{
+        position: absolute;
+        top: 40%;
+        right: 1%;
+        
+    }
+    .east-hint{
+        position: absolute;
+        top: 35%;
+        right: 7%;
+        @include mainIsland-hint;
+    }
+
+    //西吉嶼
     .west{
         position: absolute;
         top: 52%;
         right: 36%;
     }
+    .west-shadow{
+        position: absolute;
+        top: 53%;
+        right: 34%;
+    }
+    .west-hint{
+        position: absolute;
+        top: 46%;
+        right: 37%;
+        @include mainIsland-hint;
+    }
+
+    //東嶼坪嶼
     .littleEast{
         position: absolute;
         top: 40%;
         left: 18%;
+        
     }
+    .littleEast-shadow{
+        position: absolute;
+        top: 40%;
+        left: 16%;
+    }
+    .littleEast-hint{
+        position: absolute;
+        top: 27%;
+        left: 31%;
+        @include mainIsland-hint;
+    }
+
+    //西嶼坪嶼
     .littleWest{
         position: absolute;
         top: 25%;
         left: 18%;
     }
+    .littleWest-shadow{
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+    .littleWest-hint{
+        position: absolute;
+        top: 14%;
+        left: 21%;
+        @include mainIsland-hint;
+    }
+    
+    //附屬島嶼
     .island1{
         position: absolute;
         top: 6%;
         left: 7%;
+    }
+    .island1-hint{
+        position: absolute;
+        top: 0%;
+        left: 5%;
+        @include subIsland-hint;
+        width: 80px;
     }
     .island2{
         position: absolute;
         top: 15%;
         left: 15%;
     }
+    .island2-hint{
+        position: absolute;
+        top: 1%;
+        left: 14%;
+        @include subIsland-hint;
+    }
     .island3{
         position: absolute;
         top: 40%;
         left: 14%;
+    }
+    .island3-hint{
+        position: absolute;
+        top: 25%;
+        left: 12%;
+        @include subIsland-hint;
     }
     .island4{
         position: absolute;
         top: 53%;
         left: 26%;
     }
+    .island4-hint{
+        position: absolute;
+        top: 38%;
+        left: 24%;
+        @include subIsland-hint;
+    }
     .island5{
         position: absolute;
         top: 55%;
         left: 6%;
+    }
+    .island5-hint{
+        position: absolute;
+        top: 40%;
+        left: 4%;
+        @include subIsland-hint;
     }
     .island6{
         position: absolute;
         top: 65%;
         left: 19%;
     }
+    .island6-hint{
+        position: absolute;
+        top: 50%;
+        left: 17%;
+        @include subIsland-hint;
+    }
     .island7{
         position: absolute;
         top: 58%;
         left: 33%;
+    }
+    .island7-hint{
+        position: absolute;
+        top: 44%;
+        left: 32%;
+        @include subIsland-hint;
     }
     .island8{
         position: absolute;
         top: 47%;
         right: 23%;
     }
+    .island8-hint{
+        position: absolute;
+        top: 33%;
+        right: 23%;
+        @include subIsland-hint;
+    }
+    .active{
+        opacity: 1;
+    }
+
     .fish-l{
         position: absolute;
         top: 30%;
@@ -140,7 +248,7 @@ body {
     }
     .fish-r{
         position: absolute;
-        top: 68%;
+        top: 73%;
         right: 30%;
     }
     .rock{

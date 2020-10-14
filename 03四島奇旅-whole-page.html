@@ -81,8 +81,8 @@
                 <div class="title ">
                     <span>四島奇旅</span>
                 </div>
-                <a href="#section1" class="name ">
-                    <div class="icon"></div>
+                <a href="#section1" class="name active-nav">
+                    <div class="icon active-icon "></div>
                     <span>東嶼坪嶼</span>
                 </a>
                 <a href="#section2" class="name ">
@@ -332,15 +332,13 @@ $('.menu').click(function () {
 
 })
 
-
 $('.name').click(function(){
-    if($(this).hasClass('active-nav')){
+    if($(this).has('active-nav')){
         $(this).removeClass('active-nav')
         $('.icon').removeClass('active-icon')
     }else{
         $(this).addClass('active-nav')
         $('.icon').addClass('active-icon')
-        $('.icon').getElementByClass
     }
 })
 

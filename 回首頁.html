@@ -79,30 +79,57 @@
     <!-- 內容 -->
     <div class="wholeMap">
         <img class="logo" src="./img/00頁首/Logo.png" alt="">
+        <!-- 東吉嶼 -->
+        <img class="east-shadow animate__animated animate__pulse animate__infinite animate__slower" src="./img/00頁首/east-shadow.png" alt="">
         <a href="./03四島奇旅-page1.html"><img class="east animate__animated animate__pulse animate__infinite animate__slow" src="./img/00頁首/01東吉嶼.png" alt=""></a>
+        <div class="east-hint">東吉嶼</div>
+        <!-- 西吉嶼 -->
+        <img class="west-shadow animate__animated animate__pulse animate__infinite animate__slower" src="./img/00頁首/west-shadow.png" alt="">
         <a href="./03四島奇旅-page2.html"><img class="west animate__animated animate__pulse animate__infinite animate__slow" src="./img/00頁首/02西吉嶼.png" alt=""></a>
+        <div class="west-hint">西吉嶼</div>
+        <!-- 東嶼坪嶼 -->
+        <img class="littleEast-shadow animate__animated animate__pulse animate__infinite animate__slower" src="./img/00頁首/littleEast-shadow.png" alt="">
         <a href="./03四島奇旅-page3.html"><img class="littleEast animate__animated animate__pulse animate__infinite animate__slow" src="./img/00頁首/03東嶼坪嶼.png" alt=""></a>
+        <div class="littleEast-hint">東嶼坪嶼</div>
+        <!-- 西嶼坪嶼 -->
+        <img class="littleWest-shadow animate__animated animate__pulse animate__infinite animate__slower" src="./img/00頁首/littleWest-shadow.png" alt="">
         <a href="./03四島奇旅-page4.html"><img class="littleWest animate__animated animate__pulse animate__infinite animate__slow" src="./img/00頁首/04西嶼坪嶼.png" alt=""></a>
-        <img class="island1" src="./img/00頁首/05頭巾.png" alt="">
-        <img class="island2" src="./img/00頁首/06鐵砧.png" alt="">
-        <img class="island3" src="./img/00頁首/07二塭.png" alt="">
-        <img class="island4" src="./img/00頁首/08香爐.png" alt="">
-        <img class="island5" src="./img/00頁首/09離塭仔.png" alt="">
-        <img class="island6" src="./img/00頁首/10鐘仔.png" alt="">
-        <img class="island7" src="./img/00頁首/11豬母礁.png" alt="">
-        <img class="island8" src="./img/00頁首/12鋤頭嶼.png" alt="">
+        <div class="littleWest-hint">西嶼坪嶼</div>
+        <!-- 附屬島嶼 -->
+        <img class="islandHint island1" src="./img/00頁首/05頭巾.png" alt="">
+        <div class="islandHint island1-hint">頭巾</div>
+        <img class="littleIsland island2" src="./img/00頁首/06鐵砧.png" alt="">
+        <div class="islandHint island2-hint">鐵砧</div>
+        <img class="littleIsland island3" src="./img/00頁首/07二塭.png" alt="">
+        <div class="islandHint island3-hint">二塭</div>
+        <img class="littleIsland island4" src="./img/00頁首/08香爐.png" alt="">
+        <div class="islandHint island4-hint">香爐</div>
+        <img class="littleIsland island5" src="./img/00頁首/09離塭仔.png" alt="">
+        <div class="islandHint island5-hint">離塭仔</div>
+        <img class="littleIsland island6" src="./img/00頁首/10鐘仔.png" alt="">
+        <div class="islandHint island6-hint">鐘仔</div>
+        <img class="littleIsland island7" src="./img/00頁首/11豬母礁.png" alt="">
+        <div class="islandHint island7-hint">豬母礁</div>
+        <img class="littleIsland island8 " onmouseover="islandHint(event, 'island8')" src="./img/00頁首/12鋤頭嶼.png" alt="">
+        <div class="islandHint island8-hint">鋤頭嶼</div>
+
         <img class="fish-l" src="./img/00頁首/fish-left.png" alt="">
         <img class="fish-r" src="./img/00頁首/fish-r.png" alt="">
+        <!-- 生態探索 -->
         <img class="rock" src="./img/00頁首/玄武岩.png" alt="">
+        <div class="rock-hint">玄武岩</div>
         <img class="animal" src="./img/00頁首/Animal.png" alt="">
         <img class="plant" src="./img/00頁首/plant.png" alt="">
         <img class="carol" src="./img/00頁首/珊瑚.png" alt="">
+
         <img class="birds" src="./img/00頁首/Birds.png" alt="">
         <img class="cloud" src="./img/00頁首/Cloud.png" alt="">
         <img class="boat" src="./img/00頁首/Boat.png" alt="">
         <img class="email" src="./img/00頁首/Email.png" alt="">
         <img class="fb" src="./img/00頁首/FB.png" alt="">
         <img class="wave" src="./img/00頁首/wave.png" alt="">
+        
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
@@ -144,10 +171,37 @@
 
         })
 
+        
+        // $( ".littleIsland" ).hover(function() {
+        // $(".island-hint" ).addClass("active");}, 
+        // function() {
+        // $(".island-hint").toggleClass("active");
+        // });
+
+        $( ".littleIsland" ).hover(function() {
+  $( ".island-hint" ).each(function() {
+    $( this ).toggleClass( "active" );
+  });
+});
+
+function islandHint(evt, islandName) {
+        var i, islandHint,littleIsland;
+        islandHint = document.getElementsByClassName("island-hint");
+        for (i = 0; i < islandHint.length; i++) {
+            islandHint[i].style.opacity = "1";
+        }
+        littleIsland = document.getElementsByClassName("littleIsland");
+        for (i = 0; i < littleIsland.length; i++) {
+            littleIsland[i].className = littleIsland[i].className.replace(" active", "");
+        }
+        document.getElementById(islandName).style.opacity = "0";
+        evt.currentTarget.className += "active";
+        }
+
     </script>
 
 
-
+    
 
 </body>
 

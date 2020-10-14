@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -149,10 +150,54 @@ body {
           filter: drop-shadow(40px 40px 10px #59a7b3);
 }
 
+.wholeMap .east-shadow {
+  position: absolute;
+  top: 40%;
+  right: 1%;
+}
+
+.wholeMap .east-hint {
+  position: absolute;
+  top: 35%;
+  right: 7%;
+  background-image: url(../img/00頁首/四島地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+}
+
 .wholeMap .west {
   position: absolute;
   top: 52%;
   right: 36%;
+}
+
+.wholeMap .west-shadow {
+  position: absolute;
+  top: 53%;
+  right: 34%;
+}
+
+.wholeMap .west-hint {
+  position: absolute;
+  top: 46%;
+  right: 37%;
+  background-image: url(../img/00頁首/四島地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
 }
 
 .wholeMap .littleEast {
@@ -161,10 +206,54 @@ body {
   left: 18%;
 }
 
+.wholeMap .littleEast-shadow {
+  position: absolute;
+  top: 40%;
+  left: 16%;
+}
+
+.wholeMap .littleEast-hint {
+  position: absolute;
+  top: 27%;
+  left: 31%;
+  background-image: url(../img/00頁首/四島地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+}
+
 .wholeMap .littleWest {
   position: absolute;
   top: 25%;
   left: 18%;
+}
+
+.wholeMap .littleWest-shadow {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.wholeMap .littleWest-hint {
+  position: absolute;
+  top: 14%;
+  left: 21%;
+  background-image: url(../img/00頁首/四島地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
 }
 
 .wholeMap .island1 {
@@ -173,10 +262,43 @@ body {
   left: 7%;
 }
 
+.wholeMap .island1-hint {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
+  width: 80px;
+}
+
 .wholeMap .island2 {
   position: absolute;
   top: 15%;
   left: 15%;
+}
+
+.wholeMap .island2-hint {
+  position: absolute;
+  top: 1%;
+  left: 14%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
 }
 
 .wholeMap .island3 {
@@ -185,10 +307,42 @@ body {
   left: 14%;
 }
 
+.wholeMap .island3-hint {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
+}
+
 .wholeMap .island4 {
   position: absolute;
   top: 53%;
   left: 26%;
+}
+
+.wholeMap .island4-hint {
+  position: absolute;
+  top: 38%;
+  left: 24%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
 }
 
 .wholeMap .island5 {
@@ -197,10 +351,42 @@ body {
   left: 6%;
 }
 
+.wholeMap .island5-hint {
+  position: absolute;
+  top: 40%;
+  left: 4%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
+}
+
 .wholeMap .island6 {
   position: absolute;
   top: 65%;
   left: 19%;
+}
+
+.wholeMap .island6-hint {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
 }
 
 .wholeMap .island7 {
@@ -209,10 +395,46 @@ body {
   left: 33%;
 }
 
+.wholeMap .island7-hint {
+  position: absolute;
+  top: 44%;
+  left: 32%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
+}
+
 .wholeMap .island8 {
   position: absolute;
   top: 47%;
   right: 23%;
+}
+
+.wholeMap .island8-hint {
+  position: absolute;
+  top: 33%;
+  right: 23%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0;
+}
+
+.wholeMap .active {
+  opacity: 1;
 }
 
 .wholeMap .fish-l {
@@ -223,7 +445,7 @@ body {
 
 .wholeMap .fish-r {
   position: absolute;
-  top: 68%;
+  top: 73%;
   right: 30%;
 }
 
