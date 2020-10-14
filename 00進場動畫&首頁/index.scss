@@ -256,21 +256,49 @@ body {
         bottom: 15%;
         left: 6%;
     }
+    .rock-hint{
+        position: absolute;
+        bottom: 27%;
+        left: 5%;
+        @include others-hint;
+    }
+
     .animal{
         position: absolute;
         bottom: 15%;
         left: 15%;
     }
+    .animal-hint{
+        position: absolute;
+        bottom: 27%;
+        left: 15%;
+        @include others-hint;
+    }
+
     .plant{
         position: absolute;
         bottom: 15%;
         left: 25%;
     }
+    .plant-hint{
+        position: absolute;
+        bottom: 27%;
+        left: 25%;
+        @include others-hint;
+    }
+
     .carol{
         position: absolute;
         bottom: 15%;
         left: 35%;
     }
+    .carol-hint{
+        position: absolute;
+        bottom: 27%;
+        left: 35%;
+        @include others-hint;
+    }
+
     .birds{
         position: absolute;
         top: 12%;
@@ -302,4 +330,5 @@ body {
         position: absolute;
         bottom: 0;
     }
+    
 }
