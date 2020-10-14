@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(../img/01認識我們/02歷史與發展/發展與歷史底圖_工作區域\ 1.png);
+    background-image: url(../img/01認識我們/02歷史與發展/背景圖.png);
     background-position: center;
     background-size: cover;
 }
@@ -111,16 +111,17 @@ body {
         .history ,
         .development{
             height: 40vh;
-            background-color: brown;
+            // background-color: brown;
             border-radius: 5%;
             width: 35%;
             transition: 1s;
-
-            // display: flex;
-            // align-items: center;
             h2{
                 line-height: 40vh;
                 text-align: center;
+                text-decoration: underline;
+                font-weight: 900;
+                background-color: rgba(62, 67, 71,0.6);
+                border-radius: 5%;
                 // display: block;
                 // transition: 1s;
             }
@@ -132,7 +133,7 @@ body {
                 letter-spacing: 8px;
                 display: none;
                 align-items: center;
-                background-color:darkgray;
+                // background-color:darkgray;
                 transition: 1s;
                 border-radius: 5%;
             }
@@ -142,6 +143,7 @@ body {
                 // transform: 1s;
                 h2{
                     display: none;
+                    background-color: rgba(62, 67, 71,0);
                 }
                 .text{
                     display: block;
@@ -168,16 +170,28 @@ body {
 
 
         // 歷史圖片
-        // .history{
-        //     background-image: url(.);
-        // }
+        .history{
+            background-image: url(../img/01認識我們/02歷史與發展/歷史小.png);
+            background-position: center;
+            background-size: 300%;
+            .text{
+                background-image: url(../img/01認識我們/02歷史與發展/歷史大.png);
+                background-position: center;
+                background-size: 350%;
+            }
+        }
 
         // 發展
-        // .development{
-        //     background-image: {
-
-        //     };
-        // }
+        .development{
+            background-image: url(../img/01認識我們/02歷史與發展/發展小.png);
+            background-position: center;
+            background-size: 400%;
+            .text{
+                background-image: url(../img/01認識我們/02歷史與發展/發展大.png);
+                background-position: center;
+                background-size: 450%;
+            }
+        }
 
         // .development {
         //     height: 40vh;

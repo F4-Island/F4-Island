@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(../img/01認識我們/02歷史與發展/);
+  background-image: url(../img/01認識我們/02歷史與發展/背景圖.png);
   background-position: center;
   background-size: cover;
 }
@@ -207,7 +207,6 @@ body {
 .unit .row .history,
 .unit .row .development {
   height: 40vh;
-  background-color: brown;
   border-radius: 5%;
   width: 35%;
   -webkit-transition: 1s;
@@ -218,6 +217,10 @@ body {
 .unit .row .development h2 {
   line-height: 40vh;
   text-align: center;
+  text-decoration: underline;
+  font-weight: 900;
+  background-color: rgba(62, 67, 71, 0.6);
+  border-radius: 5%;
 }
 
 .unit .row .history .text,
@@ -231,7 +234,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: darkgray;
   -webkit-transition: 1s;
   transition: 1s;
   border-radius: 5%;
@@ -246,6 +248,7 @@ body {
 .unit .row .history:hover h2,
 .unit .row .development:hover h2 {
   display: none;
+  background-color: rgba(62, 67, 71, 0);
 }
 
 .unit .row .history:hover .text,
@@ -270,6 +273,30 @@ body {
   display: block;
   -webkit-transform: 1s;
           transform: 1s;
+}
+
+.unit .row .history {
+  background-image: url(../img/01認識我們/02歷史與發展/歷史小.png);
+  background-position: center;
+  background-size: 300%;
+}
+
+.unit .row .history .text {
+  background-image: url(../img/01認識我們/02歷史與發展/歷史大.png);
+  background-position: center;
+  background-size: 350%;
+}
+
+.unit .row .development {
+  background-image: url(../img/01認識我們/02歷史與發展/發展小.png);
+  background-position: center;
+  background-size: 400%;
+}
+
+.unit .row .development .text {
+  background-image: url(../img/01認識我們/02歷史與發展/發展大.png);
+  background-position: center;
+  background-size: 450%;
 }
 
 .wave {
