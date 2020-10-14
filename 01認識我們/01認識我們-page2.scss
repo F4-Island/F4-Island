@@ -119,7 +119,7 @@ body {
             h2{
                 line-height: 40vh;
                 text-align: center;
-                display: block;
+                // display: block;
                 transition: 1s;
             }
             .text{
@@ -146,6 +146,30 @@ body {
             }
         }
 
+        .title1.active{
+           display: none;
+        }
+        .text1.active{
+            display:block;
+            width: 105%;
+            height: 50vh;
+            transform: 1s;
+        }
+
+
+
+        // 歷史圖片
+        // .history{
+        //     background-image: url(.);
+        // }
+
+        // 發展
+        // .development{
+        //     background-image: {
+
+        //     };
+        // }
+
         // .development {
         //     height: 40vh;
         //     background-color: rgb(19, 55, 121);
@@ -161,7 +185,7 @@ body {
         //     }
         // }
     }
-}
+}   
 
 // 波浪
 .wave {
@@ -178,6 +202,3 @@ body {
 }
 
 
-.text-active{
-    display: 1;
-}

@@ -133,7 +133,7 @@ body:after {
 .l-menu {
   width: 0vw;
   height: 0vw;
-  position: absolute;
+  position: fixed;
   top: 1vw;
   right: 2vw;
   z-index: 5;

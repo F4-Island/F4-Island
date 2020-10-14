@@ -110,8 +110,8 @@
             <div class="col-md-1"></div>
             <!-- 歷史 -->
             <div class="history">
-                <h2>歷史</h2>
-                <div class="text">
+                <h2 class="title1 active">歷史</h2>
+                <div class="text text1 active">
                     <h4>歷史</h4>
                     <br>
                     <span>遠在臺灣新石器時代階段，南方四島即扮演聯結大陸與臺灣西南部的重要角色，具有史前文化互動圈的重要價值及清初閩臺正口對渡航道上進出黑水溝重要指標的文化地理意涵，保存有清代傳統建築與日據時期的洋樓建築、聚落發展等空間層次，以及獨特的梯田式菜宅人文地景等特色，具備成為世界遺產的珍貴資源。
@@ -122,7 +122,7 @@
             <div class="col-md-1"></div>
             <!-- 發展/ -->
             <div class="development">
-                <h2>發展</h2>
+                <h2 class="title">發展</h2>
                 <div class="text">
                     <h4>發展</h4>
                     <br>
@@ -190,6 +190,14 @@
 
         })
 
+        $('.history').hover(function () {
+            if ($('.title1').hasClass('active')) {
+                $('.title1').removeClass('active')
+                $('.text1').removeClass('active')
+            } 
+
+        })
+        
 
 
 
