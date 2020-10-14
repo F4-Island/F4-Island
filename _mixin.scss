@@ -148,3 +148,16 @@
     letter-spacing: 3px;
     font-size: 50px;
 }
+
+@mixin footer{
+    position: fixed;
+    z-index: 200;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.5vw;
+    line-height: 0.5vw;
+    letter-spacing: 1px;
+}

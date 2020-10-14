@@ -135,4 +135,132 @@ body {
 .l-menu.active li a span {
   opacity: 1;
 }
+
+.page-navbar {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.page-navbar .container nav {
+  width: 70%;
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+  background-color: #3281A5;
+  padding: 0 5%;
+}
+
+.page-navbar .container nav a {
+  text-decoration: none;
+}
+
+.page-navbar .container nav a {
+  text-decoration: none;
+}
+
+.page-navbar .container nav .title {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.page-navbar .container nav .name {
+  font-family: Microsoft JhengHei;
+  font-weight: 400;
+  font-size: 21px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.page-navbar .container nav .name .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 10px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page-navbar .container nav .name:hover {
+  opacity: 1;
+  font-weight: 900;
+}
+
+.page-navbar .container nav .name-1 {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.page-navbar .container nav .name-1 .icon {
+  opacity: 1;
+}
+
+.content-box {
+  padding-top: 5%;
+  position: relative;
+}
+
+.content-box .page-title {
+  margin-bottom: 1%;
+}
+
+.content-box .page-title h1 {
+  color: #225679;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+.content-box .content {
+  margin-bottom: 7%;
+}
+
+.content-box .content .text-box p {
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.content-box .temple {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+.content-box .plant {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer {
+  margin-top: 200px;
+  position: relative;
+}
+
+footer img {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
 /*# sourceMappingURL=03四島奇旅-page2.css.map */

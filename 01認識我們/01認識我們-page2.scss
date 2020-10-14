@@ -110,7 +110,7 @@ body {
         .development{
             height: 40vh;
             background-color: brown;
-            border-radius: 10%;
+            border-radius: 5%;
             width: 35%;
             transition: 1s;
 
@@ -120,23 +120,24 @@ body {
                 line-height: 40vh;
                 text-align: center;
                 // display: block;
-                transition: 1s;
+                // transition: 1s;
             }
             .text{
-                padding: 5%;
+                padding: 15%;
                 width: 100%;
                 height: 100%;
-                letter-spacing: 10px;
+                font-size: 16px;
+                letter-spacing: 8px;
                 display: none;
                 align-items: center;
                 background-color:darkgray;
                 transition: 1s;
-                border-radius: 10%;
+                border-radius: 5%;
             }
             &:hover {
                 width: 40%;
-                height: 45vh;
-                transform: 1s;
+                height: 60vh;
+                // transform: 1s;
                 h2{
                     display: none;
                 }
@@ -146,15 +147,21 @@ body {
             }
         }
 
-        .title1.active{
-           display: none;
-        }
-        .text1.active{
-            display:block;
-            width: 105%;
-            height: 50vh;
+        // 一開始展開樣式(可參照hover狀況寫
+        .history.active{
+            width: 40%;
+            height: 60vh;
             transform: 1s;
+            .title1.active{
+                display: none;
+                transform: 1s;
+             }
+             .text1.active{
+                display:block;
+                transform: 1s;
+            }
         }
+
 
 
 
@@ -202,3 +209,6 @@ body {
 }
 
 
+footer{
+    @include footer;
+}
