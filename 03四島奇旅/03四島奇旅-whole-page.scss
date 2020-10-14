@@ -8,7 +8,10 @@
 }
 
 body {
-    background-color: $bg-white;
+    background-image: url(../img/03四島奇旅/四島奇旅底圖.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 // loading遮蓋區
@@ -125,6 +128,46 @@ body {
             } 
         }
     }
+    .field{
+        position: absolute;
+        top: 30%;
+        right: 0;
+    }
+    .coral-1{
+        position: absolute;
+        top: 50%;
+        left: 0;
+    } 
+    .fish-1{
+        position: absolute;
+        top: 75%;
+        right: 40%;
+    }
+    .temple{
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+    .plant{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    } 
+    .tower{
+        position: absolute;
+        top: 25%;
+        right: 0;
+    }
+    .fish{
+        position: absolute;
+        top: 55%;
+        right: 40%;
+    } 
+    .coral{
+        position: absolute;
+        top: 80%;
+        left: 0;
+    } 
     .hole{
         position: absolute;
         top: 20%;
@@ -134,7 +177,7 @@ body {
         position: absolute;
         top: 60%;
         left: 45%;
-    } 
+    }  
 }
 footer{
     margin-top: 200px;
