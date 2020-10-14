@@ -106,8 +106,8 @@ body {
 }
 
 .l-menu.active {
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   opacity: 1;
 }
 
@@ -192,7 +192,6 @@ body {
 
 .position {
   background-image: url(../img/01認識我們/地理位置-pic.png);
-  background-color: white;
   background-size: 105%;
   background-position: center;
   width: 60%;
