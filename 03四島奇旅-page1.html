@@ -17,7 +17,7 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./03四島奇旅/03四島奇旅-page1.scss">
+    <link rel="stylesheet" href="./03四島奇旅/03四島奇旅-page1.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     </div> -->
 
     <!-- logo -->
-    <img class="logo pt-3 pl-3" width="12%" src="./img/00頁首/F4嶼-logo.svg" alt="">
+    <img class="logo" width="12%" src="./img/03四島奇旅/01東嶼坪嶼/logo.png" alt="">
 
     <!-- menu -->
     <div class="menu">
@@ -158,45 +158,47 @@
 </div>
             
 
-        <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
 
-        // loading時間
-        $(document).ready(function () {
-            setTimeout(function () {
-                $(".loading-wrapper").fadeOut(500);
-            }, 3000);
-        });
+// loading時間
+$(document).ready(function () {
+    setTimeout(function () {
+        $(".loading-wrapper").fadeOut(500);
+    }, 3000);
+});
 
-        // menu開關
-        $('.menu-btn').click(function () {
-            $('.menu *').removeClass('active');
-            $(this).addClass('active')
-            $('.menu-btnline').eq($(this).index()).addClass('active')
-            $('.menu-text').eq($(this).index()).addClass('active')
+// menu開關
+$('.menu-btn').click(function () {
+    $('.menu *').removeClass('active');
+    $(this).addClass('active')
+    $('.menu-btnline').eq($(this).index()).addClass('active')
+    $('.menu-text').eq($(this).index()).addClass('active')
 
-        })
-        $('.menu').click(function () {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active')
-                $('.l-menu').removeClass('active')
-            } else {
-                $(this).addClass('active')
-                $('.l-menu').addClass('active')
-            }
+})
+$('.menu').click(function () {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active')
+        $('.l-menu').removeClass('active')
+    } else {
+        $(this).addClass('active')
+        $('.l-menu').addClass('active')
+    }
 
-        })
+})
 
-    </script>
+</script>
 </body>
+
+
 </html>
