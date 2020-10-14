@@ -213,6 +213,11 @@ body {
 
 .content-box {
   padding-top: 5%;
+  position: relative;
+}
+
+.content-box .page-title {
+  margin-bottom: 1%;
 }
 
 .content-box .page-title h1 {
@@ -225,11 +230,33 @@ body {
   font-size: 50px;
 }
 
+.content-box .content {
+  margin-bottom: 7%;
+}
+
 .content-box .content .text-box p {
   font-size: 22px;
   letter-spacing: 3px;
   margin-bottom: 0;
   text-align: justify;
+}
+
+.content-box .field {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.content-box .coral {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.content-box .fish {
+  position: absolute;
+  top: 75%;
+  right: 40%;
 }
 
 footer {
