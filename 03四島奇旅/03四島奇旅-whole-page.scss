@@ -2,6 +2,7 @@
 @import "../mixin";
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .selector-for-some-widget {
     box-sizing: content-box;
@@ -91,18 +92,15 @@ body {
                 // &:hover .icon{
                 //     opacity: 1;
                 // }
-                &:hover {
+                .active-icon {
                     opacity: 1;
                     font-weight: 900;
                 }
             }
             //針對不同頁面強調所對應的navbar標題
-            .name-1{
+            .active-nav{
                 font-weight: 600;
                 opacity: 1;
-                .icon{
-                    opacity: 1;
-                }
             }
         }
     }
@@ -111,6 +109,11 @@ body {
 .content-box{
     padding-top: 5%;
     position: relative;
+    .fake-anchor{
+        position: absolute;
+        top: -60px;
+        left: 0;
+    }
     .page-title{
         margin-bottom: 1%;
         h1{
