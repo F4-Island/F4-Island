@@ -105,6 +105,8 @@ body {
 
 .Sub-standard {
     @include Sub-standard-style;
+    text-align:center;
+    margin-top: -10px;
 }
 
 .content-box {
@@ -115,8 +117,10 @@ body {
     }
 
     .title-p {
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 600;
+        margin-top: 30px;
+        letter-spacing: 2px;
     }
 }
 
@@ -147,8 +151,7 @@ body {
     top: 60%;
     left: 45%;
 }
-p {
-}
+
 footer {
     margin-top: 200px;
     position: relative;
