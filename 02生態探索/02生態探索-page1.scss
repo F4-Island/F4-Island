@@ -94,6 +94,14 @@ body {
     }
 }
 
+
+.img{
+    width: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+
 // 海鷗
 .seagull {
     position: fixed;
@@ -101,114 +109,11 @@ body {
     top: 15%;
 }
 
-// 歷史及發展
-
-.unit {
-    margin-top: 8%;
-    color: white;
-    text-align: center;
-    .row {
-        .history ,
-        .development{
-            height: 40vh;
-            // background-color: brown;
-            border-radius: 5%;
-            width: 35%;
-            transition: 1s;
-            h2{
-                line-height: 40vh;
-                text-align: center;
-                text-decoration: underline;
-                font-weight: 900;
-                background-color: rgba(62, 67, 71,0.6);
-                border-radius: 5%;
-                // display: block;
-                // transition: 1s;
-            }
-            .text{
-                padding: 15%;
-                width: 100%;
-                height: 100%;
-                font-size: 16px;
-                letter-spacing: 8px;
-                display: none;
-                align-items: center;
-                // background-color:darkgray;
-                transition: 1s;
-                border-radius: 5%;
-            }
-            &:hover {
-                width: 40%;
-                height: 60vh;
-                // transform: 1s;
-                h2{
-                    display: none;
-                    background-color: rgba(62, 67, 71,0);
-                }
-                .text{
-                    display: block;
-                }
-            }
-        }
-
-        // 一開始展開樣式(可參照hover狀況寫
-        .history.active{
-            width: 40%;
-            height: 60vh;
-            transform: 1s;
-            .title1.active{
-                display: none;
-                transform: 1s;
-             }
-             .text1.active{
-                display:block;
-                transform: 1s;
-            }
-        }
 
 
 
 
-        // 歷史圖片
-        .history{
-            background-image: url(../img/01認識我們/02歷史與發展/歷史小.png);
-            background-position: center;
-            background-size: 300%;
-            .text{
-                background-image: url(../img/01認識我們/02歷史與發展/歷史大.png);
-                background-position: center;
-                background-size: 350%;
-            }
-        }
 
-        // 發展
-        .development{
-            background-image: url(../img/01認識我們/02歷史與發展/發展小.png);
-            background-position: center;
-            background-size: 400%;
-            .text{
-                background-image: url(../img/01認識我們/02歷史與發展/發展大.png);
-                background-position: center;
-                background-size: 450%;
-            }
-        }
-
-        // .development {
-        //     height: 40vh;
-        //     background-color: rgb(19, 55, 121);
-        //     border-radius: 10%;
-        //     width: 35%;
-        //     transition: 1s;
-        //     &:hover {
-        //         width: 40%;
-        //     }
-        //     h2{
-        //         line-height: 40vh;
-        //         text-align: center;
-        //     }
-        // }
-    }
-}   
 
 // 波浪
 .wave {
