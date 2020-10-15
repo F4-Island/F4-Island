@@ -30,7 +30,8 @@ body {
         // font-weight: 900;
         text-align: center;
         margin: auto;
-        border: 2px solid white;
+        // border: 2px solid white;
+        background-color: #de675e;
         border-radius: 100px;
         transition: 3s;
         line-height: 32px;
@@ -61,16 +62,7 @@ body {
 
 
 footer{
-    position: fixed;
-    z-index: 200;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    // padding: 10px;
-    box-sizing: border-box;
+    @include footer;
     color: white;
-    text-align: center;
-    font-size: 0.5vw;
-    line-height: 0.5vw;
-    letter-spacing: 1px;
+
 }

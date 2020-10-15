@@ -21,6 +21,7 @@ body {
 // menu開關
 .menu{
     @include menu;
+    
 }
 
 // menu效果
@@ -41,6 +42,7 @@ body {
 
 // 展開尺寸
 .l-menu.active{
+    z-index: 100;
     @include  l-menu-active;
 }  
 

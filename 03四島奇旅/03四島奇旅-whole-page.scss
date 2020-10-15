@@ -1,0 +1,193 @@
+@import "../default";
+@import "../mixin";
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url(../img/03四島奇旅/四島奇旅底圖.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+// loading遮蓋區
+.loading-wrapper{
+    @include loading-wrapper;
+}
+
+// loading燈塔
+ .loading {
+    @include loading;
+}
+
+
+// logo
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+}
+
+// menu開關
+.menu{
+    @include menu;
+}
+
+// menu效果
+.menu-btnline.active,
+.menu-text.active,
+.menu-btn.active{
+    display: none;
+}
+
+.menu.active
+{
+    background-color: #a1c143;
+}
+// 展開的menu// 未展開尺寸
+.l-menu{
+    @include l-menu;
+}
+
+// 展開尺寸
+.l-menu.active{
+    @include  l-menu-active;
+}  
+  
+
+
+.page-navbar{
+    @include nav-word-l;
+
+    .container{
+        nav{
+            @include navbar-style;
+            a{
+                text-decoration: none;
+            }
+            .title{
+                @include nav-word-l; 
+            }
+            .name{
+                @include nav-word-s;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                transition:0.3s;
+                opacity: 0.5;
+                .icon{
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color:red;
+                    margin-right: 10px;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                // &:hover .icon{
+                //     opacity: 1;
+                // }
+                .active-icon {
+                    opacity: 1;
+                    font-weight: 900;
+                }
+            }
+            //針對不同頁面強調所對應的navbar標題
+            .active-nav{
+                font-weight: 600;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.content-box{
+    padding-top: 5%;
+    position: relative;
+    .fake-anchor{
+        position: absolute;
+        top: -60px;
+        left: 0;
+    }
+    .page-title{
+        margin-bottom: 1%;
+        h1{
+           @include page-title-style; 
+        }     
+    }
+    .content{
+        margin-bottom: 7%;
+        .text-box{
+            p{
+            font-size: 22px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+            text-align: justify;
+            } 
+        }
+    }
+    .field{
+        position: absolute;
+        top: 30%;
+        right: 0;
+    }
+    .coral-1{
+        position: absolute;
+        top: 50%;
+        left: 0;
+    } 
+    .fish-1{
+        position: absolute;
+        top: 75%;
+        right: 40%;
+    }
+    .temple{
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+    .plant{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    } 
+    .tower{
+        position: absolute;
+        top: 25%;
+        right: 0;
+    }
+    .fish{
+        position: absolute;
+        top: 55%;
+        right: 40%;
+    } 
+    .coral{
+        position: absolute;
+        top: 80%;
+        left: 0;
+    } 
+    .hole{
+        position: absolute;
+        top: 20%;
+        right: 20%;
+    }
+    .rock{
+        position: absolute;
+        top: 60%;
+        left: 45%;
+    }  
+}
+footer{
+    margin-top: 200px;
+    position: relative;
+    img{
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+} 

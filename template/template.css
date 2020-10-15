@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #318eda;
+  background-color: #e3ece6;
 }
 
 .loading-wrapper {
@@ -36,8 +36,8 @@ body {
 
 .logo {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 25px;
 }
 
 .menu {
@@ -49,7 +49,7 @@ body {
   background-color: #de675e;
   text-shadow: none;
   border-radius: 50%;
-  z-index: 20;
+  z-index: 101;
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
@@ -89,7 +89,7 @@ body {
 .l-menu {
   width: 0vw;
   height: 0vw;
-  position: absolute;
+  position: fixed;
   top: 1vw;
   right: 2vw;
   z-index: 5;
@@ -127,8 +127,8 @@ body {
 }
 
 .l-menu.active {
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   opacity: 1;
 }
 
@@ -136,7 +136,7 @@ body {
   opacity: 1;
 }
 
-.page1 {
+.page-navbar {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -144,23 +144,23 @@ body {
   letter-spacing: 2px;
 }
 
-.page1 .container nav {
+.page-navbar .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
-  background-color: #a1c143;
+  background-color: #3281A5;
   padding: 0 5%;
 }
 
-.page1 .container nav a {
+.page-navbar .container nav a {
   text-decoration: none;
 }
 
-.page1 .container nav a {
+.page-navbar .container nav a {
   text-decoration: none;
 }
 
-.page1 .container nav .title {
+.page-navbar .container nav .title {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -168,7 +168,7 @@ body {
   letter-spacing: 2px;
 }
 
-.page1 .container nav .name {
+.page-navbar .container nav .name {
   font-family: Microsoft JhengHei;
   font-weight: 400;
   font-size: 21px;
@@ -186,7 +186,7 @@ body {
   opacity: 0.5;
 }
 
-.page1 .container nav .name .icon {
+.page-navbar .container nav .name .icon {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -197,17 +197,17 @@ body {
   transition: 0.5s;
 }
 
-.page1 .container nav .name:hover {
+.page-navbar .container nav .name:hover {
   opacity: 1;
   font-weight: 900;
 }
 
-.page1 .container nav .name-1 {
+.page-navbar .container nav .name-1 {
   font-weight: 600;
   opacity: 1;
 }
 
-.page1 .container nav .name-1 .icon {
+.page-navbar .container nav .name-1 .icon {
   opacity: 1;
 }
 /*# sourceMappingURL=template.css.map */

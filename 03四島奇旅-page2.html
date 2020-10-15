@@ -1,25 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>澎湖南方四島國家公園</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- animate     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./03四島奇旅/03四島奇旅-page2.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="page1 d-flex ">
-        <div class="logo-box">LOGO</div>
+    
+  <!-- //轉場loading -->
+
+    <!-- <div class="loading-wrapper">
+        <img src="./素材/轉場loading/燈塔.gif" alt="" class="loading">
+    </div> -->
+
+    <!-- logo -->
+    <img class="logo" width="12%" src="./img/03四島奇旅/01東嶼坪嶼/logo.png" alt="">
+
+    <!-- menu -->
+    <div class="menu">
+        <div class="menu-btn">
+            <div class="menu-btnline">│││</div>
+            <div class="menu-text">menu</div>
+        </div>
+        <div class="menu-btn active">
+            <div class="menu-btnline active">—</div>
+            <div class="menu-text active">close</div>
+        </div>
+
+    </div>
+
+    <div class="l-menu">
+        <div class="menu-list">
+            <li>
+                <a href="01認識我們-page1.html">
+                    <span>認識我們</span>
+                </a>
+            </li>
+            <li>
+                <a href="02生態探險-page1.html">
+                    <span>生態探索</span>
+                </a>
+            </li>
+            <li>
+                <a href="03四島奇旅-page1.html">
+                    <span>四島奇旅</span>
+                </a>
+            </li>
+            <li>
+                <a href="04出發四島-page1.html">
+                    <span>出發四島</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <span>返回首頁</span>
+                </a>
+            </li>
+
+        </div>
+    </div>
+
+    <div class="page-navbar">
         <div class="container d-flex flex-column align-items-center">
             <nav id="navbar" class="sticky-top d-flex justify-content-around align-items-center">
                 <div class="title ">
                     <span>四島奇旅</span>
                 </div>
-                <a href="./03四島奇旅-page1.html" class="name ">
+                <a href="./03四島奇旅-page1.html" class="name">
                     <div class="icon"></div>
                     <span>東嶼坪嶼</span>
                 </a>
-                <a href="./03四島奇旅-page2.html" class="name ">
+                <a href="./03四島奇旅-page2.html" class="name name-1">
                     <div class="icon"></div>
                     <span>西嶼坪嶼</span>
                 </a>
@@ -32,39 +98,90 @@
                     <span>西吉嶼</span>
                 </a>
             </nav>
-            <div class="content-box w-100">
-                <div class="content d-flex align-items-center">
-                    <div class="img-box w-50">
-                        <img src="./img/03四島奇旅/02西嶼坪嶼/海蝕柱.jpg" alt="">
-                    </div>
-                    <div class="text-box w-50 d-flex">
-                        <div class="text m-1">島上擁有寬廣且高聳的海崖地形，南側海岸有處受侵蝕的海蝕柱孤懸海上，遺世獨立，與壯觀的柱狀玄武岩靜靜相望。
-                        </div>
-                        <div class="title">
-                            <img src="./img/03四島奇旅/01東嶼坪嶼/梯田式菜宅-18.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="content d-flex flex-row-reverse align-items-center">
-                    <div class="img-box w-50">
-                        <img src="./img/03四島奇旅/02西嶼坪嶼/華娘廟-1.jpg" alt="">
-                    </div>
-                    <div class="text-box w-50 d-flex flex-row-reverse">
-                        <div class="text m-1">位在碼頭附近，是島上的信仰中心，雖西嶼坪嶼的居民多已外移，但建築體依然保存得相當完整，從中仍可感受出過往輝煌。
-                        </div>
-                        <div class="title">
-                            <img src="./img/03四島奇旅/01東嶼坪嶼/梯田式菜宅-18.png" alt="">
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div class="container content-box">
+        <div class="page-title d-flex align-items-center justify-content-center">
+            <h1 class="mb-0">西嶼坪嶼</h1>
+        </div>
+        <div class="content row pt-5 align-items-center ">
+            <div class="img-box col-5 d-flex justify-content-around">
+                <img src="./img/03四島奇旅/02西嶼坪嶼/海蝕柱-pic.png" alt="">
+            </div>
+            <div class="text-box col-5">
+                <p>
+                    島上擁有寬廣且高聳的海崖地形，南側海岸有處受侵蝕的海蝕柱孤懸海上，遺世獨立，與壯觀的柱狀玄武岩靜靜相望。
+                </p> 
+            </div>
+            <div class="title col-2 d-flex justify-content-start">
+                <img src="./img/03四島奇旅/02西嶼坪嶼/海蝕柱-文字.png" alt="">
             </div>
         </div>
+        <div class="content row pt-5 align-items-center flex-row-reverse">
+            <div class="img-box col-5 ">
+                <img src="./img/03四島奇旅/02西嶼坪嶼/華娘廟-pic.png" alt="">
+            </div>
+            <div class="text-box col-5">
+                <p>位在碼頭附近，是島上的信仰中心，雖西嶼坪嶼的居民多已外移，但建築體依然保存得相當完整，從中仍可感受出過往輝煌。
+                </p>
+            </div>
+            <div class="title col-2 d-flex justify-content-end">
+                <img src="./img/03四島奇旅/02西嶼坪嶼/華娘廟-文字.png" alt="">
+            </div>
+        </div>
+        <img class="illustration temple" src="./img/03四島奇旅/02西嶼坪嶼/廟插圖.png" alt="">
+        <img class="illustration plant" src="./img/03四島奇旅/02西嶼坪嶼/植物插圖.png" alt="">
+    </div>          
+</div>
+<footer>
+    <div class="footer">
+        <img src="./img/01認識我們/小波浪.png" alt="">
+        <img src="./img/01認識我們/波浪.png" alt="">
+    </div>
+</footer>
             
-        <div class="burger-box">Burger</div>
-    </div>   
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+
+// loading時間
+$(document).ready(function () {
+    setTimeout(function () {
+        $(".loading-wrapper").fadeOut(500);
+    }, 3000);
+});
+
+// menu開關
+$('.menu-btn').click(function () {
+    $('.menu *').removeClass('active');
+    $(this).addClass('active')
+    $('.menu-btnline').eq($(this).index()).addClass('active')
+    $('.menu-text').eq($(this).index()).addClass('active')
+
+})
+$('.menu').click(function () {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active')
+        $('.l-menu').removeClass('active')
+    } else {
+        $(this).addClass('active')
+        $('.l-menu').addClass('active')
+    }
+
+})
+
+</script>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </html>

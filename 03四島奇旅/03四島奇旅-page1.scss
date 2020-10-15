@@ -5,16 +5,63 @@
 }
 .selector-for-some-widget {
     box-sizing: content-box;
-  }
+}
 
-.page1{
+body {
+    background-image: url(../img/03四島奇旅/四島奇旅底圖.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// loading遮蓋區
+.loading-wrapper{
+    @include loading-wrapper;
+}
+
+// loading燈塔
+ .loading {
+    @include loading;
+}
+
+
+// logo
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+}
+
+// menu開關
+.menu{
+    @include menu;
+}
+
+// menu效果
+.menu-btnline.active,
+.menu-text.active,
+.menu-btn.active{
+    display: none;
+}
+
+.menu.active
+{
+    background-color: #a1c143;
+}
+// 展開的menu// 未展開尺寸
+.l-menu{
+    @include l-menu;
+}
+
+// 展開尺寸
+.l-menu.active{
+    @include  l-menu-active;
+}  
+  
+
+
+.page-navbar{
     @include nav-word-l;
-    // background-color: yellowgreen;
-    .logo-box{
-        width: 200px;
-        height: 200px;
-        background-color: red;
-    }
+
     .container{
         nav{
             @include navbar-style;
@@ -26,51 +73,82 @@
             }
             .name{
                 @include nav-word-s;
+                font-weight: 400;
                 display: flex;
                 align-items: center;
-                transition:1s;
+                transition:0.3s;
                 opacity: 0.5;
                 .icon{
                     width: 15px;
                     height: 15px;
                     border-radius: 50%;
-                    background-color: white;
+                    background-color:red;
                     margin-right: 10px;
                     opacity: 0;
                     transition: 0.5s;
                 }
-                &:hover .icon{
-                    opacity: 1;
-                }
+                // &:hover .icon{
+                //     opacity: 1;
+                // }
                 &:hover {
                     opacity: 1;
+                    font-weight: 900;
                 }
             }
             //針對不同頁面強調所對應的navbar標題
             .name-1{
+                font-weight: 600;
                 opacity: 1;
                 .icon{
                     opacity: 1;
                 }
             }
         }
-        .content-box{
-            padding: 100px 0;
-            @include c-word;
-            .content{
-                padding-bottom: 80px;
-                .img-box{
-                    img{
-                        border-radius: 40% 50% 40% 50%;
-                        width: 90%;
-                    }
-                }
-            }   
-        }
-    }
-    .burger-box{
-        width: 200px;
-        height: 200px;
-        background-color: palevioletred;
     }
 }
+
+.content-box{
+    padding-top: 5%;
+    position: relative;
+    .page-title{
+        margin-bottom: 1%;
+        h1{
+           @include page-title-style; 
+        }     
+    }
+    .content{
+        margin-bottom: 7%;
+        .text-box{
+            p{
+            font-size: 22px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+            text-align: justify;
+            } 
+        }
+    }
+    .field{
+        position: absolute;
+        top: 30%;
+        right: 0;
+    }
+    .coral{
+        position: absolute;
+        top: 50%;
+        left: 0;
+    } 
+    .fish{
+        position: absolute;
+        top: 75%;
+        right: 40%;
+    } 
+}
+footer{
+    margin-top: 200px;
+    position: relative;
+    img{
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+} 
