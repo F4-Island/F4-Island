@@ -214,16 +214,23 @@ body {
   opacity: 1;
 }
 
+.Sub-standard {
+  color: #24999F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: Arno Pro;
+  opacity: 0.5;
+}
+
 .content-box {
   padding-top: 5%;
   position: relative;
 }
 
-.content-box .page-title {
-  margin-bottom: 1%;
-}
-
-.content-box .page-title h1 {
+.content-box h1 {
   color: #24999F;
   display: inline-block;
   -webkit-box-align: center;
@@ -234,27 +241,32 @@ body {
   font-weight: 600;
 }
 
-.content-box .content {
+.content-box .title-p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.content {
   margin-bottom: 7%;
 }
 
-.content-box .content .text-box p {
+.content .text-box p {
   font-size: 22px;
   letter-spacing: 3px;
   margin-bottom: 0;
   text-align: justify;
 }
 
-.content-box .temple {
+.hole {
   position: absolute;
-  top: 45%;
-  right: 0;
+  top: 20%;
+  right: 20%;
 }
 
-.content-box .plant {
+.rock {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 60%;
+  left: 45%;
 }
 
 footer {
@@ -267,4 +279,4 @@ footer img {
   position: absolute;
   bottom: 0;
 }
-/*# sourceMappingURL=03四島奇旅-page2.css.map */
+/*# sourceMappingURL=04出發四島-page1.css.map */
