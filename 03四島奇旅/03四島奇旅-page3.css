@@ -224,13 +224,14 @@ body {
 }
 
 .content-box .page-title h1 {
-  color: #225679;
+  color: #24999F;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 3px;
   font-size: 50px;
+  font-weight: 600;
 }
 
 .content-box .content {
