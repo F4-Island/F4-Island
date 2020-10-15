@@ -223,6 +223,8 @@ body {
   font-size: 25px;
   font-family: Arno Pro;
   opacity: 0.5;
+  text-align: center;
+  margin-top: -10px;
 }
 
 .content-box {
@@ -242,8 +244,10 @@ body {
 }
 
 .content-box .title-p {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
+  margin-top: 30px;
+  letter-spacing: 2px;
 }
 
 .content {
