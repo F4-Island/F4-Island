@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <img class="logo" width="12%" src="./img/00頁首/F4嶼-logo.svg" alt="">
 
     <!-- menu -->
     <div class="menu">
@@ -84,8 +83,9 @@
 
     <div class="content-box">
         <div class="tab w-50">
-            <div class="tab-btn">
-                <button class="tablinks" onmouseover="openIsland(event, 'East')">
+            <img class="logo" width="20%" src="./img/00頁首/F4嶼-logo.svg" alt="">
+            <div class="tab-btn abc">
+                <button class="tablinks abc" onmouseover="openIsland(event, 'East')">
                     <h1>東吉嶼</h1>
                 </button>
                 <button class="tablinks" onmouseover="openIsland(event, 'West')">
@@ -100,11 +100,13 @@
             </div>
         </div>
 
-        <div id="East" class="tabcontent tab1 w-50">
-            <div class="text w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+        <div id="East" class="tabcontent abc tab1 w-50">
+            <div class="text w-100 h-50 d-flex flex-column align-items-center justify-content-center">
+                <div class="text-box">
                 <h3>東吉嶼</h3>
                 <p>東吉嶼位於望安鄉的東南方，是四島中面積最大且相對繁榮的方山島嶼，過去曾是軍事戰略的重要地點，島上不僅有軍營的遺址更擁有二座興建的燈塔。因島嶼位置靠近臺南，航程僅約2小時30分，早年島上漁貨多送往臺南販售，島上日常生活用品也多半來自臺南。
                 </p>
+            </div>
             </div>
         </div>
 
@@ -177,6 +179,16 @@
             }
 
         })
+
+        $('.tablinks*').hover(function () {
+            if ($('.tablinks*').hasClass('abc')) {
+                $('.tablinks*').removeClass('abc')
+                $('.tab-btn').removeClass('abc')
+                $('.tabcontent').removeClass('abc')
+            } 
+
+        })
+
     </script>
 </body>
 

@@ -14,9 +14,9 @@ body {
 }
 
 .logo {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 5%;
+  right: 15%;
 }
 
 .menu {
@@ -196,7 +196,6 @@ body {
 .content-box {
   width: 100vw;
   height: 100vh;
-  background-color: #318eda;
 }
 
 .content-box .tab {
@@ -205,6 +204,8 @@ body {
   width: 30%;
   height: 100%;
   padding-top: 40vh;
+  background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
+  background-size: cover;
 }
 
 .content-box .tab .tab-btn {
@@ -291,30 +292,65 @@ body {
   background-position: center;
 }
 
-.content-box .tabcontent p {
-  width: 50%;
+.content-box .tabcontent .text .text-box {
+  margin: auto;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgba(62, 67, 71, 0.8);
+  padding: 10px;
+}
+
+.content-box .tabcontent .text .text-box p {
   text-align: justify;
 }
 
 .content-box .tab1 {
-  background-image: url(../img/03四島奇旅/01東嶼坪嶼/梯田式菜宅.jpg);
+  background-image: url(../img/認識四島/東吉嶼.png);
 }
 
 .content-box .tab2 {
-  background-image: url(../img/03四島奇旅/02西嶼坪嶼/華娘廟-1.jpg);
+  background-image: url(../img/認識四島/西吉嶼.png);
 }
 
 .content-box .tab3 {
-  background-image: url(../img/03四島奇旅/03東吉嶼/東吉之眼.jpg);
+  background-image: url(../img/認識四島/東嶼坪嶼.png);
 }
 
 .content-box .tab4 {
-  background-image: url(../img/03四島奇旅/04西吉嶼/北岸海蝕洞.jpg);
+  background-image: url(../img/認識四島/西嶼坪嶼.png);
 }
 
 .content-box .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+
+.tab-btn.abc .tablinks.abc {
+  position: relative;
+  background-color: #1c99af;
+}
+
+.tab-btn.abc .tablinks.abc::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  background-color: none;
+}
+
+.tab-btn.abc .tablinks.abc h1 {
+  position: relative;
+  top: 20px;
+  right: 50px;
+  color: white;
+}
+
+.tabcontent.abc {
+  display: block;
+  background-image: url(../img/認識四島/東吉嶼.png);
 }
 /*# sourceMappingURL=01認識我們-page3.css.map */
