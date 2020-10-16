@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(../img/04出發四島/出發四島-底圖.png);
+  background-image: url(../img/04出發四島/注意事項-底圖.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -260,21 +260,6 @@ body {
   text-align: justify;
 }
 
-h2 {
-  color: #24999F;
-  display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 1px;
-  font-size: 45px;
-  font-weight: 600;
-}
-
-h4 {
-  font-weight: 600;
-}
-
 .hole {
   position: absolute;
   top: 20%;
@@ -287,14 +272,20 @@ h4 {
   left: 45%;
 }
 
-.Application {
-  width: 200px;
+.application a {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  width: 300px;
   height: 50px;
   background-color: #DF675E;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 50px;
 }
 
-.Application a {
-  color: white;
+.application .title-p {
+  font-size: 25px;
 }
 
 .wave {
