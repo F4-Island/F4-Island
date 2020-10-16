@@ -154,6 +154,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .logo {
+    width: 45%;
+    top: 10%;
+  }
+}
+
 .wholeMap .east {
   position: absolute;
   top: 36%;
@@ -163,6 +170,13 @@ body {
 @media (max-width: 768px) {
   .wholeMap .east {
     width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .east {
+    width: 175px;
+    right: 2%;
   }
 }
 
@@ -195,6 +209,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .east .east-hint {
+    top: -30%;
+    right: 10%;
+  }
+}
+
 .wholeMap .west {
   position: absolute;
   top: 52%;
@@ -204,6 +225,13 @@ body {
 @media (max-width: 768px) {
   .wholeMap .west {
     width: 203px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .west {
+    width: 142px;
+    right: 30%;
   }
 }
 
@@ -231,7 +259,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .west .west-hint {
-    top: -30%;
+    top: -40%;
     right: 10%;
   }
 }
@@ -245,6 +273,13 @@ body {
 @media (max-width: 768px) {
   .wholeMap .littleEast {
     width: 213px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .littleEast {
+    width: 149px;
+    left: 5%;
   }
 }
 
@@ -272,7 +307,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .littleEast .littleEast-hint {
-    top: -80%;
+    top: -90%;
     left: 65%;
   }
 }
@@ -286,6 +321,13 @@ body {
 @media (max-width: 768px) {
   .wholeMap .littleWest {
     width: 132px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .littleWest {
+    width: 92px;
+    left: 5%;
   }
 }
 
@@ -313,7 +355,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .littleWest .littleWest-hint {
-    top: -70%;
+    top: -90%;
     left: 40%;
   }
 }
@@ -331,6 +373,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .island1 {
+    top: 10%;
+  }
+}
+
 .wholeMap .island1 .island1-hint {
   position: absolute;
   top: -120%;
@@ -344,6 +392,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -352,6 +401,12 @@ body {
   .wholeMap .island1 .island1-hint {
     top: -70%;
     left: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island1 .island1-hint {
+    top: -150%;
   }
 }
 
@@ -372,6 +427,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .island2 {
+    left: 15%;
+  }
+}
+
 .wholeMap .island2 .island2-hint {
   position: absolute;
   top: -195%;
@@ -385,6 +446,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -393,6 +455,13 @@ body {
   .wholeMap .island2 .island2-hint {
     top: -125%;
     left: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island2 .island2-hint {
+    top: -190%;
+    left: 5%;
   }
 }
 
@@ -412,6 +481,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .island3 {
+    left: 18%;
+    top: 30%;
+  }
+}
+
 .wholeMap .island3 .island3-hint {
   position: absolute;
   top: -210%;
@@ -425,6 +501,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -433,6 +510,13 @@ body {
   .wholeMap .island3 .island3-hint {
     top: -150%;
     left: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island3 .island3-hint {
+    top: -220%;
+    left: 0%;
   }
 }
 
@@ -453,6 +537,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .island4 {
+    top: 43%;
+  }
+}
+
 .wholeMap .island4 .island4-hint {
   position: absolute;
   top: -420%;
@@ -466,6 +556,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -474,6 +565,12 @@ body {
   .wholeMap .island4 .island4-hint {
     top: -300%;
     left: -25%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island4 .island4-hint {
+    top: -250%;
   }
 }
 
@@ -507,6 +604,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -515,6 +613,12 @@ body {
   .wholeMap .island5 .island5-hint {
     top: -115%;
     left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island5 .island5-hint {
+    top: -170%;
   }
 }
 
@@ -547,6 +651,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -555,6 +660,12 @@ body {
   .wholeMap .island6 .island6-hint {
     top: -110%;
     left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island6 .island6-hint {
+    top: -160%;
   }
 }
 
@@ -575,6 +686,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .island7 {
+    top: 50%;
+  }
+}
+
 .wholeMap .island7 .island7-hint {
   position: absolute;
   top: -140%;
@@ -588,6 +705,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -596,6 +714,13 @@ body {
   .wholeMap .island7 .island7-hint {
     top: -90%;
     left: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island7 .island7-hint {
+    top: -140%;
+    left: 5%;
   }
 }
 
@@ -616,6 +741,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .island8 {
+    right: 10%;
+  }
+}
+
 .wholeMap .island8 .island8-hint {
   position: absolute;
   top: -190%;
@@ -629,6 +760,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -640,6 +772,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .island8 .island8-hint {
+    top: -250%;
+    right: 65%;
+  }
+}
+
 .wholeMap .island8:hover .island8-hint {
   opacity: 1;
 }
@@ -647,6 +786,12 @@ body {
 @media (max-width: 768px) {
   .wholeMap .island8 .island8-img {
     width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island8 .island8-img {
+    width: 30%;
   }
 }
 
@@ -669,6 +814,20 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .fish-r {
+    top: 55%;
+    left: 70%;
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .fish-r .fish-r-img {
+    width: 100%;
+  }
+}
+
 .wholeMap .rock {
   position: absolute;
   bottom: 15%;
@@ -680,6 +839,18 @@ body {
     bottom: 10%;
     left: 4%;
   }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .rock {
+    bottom: 17%;
+    left: 10%;
+    width: 80px;
+  }
+}
+
+.wholeMap .rock .rock-img {
+  width: 70%;
 }
 
 .wholeMap .rock .rock-hint {
@@ -696,8 +867,17 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .wholeMap .rock .rock-hint {
+    bottom: 15%;
+    left: -15%;
+    opacity: 1;
+  }
 }
 
 .wholeMap .rock .rock-shadow {
@@ -707,6 +887,14 @@ body {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .wholeMap .rock .rock-shadow {
+    left: 0;
+    width: 70%;
+    opacity: 1;
+  }
 }
 
 .wholeMap .rock:hover .rock-hint {
@@ -730,6 +918,18 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .animal {
+    bottom: 17%;
+    left: 32%;
+    width: 80px;
+  }
+}
+
+.wholeMap .animal .animal-img {
+  width: 90%;
+}
+
 .wholeMap .animal .animal-hint {
   position: absolute;
   bottom: 200%;
@@ -744,8 +944,17 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .wholeMap .animal .animal-hint {
+    bottom: 45%;
+    left: -10%;
+    opacity: 1;
+  }
 }
 
 .wholeMap .animal .animal-shadow {
@@ -755,6 +964,14 @@ body {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .wholeMap .animal .animal-shadow {
+    left: 0;
+    width: 90%;
+    opacity: 1;
+  }
 }
 
 .wholeMap .animal:hover .animal-hint {
@@ -778,6 +995,18 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .plant {
+    bottom: 17%;
+    left: 55%;
+    width: 80px;
+  }
+}
+
+.wholeMap .plant .plant-img {
+  width: 80%;
+}
+
 .wholeMap .plant .plant-hint {
   position: absolute;
   bottom: 110%;
@@ -792,8 +1021,17 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .wholeMap .plant .plant-hint {
+    bottom: 25%;
+    left: -8%;
+    opacity: 1;
+  }
 }
 
 .wholeMap .plant .plant-shadow {
@@ -803,6 +1041,14 @@ body {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .wholeMap .plant .plant-shadow {
+    left: 0;
+    width: 80%;
+    opacity: 1;
+  }
 }
 
 .wholeMap .plant:hover .plant-hint {
@@ -826,6 +1072,18 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .carol {
+    bottom: 17%;
+    left: 75%;
+    width: 80px;
+  }
+}
+
+.wholeMap .carol .carol-img {
+  width: 90%;
+}
+
 .wholeMap .carol .carol-hint {
   position: absolute;
   bottom: 110%;
@@ -840,8 +1098,16 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .wholeMap .carol .carol-hint {
+    bottom: 30%;
+    opacity: 1;
+  }
 }
 
 .wholeMap .carol .carol-shadow {
@@ -851,6 +1117,14 @@ body {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 576px) {
+  .wholeMap .carol .carol-shadow {
+    left: 5%;
+    width: 90%;
+    opacity: 1;
+  }
 }
 
 .wholeMap .carol:hover .carol-hint {
@@ -873,6 +1147,14 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .birds {
+    top: 5%;
+    right: 5%;
+    width: 50%;
+  }
+}
+
 .wholeMap .cloud {
   position: absolute;
   top: 17%;
@@ -882,6 +1164,20 @@ body {
 @media (max-width: 768px) {
   .wholeMap .cloud {
     width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .cloud {
+    width: 50%;
+    right: 5%;
+    width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .cloud .cloud-img {
+    width: 100%;
   }
 }
 
@@ -898,6 +1194,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .boat {
+    width: 40%;
+    right: 30%;
+  }
+}
+
 .wholeMap .email {
   position: absolute;
   bottom: 15%;
@@ -907,6 +1210,13 @@ body {
 @media (max-width: 768px) {
   .wholeMap .email {
     bottom: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .email {
+    bottom: 8%;
+    right: 15%;
   }
 }
 
@@ -922,6 +1232,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .fb {
+    right: 30%;
+    bottom: 8%;
+  }
+}
+
 .wholeMap .wave {
   width: 100vw;
   position: absolute;
@@ -934,6 +1251,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .box img {
+    width: 45%;
+  }
+}
+
 @media (max-width: 768px) {
   .wholeMap .box .hint {
     width: 60px;
@@ -942,11 +1265,28 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .wholeMap .box .hint {
+    width: 50px;
+    font-size: 12px;
+    line-height: 42px;
+    letter-spacing: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .wholeMap .box .others-hint {
     width: 95px;
     font-size: 16px;
     line-height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .box .others-hint {
+    width: 70px;
+    font-size: 12px;
+    line-height: 35px;
   }
 }
 /*# sourceMappingURL=index.css.map */
