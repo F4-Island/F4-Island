@@ -142,24 +142,34 @@ body {
           transform: translate(-50%, 0);
 }
 
+@media (max-width: 1024px) {
+  .wholeMap .logo {
+    width: 50%;
+  }
+}
+
 .wholeMap .east {
   position: absolute;
-  top: 38%;
-  right: 5%;
-  -webkit-filter: drop-shadow(40px 40px 10px #59a7b3);
-          filter: drop-shadow(40px 40px 10px #59a7b3);
-}
-
-.wholeMap .east-shadow {
-  position: absolute;
   top: 40%;
-  right: 1%;
+  right: 3%;
 }
 
-.wholeMap .east-hint {
+@media (max-width: 768px) {
+  .wholeMap .east {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .east .east-img {
+    width: 100%;
+  }
+}
+
+.wholeMap .east .east-hint {
   position: absolute;
-  top: 35%;
-  right: 7%;
+  top: -5%;
+  right: 10%;
   background-image: url(../img/00頁首/四島地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -178,16 +188,10 @@ body {
   right: 36%;
 }
 
-.wholeMap .west-shadow {
+.wholeMap .west .west-hint {
   position: absolute;
-  top: 53%;
-  right: 34%;
-}
-
-.wholeMap .west-hint {
-  position: absolute;
-  top: 46%;
-  right: 37%;
+  top: -20%;
+  right: 8%;
   background-image: url(../img/00頁首/四島地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -206,16 +210,10 @@ body {
   left: 18%;
 }
 
-.wholeMap .littleEast-shadow {
+.wholeMap .littleEast .littleEast-hint {
   position: absolute;
-  top: 40%;
-  left: 16%;
-}
-
-.wholeMap .littleEast-hint {
-  position: absolute;
-  top: 27%;
-  left: 31%;
+  top: -60%;
+  left: 70%;
   background-image: url(../img/00頁首/四島地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -234,16 +232,10 @@ body {
   left: 18%;
 }
 
-.wholeMap .littleWest-shadow {
+.wholeMap .littleWest .littleWest-hint {
   position: absolute;
-  top: 25%;
-  left: 15%;
-}
-
-.wholeMap .littleWest-hint {
-  position: absolute;
-  top: 14%;
-  left: 21%;
+  top: -55%;
+  left: 50%;
   background-image: url(../img/00頁首/四島地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -262,10 +254,10 @@ body {
   left: 7%;
 }
 
-.wholeMap .island1-hint {
+.wholeMap .island1 .island1-hint {
   position: absolute;
-  top: 0%;
-  left: 5%;
+  top: -140%;
+  left: -40%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -276,9 +268,12 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
-  width: 80px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .island1:hover .island1-hint {
+  opacity: 1;
 }
 
 .wholeMap .island2 {
@@ -287,10 +282,10 @@ body {
   left: 15%;
 }
 
-.wholeMap .island2-hint {
+.wholeMap .island2 .island2-hint {
   position: absolute;
-  top: 1%;
-  left: 14%;
+  top: -500%;
+  left: -10%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -301,8 +296,12 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .island2:hover .island2-hint {
+  opacity: 1;
 }
 
 .wholeMap .island3 {
@@ -311,10 +310,10 @@ body {
   left: 14%;
 }
 
-.wholeMap .island3-hint {
+.wholeMap .island3 .island3-hint {
   position: absolute;
-  top: 25%;
-  left: 12%;
+  top: -600%;
+  left: -150%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -325,8 +324,12 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .island3:hover .island3-hint {
+  opacity: 1;
 }
 
 .wholeMap .island4 {
@@ -335,10 +338,10 @@ body {
   left: 26%;
 }
 
-.wholeMap .island4-hint {
+.wholeMap .island4 .island4-hint {
   position: absolute;
-  top: 38%;
-  left: 24%;
+  top: -450%;
+  left: -100%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -349,8 +352,12 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .island4:hover .island4-hint {
+  opacity: 1;
 }
 
 .wholeMap .island5 {
@@ -359,10 +366,10 @@ body {
   left: 6%;
 }
 
-.wholeMap .island5-hint {
+.wholeMap .island5 .island5-hint {
   position: absolute;
-  top: 40%;
-  left: 4%;
+  top: -600%;
+  left: -100%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -373,20 +380,24 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .island5:hover .island5-hint {
+  opacity: 1;
 }
 
 .wholeMap .island6 {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 19%;
 }
 
-.wholeMap .island6-hint {
+.wholeMap .island6 .island6-hint {
   position: absolute;
-  top: 50%;
-  left: 17%;
+  top: -500%;
+  left: -100%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -397,8 +408,12 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .island6:hover .island6-hint {
+  opacity: 1;
 }
 
 .wholeMap .island7 {
@@ -407,10 +422,10 @@ body {
   left: 33%;
 }
 
-.wholeMap .island7-hint {
+.wholeMap .island7 .island7-hint {
   position: absolute;
-  top: 44%;
-  left: 32%;
+  top: -500%;
+  left: -50%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -421,8 +436,12 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .island7:hover .island7-hint {
+  opacity: 1;
 }
 
 .wholeMap .island8 {
@@ -431,10 +450,10 @@ body {
   right: 23%;
 }
 
-.wholeMap .island8-hint {
+.wholeMap .island8 .island8-hint {
   position: absolute;
-  top: 33%;
-  right: 23%;
+  top: -210%;
+  right: 0%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -445,11 +464,11 @@ body {
   text-align: center;
   line-height: 100px;
   opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.wholeMap .active {
+.wholeMap .island8:hover .island8-hint {
   opacity: 1;
 }
 
@@ -471,10 +490,10 @@ body {
   left: 6%;
 }
 
-.wholeMap .rock-hint {
+.wholeMap .rock .rock-hint {
   position: absolute;
-  bottom: 27%;
-  left: 5%;
+  bottom: 110%;
+  left: -20%;
   background-image: url(../img/00頁首/生態hover.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -485,6 +504,26 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .rock .rock-shadow {
+  position: absolute;
+  bottom: -55%;
+  left: -35%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .rock:hover .rock-hint {
+  opacity: 1;
+}
+
+.wholeMap .rock:hover .rock-shadow {
+  opacity: 1;
 }
 
 .wholeMap .animal {
@@ -493,10 +532,10 @@ body {
   left: 15%;
 }
 
-.wholeMap .animal-hint {
+.wholeMap .animal .animal-hint {
   position: absolute;
-  bottom: 27%;
-  left: 15%;
+  bottom: 200%;
+  left: 0%;
   background-image: url(../img/00頁首/生態hover.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -507,6 +546,26 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .animal .animal-shadow {
+  position: absolute;
+  bottom: -100%;
+  left: -20%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .animal:hover .animal-hint {
+  opacity: 1;
+}
+
+.wholeMap .animal:hover .animal-shadow {
+  opacity: 1;
 }
 
 .wholeMap .plant {
@@ -515,10 +574,10 @@ body {
   left: 25%;
 }
 
-.wholeMap .plant-hint {
+.wholeMap .plant .plant-hint {
   position: absolute;
-  bottom: 27%;
-  left: 25%;
+  bottom: 110%;
+  left: 0%;
   background-image: url(../img/00頁首/生態hover.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -529,6 +588,26 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .plant .plant-shadow {
+  position: absolute;
+  bottom: -50%;
+  left: 9%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .plant:hover .plant-hint {
+  opacity: 1;
+}
+
+.wholeMap .plant:hover .plant-shadow {
+  opacity: 1;
 }
 
 .wholeMap .carol {
@@ -537,10 +616,10 @@ body {
   left: 35%;
 }
 
-.wholeMap .carol-hint {
+.wholeMap .carol .carol-hint {
   position: absolute;
-  bottom: 27%;
-  left: 35%;
+  bottom: 110%;
+  left: 0%;
   background-image: url(../img/00頁首/生態hover.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -551,6 +630,26 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .carol .carol-shadow {
+  position: absolute;
+  bottom: -50%;
+  left: 9%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wholeMap .carol:hover .carol-hint {
+  opacity: 1;
+}
+
+.wholeMap .carol:hover .carol-shadow {
+  opacity: 1;
 }
 
 .wholeMap .birds {
@@ -588,5 +687,24 @@ body {
   width: 100vw;
   position: absolute;
   bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .wholeMap .box img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .box img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .box .hint {
+    width: 50px;
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

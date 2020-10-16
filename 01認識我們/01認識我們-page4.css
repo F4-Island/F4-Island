@@ -9,10 +9,14 @@
           box-sizing: content-box;
 }
 
+body {
+  background-color: #318eda;
+}
+
 .logo {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 5%;
+  right: 18.5%;
 }
 
 .menu {
@@ -118,6 +122,8 @@
   font-size: 24px;
   color: white;
   letter-spacing: 2px;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .page .container nav {
@@ -189,8 +195,7 @@
 
 .content-box {
   width: 100vw;
-  height: 70vh;
-  background-color: skyblue;
+  height: 100vh;
 }
 
 .content-box .tab {
@@ -198,6 +203,12 @@
   float: right;
   width: 30%;
   height: 100%;
+  padding-top: 40vh;
+  background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
+  background-size: cover;
+}
+
+.content-box .tab .tab-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,11 +220,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.content-box .tab .tablinks {
-  width: 40%;
-  height: 30%;
+.content-box .tab .tab-btn .tablinks {
+  width: 25%;
+  height: 25%;
   margin: 0 2%;
   text-align: center;
   cursor: pointer;
@@ -225,7 +238,7 @@
   z-index: 99;
 }
 
-.content-box .tab .tablinks h1 {
+.content-box .tab .tab-btn .tablinks h2 {
   position: absolute;
   top: calc(50% - 10px);
   left: calc(50% - 10px);
@@ -233,16 +246,16 @@
           transform: translate(-50%, -50%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 26px;
+  font-size: 24px;
 }
 
-.content-box .tab .tablinks:hover::before {
+.content-box .tab .tab-btn .tablinks:hover::before {
   background-color: #1c99af;
   -webkit-transform: translate(10px, 10px);
           transform: translate(10px, 10px);
 }
 
-.content-box .tab .tablinks:hover h1 {
+.content-box .tab .tab-btn .tablinks:hover h2 {
   color: white;
   top: 50%;
   left: 50%;
@@ -250,11 +263,11 @@
           transform: translate(-50%, -50%);
 }
 
-.content-box .tab .tablinks .active {
+.content-box .tab .tab-btn .tablinks .active {
   background-color: #ccc;
 }
 
-.content-box .tab .tablinks::before {
+.content-box .tab .tab-btn .tablinks::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -279,30 +292,85 @@
   background-position: center;
 }
 
-.content-box .tabcontent p {
-  width: 50%;
+.content-box .tabcontent .text .text-box {
+  margin: auto;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgba(49, 129, 165, 0.8);
+  padding: 10px;
+}
+
+.content-box .tabcontent .text .text-box p {
   text-align: justify;
 }
 
 .content-box .tab1 {
-  background-image: url(../img/03四島奇旅/01東嶼坪嶼/梯田式菜宅.jpg);
+  background-image: url(../img/認識四島/頭巾.png);
 }
 
 .content-box .tab2 {
-  background-image: url(../img/03四島奇旅/02西嶼坪嶼/華娘廟-1.jpg);
+  background-image: url(../img/認識四島/鐵砧.png);
 }
 
 .content-box .tab3 {
-  background-image: url(../img/03四島奇旅/03東吉嶼/東吉之眼.jpg);
+  background-image: url(../img/認識四島/鐘仔.png);
 }
 
 .content-box .tab4 {
-  background-image: url(../img/03四島奇旅/04西吉嶼/北岸海蝕洞.jpg);
+  background-image: url(../img/認識四島/豬母礁.png);
+}
+
+.content-box .tab5 {
+  background-image: url(../img/認識四島/二塭.png);
+}
+
+.content-box .tab6 {
+  background-image: url(../img/認識四島/香爐嶼.png);
+}
+
+.content-box .tab7 {
+  background-image: url(../img/認識四島/鋤頭嶼.png);
+}
+
+.content-box .tab8 {
+  background-image: url(../img/認識四島/柴垵塭.png);
+}
+
+.content-box .tab9 {
+  background-image: url(../img/認識四島/離塭仔.png);
 }
 
 .content-box .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+
+.tab-btn.abc .tablinks.abc {
+  position: relative;
+  background-color: #1c99af;
+}
+
+.tab-btn.abc .tablinks.abc::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  background-color: none;
+}
+
+.tab-btn.abc .tablinks.abc h2 {
+  position: relative;
+  top: 20px;
+  right: 50px;
+  color: white;
+}
+
+.tabcontent.abc {
+  display: block;
+  background-image: url(../img/認識四島/頭巾.png);
 }
 /*# sourceMappingURL=01認識我們-page4.css.map */

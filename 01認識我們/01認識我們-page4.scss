@@ -1,72 +1,76 @@
 @import "../default";
-@import"../mixin";
-*{
+@import "../mixin";
+* {
     box-sizing: border-box;
 }
 .selector-for-some-widget {
     box-sizing: content-box;
-  }
+}
+
+body {
+    background-color: #318eda;
+}
 
 // logo
-.logo{
-    position: fixed;
-    top: 0;
-    left: 0;
+.logo {
+    position: absolute;
+    top: 5%;
+    right: 18.5%;
+    // transform: translate(-25% , -50%);
 }
 
 // menu開關
-.menu{
+.menu {
     @include menu;
-    
 }
 
 // menu效果
 .menu-btnline.active,
 .menu-text.active,
-.menu-btn.active{
+.menu-btn.active {
     display: none;
 }
 
-.menu.active
-{
+.menu.active {
     background-color: #a1c143;
 }
 // 展開的menu// 未展開尺寸
-.l-menu{
+.l-menu {
     @include l-menu;
 }
 
 // 展開尺寸
-.l-menu.active{
+.l-menu.active {
     z-index: 100;
-    @include  l-menu-active;
-}  
+    @include l-menu-active;
+}
 
-.page{
+.page {
     @include nav-word-l;
+    position: sticky;
     // background-color: blue;
 
-    .container{
-        nav{
+    .container {
+        nav {
             @include navbar-style;
-            a{
+            a {
                 text-decoration: none;
             }
-            .title{
-                @include nav-word-l; 
+            .title {
+                @include nav-word-l;
             }
-            .name{
+            .name {
                 @include nav-word-s;
                 font-weight: 400;
                 display: flex;
                 align-items: center;
-                transition:0.3s;
+                transition: 0.3s;
                 opacity: 0.5;
-                .icon{
+                .icon {
                     width: 15px;
                     height: 15px;
                     border-radius: 50%;
-                    background-color:red;
+                    background-color: red;
                     margin-right: 10px;
                     opacity: 0;
                     transition: 0.5s;
@@ -80,74 +84,81 @@
                 }
             }
             //針對不同頁面強調所對應的navbar標題
-            .name-1{
+            .name-1 {
                 font-weight: 600;
                 opacity: 1;
-                .icon{
+                .icon {
                     opacity: 1;
                 }
             }
         }
     }
 }
-.content-box{
+.content-box {
     width: 100vw;
-    height: 70vh;
-    background-color: skyblue;
+    height: 100vh;
+    // background-color: #318eda;
     // margin-top: 100px;
     .tab {
         padding: 3% 0;
         float: right;
         width: 30%;
         height: 100%;
-        display: flex;
-        flex-wrap: wrap ;
-        justify-content: center;
-        align-items: center;
-        .tablinks{
-            width: 40%;
-            height: 30%;
-            margin: 0 2%;
-            text-align: center;
-            cursor: pointer; 
-            border: none;
-            outline: none;
-            display: block;
-            background-color: yellow;
-            position: relative;
-            z-index: 99;
-            
-            h1{
-                position: absolute;
-                top: calc(50% - 10px);
-                left: calc(50% - 10px);
-                transform: translate(-50%,-50%);
-                transition: 0.4s;
-                font-size: 26px;
-            }
-            &:hover::before {
-                background-color: rgb(28, 153, 175);
-                transform: translate(10px,10px);  
-            }
-            &:hover h1{
-                color: white;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-            }
-            .active {
-                background-color: #ccc;
-            }
-            &::before{
-                content: "";
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                bottom: 10px;
-                right: 10px;
-                background-color: white;
-                z-index: -1;
-                transition: 0.4s
+        padding-top: 40vh;
+        background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
+        background-size: cover;
+        .tab-btn {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            .tablinks {
+                width: 25%;
+                height: 25%;
+                margin: 0 2%;
+                text-align: center;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                display: block;
+                background-color: yellow;
+                position: relative;
+                z-index: 99;
+
+                h2 {
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    left: calc(50% - 10px);
+                    transform: translate(-50%, -50%);
+                    transition: 0.4s;
+                    font-size: 24px;
+                }
+                &:hover::before {
+                    background-color: rgb(28, 153, 175);
+                    transform: translate(10px, 10px);
+                }
+                &:hover h2 {
+                    color: white;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .active {
+                    background-color: #ccc;
+                }
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    background-color: white;
+                    z-index: -1;
+                    transition: 0.4s;
+                }
             }
         }
     }
@@ -161,26 +172,80 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        p{
-            width: 50%;
-            text-align: justify;
+        .text {
+            .text-box {
+                margin: auto;
+                width: 70%;
+                align-items: center;
+                text-align: center;
+                background-color: rgba(#3181A5, 0.8);
+                padding: 10px;
+                p {
+                    // width: 50%;
+                    text-align: justify;
+                }
+            }
         }
     }
-    .tab1{
-        background-image: url(../img/03四島奇旅/01東嶼坪嶼/梯田式菜宅.jpg);
+    .tab1 {
+        background-image: url(../img/認識四島/頭巾.png);
     }
-    .tab2{
-        background-image: url(../img/03四島奇旅/02西嶼坪嶼/華娘廟-1.jpg);
+    .tab2 {
+        background-image: url(../img/認識四島/鐵砧.png);
     }
-    .tab3{
-        background-image: url(../img/03四島奇旅/03東吉嶼/東吉之眼.jpg)
+    .tab3 {
+        background-image: url(../img/認識四島/鐘仔.png);
     }
-    .tab4{
-        background-image: url(../img/03四島奇旅/04西吉嶼/北岸海蝕洞.jpg);
+    .tab4 {
+        background-image: url(../img/認識四島/豬母礁.png);
+    }
+    .tab5 {
+        background-image: url(../img/認識四島/二塭.png);
+    }
+    .tab6 {
+        background-image: url(../img/認識四島/香爐嶼.png);
+    }
+    .tab7 {
+        background-image: url(../img/認識四島/鋤頭嶼.png);
+    }
+    .tab8 {
+        background-image: url(../img/認識四島/柴垵塭.png);
+    }
+    .tab9 {
+        background-image: url(../img/認識四島/離塭仔.png);
     }
     .clearfix::after {
         content: "";
         clear: both;
         display: table;
     }
+}
+
+// 一開始顯示圖
+.tab-btn.abc {
+    .tablinks.abc {
+        position: relative;
+        background-color: rgb(28, 153, 175);
+        // z-index: 200;
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            background-color:none;
+            // z-index: 9999;
+            // transition: 0.4s;
+        }
+        h2 {
+            position: relative;
+            // right: 20px;
+            top: 20px;
+            right: 50px;
+            color: white;
+        }
+    }
+}
+.tabcontent.abc{
+    display: block;
+    background-image: url(../img/認識四島/頭巾.png);
 }

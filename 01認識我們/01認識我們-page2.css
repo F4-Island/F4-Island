@@ -251,6 +251,8 @@ body {
 .unit .row .development:hover {
   width: 40%;
   height: 60vh;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .unit .row .history:hover h2,
