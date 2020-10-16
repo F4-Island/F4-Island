@@ -92,7 +92,7 @@ body {
         }
         @media (max-width: 576px){
             width: 175px;
-            right: 0;
+            right: 2%;
         }
         .east-img{
             @media (max-width: 768px){
@@ -274,7 +274,8 @@ body {
             top: 33%;
         }
         @media (max-width: 576px){
-            left: 22%;
+            left: 18%;
+            top: 30%;
         }
         .island3-hint{
             position: absolute;
@@ -459,7 +460,13 @@ body {
         }
         @media (max-width: 576px){
             top: 55%;
-            right: -30%;
+            left: 70%;
+            width: 100px;
+        }
+        .fish-r-img{
+            @media (max-width: 576px){
+                width: 100%;
+            }
         }
     }
     .rock{
@@ -473,7 +480,10 @@ body {
         @media (max-width: 576px){
             bottom: 17%;
             left: 10%;
-            width: 30%;
+            width: 80px;
+        }
+        .rock-img{
+            width: 70%;
         }
         .rock-hint{
             position: absolute;
@@ -493,6 +503,7 @@ body {
             transition: 0.3s;
             @media (max-width: 576px){
                 left: 0;
+                width: 70%;
             } 
         }
         &:hover .rock-hint {
@@ -515,7 +526,10 @@ body {
         @media (max-width: 576px){
             bottom: 17%;
             left: 32%;
-            width: 30%;
+            width: 80px;
+        }
+        .animal-img{
+            width: 90%;
         }
         .animal-hint{
             position: absolute;
@@ -535,6 +549,7 @@ body {
             transition: 0.3s;
             @media (max-width: 576px){
                 left: 0;
+                width: 90%;
             } 
         }
         &:hover .animal-hint{
@@ -557,7 +572,10 @@ body {
         @media (max-width: 576px){
             bottom: 17%;
             left: 55%;
-            width: 30%;
+            width: 80px;
+        }
+        .plant-img{
+            width: 80%;
         }
         .plant-hint{
             position: absolute;
@@ -577,6 +595,7 @@ body {
             transition: 0.3s;
             @media (max-width: 576px){
                 left: 0;
+                width: 80%;
             } 
         }
         &:hover .plant-hint{
@@ -599,7 +618,10 @@ body {
         @media (max-width: 576px){
             bottom: 17%;
             left: 75%;
-            width: 30%;
+            width: 80px;
+        }
+        .carol-img{
+            width: 90%;
         }
         .carol-hint{
             position: absolute;
@@ -618,6 +640,7 @@ body {
             transition: 0.3s;
             @media (max-width: 576px){
                 left: 5%;
+                width: 90%;
             } 
         }
         &:hover .carol-hint{
@@ -638,7 +661,7 @@ body {
         }
         @media (max-width: 576px){
             top: 5%;
-            right: 10%;
+            right: 5%;
             width: 50%;
         }
     }
@@ -651,7 +674,13 @@ body {
         }
         @media (max-width: 576px){
             width: 50%;
-            right: -20%;
+            right: 5%;
+            width: 150px;
+        }
+        .cloud-img{
+            @media (max-width: 576px){
+                width: 100%;
+            }
         }
     }
     .boat{
@@ -713,7 +742,7 @@ body {
                 line-height: 70px;
             } 
             @media (max-width: 576px){
-                width: 48px;
+                width: 50px;
                 font-size: 12px;
                 line-height: 42px;
                 letter-spacing: 0;
