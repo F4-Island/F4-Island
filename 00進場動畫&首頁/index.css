@@ -876,6 +876,7 @@ body {
   .wholeMap .rock .rock-hint {
     bottom: 15%;
     left: -15%;
+    opacity: 1;
   }
 }
 
@@ -892,6 +893,7 @@ body {
   .wholeMap .rock .rock-shadow {
     left: 0;
     width: 70%;
+    opacity: 1;
   }
 }
 
@@ -951,6 +953,7 @@ body {
   .wholeMap .animal .animal-hint {
     bottom: 45%;
     left: -10%;
+    opacity: 1;
   }
 }
 
@@ -967,6 +970,7 @@ body {
   .wholeMap .animal .animal-shadow {
     left: 0;
     width: 90%;
+    opacity: 1;
   }
 }
 
@@ -1026,6 +1030,7 @@ body {
   .wholeMap .plant .plant-hint {
     bottom: 25%;
     left: -8%;
+    opacity: 1;
   }
 }
 
@@ -1042,6 +1047,7 @@ body {
   .wholeMap .plant .plant-shadow {
     left: 0;
     width: 80%;
+    opacity: 1;
   }
 }
 
@@ -1100,6 +1106,7 @@ body {
 @media (max-width: 576px) {
   .wholeMap .carol .carol-hint {
     bottom: 30%;
+    opacity: 1;
   }
 }
 
@@ -1116,6 +1123,7 @@ body {
   .wholeMap .carol .carol-shadow {
     left: 5%;
     width: 90%;
+    opacity: 1;
   }
 }
 

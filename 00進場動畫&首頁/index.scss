@@ -493,6 +493,7 @@ body {
             @media (max-width: 576px){
                 bottom: 15%;
                 left: -15%;
+                opacity: 1;
             } 
         }
         .rock-shadow{
@@ -504,6 +505,7 @@ body {
             @media (max-width: 576px){
                 left: 0;
                 width: 70%;
+                opacity: 1;
             } 
         }
         &:hover .rock-hint {
@@ -538,7 +540,8 @@ body {
             @include others-hint;
             @media (max-width: 576px){
               bottom: 45%; 
-              left: -10%; 
+              left: -10%;
+              opacity: 1; 
             }
         }
         .animal-shadow{
@@ -550,6 +553,7 @@ body {
             @media (max-width: 576px){
                 left: 0;
                 width: 90%;
+                opacity: 1;
             } 
         }
         &:hover .animal-hint{
@@ -585,6 +589,7 @@ body {
             @media (max-width: 576px){
                 bottom: 25%;
                 left: -8%;
+                opacity: 1;
             }
         }
         .plant-shadow{
@@ -596,6 +601,7 @@ body {
             @media (max-width: 576px){
                 left: 0;
                 width: 80%;
+                opacity: 1;
             } 
         }
         &:hover .plant-hint{
@@ -630,6 +636,7 @@ body {
             @include others-hint;
             @media (max-width: 576px){
                 bottom: 30%;
+                opacity: 1;
             }
         }
         .carol-shadow{
@@ -641,6 +648,7 @@ body {
             @media (max-width: 576px){
                 left: 5%;
                 width: 90%;
+                opacity: 1;
             } 
         }
         &:hover .carol-hint{
