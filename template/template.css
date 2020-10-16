@@ -250,6 +250,13 @@ body {
   transition: 0.5s;
 }
 
+@media (max-width: 1200px) {
+  .page-navbar .container nav .name .icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 .page-navbar .container nav .name:hover {
   opacity: 1;
   font-weight: 900;
