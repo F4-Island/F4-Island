@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(../img/01認識我們/02歷史與發展/背景圖.png);
+  background-image: url(../img/02生態探索/珊瑚礁生態底圖.png);
   background-position: center;
   background-size: cover;
 }
@@ -192,26 +192,74 @@ body {
   opacity: 1;
 }
 
+.content .title {
+  margin: 50px auto;
+}
+
+.content .title h1 {
+  color: #24999F;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.content .title h3 {
+  color: #24999F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: Arno Pro;
+  opacity: 0.5;
+}
+
 .card {
-  background-color: #307C9E;
+  background-color: #307c9e;
   border-radius: 30px;
   color: white;
 }
 
 .card .roundimg {
-  margin: 10% auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  background-color: steelblue;
+  margin: 10% auto 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
 }
 
 .card .card-body {
   line-height: 30px;
 }
 
+.card .card-body h5 {
+  font-weight: 900;
+}
+
 .card .card-body p {
   text-align: left;
+}
+
+.coral {
+  background-image: url(/img/02生態探索/珊瑚礁生態/珊瑚.jpg);
+}
+
+.seaweed {
+  background-image: url(/img/02生態探索/珊瑚礁生態/藻類.jpg);
+}
+
+.fish {
+  background-image: url(/img/02生態探索/珊瑚礁生態/魚類.jpg);
+}
+
+.invertebrates {
+  background-image: url(/img/02生態探索/珊瑚礁生態/無脊椎.jpg);
 }
 
 .seagull {

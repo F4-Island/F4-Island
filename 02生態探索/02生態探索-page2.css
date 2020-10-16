@@ -10,31 +10,9 @@
 }
 
 body {
-  background-image: url(../img/04出發四島/出發四島-底圖.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/02生態探索/玄武岩底圖.png);
+  background-position: center;
   background-size: cover;
-}
-
-.loading-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background: rgb(22, 49, 81); */
-  background: black;
-  z-index: 99999;
-}
-
-.loading {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-75px, -75px);
-          transform: translate(-75px, -75px);
-  border-radius: 100px;
 }
 
 .logo {
@@ -139,7 +117,7 @@ body {
   opacity: 1;
 }
 
-.page-navbar {
+.page1 {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -147,7 +125,7 @@ body {
   letter-spacing: 2px;
 }
 
-.page-navbar .container nav {
+.page1 .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
@@ -155,15 +133,15 @@ body {
   padding: 0 5%;
 }
 
-.page-navbar .container nav a {
+.page1 .container nav a {
   text-decoration: none;
 }
 
-.page-navbar .container nav a {
+.page1 .container nav a {
   text-decoration: none;
 }
 
-.page-navbar .container nav .title {
+.page1 .container nav .title {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -171,7 +149,7 @@ body {
   letter-spacing: 2px;
 }
 
-.page-navbar .container nav .name {
+.page1 .container nav .name {
   font-family: Microsoft JhengHei;
   font-weight: 400;
   font-size: 21px;
@@ -189,7 +167,7 @@ body {
   opacity: 0.5;
 }
 
-.page-navbar .container nav .name .icon {
+.page1 .container nav .name .icon {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -200,39 +178,25 @@ body {
   transition: 0.5s;
 }
 
-.page-navbar .container nav .name:hover {
+.page1 .container nav .name:hover {
   opacity: 1;
   font-weight: 900;
 }
 
-.page-navbar .container nav .name-1 {
+.page1 .container nav .name-1 {
   font-weight: 600;
   opacity: 1;
 }
 
-.page-navbar .container nav .name-1 .icon {
+.page1 .container nav .name-1 .icon {
   opacity: 1;
 }
 
-.Sub-standard {
-  color: #24999F;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 1px;
-  font-size: 25px;
-  font-family: Arno Pro;
-  opacity: 0.5;
-  text-align: center;
-  margin-top: -10px;
+.content .title {
+  margin: 50px auto;
 }
 
-.content-box {
-  padding-top: 5%;
-  position: relative;
-}
-
-.content-box h1 {
+.content .title h1 {
   color: #24999F;
   display: inline-block;
   -webkit-box-align: center;
@@ -241,70 +205,73 @@ body {
   letter-spacing: 3px;
   font-size: 60px;
   font-weight: 600;
-}
-
-.content-box .title-p {
-  font-size: 21px;
-  font-weight: 600;
-  margin-top: 30px;
-  letter-spacing: 2px;
-}
-
-.content {
-  margin-bottom: 7%;
-}
-
-.content .text-box p {
-  font-size: 22px;
-  letter-spacing: 3px;
   margin-bottom: 0;
-  text-align: justify;
 }
 
-h2 {
+.content .title h3 {
   color: #24999F;
-  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 1px;
-  font-size: 45px;
-  font-weight: 600;
+  font-size: 25px;
+  font-family: Arno Pro;
+  opacity: 0.5;
 }
 
-h4 {
-  font-weight: 600;
+.card {
+  background-color: #307c9e;
+  border-radius: 30px;
+  color: white;
 }
 
-.hole {
-  position: absolute;
-  top: 20%;
-  right: 20%;
+.card .roundimg {
+  margin: 10% auto 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
 }
 
-.rock {
-  position: absolute;
-  top: 60%;
-  left: 45%;
+.card .card-body {
+  line-height: 30px;
 }
 
-.img-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.card .card-body h5 {
+  font-weight: 900;
+}
+
+.card .card-body p {
+  text-align: left;
+}
+
+.coral {
+  background-image: url(/img/02生態探索/珊瑚礁生態/珊瑚.jpg);
+}
+
+.seaweed {
+  background-image: url(/img/02生態探索/珊瑚礁生態/藻類.jpg);
+}
+
+.fish {
+  background-image: url(/img/02生態探索/珊瑚礁生態/魚類.jpg);
+}
+
+.invertebrates {
+  background-image: url(/img/02生態探索/珊瑚礁生態/無脊椎.jpg);
+}
+
+.seagull {
+  position: fixed;
+  right: 30%;
+  top: 15%;
 }
 
 .wave {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   bottom: 0;
-  z-index: 99;
 }
 
 .boat {
@@ -326,4 +293,4 @@ footer {
   line-height: 0.5vw;
   letter-spacing: 1px;
 }
-/*# sourceMappingURL=04出發四島-page1.css.map */
+/*# sourceMappingURL=02生態探索-page2.css.map */

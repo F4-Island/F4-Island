@@ -8,9 +8,19 @@
 }
 
 body {
-    background-image: url(../img/02生態探索/珊瑚礁生態底圖.png);
-    background-position: center;
+    background-image: url(../img/04出發四島/出發四島-底圖.png);
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+// loading遮蓋區
+.loading-wrapper {
+    @include loading-wrapper;
+}
+
+// loading燈塔
+.loading {
+    @include loading;
 }
 
 // logo
@@ -45,9 +55,8 @@ body {
     @include l-menu-active;
 }
 
-.page1 {
+.page-navbar {
     @include nav-word-l;
-    // background-color: blue;
 
     .container {
         nav {
@@ -94,77 +103,95 @@ body {
     }
 }
 
+.Sub-standard {
+    @include Sub-standard-style;
+    text-align:center;
+    margin-top: -10px;
+}
+
+.content-box {
+    padding-top: 5%;
+    position: relative;
+    h1 {
+        @include page-title-style;
+    }
+
+    ul .title-p {
+        font-size: 21px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
+}
+
 .content {
-    .title {
-        margin: 50px auto;
-        h1 {
-            @include page-title-style;
-            margin-bottom: 0;
-        }
-        h3 {
-            @include Sub-standard-style;
-            }
-        }
-    }
-
-
-.card {
-    background-color: #307c9e;
-    border-radius: 30px;
-    color: white;
-    .roundimg {
-        margin: 10% auto 0 auto;
-        width: 150px;
-        height: 150px;
-        border-radius: 100px;
-        background-size: cover;
-        background-position: center;
-
-    }
-    .card-body {
-        // height: 40vh;
-        line-height: 30px;
-        h5{
-            font-weight: 900;
-        }
+    margin-bottom: 7%;
+    .text-box {
         p {
-            text-align: left;
+            font-size: 22px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+            text-align: justify;
         }
     }
 }
 
-// 珊瑚圖片
-.coral {
-    background-image: url(/img/02生態探索/珊瑚礁生態/珊瑚.jpg);
+h2{
+    color:#24999F;
+    display: inline-block;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 45px;
+    font-weight: 600;
 }
 
-// 藻類圖片 
-.seaweed {
-    background-image: url(/img/02生態探索/珊瑚礁生態/藻類.jpg);
+h4{
+    font-weight: 600;
+
 }
 
-// 魚類圖片
- .fish {
-    background-image: url(/img/02生態探索/珊瑚礁生態/魚類.jpg);
+// .title-p {
+//     font-size: 22px;
+//     font-weight: 600;
+// }
+
+.hole {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+.rock {
+    position: absolute;
+    top: 60%;
+    left: 45%;
 }
 
-// 無脊椎動物圖片 
-.invertebrates {
-    background-image: url(/img/02生態探索/珊瑚礁生態/無脊椎.jpg);
+// footer {
+//     margin-top: 200px;
+//     position: relative;
+//     img {
+//         width: 100vw;
+//         position: absolute;
+//         bottom: 0;
+//     }
+// }
+
+// 申請按鈕
+.Application{
+    width: 200px;
+    height: 50px;
+    background-color: #DF675E;
+}
+.Application a{
+        color: white; ;
 }
 
-// 海鷗
-.seagull {
-    position: fixed;
-    right: 30%;
-    top: 15%;
-}
 
 // 波浪
 .wave {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 0;
+    z-index: 99;
 }
 
 // 小船
@@ -174,6 +201,6 @@ body {
     bottom: 8%;
 }
 
-footer {
+footer{
     @include footer;
 }
