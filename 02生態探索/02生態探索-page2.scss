@@ -11,15 +11,13 @@ body {
     background-image: url(../img/02生態探索/玄武岩底圖.png);
     // background-position: center;
     background-size: cover;
-    height: 200vh;
+    // height: 200vh;
 }
-
-
-
 
 // logo
 .logo {
     @include logo;
+    z-index: 5;
 }
 
 // menu開關
@@ -102,47 +100,157 @@ body {
         // 玄武岩
         .basalt {
             // width: 100%;
-            height: 500px;
+            height: 400px;
             // background-color: white;
             .basalt-img {
                 width: 50%;
-                height: 100%;
+                height: 90%;
                 background-image: url(../img/02生態探索/玄武岩/玄武岩.jpg);
                 background-position: center;
                 background-size: cover;
                 border-radius: 20px;
             }
-            .basalt-text{
+            // 玄武岩文字區
+            .basalt-text {
                 width: 50%;
                 height: 100%;
-                .basalt-title{
+                .basalt-title {
                     height: 20%;
                     position: relative;
-                    h1{
+                    h1 {
+                        padding: 5px;
                         position: absolute;
-                        bottom: -15%;
+                        bottom: -25%;
                         right: 10px;
                         width: 30%;
                         color: white;
-                        background-color: #1B5377;
+                        background-color: #1b5377;
+                        z-index: 2;
+                        border-radius: 50px;
                     }
                 }
-                .basalt-content{
+                // 玄武岩文字內容
+                .basalt-content {
                     position: relative;
                     height: 80%;
-                    background-color:#1972B3 ;
+                    background-color: #1972b3;
                     padding: 10%;
                     color: white;
+                    font-size: 18px;
                     margin-bottom: -10%;
-                    margin-left:-10%;                }
+                    margin-left: -10%;
+                    border-radius: 20px;
+                    letter-spacing: 10px;
+                    text-align: left;
+                }
             }
-
-
-
+        }
+        // 海蝕
+        .seaeclipse {
+            height: 400px;
+            display: flex;
+            flex-direction: row-reverse;
+            .seaeclipse-img {
+                width: 50%;
+                height: 100%;
+                background-image: url(../img/02生態探索/玄武岩/海蝕.jpg);
+                background-position: center;
+                background-size: cover;
+                border-radius: 20px;
+            }
+            .seaeclipse-text {
+                width: 50%;
+                height: 100%;
+                .seaeclipse-title {
+                    height: 20%;
+                    position: relative;
+                    h1 {
+                        padding: 5px;
+                        position: absolute;
+                        bottom: -25%;
+                        left: 0px;
+                        width: 30%;
+                        color: white;
+                        background-color: #82953C;
+                        z-index: 2;
+                        border-radius: 50px;
+                    }
+                }
+                .seaeclipse-content {
+                    position: relative;
+                    height: 70%;
+                    background-color: #A6C047;
+                    padding: 10%;
+                    color: white;
+                    font-size: 18px;
+                    margin-bottom: -10%;
+                    margin-right: -10%;
+                    border-radius: 20px;
+                    letter-spacing: 10px;
+                    text-align: left;
+                }
+            }
         }
     }
 }
 
+.swiper-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    // display: flex;
+    // align-items: center;
+    .img-box{
+        height: 80%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5%;
+    }
+    .img1{
+        background-image: url(../img/02生態探索/玄武岩/玄武岩下面的swiper/海蝕崖.jpg);
+    }
+    .img2{
+        background-image: url(../img/02生態探索/玄武岩/玄武岩下面的swiper/風化而成球狀的玄武岩礫灘.jpg);
+    }
+    .img3{
+        background-image: url(../img/02生態探索/玄武岩/玄武岩下面的swiper/風化後的玄武岩脈.jpg);
+    }
+    .img4{
+        background-image: url(../img/02生態探索/玄武岩/玄武岩下面的swiper/海蝕平台（東吉嶼南方海崖）.jpg);
+    }
+    .img5{
+        background-image: url(../img/02生態探索/玄武岩/玄武岩下面的swiper/海蝕平台（東嶼坪嶼南方海岸）.jpg);
+    }
+    .img6{
+        background-image: url(../img/02生態探索/玄武岩/玄武岩下面的swiper/海蝕平台與壺穴（東吉嶼大坪）.jpg);
+    }
+    .img7{
+        background-image: url(../img/02生態探索/玄武岩/玄武岩下面的swiper/海蝕洞.jpg);
+    }
+    span{
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: bold;
+    }
+  }
+
+  .swiper-container .swiper-slide {
+    height: 300px;
+    // line-height: 300px;
+  }
+
+
+  .swiper-container .swiper-slide-next {
+    width: 50%;
+    height: 350px;
+    margin-top: -20px;
+    // line-height: 400px;
+  }
 
 // 海鷗
 .seagull {
