@@ -136,7 +136,7 @@ body {
 
 .wholeMap .logo {
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -148,10 +148,16 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .wholeMap .logo {
+    width: 30%;
+  }
+}
+
 .wholeMap .east {
   position: absolute;
-  top: 40%;
-  right: 3%;
+  top: 36%;
+  right: 2%;
 }
 
 @media (max-width: 768px) {
@@ -182,10 +188,29 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .east .east-hint {
+    top: -20%;
+    right: 10%;
+  }
+}
+
 .wholeMap .west {
   position: absolute;
   top: 52%;
-  right: 36%;
+  right: 35%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .west {
+    width: 203px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .west .west-img {
+    width: 100%;
+  }
 }
 
 .wholeMap .west .west-hint {
@@ -204,10 +229,29 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .west .west-hint {
+    top: -30%;
+    right: 10%;
+  }
+}
+
 .wholeMap .littleEast {
   position: absolute;
-  top: 40%;
-  left: 18%;
+  top: 38%;
+  left: 17%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .littleEast {
+    width: 213px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .littleEast .littleEast-img {
+    width: 100%;
+  }
 }
 
 .wholeMap .littleEast .littleEast-hint {
@@ -226,10 +270,29 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .littleEast .littleEast-hint {
+    top: -80%;
+    left: 65%;
+  }
+}
+
 .wholeMap .littleWest {
   position: absolute;
-  top: 25%;
-  left: 18%;
+  top: 23%;
+  left: 16%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .littleWest {
+    width: 132px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .littleWest .littleWest-img {
+    width: 100%;
+  }
 }
 
 .wholeMap .littleWest .littleWest-hint {
@@ -248,16 +311,30 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .littleWest .littleWest-hint {
+    top: -70%;
+    left: 40%;
+  }
+}
+
 .wholeMap .island1 {
   position: absolute;
-  top: 6%;
-  left: 7%;
+  top: 12%;
+  left: 5%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island1 {
+    top: 6%;
+    left: 0;
+  }
 }
 
 .wholeMap .island1 .island1-hint {
   position: absolute;
-  top: -140%;
-  left: -40%;
+  top: -120%;
+  left: 0%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -267,9 +344,15 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island1 .island1-hint {
+    top: -70%;
+    left: 5%;
+  }
 }
 
 .wholeMap .island1:hover .island1-hint {
@@ -278,13 +361,60 @@ body {
 
 .wholeMap .island2 {
   position: absolute;
-  top: 15%;
-  left: 15%;
+  top: 18%;
+  left: 14%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island2 {
+    top: 15%;
+    left: 10%;
+  }
 }
 
 .wholeMap .island2 .island2-hint {
   position: absolute;
-  top: -500%;
+  top: -195%;
+  left: 5%;
+  background-image: url(../img/00頁首/附屬地標圖.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 104px;
+  height: 165px;
+  font-size: larger;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island2 .island2-hint {
+    top: -125%;
+    left: 25%;
+  }
+}
+
+.wholeMap .island2:hover .island2-hint {
+  opacity: 1;
+}
+
+.wholeMap .island3 {
+  position: absolute;
+  top: 39%;
+  left: 13%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island3 {
+    top: 33%;
+  }
+}
+
+.wholeMap .island3 .island3-hint {
+  position: absolute;
+  top: -210%;
   left: -10%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
@@ -295,37 +425,15 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wholeMap .island2:hover .island2-hint {
-  opacity: 1;
-}
-
-.wholeMap .island3 {
-  position: absolute;
-  top: 40%;
-  left: 14%;
-}
-
-.wholeMap .island3 .island3-hint {
-  position: absolute;
-  top: -600%;
-  left: -150%;
-  background-image: url(../img/00頁首/附屬地標圖.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 104px;
-  height: 165px;
-  font-size: larger;
-  letter-spacing: 1px;
-  text-align: center;
-  line-height: 100px;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+@media (max-width: 768px) {
+  .wholeMap .island3 .island3-hint {
+    top: -150%;
+    left: 5%;
+  }
 }
 
 .wholeMap .island3:hover .island3-hint {
@@ -334,14 +442,21 @@ body {
 
 .wholeMap .island4 {
   position: absolute;
-  top: 53%;
+  top: 51%;
   left: 26%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island4 {
+    top: 45%;
+    left: 28%;
+  }
 }
 
 .wholeMap .island4 .island4-hint {
   position: absolute;
-  top: -450%;
-  left: -100%;
+  top: -420%;
+  left: -80%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -351,9 +466,15 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island4 .island4-hint {
+    top: -300%;
+    left: -25%;
+  }
 }
 
 .wholeMap .island4:hover .island4-hint {
@@ -366,10 +487,17 @@ body {
   left: 6%;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .island5 {
+    top: 50%;
+    left: 3%;
+  }
+}
+
 .wholeMap .island5 .island5-hint {
   position: absolute;
-  top: -600%;
-  left: -100%;
+  top: -160%;
+  left: -10%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -379,9 +507,15 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island5 .island5-hint {
+    top: -115%;
+    left: 0;
+  }
 }
 
 .wholeMap .island5:hover .island5-hint {
@@ -391,13 +525,19 @@ body {
 .wholeMap .island6 {
   position: absolute;
   top: 60%;
-  left: 19%;
+  left: 17%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island6 {
+    left: 12%;
+  }
 }
 
 .wholeMap .island6 .island6-hint {
   position: absolute;
-  top: -500%;
-  left: -100%;
+  top: -160%;
+  left: -10%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -407,9 +547,15 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island6 .island6-hint {
+    top: -110%;
+    left: 0;
+  }
 }
 
 .wholeMap .island6:hover .island6-hint {
@@ -418,14 +564,21 @@ body {
 
 .wholeMap .island7 {
   position: absolute;
-  top: 58%;
-  left: 33%;
+  top: 55%;
+  left: 32%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island7 {
+    top: 52%;
+    left: 30%;
+  }
 }
 
 .wholeMap .island7 .island7-hint {
   position: absolute;
-  top: -500%;
-  left: -50%;
+  top: -140%;
+  left: 0%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -435,9 +588,15 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island7 .island7-hint {
+    top: -90%;
+    left: 10%;
+  }
 }
 
 .wholeMap .island7:hover .island7-hint {
@@ -450,9 +609,16 @@ body {
   right: 23%;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .island8 {
+    top: 39%;
+    right: 19%;
+  }
+}
+
 .wholeMap .island8 .island8-hint {
   position: absolute;
-  top: -210%;
+  top: -190%;
   right: 0%;
   background-image: url(../img/00頁首/附屬地標圖.png);
   background-repeat: no-repeat;
@@ -463,13 +629,25 @@ body {
   letter-spacing: 1px;
   text-align: center;
   line-height: 100px;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .island8 .island8-hint {
+    top: -180%;
+    right: 40%;
+  }
+}
+
 .wholeMap .island8:hover .island8-hint {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .island8 .island8-img {
+    width: 60%;
+  }
 }
 
 .wholeMap .fish-l {
@@ -484,10 +662,24 @@ body {
   right: 30%;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .fish-r {
+    top: 65%;
+    right: 15%;
+  }
+}
+
 .wholeMap .rock {
   position: absolute;
   bottom: 15%;
   left: 6%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .rock {
+    bottom: 10%;
+    left: 4%;
+  }
 }
 
 .wholeMap .rock .rock-hint {
@@ -504,7 +696,6 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -532,6 +723,13 @@ body {
   left: 15%;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .animal {
+    bottom: 10%;
+    left: 16%;
+  }
+}
+
 .wholeMap .animal .animal-hint {
   position: absolute;
   bottom: 200%;
@@ -546,7 +744,6 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -574,6 +771,13 @@ body {
   left: 25%;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .plant {
+    bottom: 10%;
+    left: 31%;
+  }
+}
+
 .wholeMap .plant .plant-hint {
   position: absolute;
   bottom: 110%;
@@ -588,7 +792,6 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -616,6 +819,13 @@ body {
   left: 35%;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .carol {
+    bottom: 10%;
+    left: 43%;
+  }
+}
+
 .wholeMap .carol .carol-hint {
   position: absolute;
   bottom: 110%;
@@ -630,7 +840,6 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
-  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -658,10 +867,22 @@ body {
   right: 27%;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .birds {
+    width: 15%;
+  }
+}
+
 .wholeMap .cloud {
   position: absolute;
-  top: 20%;
+  top: 17%;
   right: 1%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .cloud {
+    width: 30%;
+  }
 }
 
 .wholeMap .boat {
@@ -671,16 +892,34 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .boat {
+    bottom: 3%;
+  }
+}
+
 .wholeMap .email {
   position: absolute;
   bottom: 15%;
   right: 2%;
 }
 
+@media (max-width: 768px) {
+  .wholeMap .email {
+    bottom: 10%;
+  }
+}
+
 .wholeMap .fb {
   position: absolute;
   bottom: 15%;
-  right: 6%;
+  right: 11%;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .fb {
+    bottom: 10%;
+  }
 }
 
 .wholeMap .wave {
@@ -696,15 +935,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  .wholeMap .box img {
-    width: 50%;
+  .wholeMap .box .hint {
+    width: 60px;
+    font-size: 16px;
+    line-height: 70px;
   }
 }
 
 @media (max-width: 768px) {
-  .wholeMap .box .hint {
-    width: 50px;
-    font-size: 10px;
+  .wholeMap .box .others-hint {
+    width: 95px;
+    font-size: 16px;
+    line-height: 50px;
   }
 }
 /*# sourceMappingURL=index.css.map */
