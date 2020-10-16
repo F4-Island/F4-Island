@@ -61,6 +61,13 @@ body {
   font-size: 1vw;
 }
 
+@media (max-width: 1200px) {
+  .menu {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
 .menu-btnline.active,
 .menu-text.active,
 .menu-btn.active {
@@ -131,6 +138,13 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 1200px) {
+  .l-menu.active {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
 .page {
   font-family: Microsoft JhengHei;
   font-weight: 600;
@@ -141,12 +155,24 @@ body {
   position: sticky;
 }
 
+@media (max-width: 1200px) {
+  .page {
+    font-size: 22px;
+  }
+}
+
 .page .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
   background-color: #3281A5;
   padding: 0 5%;
+}
+
+@media (max-width: 1200px) {
+  .page .container nav {
+    width: 60%;
+  }
 }
 
 .page .container nav a {
@@ -165,6 +191,12 @@ body {
   letter-spacing: 2px;
 }
 
+@media (max-width: 1200px) {
+  .page .container nav .title {
+    font-size: 22px;
+  }
+}
+
 .page .container nav .name {
   font-family: Microsoft JhengHei;
   font-weight: 400;
@@ -181,6 +213,12 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .page .container nav .name {
+    font-size: 18px;
+  }
 }
 
 .page .container nav .name .icon {
