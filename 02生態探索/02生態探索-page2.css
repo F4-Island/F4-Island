@@ -192,11 +192,11 @@ body {
   opacity: 1;
 }
 
-.container .title {
+.content .title1 {
   margin: 50px auto;
 }
 
-.container .title h1 {
+.content .title1 h1 {
   color: #24999F;
   display: inline-block;
   -webkit-box-align: center;
@@ -208,7 +208,7 @@ body {
   margin-bottom: 0;
 }
 
-.container .title h3 {
+.content .title1 h3 {
   color: #24999F;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -219,11 +219,11 @@ body {
   opacity: 0.5;
 }
 
-.container .content .basalt {
+.content .content .basalt {
   height: 500px;
 }
 
-.container .content .basalt .basalt-img {
+.content .content .basalt .basalt-img {
   width: 50%;
   height: 100%;
   background-image: url(../img/02生態探索/玄武岩/玄武岩.jpg);
@@ -232,17 +232,17 @@ body {
   border-radius: 20px;
 }
 
-.container .content .basalt .basalt-text {
+.content .content .basalt .basalt-text {
   width: 50%;
   height: 100%;
 }
 
-.container .content .basalt .basalt-text .basalt-title {
+.content .content .basalt .basalt-text .basalt-title {
   height: 20%;
   position: relative;
 }
 
-.container .content .basalt .basalt-text .basalt-title h1 {
+.content .content .basalt .basalt-text .basalt-title h1 {
   position: absolute;
   bottom: -15%;
   right: 10px;
@@ -251,7 +251,7 @@ body {
   background-color: #1B5377;
 }
 
-.container .content .basalt .basalt-text .basalt-content {
+.content .content .basalt .basalt-text .basalt-content {
   position: relative;
   height: 80%;
   background-color: #1972B3;

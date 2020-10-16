@@ -14,6 +14,9 @@ body {
     height: 200vh;
 }
 
+
+
+
 // logo
 .logo {
     position: fixed;
@@ -95,8 +98,8 @@ body {
     }
 }
 
-.container {
-    .title {
+.content {
+    .title1 {
         margin: 50px auto;
         h1 {
             @include page-title-style;
