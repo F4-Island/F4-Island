@@ -13,6 +13,16 @@ body {
     background-size: cover;
 }
 
+// loading遮蓋區
+.loading-wrapper{
+    @include loading-wrapper;
+}
+
+// loading燈塔
+ .loading {
+    @include loading;
+}
+
 // logo
 .logo {
     position: fixed;
