@@ -55,8 +55,14 @@ body {
   border-radius: 50%;
   z-index: 101;
   color: white;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu:hover {
+  width: 11vw;
+  height: 11vw;
 }
 
 .menu .menu-btn {
@@ -105,6 +111,10 @@ body {
   transition: 0.6s;
 }
 
+.l-menu a {
+  text-decoration: none;
+}
+
 .l-menu .menu-list {
   position: relative;
   top: 50%;
@@ -123,11 +133,16 @@ body {
 .l-menu .menu-list li a span {
   font-size: 1.18vw;
   color: #fff;
+  font-weight: 700;
   display: block;
   line-height: 3;
   opacity: 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.l-menu .menu-list li a span:hover {
+  color: #b8cad3;
 }
 
 .l-menu.active {
