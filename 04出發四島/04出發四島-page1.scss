@@ -166,12 +166,31 @@ h4{
     left: 45%;
 }
 
-footer {
-    margin-top: 200px;
-    position: relative;
-    img {
-        width: 100vw;
-        position: absolute;
-        bottom: 0;
-    }
+// footer {
+//     margin-top: 200px;
+//     position: relative;
+//     img {
+//         width: 100vw;
+//         position: absolute;
+//         bottom: 0;
+//     }
+// }
+
+// 波浪
+.wave {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+
+// 小船
+.boat {
+    position: fixed;
+    right: 5%;
+    bottom: 8%;
+}
+
+footer{
+    @include footer;
 }
