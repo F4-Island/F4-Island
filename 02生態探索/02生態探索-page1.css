@@ -23,7 +23,7 @@ body {
   height: 100%;
   /* background: rgb(22, 49, 81); */
   background: black;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .loading {
