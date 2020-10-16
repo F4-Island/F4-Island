@@ -74,12 +74,15 @@ body {
         @media (max-width: 1024px) { 
             width: 50%;
         } 
+        @media (max-width: 768px){
+            width: 30%;
+        }
     }
     //東吉嶼
     .east{
         position: absolute;
-        top: 40%;
-        right: 3%;
+        top: 36%;
+        right: 2%;
         @media (max-width: 768px){
             width: 250px;
         }
@@ -92,7 +95,11 @@ body {
             position: absolute;
             top: -5%;
             right: 10%;
-            @include mainIsland-hint;  
+            @include mainIsland-hint; 
+            @media (max-width: 768px){
+                top: -30%;
+                right: 5%;
+            }
         }
     }
     
@@ -102,12 +109,19 @@ body {
     .west{
         position: absolute;
         top: 52%;
-        right: 36%;
+        right: 35%;
+        @media (max-width: 768px){
+            width: 203px;
+        }
         .west-hint{
             position: absolute;
             top: -20%;
             right: 8%;
             @include mainIsland-hint;
+            @media (max-width: 768px){
+                top: -55%;
+                right: 20%;
+            }
         } 
     }
     
@@ -115,13 +129,20 @@ body {
     //東嶼坪嶼
     .littleEast{
         position: absolute;
-        top: 40%;
-        left: 18%;
+        top: 38%;
+        left: 16%;
+        @media (max-width: 768px){
+            width: 213px;
+        }
         .littleEast-hint{
             position: absolute;
             top: -60%;
             left: 70%;
             @include mainIsland-hint;
+            @media (max-width: 768px){
+                top: -120%;
+                left: 49%;
+            }
         }
     }
     
@@ -129,24 +150,31 @@ body {
     //西嶼坪嶼
     .littleWest{
         position: absolute;
-        top: 25%;
-        left: 18%;
+        top: 23%;
+        left: 16%;
+        @media (max-width: 768px){
+            width: 132px;
+        }
         .littleWest-hint{
             position: absolute;
             top: -55%;
             left: 50%;
             @include mainIsland-hint;
+            @media (max-width: 768px){
+                top: -120%;
+                left: 28%;
+            }
         }
     }
     
     //附屬島嶼
     .island1{
         position: absolute;
-        top: 6%;
-        left: 7%;
+        top: 12%;
+        left: 5%;
         .island1-hint{
             position: absolute;
-            top: -140%;
+            top: -220%;
             left: -40%;
             @include subIsland-hint;
         }
@@ -157,12 +185,12 @@ body {
     
     .island2{
         position: absolute;
-        top: 15%;
+        top: 20%;
         left: 15%;
         .island2-hint{
             position: absolute;
             top: -500%;
-            left: -10%;
+            left: -35%;
             @include subIsland-hint;
         }
         &:hover .island2-hint{
@@ -172,7 +200,7 @@ body {
     
     .island3{
         position: absolute;
-        top: 40%;
+        top: 38%;
         left: 14%;
         .island3-hint{
             position: absolute;
@@ -187,7 +215,7 @@ body {
     
     .island4{
         position: absolute;
-        top: 53%;
+        top: 51%;
         left: 26%;
         .island4-hint{
             position: absolute;
@@ -202,7 +230,7 @@ body {
     
     .island5{
         position: absolute;
-        top: 55%;
+        top: 57%;
         left: 6%;
         .island5-hint{
             position: absolute;
@@ -217,8 +245,8 @@ body {
     
     .island6{
         position: absolute;
-        top: 60%;
-        left: 19%;
+        top: 61%;
+        left: 15%;
         .island6-hint{
             position: absolute;
             top: -500%;
@@ -233,12 +261,16 @@ body {
     .island7{
         position: absolute;
         top: 58%;
-        left: 33%;
+        left: 35%;
+        @media (max-width: 768px){
+            top: 55%;
+        }
         .island7-hint{
             position: absolute;
             top: -500%;
             left: -50%;
             @include subIsland-hint;
+            
         }
         &:hover .island7-hint{
             opacity: 1;
@@ -249,15 +281,29 @@ body {
         position: absolute;
         top: 47%;
         right: 23%;
+        @media (max-width: 768px){
+            top: 43%;
+            right: 19%;
+        }
         .island8-hint{
             position: absolute;
             top: -210%;
             right: 0%;
             @include subIsland-hint;
+            @media (max-width: 768px){
+                top: -240%;
+                right: 30%;
+            }
         }
         &:hover .island8-hint{
             opacity: 1;
         }
+        .island8-img{
+            @media (max-width: 768px){
+            width: 60%;
+            }
+        }
+        
     }
 
     .fish-l{
@@ -269,11 +315,19 @@ body {
         position: absolute;
         top: 73%;
         right: 30%;
+        @media (max-width: 768px){
+            top: 65%;
+            right: 15%;
+        }
     }
     .rock{
         position: absolute;
         bottom: 15%;
         left: 6%;
+        @media (max-width: 768px){
+            bottom: 10%;
+            left: 4%;
+        }
         .rock-hint{
             position: absolute;
             bottom: 110%;
@@ -300,6 +354,10 @@ body {
         position: absolute;
         bottom: 15%;
         left: 15%;
+        @media (max-width: 768px){
+            bottom: 10%;
+            left: 16%;
+        }
         .animal-hint{
             position: absolute;
             bottom: 200%;
@@ -326,6 +384,10 @@ body {
         position: absolute;
         bottom: 15%;
         left: 25%;
+        @media (max-width: 768px){
+            bottom: 10%;
+            left: 31%;
+        }
         .plant-hint{
             position: absolute;
             bottom: 110%;
@@ -352,6 +414,10 @@ body {
         position: absolute;
         bottom: 15%;
         left: 35%;
+        @media (max-width: 768px){
+            bottom: 10%;
+            left: 43%;
+        }
         .carol-hint{
             position: absolute;
             bottom: 110%;
@@ -378,27 +444,42 @@ body {
         position: absolute;
         top: 12%;
         right: 27%;
+        @media (max-width: 768px){
+            width: 15%;
+        }
     }
     .cloud{
         position: absolute;
         top: 20%;
         right: 1%;
+        @media (max-width: 768px){
+            width: 30%;
+        }
     }
     .boat{
         position: absolute;
         bottom: 8%;
         right: 12%;
         z-index: 1;
+        @media (max-width: 768px){
+            bottom: 3%;
+        }
     }
     .email{
         position: absolute;
         bottom: 15%;
         right: 2%;
+        @media (max-width: 768px){
+            bottom: 10%;
+        }
     }
     .fb{
         position: absolute;
         bottom: 15%;
-        right: 6%;
+        right: 11%;
+        @media (max-width: 768px){
+            bottom: 10%;
+        }
     }
     .wave{
         width: 100vw;
@@ -411,16 +492,24 @@ body {
             @media (max-width: 1024px) { 
                 width: 80%;
             }
-            @media (max-width: 768px) { 
-                width: 50%;
-            }    
+            // @media (max-width: 768px) { 
+            //     width: 50%;
+            // }    
         }
         .hint{
             @media (max-width: 768px) { 
-                width: 50px;
+                width: 70px;
                 font-size: 10px;
+                line-height: 70px;
             }    
         }
+    }
+    .others-box{
+        img{
+            @media (max-width: 768px){
+                width: 60%;
+            }  
+        }  
     }
     
     
