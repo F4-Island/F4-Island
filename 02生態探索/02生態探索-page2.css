@@ -11,8 +11,8 @@
 
 body {
   background-image: url(../img/02生態探索/玄武岩底圖.png);
-  background-position: center;
   background-size: cover;
+  height: 200vh;
 }
 
 .logo {
@@ -192,23 +192,23 @@ body {
   opacity: 1;
 }
 
-.content .title {
+.container .title {
   margin: 50px auto;
 }
 
-.content .title h1 {
+.container .title h1 {
   color: #24999F;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 3px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   margin-bottom: 0;
 }
 
-.content .title h3 {
+.container .title h3 {
   color: #24999F;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -219,47 +219,46 @@ body {
   opacity: 0.5;
 }
 
-.card {
-  background-color: #307c9e;
-  border-radius: 30px;
-  color: white;
+.container .content .basalt {
+  height: 500px;
 }
 
-.card .roundimg {
-  margin: 10% auto 0 auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-  background-size: cover;
+.container .content .basalt .basalt-img {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/02生態探索/玄武岩/玄武岩.jpg);
   background-position: center;
+  background-size: cover;
+  border-radius: 20px;
 }
 
-.card .card-body {
-  line-height: 30px;
+.container .content .basalt .basalt-text {
+  width: 50%;
+  height: 100%;
 }
 
-.card .card-body h5 {
-  font-weight: 900;
+.container .content .basalt .basalt-text .basalt-title {
+  height: 20%;
+  position: relative;
 }
 
-.card .card-body p {
-  text-align: left;
+.container .content .basalt .basalt-text .basalt-title h1 {
+  position: absolute;
+  bottom: -15%;
+  right: 10px;
+  width: 30%;
+  color: white;
+  background-color: #1B5377;
 }
 
-.coral {
-  background-image: url(/img/02生態探索/珊瑚礁生態/珊瑚.jpg);
-}
-
-.seaweed {
-  background-image: url(/img/02生態探索/珊瑚礁生態/藻類.jpg);
-}
-
-.fish {
-  background-image: url(/img/02生態探索/珊瑚礁生態/魚類.jpg);
-}
-
-.invertebrates {
-  background-image: url(/img/02生態探索/珊瑚礁生態/無脊椎.jpg);
+.container .content .basalt .basalt-text .basalt-content {
+  position: relative;
+  height: 80%;
+  background-color: #1972B3;
+  padding: 10%;
+  color: white;
+  margin-bottom: -10%;
+  margin-left: -10%;
 }
 
 .seagull {
