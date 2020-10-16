@@ -1,3 +1,13 @@
+//navbar樣式
+@mixin logo{
+    width: 12%;
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    @media (max-width: 576px){
+        display: none;
+    }
+}
 
 @mixin navbar-style {
     width: 70%;
@@ -5,15 +15,30 @@
     border-radius: 0 0 15px 15px;
     background-color: #3281A5;
     padding: 0 5%;
+    z-index: 0;
     @media (max-width: 1200px){
-        width: 60%;
+        width: 65%;
     }
-    
+    @media (max-width: 992px){
+        width: 80%;
+    }
+    @media (max-width: 768px){
+        width: 80%;
+        height: 50px;
+    }
+    @media (max-width: 576px){
+        width: 90%;
+        padding: 0 2%;
+        height: 45px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
     a{
         text-decoration: none;
     }
 }
-
+//navbar最左字
 @mixin nav-word-l {
     font-family: Microsoft JhengHei;
     font-weight: 600;
@@ -23,8 +48,19 @@
     @media (max-width: 1200px){
         font-size: 22px;
     }
+    @media (max-width: 992px){
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    @media (max-width: 768px){
+        font-size: 18px;
+    }
+    @media (max-width: 576px){
+        font-size: 14px;
+        letter-spacing: 0;
+    }
 }
-
+//navbar項目字
 @mixin nav-word-s {
     font-family: Microsoft JhengHei;
     font-weight: 400;
@@ -34,8 +70,18 @@
     @media (max-width: 1200px){
         font-size: 18px;
     }
+    @media (max-width: 992px){
+        font-size: 16px;
+    }
+    @media (max-width: 768px){
+        font-size: 14px;
+    }
+    @media (max-width: 576px){
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
 }
-
+//內文的字,看需求用
 @mixin c-word {
     font-family: Microsoft JhengHei;
     font-weight: 400;
@@ -43,6 +89,8 @@
     color: gray;
     letter-spacing: 2px;
 }
+
+//navbar項目的標示紅點
 @mixin icon {
     width: 15px;
     height: 15px;
@@ -52,8 +100,23 @@
     opacity: 0;
     transition: 0.5s;
     @media (max-width: 1200px){
-        width: 12px;
-        height:12px;
+        width: 13px;
+        height:13px;
+    }
+    @media (max-width: 992px){
+        width: 11px;
+        height: 11px;
+        margin-right: 5px;
+    }
+    @media (max-width: 768px){
+        width: 9px;
+        height: 9px;
+        margin-right: 3px;
+    }
+    @media (max-width: 576px){
+        width: 7px;
+        height: 7px;
+        margin-right: 1px;
     }
 }
 
@@ -74,10 +137,20 @@
     &:hover{
         width: 11vw;
         height: 11vw;
+        @media (max-width: 1200px){
+            width: 16vw;
+            height: 16vw;
+        }
+        @media (max-width: 992px){
+            width: 18vw;
+            height: 18vw;
+        }
+        @media (max-width: 576px){
+            width: 21vw;
+            height: 21vw;
+        }
     }
 
-
-    
     .menu-btn{
         width: 100%;
         height: 100%;
@@ -99,6 +172,14 @@
     @media (max-width: 1200px){
         width: 15vw;
         height: 15vw;
+    }
+    @media (max-width: 992px){
+        width: 17vw;
+        height: 17vw;
+    }
+    @media (max-width: 576px){
+        width: 20vw;
+        height: 20vw;
     }
 }
 
@@ -141,8 +222,6 @@
                         &:hover{
                             color: rgb(184, 202, 211);
                         }
-
-
                     }
                 }
             }
@@ -166,6 +245,18 @@
     @media (max-width: 1200px){
         width: 30vw;
         height: 30vw;
+    }
+    @media (max-width: 992px){
+        width: 32vw;
+        height: 32vw;
+    }
+    @media (max-width: 768px){
+        width: 34vw;
+        height: 34vw;
+    }
+    @media (max-width: 576px){
+        width: 38vw;
+        height: 38vw;
     }
 }  
 

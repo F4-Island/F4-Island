@@ -51,6 +51,27 @@ body {
   height: 11vw;
 }
 
+@media (max-width: 1200px) {
+  .menu:hover {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu:hover {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu:hover {
+    width: 21vw;
+    height: 21vw;
+  }
+}
+
 .menu .menu-btn {
   width: 100%;
   height: 100%;
@@ -76,6 +97,20 @@ body {
   .menu {
     width: 15vw;
     height: 15vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    width: 17vw;
+    height: 17vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    width: 20vw;
+    height: 20vw;
   }
 }
 
@@ -152,6 +187,27 @@ body {
   .l-menu.active {
     width: 30vw;
     height: 30vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .l-menu.active {
+    width: 32vw;
+    height: 32vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .l-menu.active {
+    width: 34vw;
+    height: 34vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .l-menu.active {
+    width: 38vw;
+    height: 38vw;
   }
 }
 
