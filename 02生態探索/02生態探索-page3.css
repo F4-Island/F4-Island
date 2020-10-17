@@ -167,12 +167,6 @@ body {
   transition: 0.3s;
 }
 
-@media (max-width: 576px) {
-  .l-menu .menu-list li a span {
-    font-size: 12px;
-  }
-}
-
 .l-menu .menu-list li a span:hover {
   color: #b8cad3;
 }
