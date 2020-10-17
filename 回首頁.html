@@ -161,9 +161,11 @@
         
         <!-- 生態探索 -->
         <div class="box rock others-box">
-            <img class="rock-img" src="./img/00頁首/玄武岩.png" alt="">
+            <a href="./02生態探索-page2.html"><img class="rock-img" src="./img/00頁首/玄武岩.png" alt="">
+            
             <div class="rock-hint others-hint">玄武岩地景</div>
             <img class="rock-shadow" src="./img/00頁首/玄武岩陰影.png" alt="">
+            </a>
         </div>
         
         <div class="box animal others-box">
@@ -179,9 +181,11 @@
         </div>
         
         <div class="box carol others-box">
-            <img class="carol-img" src="./img/00頁首/珊瑚.png" alt="">
-            <div class="carol-hint others-hint">珊瑚</div>
-            <img class="carol-shadow" src="./img/00頁首/珊瑚陰影.png" alt="">
+            <a href="./02生態探索-page1.html">
+                <img class="carol-img" src="./img/00頁首/珊瑚.png" alt="">
+                <div class="carol-hint others-hint">珊瑚</div>
+                <img class="carol-shadow" src="./img/00頁首/珊瑚陰影.png" alt="">
+            </a>  
         </div>
         
         <div class="box boat">
@@ -189,14 +193,19 @@
         </div>
         
         <div class="box email">
-            <img class="email-img" src="./img/00頁首/Email.png" alt="">
+            <a href="mailto:marine@cpami.gov.tw " target="_blank">
+                <img class="email-img" src="./img/00頁首/Email.png" alt="">
+            </a>
         </div>
         
         <div class="box fb">
-            <img class="fb-img" src="./img/00頁首/FB.png" alt="">
+            <a href="https://www.facebook.com/penghunp" target="_blank">
+               <img class="fb-img" src="./img/00頁首/FB.png" alt=""> 
+            </a> 
         </div>
-        
-            <img class="wave" src="./img/00頁首/wave.png" alt="">
+
+        <img class="wave" src="./img/00頁首/wave.png" alt="">
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
@@ -225,8 +234,8 @@
             $(this).addClass('active')
             $('.menu-btnline').eq($(this).index()).addClass('active')
             $('.menu-text').eq($(this).index()).addClass('active')
-
         })
+
         $('.menu').click(function () {
             if ($(this).hasClass('active')) {
                 $(this).removeClass('active')
@@ -235,41 +244,9 @@
                 $(this).addClass('active')
                 $('.l-menu').addClass('active')
             }
-
         })
-
-        
-        // $( ".littleIsland" ).hover(function() {
-        // $(".island-hint" ).addClass("active");}, 
-        // function() {
-        // $(".island-hint").toggleClass("active");
-        // });
-
-     $( ".littleIsland" ).hover(function() {
-    $( ".islandHint" ).each(function() {
-    $( this ).toggleClass( "active" );
-  });
-});
-
-// function islandHint(evt, islandName) {
-//         var i, islandHint,littleIsland;
-//         islandHint = document.getElementsByClassName("island-hint");
-//         for (i = 0; i < islandHint.length; i++) {
-//             islandHint[i].style.opacity = "1";
-//         }
-//         littleIsland = document.getElementsByClassName("littleIsland");
-//         for (i = 0; i < littleIsland.length; i++) {
-//             littleIsland[i].className = littleIsland[i].className.replace(" active", "");
-//         }
-//         document.getElementById(islandName).style.opacity = "0";
-//         evt.currentTarget.className += "active";
-//         }
-
+     
     </script>
-
-
-    
-
 </body>
 
 </html>
