@@ -115,7 +115,7 @@ body {
                 top: -12%;
             }
             @media (max-width: 768px){
-                top: -20%;
+                top: -22%;
                 right: 10%;
             }
             @media (max-width: 576px){
@@ -157,10 +157,12 @@ body {
             @media (max-width: 1600px){
                 top: -32%;
             }
-            
             @media (max-width: 768px){
-                top: -40%;
+                top: -30%;
                 right: 10%;
+            }
+            @media (max-width: 576px){
+                top: -45%;
             }
         } 
     }
@@ -179,6 +181,7 @@ body {
         }
         @media (max-width: 768px){
             width: 213px;
+            top: 35%;
         }
         @media (max-width: 576px){
             width: 149px;
@@ -204,7 +207,7 @@ body {
                 left: 62%;
             }
             @media (max-width: 768px){
-                top: -90%;
+                top: -95%;
                 left: 65%;
             }
         }
@@ -245,8 +248,11 @@ body {
                 left: 38%;
             }
             @media (max-width: 768px){
-                top: -90%;
+                top: -80%;
                 left: 40%;
+            }
+            @media (max-width: 576px){
+                top: -95%;
             }
         }
     }
@@ -417,7 +423,7 @@ body {
             width: 24px;
         }
         @media (max-width: 576px){
-            top: 41%;
+            top: 42%;
             left: 22%;
             width: 15px;
         }
@@ -1099,20 +1105,24 @@ body {
         .hint{
             @media (max-width: 1600px){
                 width: 85px;
+                height: 135px;
             }
             @media (max-width: 1200px) { 
                 width: 70px;
+                height: 111px;
                 font-size: 16px;
                 line-height: 70px;
             } 
             @media (max-width: 768px){
                 width: 60px;
+                height: 96px;
                 font-size: 14px;
                 line-height: 60px;
                 letter-spacing: 0;
             }
             @media (max-width: 576px){
                 width: 50px;
+                height: 79px;
                 font-size: 12px;
                 line-height: 50px;
                 letter-spacing: 0;

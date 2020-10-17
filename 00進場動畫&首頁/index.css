@@ -306,7 +306,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .east .east-hint {
-    top: -20%;
+    top: -22%;
     right: 10%;
   }
 }
@@ -380,8 +380,14 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .west .west-hint {
-    top: -40%;
+    top: -30%;
     right: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .west .west-hint {
+    top: -45%;
   }
 }
 
@@ -406,6 +412,7 @@ body {
 @media (max-width: 768px) {
   .wholeMap .littleEast {
     width: 213px;
+    top: 35%;
   }
 }
 
@@ -455,7 +462,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .littleEast .littleEast-hint {
-    top: -90%;
+    top: -95%;
     left: 65%;
   }
 }
@@ -523,8 +530,14 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .littleWest .littleWest-hint {
-    top: -90%;
+    top: -80%;
     left: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .littleWest .littleWest-hint {
+    top: -95%;
   }
 }
 
@@ -819,7 +832,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .island4 {
-    top: 41%;
+    top: 42%;
     left: 22%;
     width: 15px;
   }
@@ -1956,12 +1969,14 @@ body {
 @media (max-width: 1600px) {
   .wholeMap .box .hint {
     width: 85px;
+    height: 135px;
   }
 }
 
 @media (max-width: 1200px) {
   .wholeMap .box .hint {
     width: 70px;
+    height: 111px;
     font-size: 16px;
     line-height: 70px;
   }
@@ -1970,6 +1985,7 @@ body {
 @media (max-width: 768px) {
   .wholeMap .box .hint {
     width: 60px;
+    height: 96px;
     font-size: 14px;
     line-height: 60px;
     letter-spacing: 0;
@@ -1979,6 +1995,7 @@ body {
 @media (max-width: 576px) {
   .wholeMap .box .hint {
     width: 50px;
+    height: 79px;
     font-size: 12px;
     line-height: 50px;
     letter-spacing: 0;
