@@ -1,0 +1,254 @@
+@import "../default";
+@import "../mixin";
+* {
+    box-sizing: border-box;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url(../img/02生態探索/動物底圖.png);
+    // background-position: center;
+    background-size: cover;
+    // height: 200vh;
+}
+
+// logo
+.logo {
+    @include logo;
+    z-index: 5;
+}
+
+// menu開關
+.menu {
+    @include menu;
+}
+
+// menu效果
+.menu-btnline.active,
+.menu-text.active,
+.menu-btn.active {
+    display: none;
+}
+
+.menu.active {
+    background-color: #a1c143;
+}
+// 展開的menu// 未展開尺寸
+.l-menu {
+    @include l-menu;
+}
+
+// 展開尺寸
+.l-menu.active {
+    @include l-menu-active;
+}
+
+.page1 {
+    @include nav-word-l;
+    // background-color: blue;
+
+    .container {
+        nav {
+            @include navbar-style;
+            a {
+                text-decoration: none;
+            }
+            .title {
+                @include nav-word-l;
+            }
+            .name {
+                @include nav-word-s;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                transition: 0.3s;
+                opacity: 0.5;
+                .icon {
+                    @include icon;
+                }
+                &:hover {
+                    opacity: 1;
+                    font-weight: 900;
+                }
+            }
+            //針對不同頁面強調所對應的navbar標題
+            .name-1 {
+                font-weight: 600;
+                opacity: 1;
+                .icon {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    .title1 {
+        margin: 50px auto;
+        h1 {
+            @include page-title-style;
+            margin-bottom: 0;
+        }
+        h3 {
+            @include Sub-standard-style;
+        }
+    }
+    .content {
+        // 鳥類.兩棲.昆蟲
+        .animals-row {
+            width: 100%;
+            padding: 5%;
+            background-image: url(../img/02生態探索/鳥兩棲昆蟲底.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            .col {
+                h2 {
+                    text-align: left;
+                    color: #4c96b4;
+                    font-weight: bold;
+                }
+                .title-p {
+                    font-size: 21px;
+                    font-weight: 600;
+                    margin-top: 30px;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    color: white;
+                }
+                .animalimgs {
+                    width: 100%;
+                    margin: auto;
+                    // padding: 5%;
+                    .animals-img {
+                        margin: auto;
+                        // margin: 10%;
+                        width: 25%;
+                        padding-top: 25%;
+                        border-radius: 50%;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                }
+                .animalname {
+                    width: 100%;
+                    margin: auto;
+                    h3 {
+                        margin: auto;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            // h3 {
+            //     color: #55758c;
+            //     font-weight: bold;
+            //     margin-bottom: 20%;
+            // }
+            .img1 {
+                background-image: url(../img/02生態探索/動物/鳥類-白眉燕鷗.jpg);
+            }
+            .img2 {
+                background-image: url(../img/02生態探索/動物/鳥類-小雲雀.jpg);
+            }
+            .img3 {
+                background-image: url(../img/02生態探索/動物/鳥類-高蹺鴴.jpg);
+            }
+            .img4 {
+                background-image: url(../img/02生態探索/動物/兩棲-蝎虎.jpg);
+            }
+            .img5 {
+                background-image: url(../img/02生態探索/動物/兩棲-雨傘節.jpg);
+            }
+            .img6 {
+                background-image: url(../img/02生態探索/動物/兩棲-澤蛙.jpg);
+            }
+            .img7 {
+                background-image: url(../img/02生態探索/動物/昆蟲-沖繩小灰蝶.jpg);
+            }
+            .img8 {
+                background-image: url(../img/02生態探索/動物/昆蟲-黃紋粉蝶.jpg);
+            }
+            .img9 {
+                background-image: url(../img/02生態探索/動物/昆蟲-長喙天蛾.jpg);
+            }
+        }
+        .otherimg {
+            width: 100%;
+            box-sizing: border-box;
+            background-image: url(../img/02生態探索/其他底.png);
+            border-radius: 50px;
+            background-size: cover;
+            background-position: center;
+            padding: 5%;
+            .col {
+                width: 100%;
+                h2 {
+                    text-align: left;
+                    color: #4c96b4;
+                    font-weight: bold;
+                }
+                .other {
+                    .title-p {
+                        width: 80%;
+                        font-size: 21px;
+                        font-weight: 600;
+                        margin-top: 30px;
+                        letter-spacing: 2px;
+                        text-align: left;
+                        color: white;
+                    }
+                    .animalimgs-img {
+                        width: 50%;
+                        margin: auto;
+                        .img10 {
+                            width: 70%;
+                            padding-top: 70%;
+                            padding-left: -30%;
+                            border-radius: 50%;
+                            margin: auto;
+                            background-image: url(../img/02生態探索/動物/其他-短腕陸寄居蟹.jpg);
+                            // background-color: white;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        h3 {
+                            margin: auto;
+                            color: white;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 海鷗
+.seagull {
+    position: fixed;
+    right: 30%;
+    top: 15%;
+}
+
+// 波浪
+.wave {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+// 小船
+.boat {
+    position: fixed;
+    right: 5%;
+    bottom: 8%;
+}
+
+footer {
+    @include footer;
+}

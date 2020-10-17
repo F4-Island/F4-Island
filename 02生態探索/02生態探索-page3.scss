@@ -1,0 +1,171 @@
+@import "../default";
+@import "../mixin";
+* {
+    box-sizing: border-box;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url(../img/02生態探索/植物底圖.png);
+    // background-position: center;
+    background-size: cover;
+    // height: 200vh;
+}
+
+// logo
+.logo {
+    @include logo;
+    z-index: 5;
+}
+
+// menu開關
+.menu {
+    @include menu;
+}
+
+// menu效果
+.menu-btnline.active,
+.menu-text.active,
+.menu-btn.active {
+    display: none;
+}
+
+.menu.active {
+    background-color: #a1c143;
+}
+// 展開的menu// 未展開尺寸
+.l-menu {
+    @include l-menu;
+}
+
+// 展開尺寸
+.l-menu.active {
+    @include l-menu-active;
+}
+
+.page1 {
+    @include nav-word-l;
+    // background-color: blue;
+
+    .container {
+        nav {
+            @include navbar-style;
+            a {
+                text-decoration: none;
+            }
+            .title {
+                @include nav-word-l;
+            }
+            .name {
+                @include nav-word-s;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                transition: 0.3s;
+                opacity: 0.5;
+                .icon {
+                    @include icon;
+                }
+                &:hover {
+                    opacity: 1;
+                    font-weight: 900;
+                }
+            }
+            //針對不同頁面強調所對應的navbar標題
+            .name-1 {
+                font-weight: 600;
+                opacity: 1;
+                .icon {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    .title1 {
+        margin: 50px auto;
+        h1 {
+            @include page-title-style;
+            margin-bottom: 0;
+        }
+        h3 {
+            @include Sub-standard-style;
+        }
+    }
+    .content {
+        .title-p {
+            font-size: 21px;
+            font-weight: 600;
+            margin-top: 30px;
+            letter-spacing: 2px;
+        }
+        .plant-row{
+            width: 100%;
+            .plant-img{
+                margin: auto;
+                width: 80%;
+                height: 0;
+                padding-top: 80%;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10%;
+                // background-color: springgreen;
+            }
+            h3{
+                color: #55758C;
+                font-weight: bold;
+                margin-bottom: 20%;
+            }
+            .img1{
+                background-image: url(../img/02生態探索/植物/澎湖決明.jpg);
+            }
+            .img2{
+                background-image: url(../img/02生態探索/植物/密毛爵床（澎湖爵床）.jpg);
+            }
+            .img3{
+                background-image: url(../img/02生態探索/植物/銀合歡.jpg);
+            }
+            .img4{
+                background-image: url(../img/02生態探索/植物/雞殤刺.jpeg);
+            }
+            .img5{
+                background-image: url(../img/02生態探索/植物/茅毛珍珠菜.jpg);
+            }
+            .img6{
+                background-image: url(../img/02生態探索/植物/仙人掌.jpg);
+            }
+        }
+        
+        
+    }
+}
+
+
+// 海鷗
+.seagull {
+    position: fixed;
+    right: 30%;
+    top: 15%;
+}
+
+// 波浪
+.wave {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+// 小船
+.boat {
+    position: fixed;
+    right: 5%;
+    bottom: 8%;
+}
+
+footer {
+    @include footer;
+}
