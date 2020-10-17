@@ -153,23 +153,27 @@ body {
 
 // 申請按鈕
 .application {
-     a {
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-    width: 300px;
-    height: 50px;
-    background-color:#DF675E;
-    border-radius: 30px;
-    text-align: center;
-    line-height: 50px;
+    a {
+   color: white;
+   font-size: 30px;
+   font-weight: 600;
+   width: 300px;
+   height: 50px;
+   background-color:#DF675E;
+   border-radius: 30px;
+   text-align: center;
+   line-height: 50px;
+   padding: 10px 60px;
+   margin:15px;
+   letter-spacing: 2px;
 }
-    .title-p{
-        font-size: 25px;
-    }
-
+   .title-p{
+       font-size: 28px;
+       font-weight: 600;
+       margin-top: 5px;
+       letter-spacing: 1px;
+   }
 }
-
 
 // 波浪
 .wave {
