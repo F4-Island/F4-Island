@@ -14,9 +14,16 @@ body {
 }
 
 .logo {
+  width: 12%;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 25px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
 }
 
 .menu {
@@ -30,8 +37,35 @@ body {
   border-radius: 50%;
   z-index: 101;
   color: white;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu:hover {
+  width: 11vw;
+  height: 11vw;
+}
+
+@media (max-width: 1200px) {
+  .menu:hover {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu:hover {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu:hover {
+    width: 21vw;
+    height: 21vw;
+  }
 }
 
 .menu .menu-btn {
@@ -53,6 +87,27 @@ body {
   right: 45%;
   display: block;
   font-size: 1vw;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    width: 17vw;
+    height: 17vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    width: 20vw;
+    height: 20vw;
+  }
 }
 
 .menu-btnline.active,
@@ -80,6 +135,10 @@ body {
   transition: 0.6s;
 }
 
+.l-menu a {
+  text-decoration: none;
+}
+
 .l-menu .menu-list {
   position: relative;
   top: 50%;
@@ -98,11 +157,16 @@ body {
 .l-menu .menu-list li a span {
   font-size: 1.18vw;
   color: #fff;
+  font-weight: 700;
   display: block;
   line-height: 3;
   opacity: 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.l-menu .menu-list li a span:hover {
+  color: #b8cad3;
 }
 
 .l-menu.active {
@@ -116,12 +180,68 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 1200px) {
+  .l-menu.active {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .l-menu.active {
+    width: 32vw;
+    height: 32vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .l-menu.active {
+    width: 34vw;
+    height: 34vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .l-menu.active {
+    width: 38vw;
+    height: 38vw;
+  }
+}
+
 .page {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
   color: white;
   letter-spacing: 2px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+@media (max-width: 1200px) {
+  .page {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
 }
 
 .page .container nav {
@@ -130,6 +250,37 @@ body {
   border-radius: 0 0 15px 15px;
   background-color: #3281A5;
   padding: 0 5%;
+  z-index: 0;
+}
+
+@media (max-width: 1200px) {
+  .page .container nav {
+    width: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .page .container nav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page .container nav {
+    width: 80%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page .container nav {
+    width: 90%;
+    padding: 0 2%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 
 .page .container nav a {
@@ -146,6 +297,32 @@ body {
   font-size: 24px;
   color: white;
   letter-spacing: 2px;
+}
+
+@media (max-width: 1200px) {
+  .page .container nav .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page .container nav .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page .container nav .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page .container nav .title {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
 }
 
 .page .container nav .name {
@@ -166,6 +343,31 @@ body {
   opacity: 0.5;
 }
 
+@media (max-width: 1200px) {
+  .page .container nav .name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page .container nav .name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page .container nav .name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page .container nav .name {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
 .page .container nav .name .icon {
   width: 15px;
   height: 15px;
@@ -175,6 +377,37 @@ body {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .page .container nav .name .icon {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page .container nav .name .icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page .container nav .name .icon {
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page .container nav .name .icon {
+    width: 7px;
+    height: 7px;
+    margin-right: 1px;
+  }
 }
 
 .page .container nav .name:hover {
@@ -193,8 +426,7 @@ body {
 
 .content-box {
   width: 100vw;
-  height: 70vh;
-  background-color: #318eda;
+  height: 100vh;
 }
 
 .content-box .tab {
@@ -202,6 +434,12 @@ body {
   float: right;
   width: 30%;
   height: 100%;
+  padding-top: 40vh;
+  background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
+  background-size: cover;
+}
+
+.content-box .tab .tab-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,9 +451,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.content-box .tab .tablinks {
+.content-box .tab .tab-btn .tablinks {
   width: 40%;
   height: 30%;
   margin: 0 2%;
@@ -229,7 +469,7 @@ body {
   z-index: 99;
 }
 
-.content-box .tab .tablinks h1 {
+.content-box .tab .tab-btn .tablinks h1 {
   position: absolute;
   top: calc(50% - 10px);
   left: calc(50% - 10px);
@@ -240,13 +480,13 @@ body {
   font-size: 26px;
 }
 
-.content-box .tab .tablinks:hover::before {
+.content-box .tab .tab-btn .tablinks:hover::before {
   background-color: #1c99af;
   -webkit-transform: translate(10px, 10px);
           transform: translate(10px, 10px);
 }
 
-.content-box .tab .tablinks:hover h1 {
+.content-box .tab .tab-btn .tablinks:hover h1 {
   color: white;
   top: 50%;
   left: 50%;
@@ -254,11 +494,11 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.content-box .tab .tablinks .active {
+.content-box .tab .tab-btn .tablinks .active {
   background-color: #ccc;
 }
 
-.content-box .tab .tablinks::before {
+.content-box .tab .tab-btn .tablinks::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -283,30 +523,65 @@ body {
   background-position: center;
 }
 
-.content-box .tabcontent p {
-  width: 50%;
+.content-box .tabcontent .text .text-box {
+  margin: auto;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgba(62, 67, 71, 0.8);
+  padding: 10px;
+}
+
+.content-box .tabcontent .text .text-box p {
   text-align: justify;
 }
 
 .content-box .tab1 {
-  background-image: url(../img/03四島奇旅/01東嶼坪嶼/梯田式菜宅.jpg);
+  background-image: url(../img/認識四島/東吉嶼.png);
 }
 
 .content-box .tab2 {
-  background-image: url(../img/03四島奇旅/02西嶼坪嶼/華娘廟-1.jpg);
+  background-image: url(../img/認識四島/西吉嶼.png);
 }
 
 .content-box .tab3 {
-  background-image: url(../img/03四島奇旅/03東吉嶼/東吉之眼.jpg);
+  background-image: url(../img/認識四島/東嶼坪嶼.png);
 }
 
 .content-box .tab4 {
-  background-image: url(../img/03四島奇旅/04西吉嶼/北岸海蝕洞.jpg);
+  background-image: url(../img/認識四島/西嶼坪嶼.png);
 }
 
 .content-box .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+
+.tab-btn.abc .tablinks.abc {
+  position: relative;
+  background-color: #1c99af;
+}
+
+.tab-btn.abc .tablinks.abc::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  background-color: none;
+}
+
+.tab-btn.abc .tablinks.abc h1 {
+  position: relative;
+  top: 20px;
+  right: 50px;
+  color: white;
+}
+
+.tabcontent.abc {
+  display: block;
+  background-image: url(../img/認識四島/東吉嶼.png);
 }
 /*# sourceMappingURL=01認識我們-page3.css.map */

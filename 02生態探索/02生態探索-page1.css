@@ -1,0 +1,549 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  background-image: url(../img/02生態探索/珊瑚礁生態底圖.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.loading-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgb(22, 49, 81); */
+  background: black;
+  z-index: 99999;
+}
+
+.loading {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-75px, -75px);
+          transform: translate(-75px, -75px);
+  border-radius: 100px;
+}
+
+.logo {
+  width: 12%;
+  position: fixed;
+  top: 20px;
+  left: 25px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: -30px;
+  right: -30px;
+  width: 10vw;
+  height: 10vw;
+  background-color: #de675e;
+  text-shadow: none;
+  border-radius: 50%;
+  z-index: 101;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu:hover {
+  width: 11vw;
+  height: 11vw;
+}
+
+@media (max-width: 1200px) {
+  .menu:hover {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu:hover {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu:hover {
+    width: 21vw;
+    height: 21vw;
+  }
+}
+
+.menu .menu-btn {
+  width: 100%;
+  height: 100%;
+}
+
+.menu .menu-btn .menu-btnline {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  font-size: 10px;
+  display: block;
+}
+
+.menu .menu-btn .menu-text {
+  position: absolute;
+  top: 55%;
+  right: 45%;
+  display: block;
+  font-size: 1vw;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    width: 17vw;
+    height: 17vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+.menu-btnline.active,
+.menu-text.active,
+.menu-btn.active {
+  display: none;
+}
+
+.menu.active {
+  background-color: #a1c143;
+}
+
+.l-menu {
+  width: 0vw;
+  height: 0vw;
+  position: fixed;
+  top: 1vw;
+  right: 2vw;
+  z-index: 5;
+  background-color: #1c72b2;
+  border-radius: 50%;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.l-menu a {
+  text-decoration: none;
+}
+
+.l-menu .menu-list {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  list-style: none;
+}
+
+.l-menu .menu-list li {
+  list-style: none;
+}
+
+.l-menu .menu-list li a span {
+  font-size: 1.18vw;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  line-height: 3;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.l-menu .menu-list li a span:hover {
+  color: #b8cad3;
+}
+
+.l-menu.active {
+  width: 25vw;
+  height: 25vw;
+  opacity: 1;
+}
+
+.l-menu.active li a span {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .l-menu.active {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .l-menu.active {
+    width: 32vw;
+    height: 32vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .l-menu.active {
+    width: 34vw;
+    height: 34vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .l-menu.active {
+    width: 38vw;
+    height: 38vw;
+  }
+}
+
+.page1 {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1200px) {
+  .page1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+.page1 .container nav {
+  width: 70%;
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+  background-color: #3281A5;
+  padding: 0 5%;
+  z-index: 0;
+}
+
+@media (max-width: 1200px) {
+  .page1 .container nav {
+    width: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav {
+    width: 80%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav {
+    width: 90%;
+    padding: 0 2%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.page1 .container nav a {
+  text-decoration: none;
+}
+
+.page1 .container nav a {
+  text-decoration: none;
+}
+
+.page1 .container nav .title {
+  font-family: Microsoft JhengHei;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1200px) {
+  .page1 .container nav .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav .title {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+.page1 .container nav .name {
+  font-family: Microsoft JhengHei;
+  font-weight: 400;
+  font-size: 21px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .page1 .container nav .name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav .name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav .name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav .name {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+.page1 .container nav .name .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 10px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .page1 .container nav .name .icon {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav .name .icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav .name .icon {
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav .name .icon {
+    width: 7px;
+    height: 7px;
+    margin-right: 1px;
+  }
+}
+
+.page1 .container nav .name:hover {
+  opacity: 1;
+  font-weight: 900;
+}
+
+.page1 .container nav .name-1 {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.page1 .container nav .name-1 .icon {
+  opacity: 1;
+}
+
+.content .title {
+  margin: 50px auto;
+}
+
+.content .title h1 {
+  color: #24999F;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.content .title h3 {
+  color: #24999F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: Arno Pro;
+  opacity: 0.5;
+}
+
+.card {
+  background-color: #307c9e;
+  border-radius: 30px;
+  color: white;
+}
+
+.card .roundimg {
+  margin: 10% auto 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .card-body {
+  line-height: 30px;
+}
+
+.card .card-body h5 {
+  font-weight: 900;
+}
+
+.card .card-body p {
+  text-align: left;
+}
+
+.coral {
+  background-image: url(/img/02生態探索/珊瑚礁生態/珊瑚.jpg);
+}
+
+.seaweed {
+  background-image: url(/img/02生態探索/珊瑚礁生態/藻類.jpg);
+}
+
+.fish {
+  background-image: url(/img/02生態探索/珊瑚礁生態/魚類.jpg);
+}
+
+.invertebrates {
+  background-image: url(/img/02生態探索/珊瑚礁生態/無脊椎.jpg);
+}
+
+.seagull {
+  position: fixed;
+  right: 30%;
+  top: 15%;
+}
+
+.wave {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+
+.boat {
+  position: fixed;
+  right: 5%;
+  bottom: 8%;
+}
+
+footer {
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 0.5vw;
+  line-height: 0.5vw;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=02生態探索-page1.css.map */

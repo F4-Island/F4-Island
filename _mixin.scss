@@ -1,3 +1,13 @@
+//navbar樣式
+@mixin logo{
+    width: 12%;
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    @media (max-width: 576px){
+        display: none;
+    }
+}
 
 @mixin navbar-style {
     width: 70%;
@@ -5,33 +15,109 @@
     border-radius: 0 0 15px 15px;
     background-color: #3281A5;
     padding: 0 5%;
-        a{
-            text-decoration: none;
-        }
+    z-index: 0;
+    @media (max-width: 1200px){
+        width: 65%;
+    }
+    @media (max-width: 992px){
+        width: 80%;
+    }
+    @media (max-width: 768px){
+        width: 80%;
+        height: 50px;
+    }
+    @media (max-width: 576px){
+        width: 90%;
+        padding: 0 2%;
+        height: 45px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    a{
+        text-decoration: none;
+    }
 }
-
+//navbar最左字
 @mixin nav-word-l {
     font-family: Microsoft JhengHei;
     font-weight: 600;
     font-size: 24px;
     color: white;
     letter-spacing: 2px;
+    @media (max-width: 1200px){
+        font-size: 22px;
+    }
+    @media (max-width: 992px){
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    @media (max-width: 768px){
+        font-size: 18px;
+    }
+    @media (max-width: 576px){
+        font-size: 14px;
+        letter-spacing: 0;
+    }
 }
-
+//navbar項目字
 @mixin nav-word-s {
     font-family: Microsoft JhengHei;
     font-weight: 400;
     font-size: 21px;
     color: white;
     letter-spacing: 2px;
+    @media (max-width: 1200px){
+        font-size: 18px;
+    }
+    @media (max-width: 992px){
+        font-size: 16px;
+    }
+    @media (max-width: 768px){
+        font-size: 14px;
+    }
+    @media (max-width: 576px){
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
 }
-
+//內文的字,看需求用
 @mixin c-word {
     font-family: Microsoft JhengHei;
     font-weight: 400;
     font-size: 15px;
     color: gray;
     letter-spacing: 2px;
+}
+
+//navbar項目的標示紅點
+@mixin icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:red;
+    margin-right: 10px;
+    opacity: 0;
+    transition: 0.5s;
+    @media (max-width: 1200px){
+        width: 13px;
+        height:13px;
+    }
+    @media (max-width: 992px){
+        width: 11px;
+        height: 11px;
+        margin-right: 5px;
+    }
+    @media (max-width: 768px){
+        width: 9px;
+        height: 9px;
+        margin-right: 3px;
+    }
+    @media (max-width: 576px){
+        width: 7px;
+        height: 7px;
+        margin-right: 1px;
+    }
 }
 
 @mixin menu {
@@ -45,7 +131,26 @@
     border-radius: 50%;
     z-index: 101;   
     color:white;
-    transition: 1s;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    &:hover{
+        width: 11vw;
+        height: 11vw;
+        @media (max-width: 1200px){
+            width: 16vw;
+            height: 16vw;
+        }
+        @media (max-width: 992px){
+            width: 18vw;
+            height: 18vw;
+        }
+        @media (max-width: 576px){
+            width: 21vw;
+            height: 21vw;
+        }
+    }
+
     .menu-btn{
         width: 100%;
         height: 100%;
@@ -64,6 +169,18 @@
             font-size: 1vw;
         }
     }
+    @media (max-width: 1200px){
+        width: 15vw;
+        height: 15vw;
+    }
+    @media (max-width: 992px){
+        width: 17vw;
+        height: 17vw;
+    }
+    @media (max-width: 576px){
+        width: 20vw;
+        height: 20vw;
+    }
 }
 
 // 展開的menu(隱藏時)
@@ -79,6 +196,9 @@
     margin: auto;
     opacity: 0;
     transition: 0.6s;
+    a{
+        text-decoration: none;
+    }
     .menu-list{
         position: relative;
         top: 50%;
@@ -93,27 +213,50 @@
                     span{
                         font-size: 1.18vw;
                         color: #fff;
+                        font-weight: 700;
                         display: block;
                         line-height: 3;
                         opacity: 0;
-                        transition: 0.6s;
+                        transition: 0.3s;
+
+                        &:hover{
+                            color: rgb(184, 202, 211);
+                        }
                     }
                 }
             }
+        }
     }
-}
+
 
 // 展開的menu(open)
 @mixin l-menu-active{
     width: 25vw;
     height: 25vw;
     opacity: 1;
+    
     li{
         a{
     span{
         opacity: 1;
             }
         }
+    }
+    @media (max-width: 1200px){
+        width: 30vw;
+        height: 30vw;
+    }
+    @media (max-width: 992px){
+        width: 32vw;
+        height: 32vw;
+    }
+    @media (max-width: 768px){
+        width: 34vw;
+        height: 34vw;
+    }
+    @media (max-width: 576px){
+        width: 38vw;
+        height: 38vw;
     }
 }  
 
@@ -142,12 +285,23 @@
 }
 
 @mixin page-title-style {
-    color: rgb(34,86,121);
+    color:#24999F;
     display: inline-block;
     align-items: center;
     letter-spacing: 3px;
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 600;
 }
+
+@mixin Sub-standard-style {
+    color:#24999F;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-family: Arno Pro;
+    opacity: 0.5;
+}
+
 
 @mixin footer{
     position: fixed;
@@ -160,4 +314,47 @@
     font-size: 0.5vw;
     line-height: 0.5vw;
     letter-spacing: 1px;
+}
+
+//00頁首地標
+@mixin mainIsland-hint {
+    background-image: url(../img/00頁首/四島地標圖.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 104px;
+    height: 165px;
+    font-size: larger;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+
+@mixin subIsland-hint {
+    background-image: url(../img/00頁首/附屬地標圖.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 104px;
+    height: 165px;
+    font-size: larger;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 100px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+@mixin others-hint{
+        background-image: url(../img/00頁首/生態hover.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 151px;
+        height: 100px;
+        font-size: larger;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 88px;
+        color: white;
+        // opacity: 0;
+        transition: 0.3s;
 }

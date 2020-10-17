@@ -8,7 +8,9 @@
 }
 
 body {
-    background-color: $bg-white;
+    background-image: url(../img/03四島奇旅/四島奇旅底圖.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 // loading遮蓋區
@@ -24,9 +26,7 @@ body {
 
 // logo
 .logo {
-    position: fixed;
-    top: 20px;
-    left: 25px;
+    @include logo;
 }
 
 // menu開關
@@ -77,17 +77,9 @@ body {
                 transition:0.3s;
                 opacity: 0.5;
                 .icon{
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background-color:red;
-                    margin-right: 10px;
-                    opacity: 0;
-                    transition: 0.5s;
+                    @include icon;
                 }
-                // &:hover .icon{
-                //     opacity: 1;
-                // }
+                
                 &:hover {
                     opacity: 1;
                     font-weight: 900;

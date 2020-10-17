@@ -17,25 +17,26 @@ body {
     width: 100%;
     height: 100%;
     /* background: rgb(22, 49, 81); */
-    background:black;
+    background:white;
     z-index: 999;
 
 }
-// loading燈塔
+// loading飛機
 .loading {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 500px;
+    height: 500px;
     top: 50%;
     left: 50%;
-    transform: translate(-75px , -75px);
-    border-radius: 100px;
+    transform: translate(-50% , -50%);
+    // border-radius: 100px;
 }
 
 // menu開關
 .menu{
     width: 100%;
     @include menu;
+    
 }
 
 // menu效果
@@ -68,71 +69,462 @@ body {
     height: 100vh;
     .logo{
         position: absolute;
-        top: 5%;
+        top: 4%;
         left: 50%;
         transform: translate(-50%,0);
+        @media (max-width: 1200px) { 
+            width: 30%;
+        } 
+        @media (max-width: 768px){
+            width: 30%;
+        }
+        @media (max-width: 576px){
+            width: 45%;
+            top: 10%;
+        }
     }
+    //東吉嶼
     .east{
         position: absolute;
-        top: 38%;
-        right: 5%;
-        filter: drop-shadow(40px 40px 10px rgb(89, 167, 179));
+        top: 36%;
+        right: 2%;
+        @media (max-width: 1200px){
+            width: 373px;
+        }
+        @media (max-width: 768px){
+            width: 250px;
+        }
+        @media (max-width: 576px){
+            width: 175px;
+            right: 2%;
+        }
+        .east-img{
+            @media (max-width: 1200px){
+                width: 100%;
+            }
+        }
+        .east-hint{
+            position: absolute;
+            top: -5%;
+            right: 10%;
+            @include mainIsland-hint;
+            @media (max-width: 1200px){
+                top: -30%;
+            } 
+            @media (max-width: 768px){
+                top: -20%;
+                right: 10%;
+            }
+            @media (max-width: 576px){
+                top: -30%;
+                right: 10%;
+            }
+        }
     }
+    
+    
+
+    //西吉嶼
     .west{
         position: absolute;
         top: 52%;
-        right: 36%;
+        right: 35%;
+        @media (max-width: 1200px){
+            width: 237px;
+        }
+        @media (max-width: 768px){
+            width: 203px;
+        }
+        @media (max-width: 576px){
+            width: 142px;
+            right: 30%;
+        }
+        .west-img{
+            @media (max-width: 1200px){
+                width: 100%;
+            }
+        }
+        .west-hint{
+            position: absolute;
+            top: -20%;
+            right: 8%;
+            @include mainIsland-hint;
+            @media (max-width: 1200px){
+                top: -60%;
+            }
+            @media (max-width: 768px){
+                top: -40%;
+                right: 10%;
+            }
+        } 
     }
+    
+
+    //東嶼坪嶼
     .littleEast{
         position: absolute;
-        top: 40%;
-        left: 18%;
+        top: 38%;
+        left: 17%;
+        @media (max-width: 1200px){
+            width: 250px;
+        }
+        @media (max-width: 768px){
+            width: 213px;
+        }
+        @media (max-width: 576px){
+            width: 149px;
+            left: 5%;
+        }
+        .littleEast-img{
+            @media (max-width: 1200px){
+                width: 100%;
+            }
+        } 
+        .littleEast-hint{
+            position: absolute;
+            top: -60%;
+            left: 70%;
+            @include mainIsland-hint;
+            @media (max-width: 1200px){
+                top: -120%;
+                left: 60%;
+            }
+            @media (max-width: 768px){
+                top: -90%;
+                left: 65%;
+            }
+        }
     }
+    
+    
+    //西嶼坪嶼
     .littleWest{
         position: absolute;
-        top: 25%;
-        left: 18%;
+        top: 23%;
+        left: 16%;
+        @media (max-width: 1200px){
+            width: 155px;
+        }
+        @media (max-width: 768px){
+            width: 132px;
+        }
+        @media (max-width: 576px){
+            width: 92px;
+            left: 5%;
+        }
+        .littleWest-img{
+            @media (max-width: 1200px){
+                width: 100%;
+            }
+        } 
+        .littleWest-hint{
+            position: absolute;
+            top: -55%;
+            left: 50%;
+            @include mainIsland-hint;
+            @media (max-width: 1200px){
+                top: -125%;
+                left: 30%;
+            }
+            @media (max-width: 768px){
+                top: -90%;
+                left: 40%;
+            }
+        }
     }
+    
+    //附屬島嶼
     .island1{
         position: absolute;
-        top: 6%;
-        left: 7%;
+        top: 12%;
+        left: 5%;
+        @media (max-width: 1200px){
+            left: 3%;
+        }
+        @media (max-width: 768px){
+            top: 6%;
+            left: 0;
+        }
+        @media (max-width: 576px){
+            top: 10%;
+        }
+        .island1-hint{
+            position: absolute;
+            top: -120%;
+            left: 0%;
+            @include subIsland-hint;
+            @media (max-width: 1200px){
+                top: -140%;
+                left: 5%;
+            }
+            @media (max-width: 768px){
+                top: -70%;
+                left: 5%;
+            }
+            @media (max-width: 576px){
+                top: -150%;
+            }
+        }
+        &:hover .island1-hint{
+            opacity: 1;
+        }
     }
+    
     .island2{
         position: absolute;
-        top: 15%;
-        left: 15%;
+        top: 18%;
+        left: 14%;
+        @media (max-width: 1200px){
+            left: 12%;
+        }
+        @media (max-width: 768px){
+            top: 15%;
+            left: 10%;
+        }
+        @media (max-width: 576px){
+            left: 15%;
+        }
+        .island2-hint{
+            position: absolute;
+            top: -195%;
+            left: 5%;
+            @include subIsland-hint;
+            @media (max-width: 1200px){
+                top: -210%;
+            }
+            @media (max-width: 768px){
+                top: -125%;
+                left: 25%;
+            }
+            @media (max-width: 576px){
+                top: -190%;
+                left: 5%;
+            }
+        }
+        &:hover .island2-hint{
+            opacity: 1;
+        }
     }
+    
     .island3{
         position: absolute;
-        top: 40%;
-        left: 14%;
+        top: 39%;
+        left: 13%;
+        @media (max-width: 1200px){
+            top: 35%;
+        }
+        @media (max-width: 768px){
+            top: 33%;
+        }
+        @media (max-width: 576px){
+            left: 18%;
+            top: 30%;
+        }
+        .island3-hint{
+            position: absolute;
+            top: -210%;
+            left: -10%;
+            @include subIsland-hint;
+            @media (max-width: 1200px){
+                top: -230%;
+            }
+            @media (max-width: 768px){
+                top: -150%;
+                left: 5%;
+            }
+            @media (max-width: 576px){
+                top: -220%;
+                left: 0%;
+            }
+        }
+        &:hover .island3-hint{
+            opacity: 1;
+        }
     }
+    
     .island4{
         position: absolute;
         top: 53%;
         left: 26%;
+        @media (max-width: 1200px){
+            top: 48%;
+        }
+        @media (max-width: 768px){
+            top: 45%;
+            left: 28%;
+        }
+        @media (max-width: 576px){
+            top: 43%;
+        }
+        .island4-hint{
+            position: absolute;
+            top: -420%;
+            left: -80%;
+            @include subIsland-hint;
+
+            @media (max-width: 1200px){
+                top: -455%;
+            }
+            @media (max-width: 768px){
+                top: -300%;
+                left: -25%;
+            }
+            @media (max-width: 576px){
+                top: -250%;
+            }
+        }
+        &:hover .island4-hint{
+            opacity: 1;
+        }
     }
+    
     .island5{
         position: absolute;
         top: 55%;
         left: 6%;
+        @media (max-width: 1200px){
+            top: 52%;
+        }
+        @media (max-width: 768px){
+            top: 50%;
+            left: 3%;
+        }
+        .island5-hint{
+            position: absolute;
+            top: -160%;
+            left: -10%;
+            @include subIsland-hint;
+            @media (max-width: 1200px){
+                top: -180%;
+            }
+            @media (max-width: 768px){
+                top: -115%;
+                left: 0;
+            }
+            @media (max-width: 576px){
+                top: -170%;
+            }
+        }
+        &:hover .island5-hint{
+            opacity: 1;
+        }
     }
+    
     .island6{
         position: absolute;
-        top: 65%;
-        left: 19%;
+        top: 60%;
+        left: 17%;
+        @media (max-width: 1200px){
+            top: 58%;
+        }
+        @media (max-width: 768px){
+            left: 12%;
+        }
+        .island6-hint{
+            position: absolute;
+            top: -160%;
+            left: -10%;
+            @include subIsland-hint;
+            @media (max-width: 1200px){
+                top: -180%;
+            }
+            @media (max-width: 768px){
+                top: -110%;
+                left: 0;
+            }
+            @media (max-width: 576px){
+                top: -160%;
+            }
+        }
+        &:hover .island6-hint{
+            opacity: 1;
+        }
     }
+    
     .island7{
         position: absolute;
-        top: 58%;
-        left: 33%;
+        top: 55%;
+        left: 32%;
+        @media (max-width: 1200px){
+            top: 53%;
+        }
+        @media (max-width: 768px){
+            top: 52%;
+            left: 30%;
+        }
+        @media (max-width: 576px){
+            top: 50%;
+        }
+        .island7-hint{
+            position: absolute;
+            top: -140%;
+            left: 0%;
+            @include subIsland-hint;
+            @media (max-width: 1200px){
+                top: -160%;
+            }
+            @media (max-width: 768px){
+                top: -90%;
+                left: 10%;
+            }
+            @media (max-width: 576px){
+                top: -140%;
+                left: 5%;
+            }
+        }
+        &:hover .island7-hint{
+            opacity: 1;
+        }
     }
+    
     .island8{
         position: absolute;
-        top: 47%;
-        right: 23%;
+        top: 45%;
+        right: 26%;
+        @media (max-width: 1200px){
+            top: 40%;
+            right: 23%;
+        }
+        @media (max-width: 768px){
+            top: 39%;
+            right: 19%;
+        }
+        @media (max-width: 576px){
+            right: 10%;
+        }
+        .island8-hint{
+            position: absolute;
+            top: -190%;
+            right: 0%;
+            @include subIsland-hint;
+            @media (max-width: 1200px){
+                top: -210%;
+            }
+            @media (max-width: 768px){
+                top: -180%;
+                right: 40%;
+            }
+            @media (max-width: 576px){
+                top: -250%;
+                right: 65%;
+            }
+        }
+        &:hover .island8-hint{
+            opacity: 1;
+        }
+        .island8-img{
+            @media (max-width: 1200px){
+                width: 80%;
+            }
+            @media (max-width: 768px){
+                width: 60%;
+            }
+            @media (max-width: 576px){
+                width: 30%;
+            }
+        }  
     }
+
     .fish-l{
         position: absolute;
         top: 30%;
@@ -140,58 +532,379 @@ body {
     }
     .fish-r{
         position: absolute;
-        top: 68%;
+        top: 73%;
         right: 30%;
+        @media (max-width: 1200px){
+            width: 200px;
+            top: 65%;
+            right: 20%;
+        }
+        @media (max-width: 768px){
+            top: 65%;
+            right: 15%;
+        }
+        @media (max-width: 576px){
+            top: 55%;
+            left: 70%;
+            width: 100px;
+        }
+        .fish-r-img{
+            @media (max-width: 1200px){
+                width: 100%;
+            }
+        }
     }
     .rock{
         position: absolute;
         bottom: 15%;
         left: 6%;
+        @media (max-width: 1200px){
+            width: 74px;
+        }
+        @media (max-width: 768px){
+            bottom: 10%;
+            left: 4%;
+        }
+        @media (max-width: 576px){
+            bottom: 17%;
+            left: 10%;
+            width: 80px;
+        }
+        .rock-img{
+            @media (max-width: 1200px){
+                width: 100%;
+            }
+        }
+        .rock-hint{
+            position: absolute;
+            bottom: 110%;
+            left: -20%;
+            @include others-hint;
+            @media (max-width: 1200px){
+                left: -60%;
+            }
+            @media (max-width: 576px){
+                bottom: 24%;
+                left: -15%;
+                opacity: 1;
+            } 
+        }
+        .rock-shadow{
+            position: absolute;
+            bottom: -55%;
+            left: -35%;
+            // opacity: 0;
+            transition: 0.3s;
+            @media (max-width: 1200px){
+                width: 170%;
+                bottom: -65%;
+            }
+            @media (max-width: 576px){
+                left: 0;
+                width: 70%;
+                opacity: 1;
+            } 
+        }
+        &:hover .rock-hint {
+            opacity: 1;
+        }
+        &:hover .rock-shadow{
+            opacity: 1;
+        }
     }
+    
+
     .animal{
         position: absolute;
         bottom: 15%;
         left: 15%;
+        @media (max-width: 1200px){
+            width: 95px;
+            left: 18%;
+        }
+        @media (max-width: 768px){
+            bottom: 10%;
+            left: 16%;
+        }
+        @media (max-width: 576px){
+            bottom: 17%;
+            left: 32%;
+            width: 80px;
+        }
+        .animal-img{
+            width: 100%;
+        }
+        .animal-hint{
+            position: absolute;
+            bottom: 200%;
+            left: 0%;
+            @include others-hint;
+            @media (max-width: 1200px){
+                left: -35%;
+            }
+            @media (max-width: 576px){
+              bottom: 45%; 
+              left: -10%;
+              opacity: 1; 
+            }
+        }
+        .animal-shadow{
+            position: absolute;
+            bottom: -100%;
+            left: -20%;
+            // opacity: 0;
+            transition: 0.3s;
+            @media (max-width: 1200px){
+                width: 145%;
+                bottom: -120%;
+            }
+            @media (max-width: 576px){
+                left: 0;
+                width: 90%;
+                opacity: 1;
+            } 
+        }
+        &:hover .animal-hint{
+            opacity: 1;
+        }
+        &:hover .animal-shadow{
+            opacity: 1;
+        }
     }
+    
+
     .plant{
         position: absolute;
         bottom: 15%;
         left: 25%;
+        @media (max-width: 1200px){
+            width: 78px;
+            left: 31%;
+        }
+        @media (max-width: 768px){
+            bottom: 10%;
+            left: 31%;
+        }
+        @media (max-width: 576px){
+            bottom: 17%;
+            left: 55%;
+            width: 80px;
+        }
+        .plant-img{
+            width: 100%;
+        }
+        .plant-hint{
+            position: absolute;
+            bottom: 110%;
+            left: 0%;
+            @include others-hint;
+            @media (max-width: 1200px){
+                left: -36%;
+            }
+            @media (max-width: 576px){
+                bottom: 25%;
+                left: -8%;
+                opacity: 1;
+            }
+        }
+        .plant-shadow{
+            position: absolute;
+            bottom: -50%;
+            left: 9%;
+            // opacity: 0;
+            transition: 0.3s;
+            @media (max-width: 1200px){
+                left: 12%;
+            }
+            @media (max-width: 576px){
+                left: 0;
+                width: 80%;
+                opacity: 1;
+            } 
+        }
+        &:hover .plant-hint{
+            opacity: 1;
+        }
+        &:hover .plant-shadow{
+            opacity: 1;
+        }
     }
+    
+
     .carol{
         position: absolute;
         bottom: 15%;
         left: 35%;
+        @media (max-width: 1200px){
+            width: 84px;
+            left: 43%;
+        }
+        @media (max-width: 768px){
+            bottom: 10%;
+            left: 43%;
+        }
+        @media (max-width: 576px){
+            bottom: 17%;
+            left: 75%;
+            width: 80px;
+        }
+        .carol-img{
+            width: 100%;
+        }
+        .carol-hint{
+            position: absolute;
+            bottom: 110%;
+            left: 0%;
+            @include others-hint;
+            @media (max-width: 1200px){
+                left: -23%;
+            }
+            @media (max-width: 576px){
+                bottom: 30%;
+                opacity: 1;
+            }
+        }
+        .carol-shadow{
+            position: absolute;
+            bottom: -50%;
+            left: 9%;
+            // opacity: 0;
+            transition: 0.3s;
+            @media (max-width: 576px){
+                left: 5%;
+                width: 90%;
+                opacity: 1;
+            } 
+        }
+        &:hover .carol-hint{
+            opacity: 1;
+        }
+        &:hover .carol-shadow{
+            opacity: 1;
+        }
     }
+    
+
     .birds{
         position: absolute;
         top: 12%;
         right: 27%;
+        @media (max-width: 1200px){
+            top: 5%;
+            right: 15%;
+        }
+        @media (max-width: 768px){
+            width: 15%;
+        }
+        @media (max-width: 576px){
+            top: 5%;
+            right: 5%;
+            width: 50%;
+        }
     }
     .cloud{
         position: absolute;
-        top: 20%;
+        top: 17%;
         right: 1%;
+        @media (max-width: 1200px){
+            width: 400px;
+        }
+        @media (max-width: 768px){
+            width: 30%;
+        }
+        @media (max-width: 576px){
+            width: 50%;
+            right: 5%;
+            width: 150px;
+        }
+        .cloud-img{
+            @media (max-width: 1200px){
+                width: 100%;
+            }
+        }
     }
     .boat{
         position: absolute;
         bottom: 8%;
         right: 12%;
         z-index: 1;
+        @media (max-width: 1200px){
+            bottom: 4%;
+        }
+        @media (max-width: 768px){
+            bottom: 3%;
+        }
+        @media (max-width: 576px){
+            width: 40%;
+            right: 30%;
+        }
     }
     .email{
         position: absolute;
         bottom: 15%;
         right: 2%;
+        @media (max-width: 768px){
+            bottom: 10%;
+        }
+        @media (max-width: 576px){
+            bottom: 8%;
+            right: 15%;
+        }
     }
     .fb{
         position: absolute;
         bottom: 15%;
         right: 6%;
+        @media (max-width: 1200px){
+            right: 8%;
+        }
+        @media (max-width: 768px){
+            bottom: 10%;
+        }
+        @media (max-width: 576px){
+            right: 30%;
+            bottom: 8%;
+        }
     }
     .wave{
         width: 100vw;
         position: absolute;
         bottom: 0;
+    }
+
+    .box{
+        img{
+            @media (max-width: 1200px) { 
+                width: 90%;
+            }
+            @media (max-width: 576px) { 
+                width: 45%;
+            }    
+        }
+        .hint{
+            @media (max-width: 768px) { 
+                width: 60px;
+                font-size: 16px;
+                line-height: 70px;
+            } 
+            @media (max-width: 576px){
+                width: 50px;
+                font-size: 12px;
+                line-height: 42px;
+                letter-spacing: 0;
+            }   
+        }
+        .others-hint{
+            @media (max-width: 768px) { 
+                width: 95px;
+                font-size: 16px;
+                line-height: 50px;
+            } 
+            @media (max-width: 576px){
+                width: 70px;
+                font-size: 12px;
+                line-height: 35px;
+            }   
+        }
     }
 }

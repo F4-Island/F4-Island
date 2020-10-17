@@ -10,15 +10,22 @@
 }
 
 body {
-  background-image: url(../img/01認識我們/02歷史與發展/);
+  background-image: url(../img/01認識我們/02歷史與發展/背景圖.png);
   background-position: center;
   background-size: cover;
 }
 
 .logo {
+  width: 12%;
   position: fixed;
   top: 20px;
   left: 25px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
 }
 
 .menu {
@@ -32,8 +39,35 @@ body {
   border-radius: 50%;
   z-index: 101;
   color: white;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu:hover {
+  width: 11vw;
+  height: 11vw;
+}
+
+@media (max-width: 1200px) {
+  .menu:hover {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu:hover {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu:hover {
+    width: 21vw;
+    height: 21vw;
+  }
 }
 
 .menu .menu-btn {
@@ -55,6 +89,27 @@ body {
   right: 45%;
   display: block;
   font-size: 1vw;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    width: 17vw;
+    height: 17vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    width: 20vw;
+    height: 20vw;
+  }
 }
 
 .menu-btnline.active,
@@ -82,6 +137,10 @@ body {
   transition: 0.6s;
 }
 
+.l-menu a {
+  text-decoration: none;
+}
+
 .l-menu .menu-list {
   position: relative;
   top: 50%;
@@ -100,11 +159,16 @@ body {
 .l-menu .menu-list li a span {
   font-size: 1.18vw;
   color: #fff;
+  font-weight: 700;
   display: block;
   line-height: 3;
   opacity: 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.l-menu .menu-list li a span:hover {
+  color: #b8cad3;
 }
 
 .l-menu.active {
@@ -117,6 +181,34 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 1200px) {
+  .l-menu.active {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .l-menu.active {
+    width: 32vw;
+    height: 32vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .l-menu.active {
+    width: 34vw;
+    height: 34vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .l-menu.active {
+    width: 38vw;
+    height: 38vw;
+  }
+}
+
 .page1 {
   font-family: Microsoft JhengHei;
   font-weight: 600;
@@ -125,12 +217,69 @@ body {
   letter-spacing: 2px;
 }
 
+@media (max-width: 1200px) {
+  .page1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
 .page1 .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
   background-color: #3281A5;
   padding: 0 5%;
+  z-index: 0;
+}
+
+@media (max-width: 1200px) {
+  .page1 .container nav {
+    width: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav {
+    width: 80%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav {
+    width: 90%;
+    padding: 0 2%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 
 .page1 .container nav a {
@@ -147,6 +296,32 @@ body {
   font-size: 24px;
   color: white;
   letter-spacing: 2px;
+}
+
+@media (max-width: 1200px) {
+  .page1 .container nav .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav .title {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
 }
 
 .page1 .container nav .name {
@@ -167,6 +342,31 @@ body {
   opacity: 0.5;
 }
 
+@media (max-width: 1200px) {
+  .page1 .container nav .name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav .name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav .name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav .name {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
 .page1 .container nav .name .icon {
   width: 15px;
   height: 15px;
@@ -176,6 +376,37 @@ body {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .page1 .container nav .name .icon {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav .name .icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav .name .icon {
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav .name .icon {
+    width: 7px;
+    height: 7px;
+    margin-right: 1px;
+  }
 }
 
 .page1 .container nav .name:hover {
@@ -207,7 +438,6 @@ body {
 .unit .row .history,
 .unit .row .development {
   height: 40vh;
-  background-color: brown;
   border-radius: 5%;
   width: 35%;
   -webkit-transition: 1s;
@@ -218,11 +448,14 @@ body {
 .unit .row .development h2 {
   line-height: 40vh;
   text-align: center;
+  text-decoration: underline;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5%;
 }
 
 .unit .row .history .text,
 .unit .row .development .text {
-  padding: 15%;
   width: 100%;
   height: 100%;
   font-size: 16px;
@@ -231,9 +464,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: darkgray;
   -webkit-transition: 1s;
   transition: 1s;
+  border-radius: 5%;
+}
+
+.unit .row .history .text .text-mask,
+.unit .row .development .text .text-mask {
+  padding: 15%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 67, 71, 0.8);
   border-radius: 5%;
 }
 
@@ -241,16 +482,26 @@ body {
 .unit .row .development:hover {
   width: 40%;
   height: 60vh;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .unit .row .history:hover h2,
 .unit .row .development:hover h2 {
   display: none;
+  background-color: rgba(62, 67, 71, 0);
 }
 
 .unit .row .history:hover .text,
 .unit .row .development:hover .text {
   display: block;
+}
+
+.unit .row .history:hover .text .text-mask,
+.unit .row .development:hover .text .text-mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(62, 67, 71, 0.6);
 }
 
 .unit .row .history.active {
@@ -272,10 +523,35 @@ body {
           transform: 1s;
 }
 
+.unit .row .history {
+  background-image: url(../img/01認識我們/02歷史與發展/歷史小.png);
+  background-position: center;
+  background-size: 300%;
+}
+
+.unit .row .history .text {
+  background-image: url(../img/01認識我們/02歷史與發展/歷史大.png);
+  background-position: center;
+  background-size: 350%;
+}
+
+.unit .row .development {
+  background-image: url(../img/01認識我們/02歷史與發展/發展小.png);
+  background-position: center;
+  background-size: 400%;
+}
+
+.unit .row .development .text {
+  background-image: url(../img/01認識我們/02歷史與發展/發展大.png);
+  background-position: center;
+  background-size: 450%;
+}
+
 .wave {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0;
+  z-index: 99;
 }
 
 .boat {

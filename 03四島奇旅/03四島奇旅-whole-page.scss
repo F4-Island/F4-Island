@@ -28,9 +28,7 @@ body {
 
 // logo
 .logo {
-    position: fixed;
-    top: 20px;
-    left: 25px;
+    @include logo;
 }
 
 // menu開關
@@ -81,17 +79,8 @@ body {
                 transition:0.3s;
                 opacity: 0.5;
                 .icon{
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background-color:red;
-                    margin-right: 10px;
-                    opacity: 0;
-                    transition: 0.5s;
+                    @include icon;
                 }
-                // &:hover .icon{
-                //     opacity: 1;
-                // }
                 .active-icon {
                     opacity: 1;
                     font-weight: 900;

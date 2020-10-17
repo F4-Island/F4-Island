@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,7 +10,9 @@
 }
 
 body {
-  background-color: #e3ece6;
+  background-image: url(../img/03四島奇旅/四島奇旅底圖.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .loading-wrapper {
@@ -35,9 +38,16 @@ body {
 }
 
 .logo {
+  width: 12%;
   position: fixed;
   top: 20px;
   left: 25px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
 }
 
 .menu {
@@ -51,8 +61,35 @@ body {
   border-radius: 50%;
   z-index: 101;
   color: white;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu:hover {
+  width: 11vw;
+  height: 11vw;
+}
+
+@media (max-width: 1200px) {
+  .menu:hover {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu:hover {
+    width: 18vw;
+    height: 18vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu:hover {
+    width: 21vw;
+    height: 21vw;
+  }
 }
 
 .menu .menu-btn {
@@ -74,6 +111,27 @@ body {
   right: 45%;
   display: block;
   font-size: 1vw;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    width: 17vw;
+    height: 17vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    width: 20vw;
+    height: 20vw;
+  }
 }
 
 .menu-btnline.active,
@@ -101,6 +159,10 @@ body {
   transition: 0.6s;
 }
 
+.l-menu a {
+  text-decoration: none;
+}
+
 .l-menu .menu-list {
   position: relative;
   top: 50%;
@@ -119,11 +181,16 @@ body {
 .l-menu .menu-list li a span {
   font-size: 1.18vw;
   color: #fff;
+  font-weight: 700;
   display: block;
   line-height: 3;
   opacity: 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.l-menu .menu-list li a span:hover {
+  color: #b8cad3;
 }
 
 .l-menu.active {
@@ -136,6 +203,34 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 1200px) {
+  .l-menu.active {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .l-menu.active {
+    width: 32vw;
+    height: 32vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .l-menu.active {
+    width: 34vw;
+    height: 34vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .l-menu.active {
+    width: 38vw;
+    height: 38vw;
+  }
+}
+
 .page-navbar {
   font-family: Microsoft JhengHei;
   font-weight: 600;
@@ -144,12 +239,69 @@ body {
   letter-spacing: 2px;
 }
 
+@media (max-width: 1200px) {
+  .page-navbar {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-navbar {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-navbar {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-navbar {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
 .page-navbar .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
   background-color: #3281A5;
   padding: 0 5%;
+  z-index: 0;
+}
+
+@media (max-width: 1200px) {
+  .page-navbar .container nav {
+    width: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-navbar .container nav {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-navbar .container nav {
+    width: 80%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-navbar .container nav {
+    width: 90%;
+    padding: 0 2%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 
 .page-navbar .container nav a {
@@ -166,6 +318,32 @@ body {
   font-size: 24px;
   color: white;
   letter-spacing: 2px;
+}
+
+@media (max-width: 1200px) {
+  .page-navbar .container nav .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-navbar .container nav .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-navbar .container nav .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-navbar .container nav .title {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
 }
 
 .page-navbar .container nav .name {
@@ -186,6 +364,31 @@ body {
   opacity: 0.5;
 }
 
+@media (max-width: 1200px) {
+  .page-navbar .container nav .name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-navbar .container nav .name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-navbar .container nav .name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-navbar .container nav .name {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
 .page-navbar .container nav .name .icon {
   width: 15px;
   height: 15px;
@@ -195,6 +398,37 @@ body {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .page-navbar .container nav .name .icon {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-navbar .container nav .name .icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-navbar .container nav .name .icon {
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-navbar .container nav .name .icon {
+    width: 7px;
+    height: 7px;
+    margin-right: 1px;
+  }
 }
 
 .page-navbar .container nav .name:hover {
@@ -221,13 +455,14 @@ body {
 }
 
 .content-box .page-title h1 {
-  color: #225679;
+  color: #24999F;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 3px;
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 .content-box .content {

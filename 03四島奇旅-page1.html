@@ -2,7 +2,10 @@
 <html lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-1.png" type="image/x-icon">
     <title>澎湖南方四島國家公園</title>
+
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -18,19 +21,28 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./03四島奇旅/03四島奇旅-page1.css">
+
+    <style>
+        html:not(.no-js) [data-aos=fade-up] {
+        -webkit-transform: translate3d(0,100px,0);
+        transform: translate3d(0,40px,0);
+    }
+        </style>
+    
 </head>
 
 <body>
     
   <!-- //轉場loading -->
 
-    <!-- <div class="loading-wrapper">
-        <img src="./素材/轉場loading/燈塔.gif" alt="" class="loading">
-    </div> -->
+    <div class="loading-wrapper">
+        <img src="./img/00頁首/燈塔.gif" alt="" class="loading">
+    </div>
 
     <!-- logo -->
+    <a href="回首頁.html">
     <img class="logo" width="12%" src="./img/03四島奇旅/01東嶼坪嶼/logo.png" alt="">
-
+    </a>
     <!-- menu -->
     <div class="menu">
         <div class="menu-btn">
@@ -52,7 +64,7 @@
                 </a>
             </li>
             <li>
-                <a href="02生態探險-page1.html">
+                <a href="02生態探索-page1.html">
                     <span>生態探索</span>
                 </a>
             </li>
@@ -68,7 +80,7 @@
             </li>
             <li>
                 <a href="index.html">
-                    <span>回首頁</span>
+                    <span>返回首頁</span>
                 </a>
             </li>
 
@@ -100,11 +112,11 @@
             </nav>
         </div>
     </div>
-    <div class="container content-box">
-        <div class="page-title d-flex align-items-center justify-content-center">
+    <div class="container content-box" >
+        <div  data-aos="fade-up" data-aos-duration="1500"  class="page-title d-flex align-items-center justify-content-center" >
             <h1 class="mb-0">東嶼坪嶼</h1>
         </div>
-        <div class="content row pt-5 align-items-center ">
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" class="content row pt-5 align-items-center ">
             <div class="img-box col-5 d-flex justify-content-around">
                 <img src="./img/03四島奇旅/01東嶼坪嶼/梯田式菜宅-pic.png" alt="">
             </div>
@@ -117,7 +129,7 @@
                 <img src="./img/03四島奇旅/01東嶼坪嶼/梯田式菜宅-文字.png" alt="">
             </div>
         </div>
-        <div class="content row pt-5 align-items-center flex-row-reverse">
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800" class="content row pt-5 align-items-center flex-row-reverse">
             <div class="img-box col-5 ">
                 <img src="./img/03四島奇旅/01東嶼坪嶼/池府塔-pic.png" alt="">
             </div>
@@ -129,7 +141,7 @@
                 <img src="./img/03四島奇旅/01東嶼坪嶼/池府塔-文字.png" alt="">
             </div>
         </div>
-        <div class="content row pt-5 align-items-center ">
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" class="content row pt-5 align-items-center ">
             <div class="img-box col-5 d-flex justify-content-around">
                 <img src="./img/03四島奇旅/01東嶼坪嶼/金龍塔-pic.png" alt="">
             </div>
@@ -142,7 +154,7 @@
                 <img src="./img/03四島奇旅/01東嶼坪嶼/金龍塔-文字.png" alt="">
             </div>
         </div>
-        <div class="content row pt-5 align-items-center flex-row-reverse">
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" class="content row pt-5 align-items-center flex-row-reverse">
             <div class="img-box col-5 ">
                 <img src="./img/03四島奇旅/01東嶼坪嶼/池府廟-pic.png" alt="">
             </div>
@@ -177,10 +189,15 @@ crossorigin="anonymous"></script>
 integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
-// loading時間
+<script>
+    
+
+//loading時間
 $(document).ready(function () {
     setTimeout(function () {
         $(".loading-wrapper").fadeOut(500);

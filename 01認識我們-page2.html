@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-1.png" type="image/x-icon">
     <title>澎湖南方四島國家公園</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -30,8 +31,9 @@
     </div> -->
 
     <!-- logo -->
+    <a href="回首頁.html">
     <img class="logo" width="12%" src="./img/01認識我們/logo.png" alt="">
-
+    </a>
     <!-- menu -->
     <div class="menu">
         <div class="menu-btn">
@@ -53,7 +55,7 @@
                 </a>
             </li>
             <li>
-                <a href="02生態探險-page1.html">
+                <a href="02生態探索-page1.html">
                     <span>生態探索</span>
                 </a>
             </li>
@@ -69,7 +71,7 @@
             </li>
 
             <li>
-                <a href="index.html">
+                <a href="回首頁.html">
                     <span>返回首頁</span>
                 </a>
             </li>
@@ -112,10 +114,12 @@
             <div class="history active">
                 <h2 class="title1 active">歷史</h2>
                 <div class="text text1 active">
-                    <h4>歷史</h4>
-                    <br>
-                    <span>遠在臺灣新石器時代階段，南方四島即扮演聯結大陸與臺灣西南部的重要角色，具有史前文化互動圈的重要價值及清初閩臺正口對渡航道上進出黑水溝重要指標的文化地理意涵，保存有清代傳統建築與日據時期的洋樓建築、聚落發展等空間層次，以及獨特的梯田式菜宅人文地景等特色，具備成為世界遺產的珍貴資源。
-                    </span>
+                    <div class="text-mask">
+                        <h3>歷史</h3>
+                        <br>
+                        <span>遠在臺灣新石器時代階段，南方四島即扮演聯結大陸與臺灣西南部的重要角色，具有史前文化互動圈的重要價值及清初閩臺正口對渡航道上進出黑水溝重要指標的文化地理意涵，保存有清代傳統建築與日據時期的洋樓建築、聚落發展等空間層次，以及獨特的梯田式菜宅人文地景等特色，具備成為世界遺產的珍貴資源。
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-1"></div>
@@ -124,11 +128,12 @@
             <div class="development">
                 <h2 class="title">發展</h2>
                 <div class="text">
-                    <h4>發展</h4>
-                    <br>
-                    <span>澎湖南方四島國家公園為內政部營建署海洋國家公園管理處自2010年開始籌設的國家公園，於2014年6月8日正式公告實施，並於同年10月18日掛牌。「澎湖南方四島國家公園」是臺灣第九座國家公園，也是第二座海洋型國家公園。主要由東吉嶼、西吉嶼、東嶼坪嶼、西嶼坪嶼，這四個較大島嶼及周圍小型島嶼與海域組成，生態資源珍貴且物種多樣性，海域珊瑚礁生長茂密，亦為適合浮潛的地點。
-                    </span>
-
+                    <div class="text-mask">
+                        <h3>發展</h3>
+                        <br>
+                        <span>澎湖南方四島國家公園為內政部營建署海洋國家公園管理處自2010年開始籌設的國家公園，於2014年6月8日正式公告實施，並於同年10月18日掛牌。「澎湖南方四島國家公園」是臺灣第九座國家公園，也是第二座海洋型國家公園。主要由東吉嶼、西吉嶼、東嶼坪嶼、西嶼坪嶼，這四個較大島嶼及周圍小型島嶼與海域組成，生態資源珍貴且物種多樣性，海域珊瑚礁生長茂密，亦為適合浮潛的地點。
+                        </span>
+                    </div>
                 </div>
             </div>
             <!-- <div class="col-md-1"></div> -->
@@ -136,11 +141,8 @@
     </div>
 
     <!-- 海鷗 -->
-    <img src="./img/01認識我們/海鷗插圖.png" alt="" class="seagull">
+    <!-- <img src="./img/01認識我們/海鷗插圖.png" alt="" class="seagull"> -->
 
-
-
-    <br>
     <!-- 波浪 -->
     <img src="./img/01認識我們/小波浪.png" alt="" class="wave">
     <img src="./img/01認識我們/波浪.png" alt="" class="wave">
@@ -151,7 +153,7 @@
 
 
 
-    <footer class="">
+    <footer>
         <p>Design by F4嶼</p>
         <p>Copyright © 澎湖南方四島國家公園 All Rights Reserved.
         </p>
@@ -201,16 +203,16 @@
                 $(this).removeClass('active')
                 $('.title1').removeClass('active')
                 $('.text1').removeClass('active')
-            } 
+            }
 
         })
-        
+
         $('.development').hover(function () {
             if ($('.history').hasClass('active')) {
                 $('.history').removeClass('active')
                 $('.title1').removeClass('active')
                 $('.text1').removeClass('active')
-            } 
+            }
 
         })
 
@@ -218,6 +220,7 @@
 
 
     </script>
+
 </body>
 
 

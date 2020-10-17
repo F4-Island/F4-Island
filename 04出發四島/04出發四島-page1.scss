@@ -1,148 +1,194 @@
 @import "../default";
 @import "../mixin";
-*{
+* {
     box-sizing: border-box;
 }
 .selector-for-some-widget {
     box-sizing: content-box;
 }
 
-// 波浪效果
 body {
-    position: relative;
-    align-items: center;
-    min-height: 100vh;
-    background-color: rgb(118, 218, 255);
-    overflow: hidden;
-
-    &:before, &:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        min-width: 300vw;
-        min-height: 300vw;
-        background-color: #fff;
-        animation-name: rotate;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
-
-    &:before {
-        bottom: 10vh;
-        border-radius: 45%;
-        animation-duration: 8s;
-    }
- 
-    &:after {
-        bottom: 12vh;
-        opacity: .6;
-        border-radius: 45%;
-        animation-duration: 10s;
-    }
+    background-image: url(../img/04出發四島/出發四島-底圖.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@keyframes rotate {
-    0% {
-        transform: translate(-50%, 0) rotateZ(0deg);
-    }
-    50% {
-        transform: translate(-50%, -2%) rotateZ(180deg);
-    }
-    100% {
-        transform: translate(-50%, 0%) rotateZ(360deg);
-    }
+// loading遮蓋區
+.loading-wrapper {
+    @include loading-wrapper;
 }
+
+// loading燈塔
+.loading {
+    @include loading;
+}
+
 // logo
-.logo{
-    position: fixed;
-    top: 0;
-    left: 0;
+.logo {
+    @include logo;
 }
 
 // menu開關
-.menu{
+.menu {
     @include menu;
 }
 
 // menu效果
 .menu-btnline.active,
 .menu-text.active,
-.menu-btn.active{
+.menu-btn.active {
     display: none;
 }
 
-.menu.active
-{
+.menu.active {
     background-color: #a1c143;
 }
 // 展開的menu// 未展開尺寸
-.l-menu{
+.l-menu {
     @include l-menu;
 }
 
 // 展開尺寸
-.l-menu.active{
-    @include  l-menu-active;
-}  
-  
+.l-menu.active {
+    @include l-menu-active;
+}
 
-
-.page1{
+.page-navbar {
     @include nav-word-l;
-    
-    .container{
-        nav{
+
+    .container {
+        nav {
             @include navbar-style;
-            width: 65%;
-            a{
+            a {
                 text-decoration: none;
             }
-            .title{
-                @include nav-word-l; 
+            .title {
+                @include nav-word-l;
             }
-            .name{
+            .name {
                 @include nav-word-s;
+                font-weight: 400;
                 display: flex;
                 align-items: center;
-                transition:1s;
+                transition: 0.3s;
                 opacity: 0.5;
-                .icon{
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background-color: red;
-                    margin-right: 10px;
-                    opacity: 0;
-                    transition: 0.5s;
+                .icon {
+                    @include icon;
                 }
-                &:hover .icon{
-                    opacity: 1;
-                }
+                // &:hover .icon{
+                //     opacity: 1;
+                // }
                 &:hover {
                     opacity: 1;
+                    font-weight: 900;
                 }
             }
             //針對不同頁面強調所對應的navbar標題
-            .name-1{
+            .name-1 {
+                font-weight: 600;
                 opacity: 1;
-                .icon{
+                .icon {
                     opacity: 1;
                 }
             }
         }
-        .content-box{
-            padding: 100px 0;
-            @include c-word;
-            .content{
-                padding-bottom: 80px;
-                .img-box{
-                    img{
-                        border-radius: 40% 50% 40% 50%;
-                        width: 90%;
-                    }
-                }
-            }   
+    }
+}
+
+.Sub-standard {
+    @include Sub-standard-style;
+    text-align:center;
+    margin-top: -10px;
+}
+
+.content-box {
+    padding-top: 5%;
+    position: relative;
+    h1 {
+        @include page-title-style;
+    }
+
+    .title-p {
+        font-size: 21px;
+        font-weight: 600;
+        margin-top: 30px;
+        letter-spacing: 2px;
+    }
+}
+
+.content {
+    margin-bottom: 7%;
+    .text-box {
+        p {
+            font-size: 22px;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+            text-align: justify;
         }
     }
-   
+}
+
+h2{
+    color:#24999F;
+    display: inline-block;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+h4{
+    font-weight: 600;
+
+}
+
+// .title-p {
+//     font-size: 22px;
+//     font-weight: 600;
+// }
+
+.hole {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+.rock {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+
+// footer {
+//     margin-top: 200px;
+//     position: relative;
+//     img {
+//         width: 100vw;
+//         position: absolute;
+//         bottom: 0;
+//     }
+// }
+
+.img-box{
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+// 波浪
+.wave {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+
+// 小船
+.boat {
+    position: fixed;
+    right: 5%;
+    bottom: 8%;
+}
+
+footer{
+    @include footer;
 }
