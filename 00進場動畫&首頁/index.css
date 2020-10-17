@@ -273,6 +273,7 @@ body {
 @media (max-width: 576px) {
   .wholeMap .east {
     width: 175px;
+    top: 30%;
   }
 }
 
@@ -462,8 +463,15 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .littleEast .littleEast-hint {
-    top: -95%;
+    top: -80%;
     left: 65%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .littleEast .littleEast-hint {
+    left: 0;
+    top: -70%;
   }
 }
 
@@ -495,7 +503,7 @@ body {
   .wholeMap .littleWest {
     width: 92px;
     left: 13%;
-    top: 25%;
+    top: 22%;
   }
 }
 
@@ -570,7 +578,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .island1 {
-    top: 10%;
+    top: 9%;
     left: 2%;
     width: 64px;
   }
@@ -620,7 +628,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .island1 .island1-hint {
-    top: -200%;
+    top: -190%;
   }
 }
 
@@ -658,6 +666,7 @@ body {
 @media (max-width: 576px) {
   .wholeMap .island2 {
     left: 15%;
+    top: 13%;
     width: 38px;
   }
 }
@@ -743,8 +752,8 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .island3 {
-    left: 8%;
-    top: 31%;
+    left: 5%;
+    top: 26%;
     width: 22px;
   }
 }
@@ -1488,7 +1497,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .animal .animal-hint {
-    bottom: 35%;
+    bottom: 36%;
     left: -5%;
     opacity: 1;
   }
@@ -1820,9 +1829,15 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .birds {
-    top: 5%;
-    right: 5%;
-    width: 50%;
+    top: 3%;
+    right: 15%;
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .birds .birds-img {
+    width: 100%;
   }
 }
 
@@ -1848,7 +1863,7 @@ body {
   .wholeMap .cloud {
     width: 50%;
     right: 5%;
-    width: 150px;
+    width: 130px;
   }
 }
 
@@ -1880,15 +1895,21 @@ body {
 @media (max-width: 768px) {
   .wholeMap .boat {
     bottom: 2%;
-    right: 5%;
+    right: 18%;
+    width: 150px;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .boat {
     width: 50%;
-    right: 25%;
+    right: 50%;
+    width: 85px;
   }
+}
+
+.wholeMap .boat .boat-img {
+  width: 100%;
 }
 
 .wholeMap .email {
@@ -1900,7 +1921,7 @@ body {
 @media (max-width: 768px) {
   .wholeMap .email {
     bottom: 12%;
-    right: 1%;
+    right: 3%;
   }
 }
 
@@ -1908,13 +1929,18 @@ body {
   .wholeMap .email {
     bottom: 6%;
     right: 15%;
+    width: 35px;
   }
+}
+
+.wholeMap .email .email-img {
+  width: 100%;
 }
 
 .wholeMap .fb {
   position: absolute;
   bottom: 15%;
-  right: 6%;
+  right: 7%;
 }
 
 @media (max-width: 1600px) {
@@ -1932,6 +1958,7 @@ body {
 @media (max-width: 768px) {
   .wholeMap .fb {
     bottom: 12%;
+    right: 15%;
   }
 }
 
@@ -1939,7 +1966,12 @@ body {
   .wholeMap .fb {
     right: 30%;
     bottom: 6%;
+    width: 35px;
   }
+}
+
+.wholeMap .fb .fb-img {
+  width: 100%;
 }
 
 .wholeMap .wave {
