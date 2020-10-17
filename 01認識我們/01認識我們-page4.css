@@ -165,6 +165,12 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 576px) {
+  .l-menu .menu-list li a span {
+    font-size: 12px;
+  }
+}
+
 .l-menu .menu-list li a span:hover {
   color: #b8cad3;
 }
@@ -458,13 +464,14 @@ body {
 .content-box .tab .tab-btn .tablinks {
   width: 25%;
   height: 25%;
+  border-radius: 30px;
   margin: 0 2%;
   text-align: center;
   cursor: pointer;
   border: none;
   outline: none;
   display: block;
-  background-color: yellow;
+  background-color: #295274;
   position: relative;
   z-index: 99;
 }
@@ -477,7 +484,8 @@ body {
           transform: translate(-50%, -50%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 800;
 }
 
 .content-box .tab .tab-btn .tablinks:hover::before {
@@ -502,6 +510,7 @@ body {
   content: "";
   width: 100%;
   height: 100%;
+  border-radius: 30px;
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -523,14 +532,19 @@ body {
   background-position: center;
 }
 
+.content-box .tabcontent .text {
+  margin-top: 65vh;
+}
+
 .content-box .tabcontent .text .text-box {
   margin: auto;
   width: 70%;
+  border-radius: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: rgba(49, 129, 165, 0.8);
+  background-color: rgba(41, 82, 116, 0.7);
   padding: 10px;
 }
 

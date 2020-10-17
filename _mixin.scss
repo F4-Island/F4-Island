@@ -218,7 +218,9 @@
                         line-height: 3;
                         opacity: 0;
                         transition: 0.3s;
-
+                        @media (max-width: 576px){
+                            font-size: 12px;
+                        }
                         &:hover{
                             color: rgb(184, 202, 211);
                         }
@@ -237,9 +239,9 @@
     
     li{
         a{
-    span{
-        opacity: 1;
-            }
+            span{
+                opacity: 1;
+                }
         }
     }
     @media (max-width: 1200px){
@@ -355,6 +357,6 @@
         text-align: center;
         line-height: 88px;
         color: white;
-        // opacity: 0;
+        opacity: 0;
         transition: 0.3s;
 }

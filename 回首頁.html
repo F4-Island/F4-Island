@@ -85,6 +85,13 @@
         <div class="box birds">
             <img class="birds-img" src="./img/00頁首/Birds.png" alt="">
         </div>
+        <div class="box fish-l">
+            <img src="./img/00頁首/fish-left.png" alt="">
+        </div>
+        
+        <div class="box fish-r">
+            <img class="fish-r-img" src="./img/00頁首/fish-r.png" alt="">
+        </div>
         <!-- logo -->
         <img class="logo" src="./img/00頁首/Logo.png" alt="">
         <!-- 東吉嶼 -->
@@ -117,55 +124,48 @@
         
         <!-- 附屬島嶼 -->
         <div class="box island1">
-            <img class="littleIsland" src="./img/00頁首/05頭巾.png" alt="">
+            <img class="island1-img littleIsland" src="./img/00頁首/05頭巾.png" alt="">
             <div class="islandHint island1-hint hint">頭巾</div>
         </div>
         <div class="box island2">
-            <img class="littleIsland" src="./img/00頁首/06鐵砧.png" alt="">
+            <img class="island2-img littleIsland" src="./img/00頁首/06鐵砧.png" alt="">
             <div class="islandHint island2-hint hint">鐵砧</div>
         </div>
         <div class="box island3">
-            <img class="littleIsland" src="./img/00頁首/07二塭.png" alt="">
+            <img class="island3-img littleIsland" src="./img/00頁首/07二塭.png" alt="">
             <div class="islandHint island3-hint hint">二塭</div>
         </div>
         <div class="box island4">
-            <img class="littleIsland" src="./img/00頁首/08香爐.png" alt="">
+            <img class="island4-img littleIsland" src="./img/00頁首/08香爐.png" alt="">
             <div class="islandHint island4-hint hint">香爐</div>
         </div>
         <div class="box island5">
-            <img class="littleIsland" src="./img/00頁首/09離塭仔.png" alt="">
+            <img class="island5-img littleIsland" src="./img/00頁首/09離塭仔.png" alt="">
             <div class="islandHint island5-hint hint">離塭仔</div>
         </div>
         
         <div class="box island6">
-            <img class="littleIsland" src="./img/00頁首/10鐘仔.png" alt="">
+            <img class="island6-img littleIsland" src="./img/00頁首/10鐘仔.png" alt="">
             <div class="islandHint island6-hint hint">鐘仔</div>
         </div>
         
         <div class="box island7">
-            <img class="littleIsland" src="./img/00頁首/11豬母礁.png" alt="">
+            <img class="island7-img littleIsland" src="./img/00頁首/11豬母礁.png" alt="">
             <div class="islandHint island7-hint hint">豬母礁</div>
         </div>
         
         <div class="box island8">
-            <img class="littleIsland island8-img" src="./img/00頁首/12鋤頭嶼.png" alt="">
+            <img class="island8-img littleIsland " src="./img/00頁首/12鋤頭嶼.png" alt="">
             <div class="islandHint island8-hint hint">鋤頭嶼</div>
-        </div>
-        
-
-        <div class="box fish-l">
-            <img src="./img/00頁首/fish-left.png" alt="">
-        </div>
-        
-        <div class="box fish-r">
-            <img class="fish-r-img" src="./img/00頁首/fish-r.png" alt="">
         </div>
         
         <!-- 生態探索 -->
         <div class="box rock others-box">
-            <img class="rock-img" src="./img/00頁首/玄武岩.png" alt="">
+            <a href="./02生態探索-page2.html"><img class="rock-img" src="./img/00頁首/玄武岩.png" alt="">
+            
             <div class="rock-hint others-hint">玄武岩地景</div>
             <img class="rock-shadow" src="./img/00頁首/玄武岩陰影.png" alt="">
+            </a>
         </div>
         
         <div class="box animal others-box">
@@ -181,24 +181,31 @@
         </div>
         
         <div class="box carol others-box">
-            <img class="carol-img" src="./img/00頁首/珊瑚.png" alt="">
-            <div class="carol-hint others-hint">珊瑚</div>
-            <img class="carol-shadow" src="./img/00頁首/珊瑚陰影.png" alt="">
+            <a href="./02生態探索-page1.html">
+                <img class="carol-img" src="./img/00頁首/珊瑚.png" alt="">
+                <div class="carol-hint others-hint">珊瑚</div>
+                <img class="carol-shadow" src="./img/00頁首/珊瑚陰影.png" alt="">
+            </a>  
         </div>
         
         <div class="box boat">
-            <img src="./img/00頁首/Boat.png" alt="">
+            <img class="boat-img" src="./img/00頁首/Boat.png" alt="">
         </div>
         
         <div class="box email">
-            <img src="./img/00頁首/Email.png" alt="">
+            <a href="mailto:marine@cpami.gov.tw " target="_blank">
+                <img class="email-img" src="./img/00頁首/Email.png" alt="">
+            </a>
         </div>
         
         <div class="box fb">
-            <img src="./img/00頁首/FB.png" alt="">
+            <a href="https://www.facebook.com/penghunp" target="_blank">
+               <img class="fb-img" src="./img/00頁首/FB.png" alt=""> 
+            </a> 
         </div>
-        
-            <img class="wave" src="./img/00頁首/wave.png" alt="">
+
+        <img class="wave" src="./img/00頁首/wave.png" alt="">
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
@@ -227,8 +234,8 @@
             $(this).addClass('active')
             $('.menu-btnline').eq($(this).index()).addClass('active')
             $('.menu-text').eq($(this).index()).addClass('active')
-
         })
+
         $('.menu').click(function () {
             if ($(this).hasClass('active')) {
                 $(this).removeClass('active')
@@ -237,41 +244,9 @@
                 $(this).addClass('active')
                 $('.l-menu').addClass('active')
             }
-
         })
-
-        
-        // $( ".littleIsland" ).hover(function() {
-        // $(".island-hint" ).addClass("active");}, 
-        // function() {
-        // $(".island-hint").toggleClass("active");
-        // });
-
-     $( ".littleIsland" ).hover(function() {
-    $( ".islandHint" ).each(function() {
-    $( this ).toggleClass( "active" );
-  });
-});
-
-// function islandHint(evt, islandName) {
-//         var i, islandHint,littleIsland;
-//         islandHint = document.getElementsByClassName("island-hint");
-//         for (i = 0; i < islandHint.length; i++) {
-//             islandHint[i].style.opacity = "1";
-//         }
-//         littleIsland = document.getElementsByClassName("littleIsland");
-//         for (i = 0; i < littleIsland.length; i++) {
-//             littleIsland[i].className = littleIsland[i].className.replace(" active", "");
-//         }
-//         document.getElementById(islandName).style.opacity = "0";
-//         evt.currentTarget.className += "active";
-//         }
-
+     
     </script>
-
-
-    
-
 </body>
 
 </html>
