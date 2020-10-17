@@ -115,7 +115,7 @@ body {
                 top: -12%;
             }
             @media (max-width: 768px){
-                top: -20%;
+                top: -22%;
                 right: 10%;
             }
             @media (max-width: 576px){
@@ -157,10 +157,12 @@ body {
             @media (max-width: 1600px){
                 top: -32%;
             }
-            
             @media (max-width: 768px){
-                top: -40%;
+                top: -30%;
                 right: 10%;
+            }
+            @media (max-width: 576px){
+                top: -45%;
             }
         } 
     }
@@ -179,11 +181,12 @@ body {
         }
         @media (max-width: 768px){
             width: 213px;
+            top: 35%;
         }
         @media (max-width: 576px){
             width: 149px;
-            left: 5%;
-            top: 37%;
+            left: 10%;
+            top: 35%;
         }
         .littleEast-img{
             @media (max-width: 1600px){
@@ -204,7 +207,7 @@ body {
                 left: 62%;
             }
             @media (max-width: 768px){
-                top: -90%;
+                top: -95%;
                 left: 65%;
             }
         }
@@ -245,8 +248,11 @@ body {
                 left: 38%;
             }
             @media (max-width: 768px){
-                top: -90%;
+                top: -80%;
                 left: 40%;
+            }
+            @media (max-width: 576px){
+                top: -95%;
             }
         }
     }
@@ -261,13 +267,20 @@ body {
         }
         @media (max-width: 1200px){
             left: 3%;
+            width: 127px;
         }
         @media (max-width: 768px){
             top: 8%;
             left: 0;
+            width: 101px;
         }
         @media (max-width: 576px){
             top: 10%;
+            left: 2%;
+            width: 64px;
+        }
+        .island1-img{
+            width: 100%;
         }
         .island1-hint{
             position: absolute;
@@ -278,15 +291,15 @@ body {
                 top: -80%;
             }
             @media (max-width: 1200px){
-                top: -70%;
+                top: -100%;
                 left: 5%;
             }
             @media (max-width: 768px){
-                top: -90%;
+                top: -120%;
                 left: 5%;
             }
             @media (max-width: 576px){
-                top: -150%;
+                top: -200%;
             }
         }
         &:hover .island1-hint{
@@ -303,13 +316,19 @@ body {
         }
         @media (max-width: 1200px){
             left: 12%;
+            width: 76px;
         }
         @media (max-width: 768px){
             top: 15%;
             left: 10%;
+            width: 61px;
         }
         @media (max-width: 576px){
             left: 15%;
+            width: 38px;
+        }
+        .island2-img{
+            width: 100%;
         }
         .island2-hint{
             position: absolute;
@@ -320,16 +339,16 @@ body {
                 top: -160%;
             }
             @media (max-width: 1200px){
-                top: -145%;
+                top: -190%;
                 left: 7%;
             }
             @media (max-width: 768px){
-                top: -150%;
-                left: 15%;
+                top: -200%;
+                left: 10%;
             }
             @media (max-width: 576px){
-                top: -190%;
-                left: 5%;
+                top: -250%;
+                left: -10%;
             }
         }
         &:hover .island2-hint{
@@ -346,13 +365,19 @@ body {
         }
         @media (max-width: 1200px){
             top: 35%;
+            width: 43px;
         }
         @media (max-width: 768px){
             top: 33%;
+            width: 34px;
         }
         @media (max-width: 576px){
             left: 8%;
             top: 31%;
+            width: 22px;
+        }
+        .island3-img{
+            width: 100%;
         }
         .island3-hint{
             position: absolute;
@@ -364,15 +389,16 @@ body {
                 left: 0%;
             }
             @media (max-width: 1200px){
-                top: -150%;
+                top: -270%;
+                left: -20%;
             }
             @media (max-width: 768px){
-                top: -170%;
-                left: 5%;
+                top: -290%;
+                left: -30%;
             }
             @media (max-width: 576px){
-                top: -220%;
-                left: -5%;
+                top: -270%;
+                left: -50%;
             }
         }
         &:hover .island3-hint{
@@ -387,12 +413,22 @@ body {
         @media (max-width: 1600px){
             top: 50%;
         }
+        @media (max-width: 1200px){
+            width: 30px;
+            top: 48%;
+        }
         @media (max-width: 768px){
             top: 46%;
             left: 28%;
+            width: 24px;
         }
         @media (max-width: 576px){
             top: 42%;
+            left: 22%;
+            width: 15px;
+        }
+        .island4-img{
+            width: 100%;
         }
         .island4-hint{
             position: absolute;
@@ -404,13 +440,15 @@ body {
                 left: -60%;
             }
             @media (max-width: 1200px){
-                top: -310%;
+                top: -350%;
             }
             @media (max-width: 768px){
-                left: -30%;
+                left: -50%;
+                top: -320%;
             }
             @media (max-width: 576px){
                 top: -260%;
+                left: -100%;
             }
         }
         &:hover .island4-hint{
@@ -427,10 +465,18 @@ body {
         }
         @media (max-width: 1200px){
             top: 52%;
+            width: 51px;
         }
         @media (max-width: 768px){
             top: 48%;
             left: 3%;
+            width: 41px;
+        }
+        @media (max-width: 576px){
+            width: 26px;
+        }
+        .island5-img{
+            width: 100%;
         }
         .island5-hint{
             position: absolute;
@@ -442,14 +488,15 @@ body {
                 left: 0;
             }
             @media (max-width: 1200px){
-                top: -115%;
+                top: -200%;
+                left: -18%;
             }
             @media (max-width: 768px){
-                top: -130%;
+                top: -210%;
             }
             @media (max-width: 576px){
-                top: -180%;
-                left: -5%;
+                top: -260%;
+                left: -45%;
             }
         }
         &:hover .island5-hint{
@@ -466,12 +513,19 @@ body {
         }
         @media (max-width: 1200px){
             top: 58%;
+            width: 57px;
         }
         @media (max-width: 768px){
             left: 12%;
+            width: 45px;
         }
         @media (max-width: 576px){
             top: 55%;
+            left: 15%;
+            width: 29px;
+        }
+        .island6-img{
+            width: 100%;
         }
         .island6-hint{
             position: absolute;
@@ -483,14 +537,15 @@ body {
                 left: 0%;
             }
             @media (max-width: 1200px){
-                top: -110%;
+                top: -180%;
+                left: -15%;
             }
             @media (max-width: 768px){
-                top: -120%;
+                top: -190%;
             }
             @media (max-width: 576px){
-                top: -170%;
-                left: -5%;
+                top: -250%;
+                left: -40%;
             }
         }
         &:hover .island6-hint{
@@ -507,13 +562,20 @@ body {
         }
         @media (max-width: 1200px){
             top: 53%;
+            width: 86px;
         }
         @media (max-width: 768px){
             top: 52%;
             left: 30%;
+            width: 68px;
         }
         @media (max-width: 576px){
             top: 47%;
+            width: 43px;
+            left: 35%;
+        }
+        .island7-img{
+            width: 100%;
         }
         .island7-hint{
             position: absolute;
@@ -525,15 +587,15 @@ body {
                 left: 3%;
             }
             @media (max-width: 1200px){
-                top: -95%;
+                top: -140%;
             }
             @media (max-width: 768px){
-                top: -110%;
+                top: -150%;
                 left: 8%;
             }
             @media (max-width: 576px){
-                top: -150%;
-                left: 0%;
+                top: -210%;
+                left: -15%;
             }
         }
         &:hover .island7-hint{
@@ -548,56 +610,46 @@ body {
         @media (max-width: 1600px){
             right: 22%;
             top: 44%;
+            width: 78px;
         }
         @media (max-width: 1200px){
-            top: 41%;
-            right: 24%;
+            top: 40%;
+            right: 23%;
+            width: 68px;
         }
         @media (max-width: 768px){
             top: 37%;
-            right: 21%;
+            right: 25%;
+            width: 58px;
         }
         @media (max-width: 576px){
-            right: 10%;
+            right: 34%;
+            top: 37%;
+            width: 29px;
         }
+        .island8-img{
+            width: 100%;
+        }  
         .island8-hint{
             position: absolute;
             top: -190%;
             right: 0%;
             @include subIsland-hint;
             @media (max-width: 1600px){
-                right: 15%;
+                right: 5%;
+                top: -230%;
             }
             @media (max-width: 1200px){
-                top: -180%;
-                right: 35%;
-            }
-            @media (max-width: 768px){
-                top: -182%;
-                right: 41%;
+                top: -220%;
             }
             @media (max-width: 576px){
-                top: -260%;
-                right: 65%;
+                top: -265%;
+                right: -30%;
             }
         }
         &:hover .island8-hint{
             opacity: 1;
         }
-        .island8-img{
-            @media (max-width: 1600px){
-                width: 80%;
-            }
-            @media (max-width: 1200px){
-                width: 70%;
-            }
-            @media (max-width: 768px){
-                width: 60%;
-            }
-            @media (max-width: 576px){
-                width: 30%;
-            }
-        }  
     }
 
     .fish-l{
@@ -1053,20 +1105,24 @@ body {
         .hint{
             @media (max-width: 1600px){
                 width: 85px;
+                height: 135px;
             }
             @media (max-width: 1200px) { 
                 width: 70px;
+                height: 111px;
                 font-size: 16px;
                 line-height: 70px;
             } 
             @media (max-width: 768px){
                 width: 60px;
+                height: 96px;
                 font-size: 14px;
                 line-height: 60px;
                 letter-spacing: 0;
             }
             @media (max-width: 576px){
                 width: 50px;
+                height: 79px;
                 font-size: 12px;
                 line-height: 50px;
                 letter-spacing: 0;

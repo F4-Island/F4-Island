@@ -306,7 +306,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .east .east-hint {
-    top: -20%;
+    top: -22%;
     right: 10%;
   }
 }
@@ -380,8 +380,14 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .west .west-hint {
-    top: -40%;
+    top: -30%;
     right: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .west .west-hint {
+    top: -45%;
   }
 }
 
@@ -406,14 +412,15 @@ body {
 @media (max-width: 768px) {
   .wholeMap .littleEast {
     width: 213px;
+    top: 35%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .littleEast {
     width: 149px;
-    left: 5%;
-    top: 37%;
+    left: 10%;
+    top: 35%;
   }
 }
 
@@ -455,7 +462,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .littleEast .littleEast-hint {
-    top: -90%;
+    top: -95%;
     left: 65%;
   }
 }
@@ -523,8 +530,14 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .littleWest .littleWest-hint {
-    top: -90%;
+    top: -80%;
     left: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .littleWest .littleWest-hint {
+    top: -95%;
   }
 }
 
@@ -543,6 +556,7 @@ body {
 @media (max-width: 1200px) {
   .wholeMap .island1 {
     left: 3%;
+    width: 127px;
   }
 }
 
@@ -550,13 +564,20 @@ body {
   .wholeMap .island1 {
     top: 8%;
     left: 0;
+    width: 101px;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island1 {
     top: 10%;
+    left: 2%;
+    width: 64px;
   }
+}
+
+.wholeMap .island1 .island1-img {
+  width: 100%;
 }
 
 .wholeMap .island1 .island1-hint {
@@ -585,21 +606,21 @@ body {
 
 @media (max-width: 1200px) {
   .wholeMap .island1 .island1-hint {
-    top: -70%;
+    top: -100%;
     left: 5%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island1 .island1-hint {
-    top: -90%;
+    top: -120%;
     left: 5%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island1 .island1-hint {
-    top: -150%;
+    top: -200%;
   }
 }
 
@@ -622,6 +643,7 @@ body {
 @media (max-width: 1200px) {
   .wholeMap .island2 {
     left: 12%;
+    width: 76px;
   }
 }
 
@@ -629,13 +651,19 @@ body {
   .wholeMap .island2 {
     top: 15%;
     left: 10%;
+    width: 61px;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island2 {
     left: 15%;
+    width: 38px;
   }
+}
+
+.wholeMap .island2 .island2-img {
+  width: 100%;
 }
 
 .wholeMap .island2 .island2-hint {
@@ -664,22 +692,22 @@ body {
 
 @media (max-width: 1200px) {
   .wholeMap .island2 .island2-hint {
-    top: -145%;
+    top: -190%;
     left: 7%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island2 .island2-hint {
-    top: -150%;
-    left: 15%;
+    top: -200%;
+    left: 10%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island2 .island2-hint {
-    top: -190%;
-    left: 5%;
+    top: -250%;
+    left: -10%;
   }
 }
 
@@ -702,12 +730,14 @@ body {
 @media (max-width: 1200px) {
   .wholeMap .island3 {
     top: 35%;
+    width: 43px;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island3 {
     top: 33%;
+    width: 34px;
   }
 }
 
@@ -715,7 +745,12 @@ body {
   .wholeMap .island3 {
     left: 8%;
     top: 31%;
+    width: 22px;
   }
+}
+
+.wholeMap .island3 .island3-img {
+  width: 100%;
 }
 
 .wholeMap .island3 .island3-hint {
@@ -745,21 +780,22 @@ body {
 
 @media (max-width: 1200px) {
   .wholeMap .island3 .island3-hint {
-    top: -150%;
+    top: -270%;
+    left: -20%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island3 .island3-hint {
-    top: -170%;
-    left: 5%;
+    top: -290%;
+    left: -30%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island3 .island3-hint {
-    top: -220%;
-    left: -5%;
+    top: -270%;
+    left: -50%;
   }
 }
 
@@ -779,17 +815,31 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  .wholeMap .island4 {
+    width: 30px;
+    top: 48%;
+  }
+}
+
 @media (max-width: 768px) {
   .wholeMap .island4 {
     top: 46%;
     left: 28%;
+    width: 24px;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island4 {
     top: 42%;
+    left: 22%;
+    width: 15px;
   }
+}
+
+.wholeMap .island4 .island4-img {
+  width: 100%;
 }
 
 .wholeMap .island4 .island4-hint {
@@ -819,19 +869,21 @@ body {
 
 @media (max-width: 1200px) {
   .wholeMap .island4 .island4-hint {
-    top: -310%;
+    top: -350%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island4 .island4-hint {
-    left: -30%;
+    left: -50%;
+    top: -320%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island4 .island4-hint {
     top: -260%;
+    left: -100%;
   }
 }
 
@@ -854,6 +906,7 @@ body {
 @media (max-width: 1200px) {
   .wholeMap .island5 {
     top: 52%;
+    width: 51px;
   }
 }
 
@@ -861,7 +914,18 @@ body {
   .wholeMap .island5 {
     top: 48%;
     left: 3%;
+    width: 41px;
   }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island5 {
+    width: 26px;
+  }
+}
+
+.wholeMap .island5 .island5-img {
+  width: 100%;
 }
 
 .wholeMap .island5 .island5-hint {
@@ -891,20 +955,21 @@ body {
 
 @media (max-width: 1200px) {
   .wholeMap .island5 .island5-hint {
-    top: -115%;
+    top: -200%;
+    left: -18%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island5 .island5-hint {
-    top: -130%;
+    top: -210%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island5 .island5-hint {
-    top: -180%;
-    left: -5%;
+    top: -260%;
+    left: -45%;
   }
 }
 
@@ -927,19 +992,27 @@ body {
 @media (max-width: 1200px) {
   .wholeMap .island6 {
     top: 58%;
+    width: 57px;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island6 {
     left: 12%;
+    width: 45px;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island6 {
     top: 55%;
+    left: 15%;
+    width: 29px;
   }
+}
+
+.wholeMap .island6 .island6-img {
+  width: 100%;
 }
 
 .wholeMap .island6 .island6-hint {
@@ -969,20 +1042,21 @@ body {
 
 @media (max-width: 1200px) {
   .wholeMap .island6 .island6-hint {
-    top: -110%;
+    top: -180%;
+    left: -15%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island6 .island6-hint {
-    top: -120%;
+    top: -190%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island6 .island6-hint {
-    top: -170%;
-    left: -5%;
+    top: -250%;
+    left: -40%;
   }
 }
 
@@ -1005,6 +1079,7 @@ body {
 @media (max-width: 1200px) {
   .wholeMap .island7 {
     top: 53%;
+    width: 86px;
   }
 }
 
@@ -1012,13 +1087,20 @@ body {
   .wholeMap .island7 {
     top: 52%;
     left: 30%;
+    width: 68px;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island7 {
     top: 47%;
+    width: 43px;
+    left: 35%;
   }
+}
+
+.wholeMap .island7 .island7-img {
+  width: 100%;
 }
 
 .wholeMap .island7 .island7-hint {
@@ -1048,21 +1130,21 @@ body {
 
 @media (max-width: 1200px) {
   .wholeMap .island7 .island7-hint {
-    top: -95%;
+    top: -140%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island7 .island7-hint {
-    top: -110%;
+    top: -150%;
     left: 8%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island7 .island7-hint {
-    top: -150%;
-    left: 0%;
+    top: -210%;
+    left: -15%;
   }
 }
 
@@ -1080,27 +1162,36 @@ body {
   .wholeMap .island8 {
     right: 22%;
     top: 44%;
+    width: 78px;
   }
 }
 
 @media (max-width: 1200px) {
   .wholeMap .island8 {
-    top: 41%;
-    right: 24%;
+    top: 40%;
+    right: 23%;
+    width: 68px;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island8 {
     top: 37%;
-    right: 21%;
+    right: 25%;
+    width: 58px;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island8 {
-    right: 10%;
+    right: 34%;
+    top: 37%;
+    width: 29px;
   }
+}
+
+.wholeMap .island8 .island8-img {
+  width: 100%;
 }
 
 .wholeMap .island8 .island8-hint {
@@ -1123,57 +1214,26 @@ body {
 
 @media (max-width: 1600px) {
   .wholeMap .island8 .island8-hint {
-    right: 15%;
+    right: 5%;
+    top: -230%;
   }
 }
 
 @media (max-width: 1200px) {
   .wholeMap .island8 .island8-hint {
-    top: -180%;
-    right: 35%;
-  }
-}
-
-@media (max-width: 768px) {
-  .wholeMap .island8 .island8-hint {
-    top: -182%;
-    right: 41%;
+    top: -220%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island8 .island8-hint {
-    top: -260%;
-    right: 65%;
+    top: -265%;
+    right: -30%;
   }
 }
 
 .wholeMap .island8:hover .island8-hint {
   opacity: 1;
-}
-
-@media (max-width: 1600px) {
-  .wholeMap .island8 .island8-img {
-    width: 80%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .wholeMap .island8 .island8-img {
-    width: 70%;
-  }
-}
-
-@media (max-width: 768px) {
-  .wholeMap .island8 .island8-img {
-    width: 60%;
-  }
-}
-
-@media (max-width: 576px) {
-  .wholeMap .island8 .island8-img {
-    width: 30%;
-  }
 }
 
 .wholeMap .fish-l {
@@ -1909,12 +1969,14 @@ body {
 @media (max-width: 1600px) {
   .wholeMap .box .hint {
     width: 85px;
+    height: 135px;
   }
 }
 
 @media (max-width: 1200px) {
   .wholeMap .box .hint {
     width: 70px;
+    height: 111px;
     font-size: 16px;
     line-height: 70px;
   }
@@ -1923,6 +1985,7 @@ body {
 @media (max-width: 768px) {
   .wholeMap .box .hint {
     width: 60px;
+    height: 96px;
     font-size: 14px;
     line-height: 60px;
     letter-spacing: 0;
@@ -1932,6 +1995,7 @@ body {
 @media (max-width: 576px) {
   .wholeMap .box .hint {
     width: 50px;
+    height: 79px;
     font-size: 12px;
     line-height: 50px;
     letter-spacing: 0;
