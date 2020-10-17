@@ -226,9 +226,9 @@ body {
           transform: translate(-50%, 0);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .logo {
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -240,7 +240,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .logo {
-    width: 45%;
+    width: 40%;
     top: 10%;
   }
 }
@@ -251,9 +251,16 @@ body {
   right: 2%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .east {
+    width: 419px;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .east {
     width: 373px;
+    top: 34%;
   }
 }
 
@@ -266,11 +273,10 @@ body {
 @media (max-width: 576px) {
   .wholeMap .east {
     width: 175px;
-    right: 2%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .east .east-img {
     width: 100%;
   }
@@ -292,9 +298,9 @@ body {
   color: white;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .east .east-hint {
-    top: -30%;
+    top: -12%;
   }
 }
 
@@ -318,9 +324,16 @@ body {
   right: 35%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .west {
+    width: 266px;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .west {
     width: 237px;
+    top: 50%;
   }
 }
 
@@ -337,7 +350,7 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .west .west-img {
     width: 100%;
   }
@@ -359,9 +372,9 @@ body {
   color: white;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .west .west-hint {
-    top: -60%;
+    top: -32%;
   }
 }
 
@@ -376,6 +389,12 @@ body {
   position: absolute;
   top: 38%;
   left: 17%;
+}
+
+@media (max-width: 1600px) {
+  .wholeMap .littleEast {
+    width: 280px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -394,10 +413,11 @@ body {
   .wholeMap .littleEast {
     width: 149px;
     left: 5%;
+    top: 37%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .littleEast .littleEast-img {
     width: 100%;
   }
@@ -419,10 +439,17 @@ body {
   color: white;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .littleEast .littleEast-hint {
+    top: -93%;
+    left: 60%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .littleEast .littleEast-hint {
-    top: -120%;
-    left: 60%;
+    top: -80%;
+    left: 62%;
   }
 }
 
@@ -437,6 +464,12 @@ body {
   position: absolute;
   top: 23%;
   left: 16%;
+}
+
+@media (max-width: 1600px) {
+  .wholeMap .littleWest {
+    width: 174px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -454,11 +487,12 @@ body {
 @media (max-width: 576px) {
   .wholeMap .littleWest {
     width: 92px;
-    left: 5%;
+    left: 13%;
+    top: 25%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .littleWest .littleWest-img {
     width: 100%;
   }
@@ -480,10 +514,10 @@ body {
   color: white;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .littleWest .littleWest-hint {
-    top: -125%;
-    left: 30%;
+    top: -80%;
+    left: 38%;
   }
 }
 
@@ -500,6 +534,12 @@ body {
   left: 5%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island1 {
+    top: 11%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island1 {
     left: 3%;
@@ -508,7 +548,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .island1 {
-    top: 6%;
+    top: 8%;
     left: 0;
   }
 }
@@ -537,16 +577,22 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island1 .island1-hint {
+    top: -80%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island1 .island1-hint {
-    top: -140%;
+    top: -70%;
     left: 5%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island1 .island1-hint {
-    top: -70%;
+    top: -90%;
     left: 5%;
   }
 }
@@ -565,6 +611,12 @@ body {
   position: absolute;
   top: 18%;
   left: 14%;
+}
+
+@media (max-width: 1600px) {
+  .wholeMap .island2 {
+    top: 17%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -604,16 +656,23 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island2 .island2-hint {
+    top: -160%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island2 .island2-hint {
-    top: -210%;
+    top: -145%;
+    left: 7%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island2 .island2-hint {
-    top: -125%;
-    left: 25%;
+    top: -150%;
+    left: 15%;
   }
 }
 
@@ -634,6 +693,12 @@ body {
   left: 13%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island3 {
+    top: 36%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island3 {
     top: 35%;
@@ -648,8 +713,8 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .island3 {
-    left: 18%;
-    top: 30%;
+    left: 8%;
+    top: 31%;
   }
 }
 
@@ -671,15 +736,22 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island3 .island3-hint {
+    top: -165%;
+    left: 0%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island3 .island3-hint {
-    top: -230%;
+    top: -150%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island3 .island3-hint {
-    top: -150%;
+    top: -170%;
     left: 5%;
   }
 }
@@ -687,7 +759,7 @@ body {
 @media (max-width: 576px) {
   .wholeMap .island3 .island3-hint {
     top: -220%;
-    left: 0%;
+    left: -5%;
   }
 }
 
@@ -701,22 +773,22 @@ body {
   left: 26%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .island4 {
-    top: 48%;
+    top: 50%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island4 {
-    top: 45%;
+    top: 46%;
     left: 28%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island4 {
-    top: 43%;
+    top: 42%;
   }
 }
 
@@ -738,22 +810,28 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island4 .island4-hint {
+    top: -330%;
+    left: -60%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island4 .island4-hint {
-    top: -455%;
+    top: -310%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island4 .island4-hint {
-    top: -300%;
-    left: -25%;
+    left: -30%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island4 .island4-hint {
-    top: -250%;
+    top: -260%;
   }
 }
 
@@ -767,6 +845,12 @@ body {
   left: 6%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island5 {
+    top: 53%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island5 {
     top: 52%;
@@ -775,7 +859,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .island5 {
-    top: 50%;
+    top: 48%;
     left: 3%;
   }
 }
@@ -798,22 +882,29 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island5 .island5-hint {
+    top: -130%;
+    left: 0;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island5 .island5-hint {
-    top: -180%;
+    top: -115%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island5 .island5-hint {
-    top: -115%;
-    left: 0;
+    top: -130%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island5 .island5-hint {
-    top: -170%;
+    top: -180%;
+    left: -5%;
   }
 }
 
@@ -827,6 +918,12 @@ body {
   left: 17%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island6 {
+    top: 59%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island6 {
     top: 58%;
@@ -836,6 +933,12 @@ body {
 @media (max-width: 768px) {
   .wholeMap .island6 {
     left: 12%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wholeMap .island6 {
+    top: 55%;
   }
 }
 
@@ -857,22 +960,29 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island6 .island6-hint {
+    top: -120%;
+    left: 0%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island6 .island6-hint {
-    top: -180%;
+    top: -110%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island6 .island6-hint {
-    top: -110%;
-    left: 0;
+    top: -120%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island6 .island6-hint {
-    top: -160%;
+    top: -170%;
+    left: -5%;
   }
 }
 
@@ -884,6 +994,12 @@ body {
   position: absolute;
   top: 55%;
   left: 32%;
+}
+
+@media (max-width: 1600px) {
+  .wholeMap .island7 {
+    top: 54%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -901,7 +1017,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .island7 {
-    top: 50%;
+    top: 47%;
   }
 }
 
@@ -923,23 +1039,30 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island7 .island7-hint {
+    top: -110%;
+    left: 3%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island7 .island7-hint {
-    top: -160%;
+    top: -95%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island7 .island7-hint {
-    top: -90%;
-    left: 10%;
+    top: -110%;
+    left: 8%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island7 .island7-hint {
-    top: -140%;
-    left: 5%;
+    top: -150%;
+    left: 0%;
   }
 }
 
@@ -953,17 +1076,24 @@ body {
   right: 26%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island8 {
+    right: 22%;
+    top: 44%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island8 {
-    top: 40%;
-    right: 23%;
+    top: 41%;
+    right: 24%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island8 {
-    top: 39%;
-    right: 19%;
+    top: 37%;
+    right: 21%;
   }
 }
 
@@ -991,22 +1121,29 @@ body {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .island8 .island8-hint {
+    right: 15%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .island8 .island8-hint {
-    top: -210%;
+    top: -180%;
+    right: 35%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .island8 .island8-hint {
-    top: -180%;
-    right: 40%;
+    top: -182%;
+    right: 41%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .island8 .island8-hint {
-    top: -250%;
+    top: -260%;
     right: 65%;
   }
 }
@@ -1015,9 +1152,15 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .island8 .island8-img {
     width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wholeMap .island8 .island8-img {
+    width: 70%;
   }
 }
 
@@ -1039,30 +1182,41 @@ body {
   left: 4%;
 }
 
+@media (max-width: 576px) {
+  .wholeMap .fish-l {
+    top: 17%;
+  }
+}
+
 .wholeMap .fish-r {
   position: absolute;
   top: 73%;
   right: 30%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .fish-r {
+    top: 66%;
+    right: 26%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .fish-r {
     width: 200px;
-    top: 65%;
-    right: 20%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .fish-r {
-    top: 65%;
-    right: 15%;
+    top: 55%;
+    right: 10%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .fish-r {
-    top: 55%;
+    top: 50%;
     left: 70%;
     width: 100px;
   }
@@ -1080,28 +1234,36 @@ body {
   left: 6%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .rock {
+    width: 85px;
+    bottom: 13%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .rock {
     width: 74px;
+    bottom: 12%;
+    left: 4%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .rock {
-    bottom: 10%;
-    left: 4%;
+    left: 3%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .rock {
     bottom: 17%;
-    left: 10%;
-    width: 80px;
+    left: 8%;
+    width: 59px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .rock .rock-img {
     width: 100%;
   }
@@ -1121,19 +1283,27 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .rock .rock-hint {
-    left: -60%;
+    bottom: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .rock .rock-hint {
+    bottom: 55%;
+    left: 0;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .rock .rock-hint {
-    bottom: 24%;
+    bottom: 32%;
     left: -15%;
     opacity: 1;
   }
@@ -1143,21 +1313,31 @@ body {
   position: absolute;
   bottom: -55%;
   left: -35%;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 1600px) {
+  .wholeMap .rock .rock-shadow {
+    bottom: -60%;
+    left: -50%;
+  }
 }
 
 @media (max-width: 1200px) {
   .wholeMap .rock .rock-shadow {
     width: 170%;
     bottom: -65%;
+    left: -35%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .rock .rock-shadow {
-    left: 0;
-    width: 70%;
+    left: -32%;
+    width: 170%;
+    bottom: -68%;
     opacity: 1;
   }
 }
@@ -1176,25 +1356,30 @@ body {
   left: 15%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .animal {
+    width: 109px;
+    bottom: 13%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .animal {
     width: 95px;
-    left: 18%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .animal {
-    bottom: 10%;
-    left: 16%;
+    left: 17.5%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .animal {
-    bottom: 17%;
-    left: 32%;
-    width: 80px;
+    bottom: 18%;
+    left: 30%;
+    width: 76px;
   }
 }
 
@@ -1216,20 +1401,35 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .animal .animal-hint {
+    bottom: 140%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .animal .animal-hint {
-    left: -35%;
+    left: -10%;
+    bottom: 130%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .animal .animal-hint {
+    bottom: 85%;
+    left: 10%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .animal .animal-hint {
-    bottom: 45%;
-    left: -10%;
+    bottom: 35%;
+    left: -5%;
     opacity: 1;
   }
 }
@@ -1238,21 +1438,37 @@ body {
   position: absolute;
   bottom: -100%;
   left: -20%;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 1600px) {
+  .wholeMap .animal .animal-shadow {
+    bottom: -110%;
+    left: -25%;
+  }
 }
 
 @media (max-width: 1200px) {
   .wholeMap .animal .animal-shadow {
     width: 145%;
-    bottom: -120%;
+    bottom: -150%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .animal .animal-shadow {
+    left: -15%;
+    bottom: -140%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .animal .animal-shadow {
-    left: 0;
-    width: 90%;
+    left: -25%;
+    width: 150%;
+    bottom: -150%;
     opacity: 1;
   }
 }
@@ -1271,17 +1487,24 @@ body {
   left: 25%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .plant {
+    width: 90px;
+    bottom: 13%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .plant {
     width: 78px;
-    left: 31%;
+    left: 27%;
+    bottom: 12%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .plant {
-    bottom: 10%;
-    left: 31%;
+    left: 35%;
   }
 }
 
@@ -1289,7 +1512,7 @@ body {
   .wholeMap .plant {
     bottom: 17%;
     left: 55%;
-    width: 80px;
+    width: 62px;
   }
 }
 
@@ -1311,19 +1534,33 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .plant .plant-hint {
+    bottom: 80%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .plant .plant-hint {
-    left: -36%;
+    left: -10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .plant .plant-hint {
+    bottom: 59%;
+    left: 0%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .plant .plant-hint {
-    bottom: 25%;
+    bottom: 35%;
     left: -8%;
     opacity: 1;
   }
@@ -1333,20 +1570,37 @@ body {
   position: absolute;
   bottom: -50%;
   left: 9%;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 1600px) {
+  .wholeMap .plant .plant-shadow {
+    bottom: -60%;
+    left: 0;
+  }
 }
 
 @media (max-width: 1200px) {
   .wholeMap .plant .plant-shadow {
     left: 12%;
+    bottom: -55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .plant .plant-shadow {
+    left: 25%;
+    bottom: -45%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .plant .plant-shadow {
-    left: 0;
-    width: 80%;
+    left: 20%;
+    width: 90%;
+    bottom: -55%;
     opacity: 1;
   }
 }
@@ -1365,25 +1619,33 @@ body {
   left: 35%;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .carol {
+    width: 96px;
+    bottom: 13%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .carol {
     width: 84px;
-    left: 43%;
+    left: 38%;
+    bottom: 12%;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .carol {
-    bottom: 10%;
-    left: 43%;
+    width: 80px;
+    left: 50%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .carol {
     bottom: 17%;
-    left: 75%;
-    width: 80px;
+    left: 76%;
+    width: 67px;
   }
 }
 
@@ -1405,19 +1667,27 @@ body {
   text-align: center;
   line-height: 88px;
   color: white;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .carol .carol-hint {
-    left: -23%;
+    bottom: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .carol .carol-hint {
+    bottom: 63%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .carol .carol-hint {
-    bottom: 30%;
+    bottom: 35%;
+    left: 2%;
     opacity: 1;
   }
 }
@@ -1426,14 +1696,37 @@ body {
   position: absolute;
   bottom: -50%;
   left: 9%;
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .carol .carol-shadow {
+    bottom: -60%;
+    left: 0%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wholeMap .carol .carol-shadow {
+    left: 13%;
+    bottom: -58%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wholeMap .carol .carol-shadow {
+    bottom: -45%;
+    left: 22%;
+  }
+}
+
 @media (max-width: 576px) {
   .wholeMap .carol .carol-shadow {
-    left: 5%;
+    left: 10%;
     width: 90%;
+    bottom: -55%;
     opacity: 1;
   }
 }
@@ -1461,7 +1754,7 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .birds {
-    width: 15%;
+    width: 25%;
   }
 }
 
@@ -1481,13 +1774,13 @@ body {
 
 @media (max-width: 1200px) {
   .wholeMap .cloud {
-    width: 400px;
+    width: 350px;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .cloud {
-    width: 30%;
+    width: 35%;
   }
 }
 
@@ -1512,6 +1805,12 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .boat {
+    right: 15%;
+  }
+}
+
 @media (max-width: 1200px) {
   .wholeMap .boat {
     bottom: 4%;
@@ -1520,14 +1819,15 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .boat {
-    bottom: 3%;
+    bottom: 2%;
+    right: 5%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .boat {
-    width: 40%;
-    right: 30%;
+    width: 50%;
+    right: 25%;
   }
 }
 
@@ -1539,13 +1839,14 @@ body {
 
 @media (max-width: 768px) {
   .wholeMap .email {
-    bottom: 10%;
+    bottom: 12%;
+    right: 1%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .email {
-    bottom: 8%;
+    bottom: 6%;
     right: 15%;
   }
 }
@@ -1556,22 +1857,28 @@ body {
   right: 6%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .wholeMap .fb {
     right: 8%;
   }
 }
 
+@media (max-width: 1200px) {
+  .wholeMap .fb {
+    right: 10%;
+  }
+}
+
 @media (max-width: 768px) {
   .wholeMap .fb {
-    bottom: 10%;
+    bottom: 12%;
   }
 }
 
 @media (max-width: 576px) {
   .wholeMap .fb {
     right: 30%;
-    bottom: 8%;
+    bottom: 6%;
   }
 }
 
@@ -1587,17 +1894,38 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .wholeMap .box img {
+    width: 70%;
+  }
+}
+
 @media (max-width: 576px) {
   .wholeMap .box img {
     width: 45%;
   }
 }
 
+@media (max-width: 1600px) {
+  .wholeMap .box .hint {
+    width: 85px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wholeMap .box .hint {
+    width: 70px;
+    font-size: 16px;
+    line-height: 70px;
+  }
+}
+
 @media (max-width: 768px) {
   .wholeMap .box .hint {
     width: 60px;
-    font-size: 16px;
-    line-height: 70px;
+    font-size: 14px;
+    line-height: 60px;
+    letter-spacing: 0;
   }
 }
 
@@ -1605,15 +1933,31 @@ body {
   .wholeMap .box .hint {
     width: 50px;
     font-size: 12px;
-    line-height: 42px;
+    line-height: 50px;
     letter-spacing: 0;
+  }
+}
+
+@media (max-width: 1600px) {
+  .wholeMap .box .others-hint {
+    width: 115px;
+    font-size: 18px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wholeMap .box .others-hint {
+    width: 100px;
+    font-size: 16px;
+    line-height: 50px;
   }
 }
 
 @media (max-width: 768px) {
   .wholeMap .box .others-hint {
-    width: 95px;
-    font-size: 16px;
+    width: 90px;
+    font-size: 14px;
     line-height: 50px;
   }
 }
