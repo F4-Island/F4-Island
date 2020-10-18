@@ -100,19 +100,45 @@ body {
 .position {
     background-image: url(../img/01認識我們/地理位置-pic.png);
     // background-color:white;
-    background-size: 105%;
+    background-size: 140%;
     background-position: center;
+    background-color: white;
     width: 60%;
     height: 60vh;
-    margin: 5% auto;
+    margin: 100px auto;
     position: relative;
     color: white;
     border-radius: 50px;
+    // min-height: 200px;
+    @media (max-width: 1600px){
+        background-size: 140%;
+        height: 55vh;
+    }
+    @media (max-width: 1280px){
+        background-size: 130%;
+        border-radius: 50px;
+        height: 50vh;
+    }
+    @media (max-width: 1024px){
+        background-size: 160%;
+        height: 40vh;
+        letter-spacing: 8px;
+        
+    }
+    @media (max-width:768px){
+        height: 200px;
+        width: 100%;
+        background-size: 180%;
+        
+    }
     // 海鷗
     .seagull {
         position: absolute;
         right: -8%;
-    
+        @media (max-width:768px){
+           width: 20%;
+            
+        }
     }
     // 仙人掌
     .cactus {
@@ -120,9 +146,17 @@ body {
         bottom: -12%;
         left: 6%;
         z-index: 1;
+
+        @media (max-width:1280px){
+            width: 15%;
+             
+         }
+        @media (max-width:768px){
+            width: 10%;
+             
+         }
     }
 
-    .container {
         .position-text1 {
             background-color: rgba(#0E1A27, 0.8);
             position: absolute;
@@ -132,6 +166,25 @@ body {
             padding: 10px;
             z-index: 2;
             border-radius: 10px;
+            
+            @media (max-width: 1600px){
+                width: 45%;
+                top: 15%;
+            }
+            @media (max-width: 1280px){
+                width: 50%;
+            }
+            @media (max-width: 1024px){
+                top: 120%;
+                width: 90%;
+                margin-bottom: 100px;
+            }
+            @media (max-width: 768px){
+                top: 120%;
+                width: 90%;
+                margin-bottom: 100px;
+            }
+
             h3{
                 color: #24999F;
                 span{
@@ -140,6 +193,7 @@ body {
             }
         }
         .position-text2 {
+            // 藍色對話框
             // background-color: rgba(4, 9, 27, 0.4);
             position: absolute;
             right: 2%;
@@ -151,20 +205,39 @@ body {
             background-repeat: no-repeat;
             background-position: center;
             padding: 15px;
+            @media (max-width: 1600px){
+                background-size: 100%;
+            }
+            @media (max-width: 1280px){
+                width: 40%;
+            }
+            @media (max-width: 1024px){
+                background-image: none;
+            }
             span {
                 width: 70%;
                 position: absolute;
                 left: 15%;
                 top: 35%;
+                @media (max-width: 1600px){
+                   top: 30%;
+                }
+                @media (max-width: 1024px){
+                    display: none;
+                }
             }
             // 小船
             .boat {
                 position: absolute;
                 right: -20%;
                 bottom: -40%;
+                @media (max-width: 1024px){
+                    bottom: -120%;
+                    width: 90%;
+                }
             }
         }
-    }
+    
 }
 
 // 波浪
@@ -177,4 +250,16 @@ body {
 
 footer{
     @include footer;
+    .l-footer{
+        display: block;
+        @media (max-width: 326px){
+            display: none;
+        }
+    }
+    .s-footer{
+        display: none;
+        @media (max-width: 326px){
+            display: block;
+        }
+    }
 }

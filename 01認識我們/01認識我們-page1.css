@@ -276,7 +276,7 @@ body {
 
 @media (max-width: 1200px) {
   .page1 .container nav {
-    width: 65%;
+    width: 70%;
   }
 }
 
@@ -447,19 +447,57 @@ body {
 
 .position {
   background-image: url(../img/01認識我們/地理位置-pic.png);
-  background-size: 105%;
+  background-size: 140%;
   background-position: center;
+  background-color: white;
   width: 60%;
   height: 60vh;
-  margin: 5% auto;
+  margin: 100px auto;
   position: relative;
   color: white;
   border-radius: 50px;
 }
 
+@media (max-width: 1600px) {
+  .position {
+    background-size: 140%;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .position {
+    background-size: 130%;
+    border-radius: 50px;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .position {
+    background-size: 160%;
+    height: 40vh;
+    letter-spacing: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .position {
+    height: 200px;
+    width: 100%;
+    background-size: 180%;
+  }
+}
+
 .position .seagull {
   position: absolute;
   right: -8%;
+}
+
+@media (max-width: 768px) {
+  .position .seagull {
+    width: 20%;
+  }
 }
 
 .position .cactus {
@@ -469,7 +507,19 @@ body {
   z-index: 1;
 }
 
-.position .container .position-text1 {
+@media (max-width: 1280px) {
+  .position .cactus {
+    width: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .position .cactus {
+    width: 10%;
+  }
+}
+
+.position .position-text1 {
   background-color: rgba(14, 26, 39, 0.8);
   position: absolute;
   left: 5%;
@@ -480,15 +530,44 @@ body {
   border-radius: 10px;
 }
 
-.position .container .position-text1 h3 {
+@media (max-width: 1600px) {
+  .position .position-text1 {
+    width: 45%;
+    top: 15%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .position .position-text1 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .position .position-text1 {
+    top: 120%;
+    width: 90%;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .position .position-text1 {
+    top: 120%;
+    width: 90%;
+    margin-bottom: 100px;
+  }
+}
+
+.position .position-text1 h3 {
   color: #24999F;
 }
 
-.position .container .position-text1 h3 span {
+.position .position-text1 h3 span {
   font-family: Arno Pro;
 }
 
-.position .container .position-text2 {
+.position .position-text2 {
   position: absolute;
   right: 2%;
   bottom: 2%;
@@ -501,17 +580,54 @@ body {
   padding: 15px;
 }
 
-.position .container .position-text2 span {
+@media (max-width: 1600px) {
+  .position .position-text2 {
+    background-size: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .position .position-text2 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .position .position-text2 {
+    background-image: none;
+  }
+}
+
+.position .position-text2 span {
   width: 70%;
   position: absolute;
   left: 15%;
   top: 35%;
 }
 
-.position .container .position-text2 .boat {
+@media (max-width: 1600px) {
+  .position .position-text2 span {
+    top: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .position .position-text2 span {
+    display: none;
+  }
+}
+
+.position .position-text2 .boat {
   position: absolute;
   right: -20%;
   bottom: -40%;
+}
+
+@media (max-width: 1024px) {
+  .position .position-text2 .boat {
+    bottom: -120%;
+    width: 90%;
+  }
 }
 
 .wave {
@@ -532,5 +648,25 @@ footer {
   font-size: 0.5vw;
   line-height: 0.5vw;
   letter-spacing: 1px;
+}
+
+footer .l-footer {
+  display: block;
+}
+
+@media (max-width: 326px) {
+  footer .l-footer {
+    display: none;
+  }
+}
+
+footer .s-footer {
+  display: none;
+}
+
+@media (max-width: 326px) {
+  footer .s-footer {
+    display: block;
+  }
 }
 /*# sourceMappingURL=01認識我們-page1.css.map */
