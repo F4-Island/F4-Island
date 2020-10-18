@@ -588,12 +588,12 @@ body {
   display: table;
 }
 
-.tab-btn.abc .tablinks.abc {
+.tab-btn.show .tablinks.show {
   position: relative;
   background-color: #1c99af;
 }
 
-.tab-btn.abc .tablinks.abc::before {
+.tab-btn.show .tablinks.show::before {
   content: "";
   width: 0;
   height: 0;
@@ -601,14 +601,14 @@ body {
   background-color: none;
 }
 
-.tab-btn.abc .tablinks.abc h2 {
+.tab-btn.show .tablinks.show h2 {
   position: relative;
   top: 20px;
   right: 50px;
   color: white;
 }
 
-.tabcontent.abc {
+.tabcontent.show {
   display: block;
   background-image: url(../img/認識四島/頭巾.png);
 }

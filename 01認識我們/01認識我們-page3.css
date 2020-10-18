@@ -13,19 +13,6 @@ body {
   background-color: #318eda;
 }
 
-.logo {
-  width: 12%;
-  position: fixed;
-  top: 20px;
-  left: 25px;
-}
-
-@media (max-width: 576px) {
-  .logo {
-    display: none;
-  }
-}
-
 .menu {
   position: fixed;
   top: -30px;
@@ -437,6 +424,20 @@ body {
   padding-top: 40vh;
   background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
   background-size: cover;
+  position: relative;
+}
+
+.content-box .tab .logo {
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  right: 36%;
+}
+
+@media (max-width: 576px) {
+  .content-box .tab .logo {
+    display: none;
+  }
 }
 
 .content-box .tab .tab-btn {
@@ -569,12 +570,12 @@ body {
   display: table;
 }
 
-.tab-btn.abc .tablinks.abc {
+.tab-btn.show .tablinks.show {
   position: relative;
   background-color: #1c99af;
 }
 
-.tab-btn.abc .tablinks.abc::before {
+.tab-btn.show .tablinks.show::before {
   content: "";
   width: 0;
   height: 0;
@@ -582,14 +583,14 @@ body {
   background-color: none;
 }
 
-.tab-btn.abc .tablinks.abc h1 {
+.tab-btn.show .tablinks.show h1 {
   position: relative;
   top: 20px;
   right: 50px;
   color: white;
 }
 
-.tabcontent.abc {
+.tabcontent.show {
   display: block;
   background-image: url(../img/認識四島/東吉嶼.png);
 }

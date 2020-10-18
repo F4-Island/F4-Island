@@ -12,9 +12,14 @@ body {
 }
 
 // logo
-.logo {
-    @include logo;
-}
+// .logo {
+//     // width: 12%;
+//     position: absolute;
+//     top: 50px;
+//     left: 25px;
+//     @media (max-width: 576px){
+//         display: none;
+// }
 
 // menu開關
 .menu {
@@ -98,15 +103,25 @@ body {
         padding-top: 40vh;
         background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
         background-size: cover;
+        position: relative;
+        .logo {
+            width:30%;
+            position: absolute;
+            top: 10%;
+            right: 36%;
+            @media (max-width: 576px){
+                display: none;
+            }
+        }
+
         .tab-btn {
-            
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 100%;
-            
+
             .tablinks {
                 width: 40%;
                 height: 30%;
@@ -117,7 +132,7 @@ body {
                 border: none;
                 outline: none;
                 display: block;
-                background-color:rgb(41, 82, 116) ;
+                background-color: rgb(41, 82, 116);
                 position: relative;
                 z-index: 99;
 
@@ -206,8 +221,8 @@ body {
 }
 
 // 一開始顯示圖
-.tab-btn.abc {
-    .tablinks.abc {
+.tab-btn.show {
+    .tablinks.show {
         position: relative;
         background-color: rgb(28, 153, 175);
         // z-index: 200;
@@ -216,7 +231,7 @@ body {
             width: 0;
             height: 0;
             position: absolute;
-            background-color:none;
+            background-color: none;
             // z-index: 9999;
             // transition: 0.4s;
         }
@@ -229,7 +244,7 @@ body {
         }
     }
 }
-.tabcontent.abc{
+.tabcontent.show {
     display: block;
     background-image: url(../img/認識四島/東吉嶼.png);
 }

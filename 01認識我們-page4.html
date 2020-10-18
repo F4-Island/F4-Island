@@ -87,8 +87,8 @@
             <a href="回首頁.html">
             <img class="logo" width="15%" src="./img/00頁首/F4嶼-logo.svg" alt="">
         </a>
-            <div class="tab-btn abc">
-                <button class="tablinks abc" onmouseover="openIsland(event, 'Island1')">
+            <div class="tab-btn show">
+                <button class="tablinks show" onmouseover="openIsland(event, 'Island1')">
                     <h2>頭巾</h2>
                 </button>
                 <button class="tablinks" onmouseover="openIsland(event, 'Island2')">
@@ -118,7 +118,7 @@
             </div>
         </div>
 
-        <div id="Island1" class="tabcontent abc tab1 w-50">
+        <div id="Island1" class="tabcontent show tab1 w-50">
             <div class="text w-100  d-flex flex-column align-items-center justify-content-center">
                 <div class="text-box">
                     <h3>頭巾</h3>
@@ -251,10 +251,10 @@
         })
 
         $('.tablinks*').hover(function () {
-            if ($('.tablinks*').hasClass('abc')) {
-                $('.tablinks*').removeClass('abc')
-                $('.tab-btn').removeClass('abc')
-                $('.tabcontent').removeClass('abc')
+            if ($('.tablinks*').hasClass('show')) {
+                $('.tablinks*').removeClass('show')
+                $('.tab-btn').removeClass('show')
+                $('.tabcontent').removeClass('show')
             }
 
         })
