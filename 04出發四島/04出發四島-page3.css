@@ -516,6 +516,14 @@ body {
   line-height: 35px;
 }
 
+.text-box {
+  width: 100%;
+}
+
+.text-box img {
+  width: 100%;
+}
+
 h2 {
   color: #24999F;
   display: inline-block;

@@ -599,6 +599,7 @@ body {
   position: fixed;
   right: 5%;
   bottom: 8%;
+  z-index: -1;
 }
 
 footer {
