@@ -453,6 +453,12 @@ body {
   margin: 50px auto;
 }
 
+@media (max-width: 992px) {
+  .content-box .page-title {
+    margin: 50px auto 0 auto;
+  }
+}
+
 .content-box .page-title h1 {
   color: #24999F;
   display: inline-block;
@@ -468,6 +474,13 @@ body {
 @media (max-width: 992px) {
   .content-box .page-title h1 {
     font-size: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .page-title h1 {
+    font-size: 30px;
+    padding-top: 20px;
   }
 }
 
@@ -488,6 +501,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .content-box .page-title h3 {
+    font-size: 16px;
+  }
+}
+
 .content-box .content {
   margin-bottom: 7%;
 }
@@ -499,10 +518,28 @@ body {
   text-align: justify;
 }
 
+@media (max-width: 992px) {
+  .content-box .content .text-box p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-box .content .title img {
+    width: 70%;
+  }
+}
+
 .content-box .field {
   position: absolute;
   top: 30%;
   right: 0;
+}
+
+@media (max-width: 992px) {
+  .content-box .field {
+    top: 32%;
+  }
 }
 
 .content-box .coral {
@@ -511,10 +548,26 @@ body {
   left: 0;
 }
 
+@media (max-width: 992px) {
+  .content-box .coral {
+    top: 51%;
+  }
+}
+
 .content-box .fish {
   position: absolute;
   top: 75%;
   right: 40%;
+}
+
+@media (max-width: 992px) {
+  .content-box .fish {
+    top: 78%;
+  }
+}
+
+.content-box .illustration {
+  width: 15%;
 }
 
 footer {

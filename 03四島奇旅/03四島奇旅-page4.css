@@ -471,6 +471,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .content-box .page-title h1 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+}
+
 .content-box .page-title h3 {
   color: #24999F;
   -webkit-box-align: center;
@@ -485,6 +492,12 @@ body {
 @media (max-width: 992px) {
   .content-box .page-title h3 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .page-title h3 {
+    font-size: 16px;
   }
 }
 

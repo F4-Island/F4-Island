@@ -474,6 +474,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .content-box .page-title h1 {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+}
+
 .content-box .content {
   margin-bottom: 7%;
 }

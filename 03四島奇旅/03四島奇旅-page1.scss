@@ -101,6 +101,9 @@ body {
     position: relative;
     .page-title{
         margin: 50px auto;
+        @media (max-width: 992px){
+            margin: 50px auto 0 auto;
+        }
         h1{
            @include page-title-style;
            margin-bottom: 0; 
@@ -117,24 +120,46 @@ body {
             letter-spacing: 3px;
             margin-bottom: 0;
             text-align: justify;
+            @media (max-width: 992px){
+                font-size: 18px;
+            }
             } 
+        }
+        .title{
+            img{
+                @media (max-width: 992px){
+                    width: 70%;
+                }
+            }
         }
     }
     .field{
         position: absolute;
         top: 30%;
         right: 0;
+        @media (max-width: 992px){
+            top: 32%;
+        }
     }
     .coral{
         position: absolute;
         top: 50%;
         left: 0;
+        @media (max-width: 992px){
+            top: 51%;
+        }
     } 
     .fish{
         position: absolute;
         top: 75%;
         right: 40%;
+        @media (max-width: 992px){
+            top: 78%;
+        }
     } 
+    .illustration{
+        width: 15%;
+    }
 }
 footer{
     margin-top: 200px;
