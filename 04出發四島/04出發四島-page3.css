@@ -10,8 +10,31 @@
 }
 
 body {
-  background-image: url(../img/02生態探索/植物底圖.png);
+  background-image: url(../img/04出發四島/注意事項-底圖.png);
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+.loading-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgb(22, 49, 81); */
+  background: black;
+  z-index: 99999;
+}
+
+.loading {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-75px, -75px);
+          transform: translate(-75px, -75px);
+  border-radius: 100px;
 }
 
 .logo {
@@ -19,7 +42,6 @@ body {
   position: fixed;
   top: 20px;
   left: 25px;
-  z-index: 5;
 }
 
 @media (max-width: 576px) {
@@ -209,7 +231,7 @@ body {
   }
 }
 
-.page1 {
+.page-navbar {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -218,32 +240,32 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page1 {
+  .page-navbar {
     font-size: 22px;
   }
 }
 
 @media (max-width: 992px) {
-  .page1 {
+  .page-navbar {
     font-size: 20px;
     letter-spacing: 1px;
   }
 }
 
 @media (max-width: 768px) {
-  .page1 {
+  .page-navbar {
     font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
-  .page1 {
+  .page-navbar {
     font-size: 14px;
     letter-spacing: 0;
   }
 }
 
-.page1 .container nav {
+.page-navbar .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
@@ -253,26 +275,26 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page1 .container nav {
+  .page-navbar .container nav {
     width: 65%;
   }
 }
 
 @media (max-width: 992px) {
-  .page1 .container nav {
+  .page-navbar .container nav {
     width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .page1 .container nav {
+  .page-navbar .container nav {
     width: 80%;
     height: 50px;
   }
 }
 
 @media (max-width: 576px) {
-  .page1 .container nav {
+  .page-navbar .container nav {
     width: 90%;
     padding: 0 2%;
     height: 45px;
@@ -282,15 +304,15 @@ body {
   }
 }
 
-.page1 .container nav a {
+.page-navbar .container nav a {
   text-decoration: none;
 }
 
-.page1 .container nav a {
+.page-navbar .container nav a {
   text-decoration: none;
 }
 
-.page1 .container nav .title {
+.page-navbar .container nav .title {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -299,32 +321,32 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page1 .container nav .title {
+  .page-navbar .container nav .title {
     font-size: 22px;
   }
 }
 
 @media (max-width: 992px) {
-  .page1 .container nav .title {
+  .page-navbar .container nav .title {
     font-size: 20px;
     letter-spacing: 1px;
   }
 }
 
 @media (max-width: 768px) {
-  .page1 .container nav .title {
+  .page-navbar .container nav .title {
     font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
-  .page1 .container nav .title {
+  .page-navbar .container nav .title {
     font-size: 14px;
     letter-spacing: 0;
   }
 }
 
-.page1 .container nav .name {
+.page-navbar .container nav .name {
   font-family: Microsoft JhengHei;
   font-weight: 400;
   font-size: 21px;
@@ -343,31 +365,31 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page1 .container nav .name {
+  .page-navbar .container nav .name {
     font-size: 18px;
   }
 }
 
 @media (max-width: 992px) {
-  .page1 .container nav .name {
+  .page-navbar .container nav .name {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .page1 .container nav .name {
+  .page-navbar .container nav .name {
     font-size: 14px;
   }
 }
 
 @media (max-width: 576px) {
-  .page1 .container nav .name {
+  .page-navbar .container nav .name {
     font-size: 13px;
     letter-spacing: 1px;
   }
 }
 
-.page1 .container nav .name .icon {
+.page-navbar .container nav .name .icon {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -379,14 +401,14 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page1 .container nav .name .icon {
+  .page-navbar .container nav .name .icon {
     width: 13px;
     height: 13px;
   }
 }
 
 @media (max-width: 992px) {
-  .page1 .container nav .name .icon {
+  .page-navbar .container nav .name .icon {
     width: 11px;
     height: 11px;
     margin-right: 5px;
@@ -394,7 +416,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .page1 .container nav .name .icon {
+  .page-navbar .container nav .name .icon {
     width: 9px;
     height: 9px;
     margin-right: 3px;
@@ -402,57 +424,28 @@ body {
 }
 
 @media (max-width: 576px) {
-  .page1 .container nav .name .icon {
+  .page-navbar .container nav .name .icon {
     width: 7px;
     height: 7px;
     margin-right: 1px;
   }
 }
 
-.page1 .container nav .name:hover {
+.page-navbar .container nav .name:hover {
   opacity: 1;
   font-weight: 900;
 }
 
-.page1 .container nav .name-1 {
+.page-navbar .container nav .name-1 {
   font-weight: 600;
   opacity: 1;
 }
 
-.page1 .container nav .name-1 .icon {
+.page-navbar .container nav .name-1 .icon {
   opacity: 1;
 }
 
-.content .title1 {
-  margin: 50px auto;
-}
-
-.content .title1 h1 {
-  color: #24999F;
-  display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 3px;
-  font-size: 60px;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .content .title1 h1 {
-    font-size: 45px;
-  }
-}
-
-@media (max-width: 576px) {
-  .content .title1 h1 {
-    font-size: 30px;
-    padding-top: 30px;
-  }
-}
-
-.content .title1 h3 {
+.Sub-standard {
   color: #24999F;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -461,81 +454,103 @@ body {
   font-size: 25px;
   font-family: Arno Pro;
   opacity: 0.5;
+  text-align: center;
+  margin-top: -10px;
 }
 
 @media (max-width: 992px) {
-  .content .title1 h3 {
+  .Sub-standard {
     font-size: 20px;
   }
 }
 
 @media (max-width: 576px) {
-  .content .title1 h3 {
+  .Sub-standard {
     font-size: 16px;
   }
 }
 
-.content .content .title-p {
-  font-size: 21px;
+.content-box {
+  padding-top: 5%;
+  position: relative;
+}
+
+.content-box h1 {
+  color: #24999F;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 3px;
+  font-size: 60px;
   font-weight: 600;
-  margin-top: 30px;
-  letter-spacing: 2px;
 }
 
-.content .content .plant-row {
-  width: 100%;
+@media (max-width: 992px) {
+  .content-box h1 {
+    font-size: 45px;
+  }
 }
 
-.content .content .plant-row .plant-img {
-  margin: auto;
-  width: 80%;
-  height: 0;
-  padding-top: 80%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10%;
+@media (max-width: 576px) {
+  .content-box h1 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
 }
 
-.content .content .plant-row h3 {
-  color: #55758C;
-  font-weight: bold;
-  margin-bottom: 20%;
+.content {
+  margin-bottom: 7%;
 }
 
-.content .content .plant-row .img1 {
-  background-image: url(../img/02生態探索/植物/澎湖決明.jpg);
+.content .text-box p {
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  text-align: justify;
 }
 
-.content .content .plant-row .img2 {
-  background-image: url(../img/02生態探索/植物/密毛爵床（澎湖爵床）.jpg);
+.page-title {
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 35px;
 }
 
-.content .content .plant-row .img3 {
-  background-image: url(../img/02生態探索/植物/銀合歡.jpg);
+h2 {
+  color: #24999F;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 75px;
 }
 
-.content .content .plant-row .img4 {
-  background-image: url(../img/02生態探索/植物/雞殤刺.jpeg);
+.service p {
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 35px;
 }
 
-.content .content .plant-row .img5 {
-  background-image: url(../img/02生態探索/植物/茅毛珍珠菜.jpg);
+.hole {
+  position: absolute;
+  top: 20%;
+  right: 20%;
 }
 
-.content .content .plant-row .img6 {
-  background-image: url(../img/02生態探索/植物/仙人掌.jpg);
-}
-
-.seagull {
-  position: fixed;
-  right: 30%;
-  top: 15%;
+.rock {
+  position: absolute;
+  top: 60%;
+  left: 45%;
 }
 
 .wave {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0;
+  z-index: 99;
 }
 
 .boat {
@@ -557,4 +572,4 @@ footer {
   line-height: 0.5vw;
   letter-spacing: 1px;
 }
-/*# sourceMappingURL=02生態探索-page3.css.map */
+/*# sourceMappingURL=04出發四島-page3.css.map */

@@ -189,12 +189,6 @@ body {
   transition: 0.3s;
 }
 
-@media (max-width: 576px) {
-  .l-menu .menu-list li a span {
-    font-size: 12px;
-  }
-}
-
 .l-menu .menu-list li a span:hover {
   color: #b8cad3;
 }
@@ -467,6 +461,19 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 992px) {
+  .content .title h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content .title h1 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+}
+
 .content .title h3 {
   color: #24999F;
   -webkit-box-align: center;
@@ -476,6 +483,18 @@ body {
   font-size: 25px;
   font-family: Arno Pro;
   opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .content .title h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content .title h3 {
+    font-size: 16px;
+  }
 }
 
 .card {
@@ -536,7 +555,7 @@ body {
 .boat {
   position: fixed;
   right: 5%;
-  bottom: 8%;
+  bottom: 6%;
 }
 
 footer {

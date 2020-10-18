@@ -98,13 +98,16 @@ body {
 }
 
 .content-box{
-    padding-top: 5%;
     position: relative;
     .page-title{
-        margin-bottom: 1%;
+        margin: 50px auto;
         h1{
-           @include page-title-style; 
-        }     
+           @include page-title-style;
+           margin-bottom: 0; 
+        } 
+        h3 {
+            @include Sub-standard-style;
+        }    
     }
     .content{
         margin-bottom: 7%;

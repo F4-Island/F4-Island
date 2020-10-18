@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="/02生態探索/02生態探索-page2.css">
+    <style>
+        html:not(.no-js) [data-aos=fade-up] {
+        -webkit-transform: translate3d(0,100px,0);
+        transform: translate3d(0,40px,0);
+    }
+        </style>
 </head>
 
 <body>
@@ -109,23 +115,23 @@
 
     <div class="container content text-center">
         <div class="title1">
-            <h1>玄武岩</h1>
+            <div data-aos="fade-up" data-aos-duration="1500" ><h1>玄武岩</h1></div>
             <br>
-            <h3>Basalt</h3>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><h3>Basalt</h3></div>
         </div>
         <!-- 玄武岩 -->
         <div class=" content">
             <div class="basalt d-flex">
                 <!-- 玄武岩圖片 -->
 
-                <div class="basalt-img">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900" class="basalt-img">
                 </div>
                 <!-- 玄武岩文字區 -->
                 <div class="basalt-text">
-                    <div class="basalt-title">
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700"class="basalt-title">
                         <h1>玄武岩</h1>
                     </div>
-                    <div class="basalt-content">
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"class="basalt-content">
                         <span>
                             澎湖群島具有臺灣地區最古老、且未受後期構造運動影響的豐富火山地質景觀，大約形成於一千一百萬年前。熔岩停留後，當岩體冷卻收縮時會與周圍岩石的垂直面形成柱狀節理。裸露於地表上經過風化侵蝕作用形成豐富多樣的型態，是相當特殊的地質地形景觀。
 
@@ -139,14 +145,14 @@
             <!-- 海蝕 -->
             <div class="seaeclipse mb-5">
                 <!-- 海蝕圖片 -->
-                <div class="seaeclipse-img">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"class="seaeclipse-img">
                 </div>
                 <!-- 海蝕文字區 -->
                 <div class="seaeclipse-text">
-                    <div class="seaeclipse-title">
-                        <h1>海蝕</h1>
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700"class="seaeclipse-title">
+                        <div><h1>海蝕</h1></div>
                     </div>
-                    <div class="seaeclipse-content">
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"class="seaeclipse-content">
                         <span>
                             是海水運動對陸地的破壞作用，海蝕的力量來自波浪、潮汐和海流，而造成海蝕地形。為了保護這些最完整、最原始的澎湖海岸地形，澎湖縣政府依規定指定設置了“澎湖南海玄武岩自然保留區
                             ”，為首度由縣政府申請提報之自然保留區。
@@ -232,6 +238,9 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
     <script>
 
         // loading時間

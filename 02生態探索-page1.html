@@ -21,12 +21,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="/02生態探索/02生態探索-page1.css">
+    <style>
+        html:not(.no-js) [data-aos=fade-up] {
+        -webkit-transform: translate3d(0,100px,0);
+        transform: translate3d(0,40px,0);
+    }
+        </style>
 </head>
 
 <body>
     <!-- //轉場loading -->
 
-    <div class="loading-wrapper">
+     <div class="loading-wrapper">
         <img src="./img/00頁首/燈塔.gif" alt="" class="loading">
     </div>
 
@@ -108,20 +114,21 @@
 
     <div class="container content text-center">
         <div class="title">
-            <h1>珊瑚礁生態系</h1>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><h1>珊瑚礁生態系</h1></div>
             <br>
-            <h3>Coral reef</h3>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><h3>Coral reef</h3></div>
         </div>
         <div class="row text-center">
 
             <!-- 珊瑚區 -->
             <div class="col-md-3">
-                <div class="card border-0" style="width: 90%;">
-                    <div class="roundimg coral"></div>
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"class="card border-0" style="width: 90%;">
+                    <div  class="roundimg coral"></div>
                     <div class="card-body">
                         <h5 class="card-title animate__animated animate__rubberBand
-                        animate__repeat-3">珊瑚</h5>
-                        <p class="card-text">
+                        animate__repeat-3 
+                        animate__delay-3s">珊瑚</h5>
+                        <p  class="card-text">
                             潛入澎湖南方四島深蔚的海洋中，可以觀察到各式各樣的珊瑚，分類為石珊瑚、軟珊瑚和柳珊瑚。形成大片且直徑超過十公尺群集的現象，是澎湖南方四島海域珊瑚群聚的特殊景觀。</p>
                     </div>
                 </div>
@@ -130,11 +137,12 @@
             <!-- 藻類區 -->
             <div class="col-md-3 my-5 my-md-0">
                 <div class="mt-5"></div>
-                <div class="card border-0" style="width: 90%;">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"class="card border-0" style="width: 90%;">
                     <div class="roundimg seaweed"></div>
                     <div class="card-body">
                         <h5 class="card-title animate__animated animate__rubberBand
-                        animate__repeat-3">
+                        animate__repeat-3
+                        animate__delay-3s">
                             藻類</h5>
                         <p class="card-text">主要分布於潮間帶及淺海區，包括海草、藍綠藻、綠藻、褐藻、紅藻等多樣化的藻類族群。是海中氧氣的主要來源，同時也是水中生物的食物來源。</p>
                     </div>
@@ -143,11 +151,12 @@
 
             <!-- 魚類區 -->
             <div class="col-md-3">
-                <div class="card border-0" style="width: 90%">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700"class="card border-0" style="width: 90%">
                     <div class="roundimg fish"></div>
                     <div class="card-body">
                         <h5 class="card-title animate__animated animate__rubberBand
-                        animate__repeat-3">
+                        animate__repeat-3
+                        animate__delay-3s">
                             魚類</h5>
                         <p class="card-text">澎湖南方四島由於海底地形與黑潮支流交互作用形成湧升現象帶來豐富的營養鹽，孕育澎湖南方四島週邊海域豐富的海洋生態資源。</p>
 
@@ -158,11 +167,12 @@
             <!-- 無脊椎動物 -->
             <div class="col-md-3">
                 <div class="mt-5"></div>
-                <div class="card border-0" style="width: 90%">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2100"class="card border-0" style="width: 90%">
                     <div class="roundimg invertebrates"></div>
                     <div class="card-body">
                         <h5 class="card-title animate__animated animate__rubberBand
-                        animate__repeat-3">
+                        animate__repeat-3
+                        animate__delay-3s">
                             無脊椎動物</h5>
                         <p class="card-text">大型無脊椎動物物種非常豐富，包括軟體動物、棘皮動物、甲殼類動物等多種不同科屬的動物。海蛞蝓是海中最美麗的「無殼蝸牛」，也是海中的「七彩寶石」。</p>
 
@@ -207,6 +217,9 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
     <script>
 
         // loading時間

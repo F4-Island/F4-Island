@@ -117,15 +117,16 @@ body {
                 .basalt-title {
                     height: 20%;
                     position: relative;
+                    z-index: 5;
                     h1 {
                         padding: 5px;
                         position: absolute;
-                        bottom: -25%;
+                        bottom: -50%;
                         right: 10px;
-                        width: 30%;
+                        width: 40%;
+                        height: 80%;
                         color: white;
                         background-color: #1b5377;
-                        z-index: 2;
                         border-radius: 50px;
                     }
                 }
@@ -140,7 +141,7 @@ body {
                     margin-bottom: -10%;
                     margin-left: -10%;
                     border-radius: 20px;
-                    letter-spacing: 10px;
+                    letter-spacing: 7px;
                     text-align: left;
                 }
             }
@@ -164,15 +165,16 @@ body {
                 .seaeclipse-title {
                     height: 20%;
                     position: relative;
+                    z-index: 3;
                     h1 {
                         padding: 5px;
                         position: absolute;
-                        bottom: -25%;
-                        left: 0px;
-                        width: 30%;
+                        bottom: -50%;
+                        left: 10px;
+                        width: 40%;
+                        height: 80%;
                         color: white;
                         background-color: #82953C;
-                        z-index: 2;
                         border-radius: 50px;
                     }
                 }
@@ -186,7 +188,7 @@ body {
                     margin-bottom: -10%;
                     margin-right: -10%;
                     border-radius: 20px;
-                    letter-spacing: 10px;
+                    letter-spacing: 7px;
                     text-align: left;
                 }
             }
@@ -251,6 +253,7 @@ body {
     margin-top: -20px;
     // line-height: 400px;
   }
+
 
 // 海鷗
 .seagull {
