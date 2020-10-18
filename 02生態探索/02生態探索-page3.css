@@ -10,37 +10,22 @@
 }
 
 body {
-  background-image: url(../img/03四島奇旅/四島奇旅底圖.svg);
-  background-repeat: no-repeat;
+  background-image: url(../img/02生態探索/植物底圖.png);
   background-size: cover;
 }
 
-.loading-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background: rgb(22, 49, 81); */
-  background: black;
-  z-index: 99999;
-}
-
-.loading {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-75px, -75px);
-          transform: translate(-75px, -75px);
-  border-radius: 100px;
-}
-
 .logo {
+  width: 12%;
   position: fixed;
   top: 20px;
   left: 25px;
+  z-index: 5;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
 }
 
 .menu {
@@ -224,7 +209,7 @@ body {
   }
 }
 
-.page-navbar {
+.page1 {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -233,32 +218,32 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page-navbar {
+  .page1 {
     font-size: 22px;
   }
 }
 
 @media (max-width: 992px) {
-  .page-navbar {
+  .page1 {
     font-size: 20px;
     letter-spacing: 1px;
   }
 }
 
 @media (max-width: 768px) {
-  .page-navbar {
+  .page1 {
     font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-navbar {
+  .page1 {
     font-size: 14px;
     letter-spacing: 0;
   }
 }
 
-.page-navbar .container nav {
+.page1 .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
@@ -268,26 +253,26 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page-navbar .container nav {
+  .page1 .container nav {
     width: 65%;
   }
 }
 
 @media (max-width: 992px) {
-  .page-navbar .container nav {
+  .page1 .container nav {
     width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .page-navbar .container nav {
+  .page1 .container nav {
     width: 80%;
     height: 50px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-navbar .container nav {
+  .page1 .container nav {
     width: 90%;
     padding: 0 2%;
     height: 45px;
@@ -297,15 +282,15 @@ body {
   }
 }
 
-.page-navbar .container nav a {
+.page1 .container nav a {
   text-decoration: none;
 }
 
-.page-navbar .container nav a {
+.page1 .container nav a {
   text-decoration: none;
 }
 
-.page-navbar .container nav .title {
+.page1 .container nav .title {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -314,32 +299,32 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page-navbar .container nav .title {
+  .page1 .container nav .title {
     font-size: 22px;
   }
 }
 
 @media (max-width: 992px) {
-  .page-navbar .container nav .title {
+  .page1 .container nav .title {
     font-size: 20px;
     letter-spacing: 1px;
   }
 }
 
 @media (max-width: 768px) {
-  .page-navbar .container nav .title {
+  .page1 .container nav .title {
     font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-navbar .container nav .title {
+  .page1 .container nav .title {
     font-size: 14px;
     letter-spacing: 0;
   }
 }
 
-.page-navbar .container nav .name {
+.page1 .container nav .name {
   font-family: Microsoft JhengHei;
   font-weight: 400;
   font-size: 21px;
@@ -358,31 +343,31 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page-navbar .container nav .name {
+  .page1 .container nav .name {
     font-size: 18px;
   }
 }
 
 @media (max-width: 992px) {
-  .page-navbar .container nav .name {
+  .page1 .container nav .name {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .page-navbar .container nav .name {
+  .page1 .container nav .name {
     font-size: 14px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-navbar .container nav .name {
+  .page1 .container nav .name {
     font-size: 13px;
     letter-spacing: 1px;
   }
 }
 
-.page-navbar .container nav .name .icon {
+.page1 .container nav .name .icon {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -393,29 +378,56 @@ body {
   transition: 0.5s;
 }
 
-.page-navbar .container nav .name:hover {
+@media (max-width: 1200px) {
+  .page1 .container nav .name .icon {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav .name .icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav .name .icon {
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav .name .icon {
+    width: 7px;
+    height: 7px;
+    margin-right: 1px;
+  }
+}
+
+.page1 .container nav .name:hover {
   opacity: 1;
   font-weight: 900;
 }
 
-.page-navbar .container nav .name-1 {
+.page1 .container nav .name-1 {
   font-weight: 600;
   opacity: 1;
 }
 
-.page-navbar .container nav .name-1 .icon {
+.page1 .container nav .name-1 .icon {
   opacity: 1;
 }
 
-.content-box {
-  position: relative;
-}
-
-.content-box .page-title {
+.content .title1 {
   margin: 50px auto;
 }
 
-.content-box .page-title h1 {
+.content .title1 h1 {
   color: #24999F;
   display: inline-block;
   -webkit-box-align: center;
@@ -427,7 +439,7 @@ body {
   margin-bottom: 0;
 }
 
-.content-box .page-title h3 {
+.content .title1 h3 {
   color: #24999F;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -438,43 +450,86 @@ body {
   opacity: 0.5;
 }
 
-.content-box .content {
-  margin-bottom: 7%;
+.content .content .title-p {
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 30px;
+  letter-spacing: 2px;
 }
 
-.content-box .content .text-box p {
-  font-size: 22px;
-  letter-spacing: 3px;
-  margin-bottom: 0;
-  text-align: justify;
+.content .content .plant-row {
+  width: 100%;
 }
 
-.content-box .tower {
-  position: absolute;
-  top: 25%;
-  right: 0;
+.content .content .plant-row .plant-img {
+  margin: auto;
+  width: 80%;
+  height: 0;
+  padding-top: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
 }
 
-.content-box .fish {
-  position: absolute;
-  top: 55%;
-  right: 40%;
+.content .content .plant-row h3 {
+  color: #55758C;
+  font-weight: bold;
+  margin-bottom: 20%;
 }
 
-.content-box .coral {
-  position: absolute;
-  top: 80%;
-  left: 0;
+.content .content .plant-row .img1 {
+  background-image: url(../img/02生態探索/植物/澎湖決明.jpg);
+}
+
+.content .content .plant-row .img2 {
+  background-image: url(../img/02生態探索/植物/密毛爵床（澎湖爵床）.jpg);
+}
+
+.content .content .plant-row .img3 {
+  background-image: url(../img/02生態探索/植物/銀合歡.jpg);
+}
+
+.content .content .plant-row .img4 {
+  background-image: url(../img/02生態探索/植物/雞殤刺.jpeg);
+}
+
+.content .content .plant-row .img5 {
+  background-image: url(../img/02生態探索/植物/茅毛珍珠菜.jpg);
+}
+
+.content .content .plant-row .img6 {
+  background-image: url(../img/02生態探索/植物/仙人掌.jpg);
+}
+
+.seagull {
+  position: fixed;
+  right: 30%;
+  top: 15%;
+}
+
+.wave {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+
+.boat {
+  position: fixed;
+  right: 5%;
+  bottom: 8%;
 }
 
 footer {
-  margin-top: 200px;
-  position: relative;
-}
-
-footer img {
-  width: 100vw;
-  position: absolute;
+  position: fixed;
+  z-index: 200;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 0.5vw;
+  line-height: 0.5vw;
+  letter-spacing: 1px;
 }
-/*# sourceMappingURL=03四島奇旅-page3.css.map */
+/*# sourceMappingURL=02生態探索-page3.css.map */

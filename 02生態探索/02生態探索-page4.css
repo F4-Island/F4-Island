@@ -10,37 +10,22 @@
 }
 
 body {
-  background-image: url(../img/03四島奇旅/四島奇旅底圖.svg);
-  background-repeat: no-repeat;
+  background-image: url(../img/02生態探索/動物底圖.png);
   background-size: cover;
 }
 
-.loading-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background: rgb(22, 49, 81); */
-  background: black;
-  z-index: 99999;
-}
-
-.loading {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-75px, -75px);
-          transform: translate(-75px, -75px);
-  border-radius: 100px;
-}
-
 .logo {
+  width: 12%;
   position: fixed;
   top: 20px;
   left: 25px;
+  z-index: 5;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
 }
 
 .menu {
@@ -224,7 +209,7 @@ body {
   }
 }
 
-.page-navbar {
+.page1 {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -233,32 +218,32 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page-navbar {
+  .page1 {
     font-size: 22px;
   }
 }
 
 @media (max-width: 992px) {
-  .page-navbar {
+  .page1 {
     font-size: 20px;
     letter-spacing: 1px;
   }
 }
 
 @media (max-width: 768px) {
-  .page-navbar {
+  .page1 {
     font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-navbar {
+  .page1 {
     font-size: 14px;
     letter-spacing: 0;
   }
 }
 
-.page-navbar .container nav {
+.page1 .container nav {
   width: 70%;
   height: 60px;
   border-radius: 0 0 15px 15px;
@@ -268,26 +253,26 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page-navbar .container nav {
+  .page1 .container nav {
     width: 65%;
   }
 }
 
 @media (max-width: 992px) {
-  .page-navbar .container nav {
+  .page1 .container nav {
     width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .page-navbar .container nav {
+  .page1 .container nav {
     width: 80%;
     height: 50px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-navbar .container nav {
+  .page1 .container nav {
     width: 90%;
     padding: 0 2%;
     height: 45px;
@@ -297,15 +282,15 @@ body {
   }
 }
 
-.page-navbar .container nav a {
+.page1 .container nav a {
   text-decoration: none;
 }
 
-.page-navbar .container nav a {
+.page1 .container nav a {
   text-decoration: none;
 }
 
-.page-navbar .container nav .title {
+.page1 .container nav .title {
   font-family: Microsoft JhengHei;
   font-weight: 600;
   font-size: 24px;
@@ -314,32 +299,32 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page-navbar .container nav .title {
+  .page1 .container nav .title {
     font-size: 22px;
   }
 }
 
 @media (max-width: 992px) {
-  .page-navbar .container nav .title {
+  .page1 .container nav .title {
     font-size: 20px;
     letter-spacing: 1px;
   }
 }
 
 @media (max-width: 768px) {
-  .page-navbar .container nav .title {
+  .page1 .container nav .title {
     font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-navbar .container nav .title {
+  .page1 .container nav .title {
     font-size: 14px;
     letter-spacing: 0;
   }
 }
 
-.page-navbar .container nav .name {
+.page1 .container nav .name {
   font-family: Microsoft JhengHei;
   font-weight: 400;
   font-size: 21px;
@@ -358,31 +343,31 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .page-navbar .container nav .name {
+  .page1 .container nav .name {
     font-size: 18px;
   }
 }
 
 @media (max-width: 992px) {
-  .page-navbar .container nav .name {
+  .page1 .container nav .name {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .page-navbar .container nav .name {
+  .page1 .container nav .name {
     font-size: 14px;
   }
 }
 
 @media (max-width: 576px) {
-  .page-navbar .container nav .name {
+  .page1 .container nav .name {
     font-size: 13px;
     letter-spacing: 1px;
   }
 }
 
-.page-navbar .container nav .name .icon {
+.page1 .container nav .name .icon {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -393,29 +378,56 @@ body {
   transition: 0.5s;
 }
 
-.page-navbar .container nav .name:hover {
+@media (max-width: 1200px) {
+  .page1 .container nav .name .icon {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page1 .container nav .name .icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page1 .container nav .name .icon {
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page1 .container nav .name .icon {
+    width: 7px;
+    height: 7px;
+    margin-right: 1px;
+  }
+}
+
+.page1 .container nav .name:hover {
   opacity: 1;
   font-weight: 900;
 }
 
-.page-navbar .container nav .name-1 {
+.page1 .container nav .name-1 {
   font-weight: 600;
   opacity: 1;
 }
 
-.page-navbar .container nav .name-1 .icon {
+.page1 .container nav .name-1 .icon {
   opacity: 1;
 }
 
-.content-box {
-  position: relative;
-}
-
-.content-box .page-title {
+.content .title1 {
   margin: 50px auto;
 }
 
-.content-box .page-title h1 {
+.content .title1 h1 {
   color: #24999F;
   display: inline-block;
   -webkit-box-align: center;
@@ -427,7 +439,7 @@ body {
   margin-bottom: 0;
 }
 
-.content-box .page-title h3 {
+.content .title1 h3 {
   color: #24999F;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -438,43 +450,173 @@ body {
   opacity: 0.5;
 }
 
-.content-box .content {
-  margin-bottom: 7%;
+.content .content .animals-row {
+  width: 100%;
+  padding: 5%;
+  background-image: url(../img/02生態探索/鳥兩棲昆蟲底.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
 }
 
-.content-box .content .text-box p {
-  font-size: 22px;
-  letter-spacing: 3px;
-  margin-bottom: 0;
-  text-align: justify;
+.content .content .animals-row .col h2 {
+  text-align: left;
+  color: #4c96b4;
+  font-weight: bold;
 }
 
-.content-box .tower {
-  position: absolute;
-  top: 25%;
-  right: 0;
+.content .content .animals-row .col .title-p {
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: white;
 }
 
-.content-box .fish {
-  position: absolute;
-  top: 55%;
-  right: 40%;
+.content .content .animals-row .col .animalimgs {
+  width: 100%;
+  margin: auto;
 }
 
-.content-box .coral {
-  position: absolute;
-  top: 80%;
-  left: 0;
+.content .content .animals-row .col .animalimgs .animals-img {
+  margin: auto;
+  width: 25%;
+  padding-top: 25%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.content .content .animals-row .col .animalname {
+  width: 100%;
+  margin: auto;
+}
+
+.content .content .animals-row .col .animalname h3 {
+  margin: auto;
+  color: white;
+  font-weight: bold;
+}
+
+.content .content .animals-row .img1 {
+  background-image: url(../img/02生態探索/動物/鳥類-白眉燕鷗.jpg);
+}
+
+.content .content .animals-row .img2 {
+  background-image: url(../img/02生態探索/動物/鳥類-小雲雀.jpg);
+}
+
+.content .content .animals-row .img3 {
+  background-image: url(../img/02生態探索/動物/鳥類-高蹺鴴.jpg);
+}
+
+.content .content .animals-row .img4 {
+  background-image: url(../img/02生態探索/動物/兩棲-蝎虎.jpg);
+}
+
+.content .content .animals-row .img5 {
+  background-image: url(../img/02生態探索/動物/兩棲-雨傘節.jpg);
+}
+
+.content .content .animals-row .img6 {
+  background-image: url(../img/02生態探索/動物/兩棲-澤蛙.jpg);
+}
+
+.content .content .animals-row .img7 {
+  background-image: url(../img/02生態探索/動物/昆蟲-沖繩小灰蝶.jpg);
+}
+
+.content .content .animals-row .img8 {
+  background-image: url(../img/02生態探索/動物/昆蟲-黃紋粉蝶.jpg);
+}
+
+.content .content .animals-row .img9 {
+  background-image: url(../img/02生態探索/動物/昆蟲-長喙天蛾.jpg);
+}
+
+.content .content .otherimg {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/02生態探索/其他底.png);
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  padding: 5%;
+}
+
+.content .content .otherimg .col {
+  width: 100%;
+}
+
+.content .content .otherimg .col h2 {
+  text-align: left;
+  color: #4c96b4;
+  font-weight: bold;
+}
+
+.content .content .otherimg .col .other .title-p {
+  width: 80%;
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: white;
+}
+
+.content .content .otherimg .col .other .animalimgs-img {
+  width: 50%;
+  margin: auto;
+}
+
+.content .content .otherimg .col .other .animalimgs-img .img10 {
+  width: 70%;
+  padding-top: 70%;
+  padding-left: -30%;
+  border-radius: 50%;
+  margin: auto;
+  background-image: url(../img/02生態探索/動物/其他-短腕陸寄居蟹.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.content .content .otherimg .col .other .animalimgs-img h3 {
+  margin: auto;
+  color: white;
+  font-weight: bold;
+}
+
+.seagull {
+  position: fixed;
+  right: 30%;
+  top: 15%;
+}
+
+.wave {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+
+.boat {
+  position: fixed;
+  right: 5%;
+  bottom: 8%;
 }
 
 footer {
-  margin-top: 200px;
-  position: relative;
-}
-
-footer img {
-  width: 100vw;
-  position: absolute;
+  position: fixed;
+  z-index: 200;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 0.5vw;
+  line-height: 0.5vw;
+  letter-spacing: 1px;
 }
-/*# sourceMappingURL=03四島奇旅-page3.css.map */
+/*# sourceMappingURL=02生態探索-page4.css.map */

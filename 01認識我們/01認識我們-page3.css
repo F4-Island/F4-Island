@@ -458,13 +458,14 @@ body {
 .content-box .tab .tab-btn .tablinks {
   width: 40%;
   height: 30%;
+  border-radius: 30px;
   margin: 0 2%;
   text-align: center;
   cursor: pointer;
   border: none;
   outline: none;
   display: block;
-  background-color: yellow;
+  background-color: #295274;
   position: relative;
   z-index: 99;
 }
@@ -477,7 +478,9 @@ body {
           transform: translate(-50%, -50%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 26px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #295274;
 }
 
 .content-box .tab .tab-btn .tablinks:hover::before {
@@ -502,6 +505,7 @@ body {
   content: "";
   width: 100%;
   height: 100%;
+  border-radius: 30px;
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -523,14 +527,19 @@ body {
   background-position: center;
 }
 
+.content-box .tabcontent .text {
+  margin-top: 55vh;
+}
+
 .content-box .tabcontent .text .text-box {
   margin: auto;
   width: 70%;
+  border-radius: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: rgba(62, 67, 71, 0.8);
+  background-color: rgba(41, 82, 116, 0.7);
   padding: 10px;
 }
 

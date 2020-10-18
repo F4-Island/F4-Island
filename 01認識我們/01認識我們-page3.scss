@@ -99,22 +99,25 @@ body {
         background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
         background-size: cover;
         .tab-btn {
+            
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 100%;
+            
             .tablinks {
                 width: 40%;
                 height: 30%;
+                border-radius: 30px;
                 margin: 0 2%;
                 text-align: center;
                 cursor: pointer;
                 border: none;
                 outline: none;
                 display: block;
-                background-color: yellow;
+                background-color:rgb(41, 82, 116) ;
                 position: relative;
                 z-index: 99;
 
@@ -124,7 +127,9 @@ body {
                     left: calc(50% - 10px);
                     transform: translate(-50%, -50%);
                     transition: 0.4s;
-                    font-size: 26px;
+                    font-size: 30px;
+                    font-weight: 800;
+                    color: rgb(41, 82, 116);
                 }
                 &:hover::before {
                     background-color: rgb(28, 153, 175);
@@ -143,6 +148,7 @@ body {
                     content: "";
                     width: 100%;
                     height: 100%;
+                    border-radius: 30px;
                     position: absolute;
                     bottom: 10px;
                     right: 10px;
@@ -164,12 +170,14 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         .text {
+            margin-top: 55vh;
             .text-box {
                 margin: auto;
                 width: 70%;
+                border-radius: 10px;
                 align-items: center;
                 text-align: center;
-                background-color: rgba(62, 67, 71, 0.8);
+                background-color: rgba(41, 82, 116, 0.7);
                 padding: 10px;
                 p {
                     // width: 50%;

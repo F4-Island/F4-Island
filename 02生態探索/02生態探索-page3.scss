@@ -8,24 +8,16 @@
 }
 
 body {
-    background-image: url(../img/02生態探索/珊瑚礁生態底圖.png);
-    background-position: center;
+    background-image: url(../img/02生態探索/植物底圖.png);
+    // background-position: center;
     background-size: cover;
-}
-
-// loading遮蓋區
-.loading-wrapper{
-    @include loading-wrapper;
-}
-
-// loading燈塔
- .loading {
-    @include loading;
+    // height: 200vh;
 }
 
 // logo
 .logo {
     @include logo;
+    z-index: 5;
 }
 
 // menu開關
@@ -76,9 +68,6 @@ body {
                 .icon {
                     @include icon;
                 }
-                // &:hover .icon{
-                //     opacity: 1;
-                // }
                 &:hover {
                     opacity: 1;
                     font-weight: 900;
@@ -97,7 +86,7 @@ body {
 }
 
 .content {
-    .title {
+    .title1 {
         margin: 50px auto;
         h1 {
             @include page-title-style;
@@ -105,55 +94,56 @@ body {
         }
         h3 {
             @include Sub-standard-style;
+        }
+    }
+    .content {
+        .title-p {
+            font-size: 21px;
+            font-weight: 600;
+            margin-top: 30px;
+            letter-spacing: 2px;
+        }
+        .plant-row{
+            width: 100%;
+            .plant-img{
+                margin: auto;
+                width: 80%;
+                height: 0;
+                padding-top: 80%;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10%;
+                // background-color: springgreen;
+            }
+            h3{
+                color: #55758C;
+                font-weight: bold;
+                margin-bottom: 20%;
+            }
+            .img1{
+                background-image: url(../img/02生態探索/植物/澎湖決明.jpg);
+            }
+            .img2{
+                background-image: url(../img/02生態探索/植物/密毛爵床（澎湖爵床）.jpg);
+            }
+            .img3{
+                background-image: url(../img/02生態探索/植物/銀合歡.jpg);
+            }
+            .img4{
+                background-image: url(../img/02生態探索/植物/雞殤刺.jpeg);
+            }
+            .img5{
+                background-image: url(../img/02生態探索/植物/茅毛珍珠菜.jpg);
+            }
+            .img6{
+                background-image: url(../img/02生態探索/植物/仙人掌.jpg);
             }
         }
-    }
-
-
-.card {
-    background-color: #307c9e;
-    border-radius: 30px;
-    color: white;
-    .roundimg {
-        margin: 10% auto 0 auto;
-        width: 150px;
-        height: 150px;
-        border-radius: 100px;
-        background-size: cover;
-        background-position: center;
-
-    }
-    .card-body {
-        // height: 40vh;
-        line-height: 30px;
-        h5{
-            font-weight: 900;
-        }
-        p {
-            text-align: left;
-        }
+        
+        
     }
 }
 
-// 珊瑚圖片
-.coral {
-    background-image: url(/img/02生態探索/珊瑚礁生態/珊瑚.jpg);
-}
-
-// 藻類圖片 
-.seaweed {
-    background-image: url(/img/02生態探索/珊瑚礁生態/藻類.jpg);
-}
-
-// 魚類圖片
- .fish {
-    background-image: url(/img/02生態探索/珊瑚礁生態/魚類.jpg);
-}
-
-// 無脊椎動物圖片 
-.invertebrates {
-    background-image: url(/img/02生態探索/珊瑚礁生態/無脊椎.jpg);
-}
 
 // 海鷗
 .seagull {
@@ -173,7 +163,7 @@ body {
 .boat {
     position: fixed;
     right: 5%;
-    bottom: 6%;
+    bottom: 8%;
 }
 
 footer {
