@@ -124,7 +124,6 @@ body {
     }
 }
 
-
 // .title-p {
 //     font-size: 22px;
 //     font-weight: 600;
@@ -153,26 +152,40 @@ body {
 
 // 申請按鈕
 .application {
+    display: flex;
+    @media (max-width:1080px) {
+            display: block;
+    }
+
     a {
-   color: white;
-   font-size: 30px;
-   font-weight: 600;
-   width: 300px;
-   height: 50px;
-   background-color:#DF675E;
-   border-radius: 30px;
-   text-align: center;
-   line-height: 50px;
-   padding: 10px 60px;
-   margin:15px;
-   letter-spacing: 2px;
-}
-   .title-p{
-       font-size: 28px;
-       font-weight: 600;
-       margin-top: 5px;
-       letter-spacing: 1px;
-   }
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        width: 300px;
+        height: 50px;
+        background-color: #df675e;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 50px;
+        padding: 10px 60px;
+        margin: 15px;
+        letter-spacing: 2px;
+        @media (max-width:1280px) {
+            padding: 10px 20px;
+            font-size: 25px;
+            width: 150px;
+        }
+        
+    }
+    .title-p {
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 5px;
+        letter-spacing: 1px;
+        @media (max-width:960px) {
+            
+        }
+    }
 }
 
 // 這裡是下方swiper
@@ -191,32 +204,32 @@ body {
 //       padding: 0;
 //     }
 
-    // .swiper-container {
-    //   width: 100%;
-    //   height: 100%;
-    // }
+// .swiper-container {
+//   width: 100%;
+//   height: 100%;
+// }
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-      margin-top: 75px;
-      margin-bottom: 275px;
-    }
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 275px;
+}
 
 // 波浪
 .wave {
