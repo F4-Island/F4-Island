@@ -83,12 +83,10 @@
     </div>
 
     <div class="content-box">
-        <div class="tab w-50">
-            <a href="回首頁.html">
-            <img class="logo" width="15%" src="./img/00頁首/F4嶼-logo.svg" alt="">
-        </a>
-            <div class="tab-btn abc">
-                <button class="tablinks abc" onmouseover="openIsland(event, 'East')">
+        <div class="tab w-50">  
+            <img class="logo" src="./img/00頁首/F4嶼-logo.svg" alt="">
+            <div class="tab-btn show">
+                <button class="tablinks show" onmouseover="openIsland(event, 'East')">
                     <h1>東吉嶼</h1>
                 </button>
                 <button class="tablinks" onmouseover="openIsland(event, 'West')">
@@ -103,7 +101,7 @@
             </div>
         </div>
 
-        <div id="East" class="tabcontent abc tab1 w-50">
+        <div id="East" class="tabcontent show tab1 w-50">
             <div class="text w-100  d-flex flex-column align-items-center justify-content-center">
                 <div class="text-box">
                 <h3>東吉嶼</h3>
@@ -190,10 +188,10 @@
         })
 
         $('.tablinks*').hover(function () {
-            if ($('.tablinks*').hasClass('abc')) {
-                $('.tablinks*').removeClass('abc')
-                $('.tab-btn').removeClass('abc')
-                $('.tabcontent').removeClass('abc')
+            if ($('.tablinks*').hasClass('show')) {
+                $('.tablinks*').removeClass('show')
+                $('.tab-btn').removeClass('show')
+                $('.tabcontent').removeClass('show')
             } 
 
         })
