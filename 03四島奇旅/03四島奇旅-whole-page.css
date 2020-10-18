@@ -468,6 +468,12 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 992px) {
+  .content-box .page-title h1 {
+    font-size: 45px;
+  }
+}
+
 .content-box .content {
   margin-bottom: 7%;
 }

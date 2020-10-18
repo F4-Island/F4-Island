@@ -291,6 +291,9 @@
     letter-spacing: 3px;
     font-size: 60px;
     font-weight: 600;
+    @media (max-width: 992px){
+        font-size: 45px;
+    }
 }
 
 @mixin Sub-standard-style {
@@ -300,6 +303,9 @@
     font-size: 25px;
     font-family: Arno Pro;
     opacity: 0.5;
+    @media (max-width: 992px){
+        font-size: 20px;
+    }
 }
 
 

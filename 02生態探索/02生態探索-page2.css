@@ -439,6 +439,12 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 992px) {
+  .content .title1 h1 {
+    font-size: 45px;
+  }
+}
+
 .content .title1 h3 {
   color: #24999F;
   -webkit-box-align: center;
@@ -448,6 +454,12 @@ body {
   font-size: 25px;
   font-family: Arno Pro;
   opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .content .title1 h3 {
+    font-size: 20px;
+  }
 }
 
 .content .content .basalt {
