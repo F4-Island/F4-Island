@@ -237,6 +237,7 @@ body {
   font-size: 24px;
   color: white;
   letter-spacing: 2px;
+  z-index: 200;
 }
 
 @media (max-width: 1200px) {
@@ -556,6 +557,12 @@ h4 {
           justify-content: center;
 }
 
+@media (max-width: 1280px) {
+  .img-box img {
+    width: 80%;
+  }
+}
+
 .wave {
   width: 100%;
   position: fixed;
@@ -567,6 +574,7 @@ h4 {
   position: fixed;
   right: 5%;
   bottom: 8%;
+  z-index: -1;
 }
 
 footer {
@@ -581,5 +589,25 @@ footer {
   font-size: 0.5vw;
   line-height: 0.5vw;
   letter-spacing: 1px;
+}
+
+footer .l-footer {
+  display: block;
+}
+
+@media (max-width: 326px) {
+  footer .l-footer {
+    display: none;
+  }
+}
+
+footer .s-footer {
+  display: none;
+}
+
+@media (max-width: 326px) {
+  footer .s-footer {
+    display: block;
+  }
 }
 /*# sourceMappingURL=04出發四島-page1.css.map */
