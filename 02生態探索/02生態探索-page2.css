@@ -528,7 +528,7 @@ body {
 .content .content .seaeclipse .seaeclipse-text .seaeclipse-title {
   height: 20%;
   position: relative;
-  z-index: 5;
+  z-index: 3;
 }
 
 .content .content .seaeclipse .seaeclipse-text .seaeclipse-title h1 {
