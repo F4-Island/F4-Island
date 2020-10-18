@@ -95,24 +95,43 @@ body {
     height: 100vh;
     // background-color: #318eda;
     // margin-top: 100px;
+    @media (max-width: 768px){
+        // display: flex;
+        // flex-wrap: wrap;
+    }
     .tab {
         padding: 3% 0;
         float: right;
-        width: 30%;
+        // width: 50%;
         height: 100%;
         padding-top: 40vh;
         background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
         background-size: cover;
         position: relative;
-        .logo {
-            width:30%;
-            position: absolute;
-            top: 10%;
-            right: 36%;
-            @media (max-width: 576px){
-                display: none;
+        @media (max-width: 768px){
+            display: flex;
+            padding-top: 20vh;
+        }
+        a{
+            @media (max-width: 768px){
+                    display: none;
+                }
+            .logo {
+                width:30%;
+                position: absolute;
+                top: 10%;
+                right: 36%;
+                @media (max-width: 1600px){
+                    width: 45%;
+                    right:29%;
+
+                }
+                @media (max-width: 576px){
+                    display: none;
+                }
             }
         }
+       
 
         .tab-btn {
             display: flex;
@@ -135,6 +154,10 @@ body {
                 background-color: rgb(41, 82, 116);
                 position: relative;
                 z-index: 99;
+                @media (max-width: 768px){
+                    width: 60%;
+                    height: 20%;
+                }
 
                 h1 {
                     position: absolute;
@@ -145,6 +168,9 @@ body {
                     font-size: 30px;
                     font-weight: 800;
                     color: rgb(41, 82, 116);
+                    @media (max-width: 768px){
+                       font-size: 25px;
+                    }
                 }
                 &:hover::before {
                     background-color: rgb(28, 153, 175);
@@ -155,6 +181,9 @@ body {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    @media (max-width: 768px){
+                        font-size: 25px;
+                     }
                 }
                 .active {
                     background-color: #ccc;
@@ -184,8 +213,14 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        @media (max-width: 768px){
+        //    float: none;
+        }
         .text {
             margin-top: 55vh;
+            @media (max-width: 768px){
+                margin-top: 20vh;
+            }
             .text-box {
                 margin: auto;
                 width: 70%;

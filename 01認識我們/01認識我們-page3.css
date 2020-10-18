@@ -419,7 +419,6 @@ body {
 .content-box .tab {
   padding: 3% 0;
   float: right;
-  width: 30%;
   height: 100%;
   padding-top: 40vh;
   background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
@@ -427,15 +426,37 @@ body {
   position: relative;
 }
 
-.content-box .tab .logo {
+@media (max-width: 768px) {
+  .content-box .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box .tab a {
+    display: none;
+  }
+}
+
+.content-box .tab a .logo {
   width: 30%;
   position: absolute;
   top: 10%;
   right: 36%;
 }
 
+@media (max-width: 1600px) {
+  .content-box .tab a .logo {
+    width: 45%;
+    right: 29%;
+  }
+}
+
 @media (max-width: 576px) {
-  .content-box .tab .logo {
+  .content-box .tab a .logo {
     display: none;
   }
 }
@@ -471,6 +492,13 @@ body {
   z-index: 99;
 }
 
+@media (max-width: 768px) {
+  .content-box .tab .tab-btn .tablinks {
+    width: 60%;
+    height: 20%;
+  }
+}
+
 .content-box .tab .tab-btn .tablinks h1 {
   position: absolute;
   top: calc(50% - 10px);
@@ -482,6 +510,12 @@ body {
   font-size: 30px;
   font-weight: 800;
   color: #295274;
+}
+
+@media (max-width: 768px) {
+  .content-box .tab .tab-btn .tablinks h1 {
+    font-size: 25px;
+  }
 }
 
 .content-box .tab .tab-btn .tablinks:hover::before {
@@ -496,6 +530,12 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .content-box .tab .tab-btn .tablinks:hover h1 {
+    font-size: 25px;
+  }
 }
 
 .content-box .tab .tab-btn .tablinks .active {
@@ -530,6 +570,12 @@ body {
 
 .content-box .tabcontent .text {
   margin-top: 55vh;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text {
+    margin-top: 20vh;
+  }
 }
 
 .content-box .tabcontent .text .text-box {
