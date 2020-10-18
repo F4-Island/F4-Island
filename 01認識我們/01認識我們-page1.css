@@ -497,6 +497,7 @@ body {
 @media (max-width: 768px) {
   .position .seagull {
     width: 20%;
+    right: 2%;
   }
 }
 
@@ -627,6 +628,7 @@ body {
   .position .position-text2 .boat {
     bottom: -120%;
     width: 90%;
+    right: 5%;
   }
 }
 
