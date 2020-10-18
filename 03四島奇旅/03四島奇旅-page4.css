@@ -447,10 +447,25 @@ body {
 
 .content-box {
   position: relative;
+  padding: 2% 0 15% 0;
+}
+
+@media (max-width: 576px) {
+  .content-box {
+    padding: 2% 0 25% 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .content-box .page-title {
   margin: 50px auto;
+}
+
+@media (max-width: 992px) {
+  .content-box .page-title {
+    margin: 50px auto 0 auto;
+  }
 }
 
 .content-box .page-title h1 {
@@ -502,7 +517,13 @@ body {
 }
 
 .content-box .content {
-  margin-bottom: 7%;
+  padding: 15px;
+}
+
+@media (max-width: 576px) {
+  .content-box .content .text-box {
+    padding: 5% 0 0 0;
+  }
 }
 
 .content-box .content .text-box p {
@@ -512,26 +533,162 @@ body {
   text-align: justify;
 }
 
+@media (max-width: 992px) {
+  .content-box .content .text-box p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box .content .text-box p {
+    font-size: 15px;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .text-box-l {
+    padding: 5% 0 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .title {
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-box .content .title img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .title img {
+    width: 60px;
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .title-l {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .title-l img {
+    width: 60px;
+    padding-right: 0;
+    padding-left: 15%;
+  }
+}
+
 .content-box .hole {
   position: absolute;
   top: 20%;
   right: 20%;
 }
 
+@media (max-width: 768px) {
+  .content-box .hole {
+    top: 50%;
+    right: 15%;
+  }
+}
+
 .content-box .rock {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 45%;
 }
 
-footer {
-  margin-top: 200px;
-  position: relative;
+@media (max-width: 992px) {
+  .content-box .rock {
+    left: 40%;
+  }
 }
 
-footer img {
+@media (max-width: 768px) {
+  .content-box .rock {
+    top: 65%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-box .illustration {
+    width: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-box .illustration {
+    width: 12%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box .illustration {
+    width: 14%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .illustration {
+    width: 17%;
+  }
+}
+
+.wave {
   width: 100vw;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .wave {
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wave {
+    height: 55px;
+  }
+}
+
+footer {
+  position: relative;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 0.5vw;
+  line-height: 0.5vw;
+  letter-spacing: 1px;
+}
+
+footer .boat {
+  position: absolute;
+  right: 5%;
+  bottom: 100%;
+}
+
+@media (max-width: 992px) {
+  footer .boat {
+    width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .boat {
+    width: 100px;
+  }
 }
 /*# sourceMappingURL=03四島奇旅-page4.css.map */

@@ -447,6 +447,15 @@ body {
 
 .content-box {
   position: relative;
+  padding: 2% 0 15% 0;
+}
+
+@media (max-width: 576px) {
+  .content-box {
+    padding: 2% 0 25% 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .content-box .page-title {
@@ -508,7 +517,13 @@ body {
 }
 
 .content-box .content {
-  margin-bottom: 7%;
+  padding: 15px;
+}
+
+@media (max-width: 576px) {
+  .content-box .content .text-box {
+    padding: 5% 0 0 0;
+  }
 }
 
 .content-box .content .text-box p {
@@ -524,9 +539,49 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .content-box .content .text-box p {
+    font-size: 15px;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .text-box-l {
+    padding: 5% 0 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .title {
+    padding: 0;
+  }
+}
+
 @media (max-width: 992px) {
   .content-box .content .title img {
     width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .title img {
+    width: 60px;
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .title-l {
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .content .title-l img {
+    width: 60px;
+    padding-right: 0;
+    padding-left: 15%;
   }
 }
 
@@ -538,7 +593,19 @@ body {
 
 @media (max-width: 992px) {
   .content-box .field {
-    top: 32%;
+    top: 28%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box .field {
+    top: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .field {
+    top: 30%;
   }
 }
 
@@ -550,34 +617,119 @@ body {
 
 @media (max-width: 992px) {
   .content-box .coral {
-    top: 51%;
+    top: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box .coral {
+    top: 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .coral {
+    top: 54%;
   }
 }
 
 .content-box .fish {
   position: absolute;
-  top: 75%;
+  top: 72%;
   right: 40%;
 }
 
 @media (max-width: 992px) {
   .content-box .fish {
-    top: 78%;
+    top: 70%;
   }
 }
 
-.content-box .illustration {
-  width: 15%;
+@media (max-width: 768px) {
+  .content-box .fish {
+    top: 70%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .fish {
+    top: 76%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-box .illustration {
+    width: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-box .illustration {
+    width: 12%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box .illustration {
+    width: 14%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .illustration {
+    width: 17%;
+  }
+}
+
+.wave {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .wave {
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wave {
+    height: 55px;
+  }
 }
 
 footer {
-  margin-top: 200px;
   position: relative;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 0.5vw;
+  line-height: 0.5vw;
+  letter-spacing: 1px;
 }
 
-footer img {
-  width: 100vw;
+footer .boat {
   position: absolute;
-  bottom: 0;
+  right: 5%;
+  bottom: 100%;
+}
+
+@media (max-width: 992px) {
+  footer .boat {
+    width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .boat {
+    width: 100px;
+  }
 }
 /*# sourceMappingURL=03四島奇旅-page1.css.map */
