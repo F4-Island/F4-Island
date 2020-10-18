@@ -32,9 +32,9 @@
 <body>
     <!-- //轉場loading -->
 
-     <div class="loading-wrapper">
+     <!-- <div class="loading-wrapper">
         <img src="./img/00頁首/燈塔.gif" alt="" class="loading">
-    </div>
+    </div> -->
 
     <!-- logo -->
     <a href="回首頁.html">
@@ -121,7 +121,7 @@
         <div class="row text-center">
 
             <!-- 珊瑚區 -->
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3 ">
                 <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"class="card border-0" style="width: 90%;">
                     <div  class="roundimg coral"></div>
                     <div class="card-body">
@@ -135,7 +135,7 @@
             </div>
 
             <!-- 藻類區 -->
-            <div class="col-md-3 my-5 my-md-0">
+            <div class="col-md-6 col-lg-3 my-5 my-md-0">
                 <div class="mt-5"></div>
                 <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"class="card border-0" style="width: 90%;">
                     <div class="roundimg seaweed"></div>
@@ -150,7 +150,7 @@
             </div>
 
             <!-- 魚類區 -->
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
                 <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700"class="card border-0" style="width: 90%">
                     <div class="roundimg fish"></div>
                     <div class="card-body">
@@ -165,7 +165,7 @@
             </div>
 
             <!-- 無脊椎動物 -->
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
                 <div class="mt-5"></div>
                 <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2100"class="card border-0" style="width: 90%">
                     <div class="roundimg invertebrates"></div>
@@ -183,6 +183,8 @@
         </div>
     </div>
 
+    <div class="mt-5"></div>
+    <div class="mt-5"></div>
 
     <!-- 海鷗 -->
     <!-- <img src="./img/01認識我們/海鷗插圖.png" alt="" class="seagull"> -->
@@ -202,8 +204,9 @@
 
     <footer class="">
         <p>Design by F4嶼</p>
-        <p>Copyright © 澎湖南方四島國家公園 All Rights Reserved.
+        <p class="l-footer">Copyright © 澎湖南方四島國家公園 All Rights Reserved.
         </p>
+        <p class="s-footer">Copyright © 澎湖南方四島國家公園</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
@@ -226,7 +229,7 @@
         $(document).ready(function () {
             setTimeout(function () {
                 $(".loading-wrapper").fadeOut(500);
-            }, 3000);
+            }, 1000);
         });
 
         // menu開關

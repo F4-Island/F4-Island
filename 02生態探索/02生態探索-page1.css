@@ -512,6 +512,13 @@ body {
   background-position: center;
 }
 
+@media (max-width: 992px) {
+  .card .roundimg {
+    width: 180px;
+    height: 180px;
+  }
+}
+
 .card .card-body {
   line-height: 30px;
 }
@@ -556,6 +563,7 @@ body {
   position: fixed;
   right: 5%;
   bottom: 6%;
+  z-index: -1;
 }
 
 footer {
@@ -570,5 +578,25 @@ footer {
   font-size: 0.5vw;
   line-height: 0.5vw;
   letter-spacing: 1px;
+}
+
+footer .l-footer {
+  display: block;
+}
+
+@media (max-width: 326px) {
+  footer .l-footer {
+    display: none;
+  }
+}
+
+footer .s-footer {
+  display: none;
+}
+
+@media (max-width: 326px) {
+  footer .s-footer {
+    display: block;
+  }
 }
 /*# sourceMappingURL=02生態探索-page1.css.map */
