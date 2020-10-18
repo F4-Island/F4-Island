@@ -13,6 +13,7 @@ body {
   background-image: url(../img/04出發四島/注意事項-底圖.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .loading-wrapper {

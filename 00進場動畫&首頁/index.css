@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 .loading-wrapper {
@@ -1874,11 +1875,12 @@ body {
 }
 
 .wholeMap .boat {
-  position: absolute;
-  bottom: -4%;
+  overflow: hidden;
+  position: fixed;
+  bottom: -3%;
   right: 12%;
   z-index: 1;
-  width: 30%;
+  width: 28%;
 }
 
 @media (max-width: 1600px) {
