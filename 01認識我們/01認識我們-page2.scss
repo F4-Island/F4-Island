@@ -95,19 +95,36 @@ body {
 
 // 歷史及發展
 
+.spacing{
+    margin-top: 50px;
+}
 .unit {
-    margin-top: 8%;
     color: white;
     text-align: center;
     .row {
+        // @media (max-width: 1024px){
+        //     padding: 50px;
+        // }
+        .hide{
+            @media (max-width: 1024px){
+                display: nono;
+            }
+        }
         .history ,
         .development{
             height: 40vh;
             // background-color: brown;
-            border-radius: 5%;
+            border-radius: 50px;
             width: 35%;
             transition: 1s;
             // transform: scale( 1.2);
+            @media (max-width: 1024px){
+
+                margin: 30px
+                auto;
+                width: 100%;
+                border-radius: 50px;
+            }
             h2{
                 line-height: 40vh;
                 text-align: center;
@@ -115,26 +132,32 @@ body {
                 font-weight: 900;
                 background-color: rgba(255, 255, 255, 0.3);
                 border-radius: 5%;
+                border-radius: 50px;
                 // display: block;
                 // transition: 1s;
             }
             .text{
                 width: 100%;
                 height: 100%;
-                font-size: 16px;
+                font-size: 18px;
                 letter-spacing: 8px;
                 display: none;
                 align-items: center;
                 // background-color:darkgray;
                 transition: 1s;
                 // transform: scale( 1.2);
-                border-radius: 5%;
+                border-radius: 50px;
+                @media (max-width: 1024px){
+                    letter-spacing: 5px;
+                    font-size: 16px;
+                }
                 .text-mask {
-                    padding: 15%;
+                    padding: 10%;
                     width: 100%;
                     height: 100%;
                     background-color: rgba(62, 67, 71,0.8);
-                    border-radius: 5%;
+                    border-radius: 50px;
+                    transition: 1s;
                     
                 }              
 
@@ -143,7 +166,12 @@ body {
             &:hover {
                 width: 40%;
                 height: 60vh;
-                transform: scale( 1.2);
+                @media (max-width: 1024px){
+                    width: 100%;
+                    border-radius: 50px;
+                }
+
+                // transform: scale( 1.2);
                 h2{
                     display: none;
                     background-color: rgba(62, 67, 71,0);
@@ -154,6 +182,7 @@ body {
                         width: 100%;
                         height: 100%;
                         background-color: rgba(62, 67, 71,0.6);
+                        border-radius: 50px;
                     }             
                  }
             }
@@ -164,6 +193,10 @@ body {
             width: 40%;
             height: 60vh;
             transform: 1s;
+            @media (max-width: 1024px){
+                width: 100%;
+                border-radius: 50px;
+            }
             .title1.active{
                 display: none;
                 transform: 1s;
@@ -231,9 +264,24 @@ body {
     position: fixed;
     right: 5%;
     bottom: 8%;
+    @media (max-width: 1024px){
+       display: none;
+    }
 }
 
 
 footer{
     @include footer;
+    .l-footer{
+        display: block;
+        @media (max-width: 326px){
+            display: none;
+        }
+    }
+    .s-footer{
+        display: none;
+        @media (max-width: 326px){
+            display: block;
+        }
+    }
 }
