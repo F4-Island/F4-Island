@@ -491,13 +491,12 @@ body {
 .content .content .basalt .basalt-text {
   width: 50%;
   height: 100%;
-  position: absolute;
 }
 
 .content .content .basalt .basalt-title {
   height: 20%;
   position: relative;
-  z-index: 5;
+  z-index: 4;
 }
 
 .content .content .basalt .basalt-title h1 {
