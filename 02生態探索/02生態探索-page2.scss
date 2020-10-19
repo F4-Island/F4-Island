@@ -272,15 +272,28 @@ body {
     width: 100vw;
     position: fixed;
     bottom: 0;
+    @media (max-width: 1200px){
+        height: 70px;
+    }
+    @media (max-width: 576px){
+        height: 55px;
+    }
 }
 
-// 小船
-.boat {
-    position: fixed;
-    right: 5%;
-    bottom: 8%;
-}
-
-footer {
+footer{
+    position: relative;
     @include footer;
-}
+    
+    .boat {
+        position: absolute;
+        right: 5%;
+        bottom: 100%;
+        @media (max-width: 992px){
+            width: 180px;
+        }
+        @media (max-width: 576px){
+            width: 100px;
+        }
+        
+    }
+} 
