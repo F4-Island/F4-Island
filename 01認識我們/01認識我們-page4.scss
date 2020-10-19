@@ -13,10 +13,7 @@ body {
     background-color: #318eda;
 }
 
-// logo
-.logo {
-    @include logo;
-}
+
 
 // menu開關
 .menu {
@@ -98,6 +95,31 @@ body {
         padding-top: 40vh;
         background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
         background-size: cover;
+        position: relative;
+        @media (max-width: 768px){
+            display: flex;
+            padding-top: 20vh;
+        }
+        a{
+            @media (max-width: 768px){
+                    display: none;
+                }
+            .logo {
+                width:30%;
+                position: absolute;
+                top: 10%;
+                right: 36%;
+                @media (max-width: 1600px){
+                    width: 45%;
+                    right:29%;
+
+                }
+                @media (max-width: 576px){
+                    display: none;
+                }
+            }
+        }
+
         .tab-btn {
             display: flex;
             flex-wrap: wrap;

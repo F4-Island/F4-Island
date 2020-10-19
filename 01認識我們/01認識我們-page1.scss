@@ -43,6 +43,7 @@ body {
 
 .menu.active {
     background-color: #a1c143;
+    z-index: 99999
 }
 // 展開的menu// 未展開尺寸
 .l-menu {
@@ -233,11 +234,12 @@ body {
             .boat {
                 position: absolute;
                 right: -20%;
-                bottom: -40%;
+                bottom: -10%;
                 @media (max-width: 1024px){
-                    bottom: -120%;
-                    width: 90%;
-                    right: 5%;
+                    bottom: -100%;
+                    width: 30%;
+                    left: 5%;
+                    opacity: 0.5;
                 }
             }
         }

@@ -59,7 +59,7 @@ body {
   background-color: #de675e;
   text-shadow: none;
   border-radius: 50%;
-  z-index: 101;
+  z-index: 601;
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -143,6 +143,7 @@ body {
 
 .menu.active {
   background-color: #a1c143;
+  z-index: 99999;
 }
 
 .l-menu {
@@ -151,7 +152,7 @@ body {
   position: fixed;
   top: 1vw;
   right: 2vw;
-  z-index: 99999999;
+  z-index: 500;
   background-color: #1c72b2;
   border-radius: 50%;
   margin: auto;
@@ -199,6 +200,7 @@ body {
   width: 25vw;
   height: 25vw;
   opacity: 1;
+  z-index: 501;
 }
 
 .l-menu.active li a span {
@@ -624,14 +626,15 @@ body {
 .position .position-text2 .boat {
   position: absolute;
   right: -20%;
-  bottom: -40%;
+  bottom: -10%;
 }
 
 @media (max-width: 1024px) {
   .position .position-text2 .boat {
-    bottom: -120%;
-    width: 90%;
-    right: 5%;
+    bottom: -100%;
+    width: 30%;
+    left: 5%;
+    opacity: 0.5;
   }
 }
 
