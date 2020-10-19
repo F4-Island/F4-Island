@@ -245,25 +245,33 @@ body {
 }
 
 // 波浪
+// 波浪
 .wave {
     width: 100vw;
     position: fixed;
     bottom: 0;
+    @media (max-width: 1200px){
+        height: 70px;
+    }
+    @media (max-width: 576px){
+        height: 55px;
+    }
 }
-
 
 footer{
+    position: relative;
     @include footer;
-    .l-footer{
-        display: block;
-        @media (max-width: 326px){
-            display: none;
+    
+    .boat {
+        position: absolute;
+        right: 5%;
+        bottom: 100%;
+        @media (max-width: 992px){
+            width: 180px;
         }
-    }
-    .s-footer{
-        display: none;
-        @media (max-width: 326px){
-            display: block;
+        @media (max-width: 576px){
+            width: 100px;
         }
+        
     }
-}
+} 

@@ -530,6 +530,12 @@ body {
   margin-top: 65vh;
 }
 
+@media (max-width: 768px) {
+  .content-box .tabcontent .text {
+    margin-top: 20vh;
+  }
+}
+
 .content-box .tabcontent .text .text-box {
   margin: auto;
   width: 70%;

@@ -168,6 +168,9 @@ body {
         background-position: center;
         .text {
             margin-top: 65vh;
+            @media (max-width: 768px){
+                margin-top: 20vh;
+            }
             .text-box {
                 margin: auto;
                 width: 70%;
