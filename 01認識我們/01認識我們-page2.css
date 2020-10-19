@@ -128,7 +128,7 @@ body {
   position: fixed;
   top: 1vw;
   right: 2vw;
-  z-index: 5;
+  z-index: 99999999;
   background-color: #1c72b2;
   border-radius: 50%;
   margin: auto;
@@ -430,12 +430,14 @@ body {
 }
 
 .spacing {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .unit {
   color: white;
   text-align: center;
+  height: 60vh;
+  margin-top: 100px;
 }
 
 @media (max-width: 1024px) {
@@ -451,6 +453,8 @@ body {
   width: 35%;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {
@@ -466,7 +470,6 @@ body {
 .unit .row .development h2 {
   line-height: 40vh;
   text-align: center;
-  text-decoration: underline;
   font-weight: 900;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5%;

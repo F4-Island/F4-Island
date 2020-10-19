@@ -31,6 +31,7 @@ body {
 // menu開關
 .menu {
     @include menu;
+    z-index: 9999;
 }
 
 // menu效果
@@ -46,6 +47,7 @@ body {
 // 展開的menu// 未展開尺寸
 .l-menu {
     @include l-menu;
+    z-index: 9999;
 }
 
 // 展開尺寸
