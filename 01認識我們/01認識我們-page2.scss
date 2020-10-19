@@ -96,11 +96,13 @@ body {
 // 歷史及發展
 
 .spacing{
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .unit {
     color: white;
     text-align: center;
+    height: 60vh;
+    margin-top: 100px;
     .row {
         // @media (max-width: 1024px){
         //     padding: 50px;
@@ -117,7 +119,7 @@ body {
             border-radius: 50px;
             width: 35%;
             transition: 1s;
-            // transform: scale( 1.2);
+            transform: scale( 1.1);
             @media (max-width: 1024px){
 
                 margin: 30px
@@ -128,7 +130,7 @@ body {
             h2{
                 line-height: 40vh;
                 text-align: center;
-                text-decoration: underline;
+                // text-decoration: underline;
                 font-weight: 900;
                 background-color: rgba(255, 255, 255, 0.3);
                 border-radius: 5%;
