@@ -109,11 +109,15 @@ body {
                 background-position: center;
                 background-size: cover;
                 border-radius: 20px;
+
+                
             }
             // 玄武岩文字區
             .basalt-text {
                 width: 50%;
                 height: 100%;
+                position: absolute;
+                }
                 .basalt-title {
                     height: 20%;
                     position: relative;
@@ -143,6 +147,7 @@ body {
                     border-radius: 20px;
                     letter-spacing: 7px;
                     text-align: left;
+                    
                 }
             }
         }
@@ -194,7 +199,7 @@ body {
             }
         }
     }
-}
+
 
 .swiper-container {
     width: 100%;

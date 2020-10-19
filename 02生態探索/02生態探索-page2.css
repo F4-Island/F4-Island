@@ -491,15 +491,16 @@ body {
 .content .content .basalt .basalt-text {
   width: 50%;
   height: 100%;
+  position: absolute;
 }
 
-.content .content .basalt .basalt-text .basalt-title {
+.content .content .basalt .basalt-title {
   height: 20%;
   position: relative;
   z-index: 5;
 }
 
-.content .content .basalt .basalt-text .basalt-title h1 {
+.content .content .basalt .basalt-title h1 {
   padding: 5px;
   position: absolute;
   bottom: -50%;
@@ -511,7 +512,7 @@ body {
   border-radius: 50px;
 }
 
-.content .content .basalt .basalt-text .basalt-content {
+.content .content .basalt .basalt-content {
   position: relative;
   height: 80%;
   background-color: #1972b3;
@@ -525,7 +526,7 @@ body {
   text-align: left;
 }
 
-.content .content .seaeclipse {
+.content .seaeclipse {
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,7 +537,7 @@ body {
           flex-direction: row-reverse;
 }
 
-.content .content .seaeclipse .seaeclipse-img {
+.content .seaeclipse .seaeclipse-img {
   width: 50%;
   height: 100%;
   background-image: url(../img/02生態探索/玄武岩/海蝕.jpg);
@@ -545,18 +546,18 @@ body {
   border-radius: 20px;
 }
 
-.content .content .seaeclipse .seaeclipse-text {
+.content .seaeclipse .seaeclipse-text {
   width: 50%;
   height: 100%;
 }
 
-.content .content .seaeclipse .seaeclipse-text .seaeclipse-title {
+.content .seaeclipse .seaeclipse-text .seaeclipse-title {
   height: 20%;
   position: relative;
   z-index: 3;
 }
 
-.content .content .seaeclipse .seaeclipse-text .seaeclipse-title h1 {
+.content .seaeclipse .seaeclipse-text .seaeclipse-title h1 {
   padding: 5px;
   position: absolute;
   bottom: -50%;
@@ -568,7 +569,7 @@ body {
   border-radius: 50px;
 }
 
-.content .content .seaeclipse .seaeclipse-text .seaeclipse-content {
+.content .seaeclipse .seaeclipse-text .seaeclipse-content {
   position: relative;
   height: 70%;
   background-color: #A6C047;
