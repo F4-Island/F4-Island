@@ -272,6 +272,9 @@ body {
   background-color: #3281A5;
   padding: 0 5%;
   z-index: 20;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 @media (max-width: 1200px) {
@@ -539,6 +542,10 @@ h2 {
   font-size: 45px;
   font-weight: 600;
   margin-top: 40px;
+}
+
+h4 {
+  font-weight: 600;
 }
 
 .service p {

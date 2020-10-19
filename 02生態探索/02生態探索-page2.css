@@ -250,6 +250,9 @@ body {
   background-color: #3281A5;
   padding: 0 5%;
   z-index: 20;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 @media (max-width: 1200px) {
@@ -491,13 +494,12 @@ body {
 .content .content .basalt .basalt-text {
   width: 50%;
   height: 100%;
-  position: absolute;
 }
 
 .content .content .basalt .basalt-title {
   height: 20%;
   position: relative;
-  z-index: 5;
+  z-index: 4;
 }
 
 .content .content .basalt .basalt-title h1 {
