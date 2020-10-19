@@ -233,6 +233,7 @@ h3{
     align-items: center;
     margin-top: 75px;
     margin-bottom: 275px;
+    
 }
 
 // 波浪
@@ -257,6 +258,7 @@ footer{
         position: absolute;
         right: 5%;
         bottom: 100%;
+        display: none;
         @media (max-width: 992px){
             width: 180px;
         }
