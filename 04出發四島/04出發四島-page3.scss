@@ -11,7 +11,7 @@ body {
     background-image: url(../img/04出發四島/注意事項-底圖.png);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 // loading遮蓋區
@@ -98,7 +98,12 @@ body {
     text-align: center;
     margin-top: -10px;
     
+    
 }
+h3{
+    opacity: 0.5;
+    margin-top: 5px;
+    }
 
 .content-box {
     padding-top: 5%;
@@ -145,7 +150,6 @@ h2{
     font-weight: 600;
     margin-top: 40px;
 }
-
 .service p{
     font-size: 22px;
     letter-spacing: 3px;

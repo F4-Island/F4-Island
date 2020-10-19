@@ -100,7 +100,12 @@ body {
     @include Sub-standard-style;
     text-align:center;
     margin-top: -10px;
-}
+ }
+
+h3{
+    opacity: 0.5;
+    margin-top: 5px;
+    }
 
 .content-box {
     padding-top: 5%;
@@ -115,6 +120,11 @@ body {
         margin-top: 30px;
         letter-spacing: 2px;
     }
+}
+
+.ar{
+    font-size: 21px;
+    letter-spacing: 2px;
 }
 
 .content {
