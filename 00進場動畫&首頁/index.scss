@@ -1,5 +1,5 @@
-@import"../default";
-@import"../mixin";
+@import "../default";
+@import "../mixin";
 
 * {
     box-sizing: border-box;
@@ -18,9 +18,8 @@ body {
     width: 100%;
     height: 100%;
     /* background: rgb(22, 49, 81); */
-    background:white;
+    background: white;
     z-index: 999;
-
 }
 // loading飛機
 .loading {
@@ -29,1159 +28,1191 @@ body {
     height: 500px;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     // border-radius: 100px;
 }
 
 // menu開關
-.menu{
+.menu {
     width: 100%;
     @include menu;
-    
 }
 
 // menu效果
 .menu-btnline.active,
 .menu-text.active,
-.menu-btn.active{
+.menu-btn.active {
     display: none;
 }
 
-.menu.active
-{
+.menu.active {
     background-color: #a1c143;
 }
 
 // 展開的menu// 未展開尺寸
-.l-menu{
+.l-menu {
     @include l-menu;
 }
 
 // 展開尺寸
-.l-menu.active{
-    @include  l-menu-active;
-} 
+.l-menu.active {
+    @include l-menu-active;
+}
 
 // 內容
-.wholeMap{
+.wholeMap {
     background-color: $bg-blue;
     position: relative;
     width: 100vw;
     height: 100vh;
-    .logo{
+    .logo {
         position: absolute;
         top: 4%;
         left: 50%;
-        transform: translate(-50%,0);
-        @media (max-width: 1600px){
+        transform: translate(-50%, 0);
+        @media (max-width: 1600px) {
             width: 25%;
-        } 
-        @media (max-width: 768px){
+        }
+        @media (max-width: 768px) {
             width: 30%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             width: 40%;
             top: 10%;
         }
     }
     //東吉嶼
-    .east{
+    .east {
         position: absolute;
         top: 36%;
         right: 2%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             width: 419px;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 373px;
             top: 34%;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 250px;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             width: 175px;
             top: 30%;
         }
-        .east-img{
-            @media (max-width: 1600px){
+        .east-img {
+            @media (max-width: 1600px) {
                 width: 100%;
             }
         }
-        .east-hint{
+        .east-hint {
             position: absolute;
             top: -5%;
             right: 10%;
             @include mainIsland-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 top: -12%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 top: -22%;
                 right: 10%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 top: -30%;
                 right: 10%;
             }
         }
     }
-    
+
     //西吉嶼
-    .west{
+    .west {
         position: absolute;
         top: 52%;
         right: 35%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             width: 266px;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 237px;
             top: 50%;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 203px;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             width: 142px;
             right: 30%;
         }
-        .west-img{
-            @media (max-width: 1600px){
+        .west-img {
+            @media (max-width: 1600px) {
                 width: 100%;
             }
         }
-        .west-hint{
+        .west-hint {
             position: absolute;
             top: -20%;
             right: 8%;
             @include mainIsland-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 top: -32%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 top: -30%;
                 right: 10%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 top: -45%;
             }
-        } 
+        }
     }
-    
 
     //東嶼坪嶼
-    .littleEast{
+    .littleEast {
         position: absolute;
         top: 38%;
         left: 17%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             width: 280px;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 250px;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 213px;
             top: 35%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             width: 149px;
             left: 10%;
             top: 35%;
         }
-        .littleEast-img{
-            @media (max-width: 1600px){
+        .littleEast-img {
+            @media (max-width: 1600px) {
                 width: 100%;
             }
-        } 
-        .littleEast-hint{
+        }
+        .littleEast-hint {
             position: absolute;
             top: -60%;
             left: 70%;
             @include mainIsland-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 top: -93%;
                 left: 60%;
             }
-            @media (max-width: 1200px){
+            @media (max-width: 1200px) {
                 top: -80%;
                 left: 62%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 top: -80%;
                 left: 65%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 left: 0;
                 top: -70%;
             }
         }
     }
-    
-    
+
     //西嶼坪嶼
-    .littleWest{
+    .littleWest {
         position: absolute;
         top: 23%;
         left: 16%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             width: 174px;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 155px;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 132px;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             width: 92px;
             left: 13%;
             top: 22%;
         }
-        .littleWest-img{
-            @media (max-width: 1600px){
+        .littleWest-img {
+            @media (max-width: 1600px) {
                 width: 100%;
             }
-        } 
-        .littleWest-hint{
+        }
+        .littleWest-hint {
             position: absolute;
             top: -55%;
             left: 50%;
             @include mainIsland-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 top: -80%;
                 left: 38%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 top: -80%;
                 left: 40%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 top: -95%;
             }
         }
     }
-    
+
     //附屬島嶼
-    .island1{
+    .island1 {
         position: absolute;
         top: 12%;
         left: 5%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             top: 11%;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             left: 3%;
             width: 127px;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             top: 8%;
             left: 0;
             width: 101px;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             top: 9%;
             left: 2%;
             width: 64px;
         }
-        .island1-img{
+        .island1-img {
             width: 100%;
         }
-        .island1-hint{
+        .island1-hint {
             position: absolute;
             top: -120%;
             left: 0%;
             @include subIsland-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 top: -80%;
             }
-            @media (max-width: 1200px){
+            @media (max-width: 1200px) {
                 top: -100%;
                 left: 5%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 top: -120%;
                 left: 5%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 top: -190%;
             }
         }
-        &:hover .island1-hint{
-            opacity: 1;
-        }
-    }
-    
-    .island2{
-        position: absolute;
-        top: 18%;
-        left: 14%;
-        @media (max-width: 1600px){
-            top: 17%;
-        }
-        @media (max-width: 1200px){
-            left: 12%;
-            width: 76px;
-        }
-        @media (max-width: 768px){
-            top: 15%;
-            left: 10%;
-            width: 61px;
-        }
-        @media (max-width: 576px){
-            left: 15%;
-            top: 13%;
-            width: 38px;
-        }
-        .island2-img{
-            width: 100%;
-        }
-        .island2-hint{
-            position: absolute;
-            top: -195%;
-            left: 5%;
-            @include subIsland-hint;
-            @media (max-width: 1600px){
-                top: -160%;
-            }
-            @media (max-width: 1200px){
-                top: -190%;
-                left: 7%;
-            }
-            @media (max-width: 768px){
-                top: -200%;
-                left: 10%;
-            }
-            @media (max-width: 576px){
-                top: -250%;
-                left: -10%;
-            }
-        }
-        &:hover .island2-hint{
-            opacity: 1;
-        }
-    }
-    
-    .island3{
-        position: absolute;
-        top: 39%;
-        left: 13%;
-        @media (max-width: 1600px){
-            top: 36%;
-        }
-        @media (max-width: 1200px){
-            top: 35%;
-            width: 43px;
-        }
-        @media (max-width: 768px){
-            top: 33%;
-            width: 34px;
-        }
-        @media (max-width: 576px){
-            left: 5%;
-            top: 26%;
-            width: 22px;
-        }
-        .island3-img{
-            width: 100%;
-        }
-        .island3-hint{
-            position: absolute;
-            top: -210%;
-            left: -10%;
-            @include subIsland-hint;
-            @media (max-width: 1600px){
-                top: -165%;
-                left: 0%;
-            }
-            @media (max-width: 1200px){
-                top: -270%;
-                left: -20%;
-            }
-            @media (max-width: 768px){
-                top: -290%;
-                left: -30%;
-            }
-            @media (max-width: 576px){
-                top: -270%;
-                left: -50%;
-            }
-        }
-        &:hover .island3-hint{
-            opacity: 1;
-        }
-    }
-    
-    .island4{
-        position: absolute;
-        top: 53%;
-        left: 26%;
-        @media (max-width: 1600px){
-            top: 50%;
-        }
-        @media (max-width: 1200px){
-            width: 30px;
-            top: 48%;
-        }
-        @media (max-width: 768px){
-            top: 46%;
-            left: 28%;
-            width: 24px;
-        }
-        @media (max-width: 576px){
-            top: 42%;
-            left: 22%;
-            width: 15px;
-        }
-        .island4-img{
-            width: 100%;
-        }
-        .island4-hint{
-            position: absolute;
-            top: -420%;
-            left: -80%;
-            @include subIsland-hint;
-            @media (max-width: 1600px){
-                top: -330%;
-                left: -60%;
-            }
-            @media (max-width: 1200px){
-                top: -350%;
-            }
-            @media (max-width: 768px){
-                left: -50%;
-                top: -320%;
-            }
-            @media (max-width: 576px){
-                top: -260%;
-                left: -100%;
-            }
-        }
-        &:hover .island4-hint{
-            opacity: 1;
-        }
-    }
-    
-    .island5{
-        position: absolute;
-        top: 55%;
-        left: 6%;
-        @media (max-width: 1600px){
-            top: 53%;
-        }
-        @media (max-width: 1200px){
-            top: 52%;
-            width: 51px;
-        }
-        @media (max-width: 768px){
-            top: 48%;
-            left: 3%;
-            width: 41px;
-        }
-        @media (max-width: 576px){
-            width: 26px;
-        }
-        .island5-img{
-            width: 100%;
-        }
-        .island5-hint{
-            position: absolute;
-            top: -160%;
-            left: -10%;
-            @include subIsland-hint;
-            @media (max-width: 1600px){
-                top: -130%;
-                left: 0;
-            }
-            @media (max-width: 1200px){
-                top: -200%;
-                left: -18%;
-            }
-            @media (max-width: 768px){
-                top: -210%;
-            }
-            @media (max-width: 576px){
-                top: -260%;
-                left: -45%;
-            }
-        }
-        &:hover .island5-hint{
-            opacity: 1;
-        }
-    }
-    
-    .island6{
-        position: absolute;
-        top: 60%;
-        left: 17%;
-        @media (max-width: 1600px){
-            top: 59%;
-        }
-        @media (max-width: 1200px){
-            top: 58%;
-            width: 57px;
-        }
-        @media (max-width: 768px){
-            left: 12%;
-            width: 45px;
-        }
-        @media (max-width: 576px){
-            top: 55%;
-            left: 15%;
-            width: 29px;
-        }
-        .island6-img{
-            width: 100%;
-        }
-        .island6-hint{
-            position: absolute;
-            top: -160%;
-            left: -10%;
-            @include subIsland-hint;
-            @media (max-width: 1600px){
-                top: -120%;
-                left: 0%;
-            }
-            @media (max-width: 1200px){
-                top: -180%;
-                left: -15%;
-            }
-            @media (max-width: 768px){
-                top: -190%;
-            }
-            @media (max-width: 576px){
-                top: -250%;
-                left: -40%;
-            }
-        }
-        &:hover .island6-hint{
-            opacity: 1;
-        }
-    }
-    
-    .island7{
-        position: absolute;
-        top: 55%;
-        left: 32%;
-        @media (max-width: 1600px){
-            top: 54%;
-        }
-        @media (max-width: 1200px){
-            top: 53%;
-            width: 86px;
-        }
-        @media (max-width: 768px){
-            top: 52%;
-            left: 30%;
-            width: 68px;
-        }
-        @media (max-width: 576px){
-            top: 47%;
-            width: 43px;
-            left: 35%;
-        }
-        .island7-img{
-            width: 100%;
-        }
-        .island7-hint{
-            position: absolute;
-            top: -140%;
-            left: 0%;
-            @include subIsland-hint;
-            @media (max-width: 1600px){
-                top: -110%;
-                left: 3%;
-            }
-            @media (max-width: 1200px){
-                top: -140%;
-            }
-            @media (max-width: 768px){
-                top: -150%;
-                left: 8%;
-            }
-            @media (max-width: 576px){
-                top: -210%;
-                left: -15%;
-            }
-        }
-        &:hover .island7-hint{
-            opacity: 1;
-        }
-    }
-    
-    .island8{
-        position: absolute;
-        top: 45%;
-        right: 26%;
-        @media (max-width: 1600px){
-            right: 22%;
-            top: 44%;
-            width: 78px;
-        }
-        @media (max-width: 1200px){
-            top: 40%;
-            right: 23%;
-            width: 68px;
-        }
-        @media (max-width: 768px){
-            top: 37%;
-            right: 25%;
-            width: 58px;
-        }
-        @media (max-width: 576px){
-            right: 34%;
-            top: 37%;
-            width: 29px;
-        }
-        .island8-img{
-            width: 100%;
-        }  
-        .island8-hint{
-            position: absolute;
-            top: -190%;
-            right: 0%;
-            @include subIsland-hint;
-            @media (max-width: 1600px){
-                right: 5%;
-                top: -230%;
-            }
-            @media (max-width: 1200px){
-                top: -220%;
-            }
-            @media (max-width: 576px){
-                top: -265%;
-                right: -30%;
-            }
-        }
-        &:hover .island8-hint{
+        &:hover .island1-hint {
             opacity: 1;
         }
     }
 
-    .fish-l{
+    .island2 {
+        position: absolute;
+        top: 18%;
+        left: 14%;
+        @media (max-width: 1600px) {
+            top: 17%;
+        }
+        @media (max-width: 1200px) {
+            left: 12%;
+            width: 76px;
+        }
+        @media (max-width: 768px) {
+            top: 15%;
+            left: 10%;
+            width: 61px;
+        }
+        @media (max-width: 576px) {
+            left: 15%;
+            top: 13%;
+            width: 38px;
+        }
+        .island2-img {
+            width: 100%;
+        }
+        .island2-hint {
+            position: absolute;
+            top: -195%;
+            left: 5%;
+            @include subIsland-hint;
+            @media (max-width: 1600px) {
+                top: -160%;
+            }
+            @media (max-width: 1200px) {
+                top: -190%;
+                left: 7%;
+            }
+            @media (max-width: 768px) {
+                top: -200%;
+                left: 10%;
+            }
+            @media (max-width: 576px) {
+                top: -250%;
+                left: -10%;
+            }
+        }
+        &:hover .island2-hint {
+            opacity: 1;
+        }
+    }
+
+    .island3 {
+        position: absolute;
+        top: 39%;
+        left: 13%;
+        @media (max-width: 1600px) {
+            top: 36%;
+        }
+        @media (max-width: 1200px) {
+            top: 35%;
+            width: 43px;
+        }
+        @media (max-width: 768px) {
+            top: 33%;
+            width: 34px;
+        }
+        @media (max-width: 576px) {
+            left: 5%;
+            top: 26%;
+            width: 22px;
+        }
+        .island3-img {
+            width: 100%;
+        }
+        .island3-hint {
+            position: absolute;
+            top: -210%;
+            left: -10%;
+            @include subIsland-hint;
+            @media (max-width: 1600px) {
+                top: -165%;
+                left: 0%;
+            }
+            @media (max-width: 1200px) {
+                top: -270%;
+                left: -20%;
+            }
+            @media (max-width: 768px) {
+                top: -290%;
+                left: -30%;
+            }
+            @media (max-width: 576px) {
+                top: -270%;
+                left: -50%;
+            }
+        }
+        &:hover .island3-hint {
+            opacity: 1;
+        }
+    }
+
+    .island4 {
+        position: absolute;
+        top: 53%;
+        left: 26%;
+        @media (max-width: 1600px) {
+            top: 50%;
+        }
+        @media (max-width: 1200px) {
+            width: 30px;
+            top: 48%;
+        }
+        @media (max-width: 768px) {
+            top: 46%;
+            left: 28%;
+            width: 24px;
+        }
+        @media (max-width: 576px) {
+            top: 42%;
+            left: 22%;
+            width: 15px;
+        }
+        .island4-img {
+            width: 100%;
+        }
+        .island4-hint {
+            position: absolute;
+            top: -420%;
+            left: -80%;
+            @include subIsland-hint;
+            @media (max-width: 1600px) {
+                top: -330%;
+                left: -60%;
+            }
+            @media (max-width: 1200px) {
+                top: -350%;
+            }
+            @media (max-width: 768px) {
+                left: -50%;
+                top: -320%;
+            }
+            @media (max-width: 576px) {
+                top: -260%;
+                left: -100%;
+            }
+        }
+        &:hover .island4-hint {
+            opacity: 1;
+        }
+    }
+
+    .island5 {
+        position: absolute;
+        top: 55%;
+        left: 6%;
+        @media (max-width: 1600px) {
+            top: 53%;
+        }
+        @media (max-width: 1200px) {
+            top: 52%;
+            width: 51px;
+        }
+        @media (max-width: 768px) {
+            top: 48%;
+            left: 3%;
+            width: 41px;
+        }
+        @media (max-width: 576px) {
+            width: 26px;
+        }
+        .island5-img {
+            width: 100%;
+        }
+        .island5-hint {
+            position: absolute;
+            top: -160%;
+            left: -10%;
+            @include subIsland-hint;
+            @media (max-width: 1600px) {
+                top: -130%;
+                left: 0;
+            }
+            @media (max-width: 1200px) {
+                top: -200%;
+                left: -18%;
+            }
+            @media (max-width: 768px) {
+                top: -210%;
+            }
+            @media (max-width: 576px) {
+                top: -260%;
+                left: -45%;
+            }
+        }
+        &:hover .island5-hint {
+            opacity: 1;
+        }
+    }
+
+    .island6 {
+        position: absolute;
+        top: 60%;
+        left: 17%;
+        @media (max-width: 1600px) {
+            top: 59%;
+        }
+        @media (max-width: 1200px) {
+            top: 58%;
+            width: 57px;
+        }
+        @media (max-width: 768px) {
+            left: 12%;
+            width: 45px;
+        }
+        @media (max-width: 576px) {
+            top: 55%;
+            left: 15%;
+            width: 29px;
+        }
+        .island6-img {
+            width: 100%;
+        }
+        .island6-hint {
+            position: absolute;
+            top: -160%;
+            left: -10%;
+            @include subIsland-hint;
+            @media (max-width: 1600px) {
+                top: -120%;
+                left: 0%;
+            }
+            @media (max-width: 1200px) {
+                top: -180%;
+                left: -15%;
+            }
+            @media (max-width: 768px) {
+                top: -190%;
+            }
+            @media (max-width: 576px) {
+                top: -250%;
+                left: -40%;
+            }
+        }
+        &:hover .island6-hint {
+            opacity: 1;
+        }
+    }
+
+    .island7 {
+        position: absolute;
+        top: 55%;
+        left: 32%;
+        @media (max-width: 1600px) {
+            top: 54%;
+        }
+        @media (max-width: 1200px) {
+            top: 53%;
+            width: 86px;
+        }
+        @media (max-width: 768px) {
+            top: 52%;
+            left: 30%;
+            width: 68px;
+        }
+        @media (max-width: 576px) {
+            top: 47%;
+            width: 43px;
+            left: 35%;
+        }
+        .island7-img {
+            width: 100%;
+        }
+        .island7-hint {
+            position: absolute;
+            top: -140%;
+            left: 0%;
+            @include subIsland-hint;
+            @media (max-width: 1600px) {
+                top: -110%;
+                left: 3%;
+            }
+            @media (max-width: 1200px) {
+                top: -140%;
+            }
+            @media (max-width: 768px) {
+                top: -150%;
+                left: 8%;
+            }
+            @media (max-width: 576px) {
+                top: -210%;
+                left: -15%;
+            }
+        }
+        &:hover .island7-hint {
+            opacity: 1;
+        }
+    }
+
+    .island8 {
+        position: absolute;
+        top: 45%;
+        right: 26%;
+        @media (max-width: 1600px) {
+            right: 22%;
+            top: 44%;
+            width: 78px;
+        }
+        @media (max-width: 1200px) {
+            top: 40%;
+            right: 23%;
+            width: 68px;
+        }
+        @media (max-width: 768px) {
+            top: 37%;
+            right: 25%;
+            width: 58px;
+        }
+        @media (max-width: 576px) {
+            right: 34%;
+            top: 37%;
+            width: 29px;
+        }
+        .island8-img {
+            width: 100%;
+        }
+        .island8-hint {
+            position: absolute;
+            top: -190%;
+            right: 0%;
+            @include subIsland-hint;
+            @media (max-width: 1600px) {
+                right: 5%;
+                top: -230%;
+            }
+            @media (max-width: 1200px) {
+                top: -220%;
+            }
+            @media (max-width: 576px) {
+                top: -265%;
+                right: -30%;
+            }
+        }
+        &:hover .island8-hint {
+            opacity: 1;
+        }
+    }
+
+    .fish-l {
         position: absolute;
         top: 30%;
         left: 4%;
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             top: 17%;
         }
     }
-    .fish-r{
+    .fish-r {
         position: absolute;
         top: 73%;
         right: 30%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             top: 66%;
             right: 26%;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 200px;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             top: 55%;
             right: 10%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             top: 50%;
             left: 70%;
             width: 100px;
         }
-        .fish-r-img{
-            @media (max-width: 1200px){
+        .fish-r-img {
+            @media (max-width: 1200px) {
                 width: 100%;
             }
         }
     }
-    .rock{
+    .rock {
         position: absolute;
         bottom: 15%;
         left: 6%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             width: 85px;
             bottom: 13%;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 74px;
             bottom: 12%;
             left: 4%;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             left: 3%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             bottom: 17%;
             left: 8%;
             width: 59px;
         }
-        .rock-img{
-            @media (max-width: 1600px){
+        .rock-img {
+            @media (max-width: 1600px) {
                 width: 100%;
             }
         }
-        .rock-hint{
+        .rock-hint {
             position: absolute;
             bottom: 110%;
             left: -20%;
             @include others-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 bottom: 80%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 bottom: 55%;
                 left: 0;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 bottom: 32%;
                 left: -15%;
                 opacity: 1;
-            } 
+            }
         }
-        .rock-shadow{
+        .rock-shadow {
             position: absolute;
             bottom: -55%;
             left: -35%;
             opacity: 0;
             transition: 0.3s;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 bottom: -60%;
                 left: -50%;
             }
-            @media (max-width: 1200px){
+            @media (max-width: 1200px) {
                 width: 170%;
                 bottom: -65%;
                 left: -35%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 left: -32%;
                 width: 170%;
                 bottom: -68%;
                 opacity: 1;
-            } 
+            }
         }
         &:hover .rock-hint {
             opacity: 1;
         }
-        &:hover .rock-shadow{
+        &:hover .rock-shadow {
             opacity: 1;
         }
     }
-    
 
-    .animal{
+    .animal {
         position: absolute;
         bottom: 15%;
         left: 15%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             width: 109px;
             bottom: 13%;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 95px;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             left: 17.5%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             bottom: 18%;
             left: 30%;
             width: 76px;
         }
-        .animal-img{
+        .animal-img {
             width: 100%;
         }
-        .animal-hint{
+        .animal-hint {
             position: absolute;
             bottom: 200%;
             left: 0%;
             @include others-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 bottom: 140%;
             }
-            @media (max-width: 1200px){
+            @media (max-width: 1200px) {
                 left: -10%;
                 bottom: 130%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 bottom: 85%;
                 left: 10%;
             }
-            @media (max-width: 576px){
-              bottom: 36%; 
-              left: -5%;
-              opacity: 1; 
+            @media (max-width: 576px) {
+                bottom: 36%;
+                left: -5%;
+                opacity: 1;
             }
         }
-        .animal-shadow{
+        .animal-shadow {
             position: absolute;
             bottom: -100%;
             left: -20%;
             opacity: 0;
             transition: 0.3s;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 bottom: -110%;
                 left: -25%;
             }
-            @media (max-width: 1200px){
+            @media (max-width: 1200px) {
                 width: 145%;
                 bottom: -150%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 left: -15%;
                 bottom: -140%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 left: -25%;
                 width: 150%;
                 bottom: -150%;
                 opacity: 1;
-            } 
+            }
         }
-        &:hover .animal-hint{
+        &:hover .animal-hint {
             opacity: 1;
         }
-        &:hover .animal-shadow{
+        &:hover .animal-shadow {
             opacity: 1;
         }
     }
-    
 
-    .plant{
+    .plant {
         position: absolute;
         bottom: 15%;
         left: 25%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             width: 90px;
             bottom: 13%;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 78px;
             left: 27%;
             bottom: 12%;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             left: 35%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             bottom: 17%;
             left: 55%;
             width: 62px;
         }
-        .plant-img{
+        .plant-img {
             width: 100%;
         }
-        .plant-hint{
+        .plant-hint {
             position: absolute;
             bottom: 110%;
             left: 0%;
             @include others-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 bottom: 80%;
             }
-            @media (max-width: 1200px){
+            @media (max-width: 1200px) {
                 left: -10%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 bottom: 59%;
                 left: 0%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 bottom: 35%;
                 left: -8%;
                 opacity: 1;
             }
         }
-        .plant-shadow{
+        .plant-shadow {
             position: absolute;
             bottom: -50%;
             left: 9%;
             opacity: 0;
             transition: 0.3s;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 bottom: -60%;
                 left: 0;
             }
-            @media (max-width: 1200px){
+            @media (max-width: 1200px) {
                 left: 12%;
                 bottom: -55%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 left: 25%;
                 bottom: -45%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 left: 20%;
                 width: 90%;
                 bottom: -55%;
                 opacity: 1;
-            } 
+            }
         }
-        &:hover .plant-hint{
+        &:hover .plant-hint {
             opacity: 1;
         }
-        &:hover .plant-shadow{
+        &:hover .plant-shadow {
             opacity: 1;
         }
     }
-    
 
-    .carol{
+    .carol {
         position: absolute;
         bottom: 15%;
         left: 35%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             width: 96px;
             bottom: 13%;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 84px;
             left: 38%;
             bottom: 12%;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 80px;
             left: 50%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             bottom: 17%;
             left: 76%;
             width: 67px;
         }
-        .carol-img{
+        .carol-img {
             width: 100%;
         }
-        .carol-hint{
+        .carol-hint {
             position: absolute;
             bottom: 110%;
             left: 0%;
             @include others-hint;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 bottom: 80%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 bottom: 63%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 bottom: 35%;
                 left: 2%;
                 opacity: 1;
             }
         }
-        .carol-shadow{
+        .carol-shadow {
             position: absolute;
             bottom: -50%;
             left: 9%;
             opacity: 0;
             transition: 0.3s;
-            @media (max-width: 1600px){
+            @media (max-width: 1600px) {
                 bottom: -60%;
                 left: 0%;
             }
-            @media (max-width: 1200px){
+            @media (max-width: 1200px) {
                 left: 13%;
                 bottom: -58%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 bottom: -45%;
                 left: 22%;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 left: 10%;
                 width: 90%;
                 bottom: -55%;
                 opacity: 1;
-            } 
+            }
         }
-        &:hover .carol-hint{
+        &:hover .carol-hint {
             opacity: 1;
         }
-        &:hover .carol-shadow{
+        &:hover .carol-shadow {
             opacity: 1;
         }
     }
-    
 
-    .birds{
+    .birds {
         position: absolute;
         top: 12%;
         right: 27%;
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             top: 5%;
             right: 15%;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 25%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             top: 3%;
             right: 15%;
             width: 100px;
         }
-        .birds-img{
-            @media (max-width: 576px){
+        .birds-img {
+            @media (max-width: 576px) {
                 width: 100%;
             }
         }
     }
-    .cloud{
+    .cloud {
         position: absolute;
         top: 17%;
         right: 1%;
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             width: 350px;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 35%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             width: 50%;
             right: 5%;
             width: 130px;
         }
-        .cloud-img{
-            @media (max-width: 1200px){
+        .cloud-img {
+            @media (max-width: 1200px) {
                 width: 100%;
             }
         }
     }
-    .boat{
-        overflow: hidden;
+    // .boat{
+    //     overflow: hidden;
+    //     position: fixed;
+    //     bottom: -3%;
+    //     right: 12%;
+    //     z-index: 1;
+    //     width: 28%;
+    //     @media (max-width: 1600px){
+    //         right: 15%;
+    //     }
+    //     @media (max-width: 1200px){
+    //         bottom: -2%;
+    //         width: 25%;
+    //     }
+    //     @media (max-width: 1080px){
+    //         bottom: -4%;
+    //         width: 35%;
+    //     }
+    //     @media (max-width: 768px){
+    //         bottom: -2%;
+    //         right: 18%;
+    //         width: 30%;
+    //     }
+    //     @media (max-width: 576px){
+    //         width: 50%;
+    //         right: 50%;
+    //         width: 85px;
+    //     }
+    //     .boat-img{
+    //         width: 100%;
+    //     }
+    // }
+    // 船船移動
+    .img-group {
+        width: 100%;
         position: fixed;
-        bottom: -3%;
-        right: 12%;
-        z-index: 1;
-        width: 28%;
-        @media (max-width: 1600px){
-            right: 15%;
+        bottom: -20px;
+        left: 0px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: bannermove 10s linear infinite;
+        .img-group img {
+            margin: 0 0.5em;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1280px) {
+            bottom: -50px;
+        }
+        @media (max-width: 1080px) {
+        }
+        @media (max-width: 768px) {
+            width: 100vw;
+            bottom: -6%;
+        }
+        @media (max-width: 576px) {
             bottom: -2%;
-            width: 25%;
         }
-        @media (max-width: 1080px){
-            bottom: -4%;
-            width: 35%;
+        @keyframes bannermove {
+            0% {
+                transform: translate(100%, 0);
+            }
+
+            100% {
+                transform: translate(-50%, 0);
+            }
         }
-        @media (max-width: 768px){
-            bottom: -2%;
-            right: 18%;
-            width: 30%;
-        }
-        @media (max-width: 576px){
-            width: 50%;
-            right: 50%;
-            width: 85px;
-        }
-        .boat-img{
-            width: 100%;
+        img {
+            @media (max-width: 768px) {
+                width: 50%;
+            }
         }
     }
-    .email{
+
+    .email {
         position: absolute;
         bottom: 15%;
         right: 2%;
-        
-        @media (max-width: 768px){
+
+        @media (max-width: 768px) {
             bottom: 12%;
             right: 3%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             bottom: 6%;
             right: 15%;
             width: 35px;
         }
-        .email-img{
+        .email-img {
             width: 100%;
         }
     }
-    .fb{
+    .fb {
         position: absolute;
         bottom: 15%;
         right: 7%;
-        @media (max-width: 1600px){
+        @media (max-width: 1600px) {
             right: 8%;
         }
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             right: 10%;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             bottom: 12%;
             right: 15%;
         }
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
             right: 30%;
             bottom: 6%;
             width: 35px;
         }
-        .fb-img{
+        .fb-img {
             width: 100%;
         }
     }
-    .wave{
+    .wave {
         width: 100vw;
         position: absolute;
         bottom: 0;
     }
 
-    .box{
-        img{
-            @media (max-width: 1200px) { 
+    .box {
+        img {
+            @media (max-width: 1200px) {
                 width: 90%;
             }
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 width: 70%;
             }
-            @media (max-width: 576px) { 
+            @media (max-width: 576px) {
                 width: 45%;
-            }    
+            }
         }
-        .hint{
-            @media (max-width: 1600px){
+        .hint {
+            @media (max-width: 1600px) {
                 width: 85px;
                 height: 135px;
             }
-            @media (max-width: 1200px) { 
+            @media (max-width: 1200px) {
                 width: 70px;
                 height: 111px;
                 font-size: 16px;
                 line-height: 70px;
-            } 
-            @media (max-width: 768px){
+            }
+            @media (max-width: 768px) {
                 width: 60px;
                 height: 96px;
                 font-size: 14px;
                 line-height: 60px;
                 letter-spacing: 0;
             }
-            @media (max-width: 576px){
+            @media (max-width: 576px) {
                 width: 50px;
                 height: 79px;
                 font-size: 12px;
                 line-height: 50px;
                 letter-spacing: 0;
-            }   
+            }
         }
-        .others-hint{
-            @media (max-width: 1600px){
+        .others-hint {
+            @media (max-width: 1600px) {
                 width: 115px;
                 font-size: 18px;
                 line-height: 70px;
             }
-            @media (max-width: 1200px) { 
+            @media (max-width: 1200px) {
                 width: 100px;
                 font-size: 16px;
                 line-height: 50px;
-            } 
-            @media (max-width: 768px) { 
+            }
+            @media (max-width: 768px) {
                 width: 90px;
                 font-size: 14px;
                 line-height: 50px;
-            } 
-            @media (max-width: 576px){
+            }
+            @media (max-width: 576px) {
                 width: 70px;
                 font-size: 12px;
                 line-height: 35px;
-            }   
+            }
         }
     }
 }
