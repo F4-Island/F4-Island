@@ -340,6 +340,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .page .container nav .title {
+    font-size: 13px;
+  }
+}
+
 .page .container nav .name {
   font-family: Microsoft JhengHei;
   font-weight: 400;
@@ -380,6 +386,12 @@ body {
   .page .container nav .name {
     font-size: 13px;
     letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page .container nav .name {
+    font-size: 12px;
   }
 }
 
@@ -444,13 +456,27 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .content-box .tab {
   padding: 3% 0;
-  float: right;
   height: 100%;
-  padding-top: 40vh;
   background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
   background-size: cover;
   position: relative;
@@ -461,33 +487,33 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 20vh;
   }
+}
+
+.content-box .tab .logo-box {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
-  .content-box .tab a {
+  .content-box .tab .logo-box {
+    width: 50%;
     display: none;
   }
 }
 
-.content-box .tab a .logo {
-  width: 30%;
+.content-box .tab .logo-box .logo {
+  width: 45%;
   position: absolute;
   top: 10%;
-  right: 36%;
+  right: 28%;
 }
 
-@media (max-width: 1600px) {
-  .content-box .tab a .logo {
-    width: 45%;
-    right: 29%;
-  }
-}
-
-@media (max-width: 576px) {
-  .content-box .tab a .logo {
-    display: none;
+@media (max-width: 768px) {
+  .content-box .tab .logo-box .logo {
+    right: 0;
+    top: 4%;
+    left: 5%;
+    width: 30%;
   }
 }
 
@@ -503,8 +529,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 40vh;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tab .tab-btn {
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 .content-box .tab .tab-btn .tablinks {
@@ -524,8 +558,8 @@ body {
 
 @media (max-width: 768px) {
   .content-box .tab .tab-btn .tablinks {
-    width: 60%;
-    height: 20%;
+    width: 20%;
+    height: 60%;
   }
 }
 
@@ -544,7 +578,13 @@ body {
 
 @media (max-width: 768px) {
   .content-box .tab .tab-btn .tablinks h1 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tab .tab-btn .tablinks h1 {
+    font-size: 14px;
   }
 }
 
@@ -564,7 +604,13 @@ body {
 
 @media (max-width: 768px) {
   .content-box .tab .tab-btn .tablinks:hover h1 {
-    font-size: 25px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tab .tab-btn .tablinks:hover h1 {
+    font-size: 12px;
   }
 }
 
@@ -587,7 +633,6 @@ body {
 }
 
 .content-box .tabcontent {
-  float: left;
   width: 100%;
   height: 100%;
   border-left: none;
@@ -598,18 +643,31 @@ body {
   background-position: center;
 }
 
-.content-box .tabcontent .text {
-  margin-top: 55vh;
+@media (max-width: 768px) {
+  .content-box .tabcontent {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent {
+    height: 300vh;
+  }
 }
 
 @media (max-width: 768px) {
   .content-box .tabcontent .text {
-    margin-top: 20vh;
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text {
+    margin-top: 0;
   }
 }
 
 .content-box .tabcontent .text .text-box {
-  margin: auto;
   width: 70%;
   border-radius: 10px;
   -webkit-box-align: center;
@@ -620,8 +678,92 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 576px) {
+  .content-box .tabcontent .text .text-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text .text-box h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
 .content-box .tabcontent .text .text-box p {
   text-align: justify;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text .text-box p {
+    font-size: 13px;
+  }
+}
+
+.content-box .tabcontent .text1 {
+  margin-top: 15%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text1 {
+    margin-top: 45vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text1 {
+    margin-top: 110%;
+  }
+}
+
+.content-box .tabcontent .text2 {
+  margin-top: 20%;
+  padding-right: 50%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text2 {
+    padding-right: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text2 {
+    padding-right: 0%;
+    margin-top: 110%;
+  }
+}
+
+.content-box .tabcontent .text3 {
+  margin-top: 18%;
+  padding-right: 40%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text3 {
+    padding-right: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text3 {
+    padding-right: 10%;
+    margin-top: 15%;
+  }
+}
+
+.content-box .tabcontent .text4 {
+  margin-top: 13%;
+  padding-right: 50%;
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text4 {
+    margin-top: 15%;
+  }
 }
 
 .content-box .tab1 {

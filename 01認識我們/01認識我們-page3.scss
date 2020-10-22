@@ -58,6 +58,9 @@ body {
             }
             .title {
                 @include nav-word-l;
+                @media (max-width: 768px){
+                    font-size: 13px;  
+                  } 
             }
             .name {
                 @include nav-word-s;
@@ -66,6 +69,9 @@ body {
                 align-items: center;
                 transition: 0.3s;
                 opacity: 0.5;
+                @media (max-width: 768px){
+                    font-size: 12px;
+                }
                 .icon {
                     @include icon;
                 }
@@ -93,52 +99,51 @@ body {
     height: 100vh;
     position: fixed;
     top: 0;
+    display: flex;
+    flex-direction: row-reverse;
     @media (max-width: 768px){
-        // display: flex;
-        // flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
     .tab {
         padding: 3% 0;
-        float: right;
-        // width: 50%;
         height: 100%;
-        padding-top: 40vh;
         background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
         background-size: cover;
         position: relative;
         @media (max-width: 768px){
             display: flex;
-            padding-top: 20vh;
         }
-        a{
+        .logo-box{
+            width: 100%;
             @media (max-width: 768px){
-                    display: none;
-                }
+                width: 50%;
+                display: none;
+            }
             .logo {
-                width:30%;
+                width:45%;
                 position: absolute;
                 top: 10%;
-                right: 36%;
-                @media (max-width: 1600px){
-                    width: 45%;
-                    right:29%;
-
-                }
-                @media (max-width: 576px){
-                    display: none;
+                right: 28%;
+                @media (max-width: 768px){
+                    right: 0;
+                    top: 4%;
+                    left: 5%;
+                    width: 30%;
                 }
             }
         }
-       
-
         .tab-btn {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            padding-top: 40vh;
             width: 100%;
             height: 100%;
-
+            @media (max-width: 768px){
+                width: 100%;
+                padding-top: 0;
+            }
             .tablinks {
                 width: 40%;
                 height: 30%;
@@ -153,10 +158,9 @@ body {
                 position: relative;
                 z-index: 99;
                 @media (max-width: 768px){
-                    width: 60%;
-                    height: 20%;
+                    width: 20%;
+                    height: 60%;
                 }
-
                 h1 {
                     position: absolute;
                     top: calc(50% - 10px);
@@ -167,7 +171,10 @@ body {
                     font-weight: 800;
                     color: rgb(41, 82, 116);
                     @media (max-width: 768px){
-                       font-size: 25px;
+                       font-size: 20px;
+                    }
+                    @media (max-width: 576px){
+                        font-size: 14px;
                     }
                 }
                 &:hover::before {
@@ -180,8 +187,11 @@ body {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     @media (max-width: 768px){
-                        font-size: 25px;
-                     }
+                        font-size: 18px;
+                    }
+                    @media (max-width: 576px){
+                        font-size: 12px;
+                    }
                 }
                 .active {
                     background-color: #ccc;
@@ -202,7 +212,7 @@ body {
         }
     }
     .tabcontent {
-        float: left;
+        // float: left;
         width: 100%;
         height: 100%;
         border-left: none;
@@ -212,25 +222,80 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         @media (max-width: 768px){
-        //    float: none;
+            height: 200vh;
+        }
+        @media (max-width: 576px){
+            height: 300vh;
         }
         .text {
-            margin-top: 55vh;
             @media (max-width: 768px){
-                margin-top: 20vh;
+                margin-top: 10vh;
+            }
+            @media (max-width: 576px){
+                margin-top: 0;
             }
             .text-box {
-                margin: auto;
                 width: 70%;
                 border-radius: 10px;
                 align-items: center;
                 text-align: center;
                 background-color: rgba(41, 82, 116, 0.7);
                 padding: 10px;
-                p {
-                    // width: 50%;
-                    text-align: justify;
+                @media (max-width: 576px){
+                    width: 90%;
                 }
+                h3{
+                    @media (max-width: 576px){
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                    }
+                }
+                p {
+                    text-align: justify;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    @media (max-width: 576px){
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .text1{
+            margin-top: 15%;
+            @media (max-width: 768px){
+                margin-top: 45vh;
+            }
+            @media (max-width: 576px){
+                margin-top: 110%;
+            }
+        }
+        .text2{
+            margin-top: 20%;
+            padding-right: 50%;
+            @media (max-width: 768px){
+                padding-right: 60%;
+            }
+            @media (max-width: 576px){
+                padding-right: 0%;
+                margin-top: 110%;
+            }
+        }
+        .text3{
+            margin-top: 18%;
+            padding-right: 40%;
+            @media (max-width: 768px){
+                padding-right: 20%;
+            }
+            @media (max-width: 576px){
+                padding-right: 10%;
+                margin-top: 15%;
+            }
+        }
+        .text4{
+            margin-top: 13%;
+            padding-right: 50%;
+            @media (max-width: 576px){
+                margin-top: 15%;
             }
         }
     }

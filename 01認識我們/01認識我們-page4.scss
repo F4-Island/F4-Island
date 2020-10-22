@@ -51,6 +51,9 @@ body {
             }
             .title {
                 @include nav-word-l;
+                @media (max-width: 768px){
+                    font-size: 13px;  
+                  } 
             }
             .name {
                 @include nav-word-s;
@@ -59,6 +62,9 @@ body {
                 align-items: center;
                 transition: 0.3s;
                 opacity: 0.5;
+                @media (max-width: 768px){
+                    font-size: 12px;
+                }
                 .icon {
                     @include icon;
                 }
