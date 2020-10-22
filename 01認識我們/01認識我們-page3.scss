@@ -225,7 +225,7 @@ body {
             height: 200vh;
         }
         @media (max-width: 576px){
-            height: 300vh;
+            height:200vh;
         }
         .text {
             @media (max-width: 768px){
@@ -254,6 +254,7 @@ body {
                     text-align: justify;
                     font-size: 18px;
                     letter-spacing: 1px;
+                    margin-bottom: 0;
                     @media (max-width: 576px){
                         font-size: 13px;
                     }
@@ -266,7 +267,7 @@ body {
                 margin-top: 45vh;
             }
             @media (max-width: 576px){
-                margin-top: 110%;
+                margin-top: 60%;
             }
         }
         .text2{
@@ -277,7 +278,7 @@ body {
             }
             @media (max-width: 576px){
                 padding-right: 0%;
-                margin-top: 110%;
+                margin-top: 60%;
             }
         }
         .text3{
