@@ -60,7 +60,7 @@ body {
   background-color: #de675e;
   text-shadow: none;
   border-radius: 50%;
-  z-index: 601;
+  z-index: 999990;
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -198,7 +198,7 @@ body {
   width: 25vw;
   height: 25vw;
   opacity: 1;
-  z-index: 501;
+  z-index: 9999;
 }
 
 .l-menu.active li a span {
@@ -553,14 +553,71 @@ body {
   left: 45%;
 }
 
-footer {
-  margin-top: 200px;
-  position: relative;
+.wave {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
 }
 
-footer img {
-  width: 100vw;
-  position: absolute;
+@media (max-width: 1200px) {
+  .wave {
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wave {
+    height: 55px;
+  }
+}
+
+footer {
+  position: relative;
+  position: fixed;
+  z-index: 200;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+footer p {
+  margin-bottom: 0;
+  margin: 0.5% 0;
+}
+
+@media (max-width: 992px) {
+  footer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    font-size: 10px;
+  }
+}
+
+footer .boat {
+  position: absolute;
+  right: 5%;
+  bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  footer .boat {
+    width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .boat {
+    width: 100px;
+  }
 }
 /*# sourceMappingURL=03四島奇旅-whole-page.css.map */

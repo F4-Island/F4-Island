@@ -40,7 +40,7 @@ body {
   background-color: #de675e;
   text-shadow: none;
   border-radius: 50%;
-  z-index: 601;
+  z-index: 999990;
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -178,7 +178,7 @@ body {
   width: 25vw;
   height: 25vw;
   opacity: 1;
-  z-index: 501;
+  z-index: 9999;
 }
 
 .l-menu.active li a span {

@@ -171,12 +171,30 @@ body {
         left: 45%;
     }  
 }
+.wave {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    @media (max-width: 1200px){
+        height: 70px;
+    }
+    @media (max-width: 576px){
+        height: 55px;
+    }
+}
 footer{
-    margin-top: 200px;
     position: relative;
-    img{
-        width: 100vw;
+    @include footer;
+    .boat {
         position: absolute;
-        bottom: 0;
+        right: 5%;
+        bottom: 40px;
+        @media (max-width: 992px){
+            width: 180px;
+        }
+        @media (max-width: 576px){
+            width: 100px;
+        }
+        
     }
 } 

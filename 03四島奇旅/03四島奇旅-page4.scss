@@ -32,7 +32,6 @@ body {
 // menu開關
 .menu{
     @include menu;
-    z-index: 9999;
 }
 
 // menu效果
@@ -49,7 +48,6 @@ body {
 // 展開的menu// 未展開尺寸
 .l-menu{
     @include l-menu;
-    z-index: 9999;
 }
 
 // 展開尺寸
@@ -220,17 +218,13 @@ body {
         height: 55px;
     }
 }
-
-
-
 footer{
     position: relative;
     @include footer;
-    
     .boat {
         position: absolute;
         right: 5%;
-        bottom: 100%;
+        bottom: 40px;
         @media (max-width: 992px){
             width: 180px;
         }

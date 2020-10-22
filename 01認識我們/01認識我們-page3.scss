@@ -43,7 +43,6 @@ body {
 
 // 展開尺寸
 .l-menu.active {
-    z-index: 100;
     @include l-menu-active;
 }
 

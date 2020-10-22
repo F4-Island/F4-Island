@@ -129,7 +129,7 @@
     background-color:  #de675e;
     text-shadow: none;
     border-radius: 50%;
-    z-index: 601;   
+    z-index: 999990;   
     color:white;
     transition: 0.5s;
     cursor: pointer;
@@ -234,7 +234,7 @@
     width: 25vw;
     height: 25vw;
     opacity: 1;
-    z-index: 501;  
+    z-index: 9999;  
     
     li{
         a{
@@ -323,11 +323,21 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-top: 50px;
     box-sizing: border-box;
     text-align: center;
-    font-size: 0.5vw;
-    line-height: 0.5vw;
+    font-size: 16px;
     letter-spacing: 1px;
+    p{
+        margin-bottom: 0;
+        margin: 0.5% 0;
+    }
+    @media (max-width: 992px){
+        font-size: 13px;
+    }
+    @media (max-width: 576px){
+        font-size: 10px;
+    }
 }
 
 //00頁首地標
