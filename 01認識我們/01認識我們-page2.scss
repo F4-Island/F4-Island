@@ -55,6 +55,9 @@ body {
             }
             .title {
                 @include nav-word-l;
+                @media (max-width: 768px){
+                  font-size: 13px;  
+                } 
             }
             .name {
                 @include nav-word-s;
@@ -63,6 +66,9 @@ body {
                 align-items: center;
                 transition: 0.3s;
                 opacity: 0.5;
+                @media (max-width: 768px){
+                    font-size: 12px;
+                }
                 .icon {
                     @include icon;
                 }
@@ -101,12 +107,18 @@ body {
 .unit {
     color: white;
     text-align: center;
-    height: 60vh;
-    margin-top: 100px;
+    height: 50vh;
+    margin-top: 180px;
+    @media (max-width: 768px){
+        margin-top: 80px;
+    }
     .row {
-        // @media (max-width: 1024px){
-        //     padding: 50px;
-        // }
+        margin-left: 0;
+        margin-right: 0;
+        @media (max-width: 768px){
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
         .hide{
             @media (max-width: 1024px){
                 display: nono;
@@ -114,44 +126,43 @@ body {
         }
         .history ,
         .development{
-            height: 40vh;
-            // background-color: brown;
+            height: 50vh;
             border-radius: 50px;
             width: 35%;
             transition: 1s;
             transform: scale( 1.1);
-            @media (max-width: 1024px){
-
-                margin: 30px
-                auto;
-                width: 100%;
-                border-radius: 50px;
+            @media (max-width: 768px){
+                width: 70%;
+                height: 30vh;
+                margin: 10% 0;
             }
             h2{
-                line-height: 40vh;
+                line-height: 50vh;
                 text-align: center;
-                // text-decoration: underline;
                 font-weight: 900;
                 background-color: rgba(255, 255, 255, 0.3);
                 border-radius: 5%;
                 border-radius: 50px;
-                // display: block;
-                // transition: 1s;
+                @media (max-width: 768px){
+                    line-height: 30vh;
+                }
             }
             .text{
                 width: 100%;
                 height: 100%;
-                font-size: 18px;
-                letter-spacing: 8px;
+                font-size: 16px;
+                letter-spacing: 2px;
+                text-align: justify;
                 display: none;
                 align-items: center;
-                // background-color:darkgray;
                 transition: 1s;
-                // transform: scale( 1.2);
                 border-radius: 50px;
                 @media (max-width: 1024px){
-                    letter-spacing: 5px;
-                    font-size: 16px;
+                    font-size: 14px;
+                }
+                @media (max-width: 576px){
+                    font-size: 12px;
+                    letter-spacing: 1px;
                 }
                 .text-mask {
                     padding: 10%;
@@ -160,20 +171,22 @@ body {
                     background-color: rgba(62, 67, 71,0.8);
                     border-radius: 50px;
                     transition: 1s;
-                    
                 }              
 
 
             }
             &:hover {
                 width: 40%;
-                height: 60vh;
-                @media (max-width: 1024px){
-                    width: 100%;
-                    border-radius: 50px;
+                height: 50vh;
+                @media (max-width: 768px){
+                    width: 80%;
+                    height: 40vh;
                 }
+                // @media (max-width: 1024px){
+                //     width: 90%;
+                //     border-radius: 50px;
+                // }
 
-                // transform: scale( 1.2);
                 h2{
                     display: none;
                     background-color: rgba(62, 67, 71,0);
@@ -193,12 +206,16 @@ body {
         // 一開始展開樣式(可參照hover狀況寫
         .history.active{
             width: 40%;
-            height: 60vh;
+            height: 50vh;
             transform: 1s;
-            @media (max-width: 1024px){
-                width: 100%;
-                border-radius: 50px;
+            @media (max-width: 768px){
+                width: 70%;
+                height: 40vh;
             }
+            // @media (max-width: 1024px){
+            //     width: 90%;
+            //     border-radius: 50px;
+            // }
             .title1.active{
                 display: none;
                 transform: 1s;
@@ -217,10 +234,16 @@ body {
             background-image: url(../img/01認識我們/02歷史與發展/歷史小.png);
             background-position: center;
             background-size: 300%;
+            @media (max-width: 992px){
+                background-size: 400%;
+            }
             .text{
                 background-image: url(../img/01認識我們/02歷史與發展/歷史大.png);
                 background-position: center;
                 background-size: 350%;
+                @media (max-width: 992px){
+                    background-size: 400%;
+                }
             }
         }
 
@@ -229,10 +252,16 @@ body {
             background-image: url(../img/01認識我們/02歷史與發展/發展小.png);
             background-position: center;
             background-size: 400%;
+            @media (max-width: 992px){
+                background-size: 550%;
+            }
             .text{
                 background-image: url(../img/01認識我們/02歷史與發展/發展大.png);
                 background-position: center;
                 background-size: 450%;
+                @media (max-width: 992px){
+                    background-size: 500%;
+                }
             }
         }
 
@@ -268,16 +297,21 @@ body {
 footer{
     position: relative;
     @include footer;
-    .boat {
-        position: absolute;
-        right: 5%;
-        bottom: 40px;
+    .boat-img{
+            position: absolute;
+            right: 5%;
+            bottom: 40px;
         @media (max-width: 992px){
             width: 180px;
         }
-        @media (max-width: 576px){
-            width: 100px;
+        @media (max-width: 992px){
+            width: 150px;
         }
-        
+       .boat {
+            @media (max-width: 992px){
+                width: 100%;
+            }
+        } 
     }
+    
 }

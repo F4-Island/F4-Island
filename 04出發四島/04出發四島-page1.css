@@ -100,17 +100,41 @@ body {
 .menu .menu-btn .menu-btnline {
   position: absolute;
   top: 40%;
-  right: 50%;
-  font-size: 10px;
+  right: 52%;
+  font-size: 20px;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .menu .menu-btn .menu-btnline {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu .menu-btn .menu-btnline {
+    font-size: 16px;
+  }
 }
 
 .menu .menu-btn .menu-text {
   position: absolute;
   top: 55%;
-  right: 45%;
+  right: 43%;
   display: block;
-  font-size: 1vw;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .menu .menu-btn .menu-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu .menu-btn .menu-text {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -179,7 +203,7 @@ body {
 }
 
 .l-menu .menu-list li a span {
-  font-size: 1.18vw;
+  font-size: 25px;
   color: #fff;
   font-weight: 700;
   display: block;
@@ -187,6 +211,12 @@ body {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 1600px) {
+  .l-menu .menu-list li a span {
+    line-height: 2;
+  }
 }
 
 .l-menu .menu-list li a span:hover {
@@ -206,29 +236,29 @@ body {
 
 @media (max-width: 1200px) {
   .l-menu.active {
-    width: 30vw;
-    height: 30vw;
+    width: 35vw;
+    height: 35vw;
   }
 }
 
 @media (max-width: 992px) {
   .l-menu.active {
-    width: 32vw;
-    height: 32vw;
+    width: 40vw;
+    height: 40vw;
   }
 }
 
 @media (max-width: 768px) {
   .l-menu.active {
-    width: 34vw;
-    height: 34vw;
+    width: 45vw;
+    height: 45vw;
   }
 }
 
 @media (max-width: 576px) {
   .l-menu.active {
-    width: 38vw;
-    height: 38vw;
+    width: 50vw;
+    height: 50vw;
   }
 }
 
@@ -597,7 +627,7 @@ footer {
   z-index: 200;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   margin-top: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
