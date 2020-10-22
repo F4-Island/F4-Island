@@ -233,6 +233,9 @@
                         @media (max-width: 1600px){
                             line-height: 2;
                         }
+                        @media (max-width: 576px){
+                            font-size: 14px;
+                        }
                         &:hover{
                             color: rgb(184, 202, 211);
                         }
@@ -252,8 +255,8 @@
     
     li{
         a{
-    span{
-        opacity: 1;
+            span{
+                opacity: 1;
             }
         }
     }

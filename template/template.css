@@ -216,6 +216,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .l-menu .menu-list li a span {
+    font-size: 14px;
+  }
+}
+
 .l-menu .menu-list li a span:hover {
   color: #b8cad3;
 }
