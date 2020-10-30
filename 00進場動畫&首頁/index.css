@@ -1959,8 +1959,8 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .bottom-group .img-group {
-    width: 250px;
-    bottom: -10px;
+    width: 200px;
+    bottom: 3px;
   }
 }
 
@@ -2021,10 +2021,8 @@ body {
 @media (max-width: 576px) {
   .wholeMap .email {
     position: fixed;
-    bottom: unset;
-    right: unset;
-    top: 5px;
-    left: 120px;
+    bottom: 15px;
+    right: 50px;
     width: 35px;
   }
 }
@@ -2061,10 +2059,8 @@ body {
 @media (max-width: 576px) {
   .wholeMap .fb {
     position: fixed;
-    right: unset;
-    bottom: unset;
-    top: 5px;
-    left: 70px;
+    right: 5px;
+    bottom: 15px;
     width: 35px;
   }
 }

@@ -1100,8 +1100,8 @@ body {
                 bottom: -25px;
             }
             @media (max-width: 576px) {
-                width: 250px;
-                bottom: -10px;
+                width: 200px;
+                bottom: 3px;
             }
             @keyframes bannermove {
                 0% {
@@ -1143,10 +1143,8 @@ body {
         }
         @media (max-width: 576px) {
             position: fixed;
-            bottom: unset;
-            right: unset;
-            top: 5px;
-            left: 120px;
+            bottom: 15px;
+            right: 50px;
             width: 35px;
         }
         .email-img {
@@ -1169,10 +1167,8 @@ body {
         }
         @media (max-width: 576px) {
             position: fixed;
-            right: unset;
-            bottom: unset;
-            top: 5px;
-            left: 70px;
+            right: 5px;
+            bottom: 15px;
             width: 35px;
         }
         .fb-img {
