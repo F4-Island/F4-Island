@@ -97,6 +97,7 @@ body {
         }
     }
     .content {
+        margin-bottom: 200px;
         // 鳥類.兩棲.昆蟲
         .animals-row {
             width: 100%;
@@ -105,6 +106,7 @@ body {
             background-size: cover;
             background-position: center;
             border-radius: 50px;
+            margin-left: 0;
             .col {
                 h2 {
                     text-align: left;
@@ -185,6 +187,7 @@ body {
             background-size: cover;
             background-position: center;
             padding: 5%;
+            margin-left: 0;
             .col {
                 width: 100%;
                 h2 {
@@ -201,6 +204,9 @@ body {
                         letter-spacing: 2px;
                         text-align: left;
                         color: white;
+                        @media (max-width: 768px){
+                            margin-top: 10px;
+                        }
                     }
                     .animalimgs-img {
                         width: 50%;
