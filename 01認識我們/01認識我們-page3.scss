@@ -182,11 +182,16 @@ body {
                     }
                     @media (max-width: 576px){
                         font-size: 14px;
+                        top: calc(50% - 5px);
+                        left: calc(50% - 5px);
                     }
                 }
                 &:hover::before {
                     background-color: rgb(28, 153, 175);
                     transform: translate(10px, 10px);
+                    @media (max-width: 576px){
+                        transform: translate(5px, 5px);
+                    }
                 }
                 &:hover h1 {
                     color: white;
@@ -214,6 +219,10 @@ body {
                     background-color: white;
                     z-index: -1;
                     transition: 0.6s;
+                    @media (max-width: 576px){
+                        bottom: 5px;
+                        right: 5px;
+                    }
                 }
             }
         }
