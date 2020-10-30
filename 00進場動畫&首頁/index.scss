@@ -1068,51 +1068,65 @@ body {
     //     }
     // }
     // 船船移動
-    .img-group {
-        width: 535px;
+    .bottom-group{
         position: fixed;
-        bottom: -20px;
-        left: 0px;
-        overflow: hidden;
-        white-space: nowrap;
-        animation: bannermove 10s linear infinite;
-        // .img-group img {
-        //     margin: 0 0.5em;
-        // }
-        img{
-            width: 100%;
-        }
-        @media (max-width: 1600px){
-            width: 400px;
-            bottom: -10px;
-        }
-        @media (max-width: 1280px) {
-            bottom: -15px;
-        }
-        @media (max-width: 992px){
-            width: 350px;
-            bottom: -20px;
-        }
-        @media (max-width: 768px) {
-            bottom: -25px;
-        }
-        @media (max-width: 576px) {
-            width: 250px;
-        }
-        @keyframes bannermove {
-            0% {
-                transform: translate(300%, 0);
+        bottom: 0;
+        .img-group {
+            width: 535px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: bannermove 10s linear infinite;
+            // .img-group img {
+            //     margin: 0 0.5em;
+            // }
+            .boat-img{
+                width: 100%;
             }
+            @media (max-width: 1600px){
+                width: 400px;
+                bottom: -5px;
+            }
+            @media (max-width: 1280px) {
+                bottom: -15px;
+            }
+            @media (max-width: 992px){
+                width: 350px;
+                bottom: -20px;
+            }
+            @media (max-width: 768px) {
+                bottom: -25px;
+            }
+            @media (max-width: 576px) {
+                width: 250px;
+                bottom: 10px;
+            }
+            @keyframes bannermove {
+                0% {
+                    transform: translate(300%, 0);
+                }
 
-            100% {
-                transform: translate(-100%, 0);
+                100% {
+                    transform: translate(-100%, 0);
+                }
+            }
+            // img {
+            //     @media (max-width: 768px) {
+            //         width: 50%;
+            //     }
+            // }
+        }
+        .wave {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            @media (max-width: 768px){
+                width: unset;
+                height: 70px;
             }
         }
-        // img {
-        //     @media (max-width: 768px) {
-        //         width: 50%;
-        //     }
-        // }
     }
 
     .email {
@@ -1125,8 +1139,10 @@ body {
             right: 3%;
         }
         @media (max-width: 576px) {
-            bottom: 6%;
-            right: 15%;
+            bottom: unset;
+            right: unset;
+            top: 5px;
+            left: 120px;
             width: 35px;
         }
         .email-img {
@@ -1148,19 +1164,17 @@ body {
             right: 15%;
         }
         @media (max-width: 576px) {
-            right: 30%;
-            bottom: 6%;
+            right: unset;
+            bottom: unset;
+            top: 5px;
+            left: 70px;
             width: 35px;
         }
         .fb-img {
             width: 100%;
         }
     }
-    .wave {
-        width: 100vw;
-        position: fixed;
-        bottom: 0;
-    }
+    
 
     .box {
         img {

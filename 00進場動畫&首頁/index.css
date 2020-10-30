@@ -1911,50 +1911,56 @@ body {
   }
 }
 
-.wholeMap .img-group {
+.wholeMap .bottom-group {
+  position: fixed;
+  bottom: 0;
+}
+
+.wholeMap .bottom-group .img-group {
   width: 535px;
   position: fixed;
-  bottom: -20px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   overflow: hidden;
   white-space: nowrap;
   -webkit-animation: bannermove 10s linear infinite;
           animation: bannermove 10s linear infinite;
 }
 
-.wholeMap .img-group img {
+.wholeMap .bottom-group .img-group .boat-img {
   width: 100%;
 }
 
 @media (max-width: 1600px) {
-  .wholeMap .img-group {
+  .wholeMap .bottom-group .img-group {
     width: 400px;
-    bottom: -10px;
+    bottom: -5px;
   }
 }
 
 @media (max-width: 1280px) {
-  .wholeMap .img-group {
+  .wholeMap .bottom-group .img-group {
     bottom: -15px;
   }
 }
 
 @media (max-width: 992px) {
-  .wholeMap .img-group {
+  .wholeMap .bottom-group .img-group {
     width: 350px;
     bottom: -20px;
   }
 }
 
 @media (max-width: 768px) {
-  .wholeMap .img-group {
+  .wholeMap .bottom-group .img-group {
     bottom: -25px;
   }
 }
 
 @media (max-width: 576px) {
-  .wholeMap .img-group {
+  .wholeMap .bottom-group .img-group {
     width: 250px;
+    bottom: 10px;
   }
 }
 
@@ -1980,6 +1986,19 @@ body {
   }
 }
 
+.wholeMap .bottom-group .wave {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .wholeMap .bottom-group .wave {
+    width: unset;
+    height: 70px;
+  }
+}
+
 .wholeMap .email {
   position: absolute;
   bottom: 15%;
@@ -1995,8 +2014,10 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .email {
-    bottom: 6%;
-    right: 15%;
+    bottom: unset;
+    right: unset;
+    top: 5px;
+    left: 120px;
     width: 35px;
   }
 }
@@ -2032,20 +2053,16 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .fb {
-    right: 30%;
-    bottom: 6%;
+    right: unset;
+    bottom: unset;
+    top: 5px;
+    left: 70px;
     width: 35px;
   }
 }
 
 .wholeMap .fb .fb-img {
   width: 100%;
-}
-
-.wholeMap .wave {
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
 }
 
 @media (max-width: 1200px) {
