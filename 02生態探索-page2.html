@@ -139,17 +139,17 @@
                     </div>
                 </div>
             </div>
-            <div class="my-5">
+            <div class="my-md-5">
                 <br>
             </div>
             <!-- 海蝕 -->
-            <div class="seaeclipse mb-5">
+            <div class="seaeclipse ">
                 <!-- 海蝕圖片 -->
-                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"class="seaeclipse-img">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"class="seaeclipse-img">
                 </div>
                 <!-- 海蝕文字區 -->
                 <div class="seaeclipse-text">
-                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800"class="seaeclipse-title">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"class="seaeclipse-title">
                         <div><h1>海蝕</h1></div>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1000" class="seaeclipse-content">
@@ -163,9 +163,9 @@
         </div>
 
     </div>
-    <div class="my-5"></div>
+    <!-- <div class="my-5"></div> -->
     <!-- Swiper -->
-    <div class="container swiper-container p-4">
+    <div class="container swiper-container p-4 d-none d-md-block">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="img-box img1"></div>
@@ -201,14 +201,48 @@
         <div class="swiper-pagination"></div>
     </div>
 
+    <!-- Swiper for mobile -->
+    <div class="container swiper-container swiper-container-mobile p-4 d-md-none ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="img-box img1"></div>
+                <span>海蝕崖</span>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box img2"></div>
+                <span>風化的玄武岩礫灘</span>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box img3"></div>
+                <span>風化後的玄武岩脈</span>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box img4"></div>
+                <span>海蝕平台-東吉嶼</span>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box img5"></div>
+                <span>海蝕平台-東嶼坪嶼</span>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box img6"></div>
+                <span>海蝕平台與壺穴</span>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box img7"></div>
+                <span>海蝕洞</span>
+            </div>
+        </div>
+        <div class="my-5"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-mobile"></div>
+    </div>
 
 
     <div class="my-5"></div>
 
     <!-- 海鷗 -->
     <!-- <img src="./img/01認識我們/海鷗插圖.png" alt="" class="seagull"> -->
-
-
 
     <br>
     <!-- 波浪 -->
@@ -271,24 +305,6 @@
 
         })
 
-        $('.history').hover(function () {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active')
-                $('.title1').removeClass('active')
-                $('.text1').removeClass('active')
-            }
-
-        })
-
-        $('.development').hover(function () {
-            if ($('.history').hasClass('active')) {
-                $('.history').removeClass('active')
-                $('.title1').removeClass('active')
-                $('.text1').removeClass('active')
-            }
-
-        })
-
         // swiper
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
@@ -301,6 +317,22 @@
             },
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        // swiper-mobile
+        var swiper = new Swiper('.swiper-container-mobile', {
+            slidesPerView: 1,
+            autoHeight: true, //enable auto height
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2600,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination-mobile',
                 clickable: true,
             },
         });
