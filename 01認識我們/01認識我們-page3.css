@@ -576,6 +576,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .content-box .tab .tab-btn .tablinks {
+    height: 50%;
+  }
+}
+
 .content-box .tab .tab-btn .tablinks h1 {
   position: absolute;
   top: calc(50% - 10px);
@@ -821,6 +827,14 @@ body {
   top: 20px;
   right: 50px;
   color: white;
+}
+
+@media (max-width: 576px) {
+  .tab-btn.show .tablinks.show h1 {
+    top: 10px;
+    left: 50%;
+    margin-bottom: 0;
+  }
 }
 
 .tabcontent.show {

@@ -499,6 +499,7 @@ body {
 @media (max-width: 576px) {
   .content-box .tab {
     padding: 0;
+    height: 50%;
   }
 }
 
@@ -775,7 +776,7 @@ body {
 
 @media (max-width: 576px) {
   .content-box .tabcontent .text4 {
-    margin-top: 95%;
+    margin-top: 90%;
     padding-right: 30%;
   }
 }
@@ -830,7 +831,7 @@ body {
 
 @media (max-width: 576px) {
   .content-box .tabcontent .text7 {
-    margin-top: 100%;
+    margin-top: 90%;
     padding-right: 0%;
   }
 }
