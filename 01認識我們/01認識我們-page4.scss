@@ -408,6 +408,11 @@ body {
             top: 20px;
             right: 50px;
             color: white;
+            @media (max-width: 576px){
+                top: 10px;
+                left: 50%;
+                margin-bottom: 0;
+            }
         }
     }
 }

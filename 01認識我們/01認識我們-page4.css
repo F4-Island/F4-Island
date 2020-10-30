@@ -932,6 +932,14 @@ body {
   color: white;
 }
 
+@media (max-width: 576px) {
+  .tab-btn.show .tablinks.show h2 {
+    top: 10px;
+    left: 50%;
+    margin-bottom: 0;
+  }
+}
+
 .tabcontent.show {
   display: block;
   background-image: url(../img/認識四島/頭巾.png);
