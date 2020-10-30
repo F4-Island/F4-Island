@@ -462,14 +462,27 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .content-box .tab {
   padding: 3% 0;
-  float: right;
-  width: 30%;
   height: 100%;
-  padding-top: 40vh;
   background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
   background-size: cover;
   position: relative;
@@ -480,33 +493,39 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 20vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .content-box .tab a {
-    display: none;
-  }
-}
-
-.content-box .tab a .logo {
-  width: 30%;
-  position: absolute;
-  top: 10%;
-  right: 36%;
-}
-
-@media (max-width: 1600px) {
-  .content-box .tab a .logo {
-    width: 45%;
-    right: 29%;
   }
 }
 
 @media (max-width: 576px) {
-  .content-box .tab a .logo {
+  .content-box .tab {
+    padding: 0;
+  }
+}
+
+.content-box .tab .logo-box {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tab .logo-box {
+    width: 50%;
     display: none;
+  }
+}
+
+.content-box .tab .logo-box .logo {
+  width: 45%;
+  position: absolute;
+  top: 8%;
+  right: 28%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tab .logo-box .logo {
+    right: 0;
+    top: 4%;
+    left: 5%;
+    width: 30%;
   }
 }
 
@@ -522,8 +541,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 40vh;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tab .tab-btn {
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 .content-box .tab .tab-btn .tablinks {
@@ -541,6 +568,12 @@ body {
   z-index: 99;
 }
 
+@media (max-width: 576px) {
+  .content-box .tab .tab-btn .tablinks {
+    height: 20%;
+  }
+}
+
 .content-box .tab .tab-btn .tablinks h2 {
   position: absolute;
   top: calc(50% - 10px);
@@ -551,6 +584,19 @@ body {
   transition: 0.4s;
   font-size: 26px;
   font-weight: 800;
+  color: #295274;
+}
+
+@media (max-width: 768px) {
+  .content-box .tab .tab-btn .tablinks h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tab .tab-btn .tablinks h2 {
+    font-size: 14px;
+  }
 }
 
 .content-box .tab .tab-btn .tablinks:hover::before {
@@ -565,6 +611,18 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .content-box .tab .tab-btn .tablinks:hover h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tab .tab-btn .tablinks:hover h2 {
+    font-size: 12px;
+  }
 }
 
 .content-box .tab .tab-btn .tablinks .active {
@@ -586,7 +644,6 @@ body {
 }
 
 .content-box .tabcontent {
-  float: left;
   width: 100%;
   height: 100%;
   border-left: none;
@@ -597,18 +654,31 @@ body {
   background-position: center;
 }
 
-.content-box .tabcontent .text {
-  margin-top: 65vh;
+@media (max-width: 768px) {
+  .content-box .tabcontent {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent {
+    height: 200vh;
+  }
 }
 
 @media (max-width: 768px) {
   .content-box .tabcontent .text {
-    margin-top: 20vh;
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text {
+    margin-top: 0;
   }
 }
 
 .content-box .tabcontent .text .text-box {
-  margin: auto;
   width: 70%;
   border-radius: 10px;
   -webkit-box-align: center;
@@ -619,8 +689,184 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 576px) {
+  .content-box .tabcontent .text .text-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text .text-box h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
 .content-box .tabcontent .text .text-box p {
   text-align: justify;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text .text-box p {
+    font-size: 13px;
+  }
+}
+
+.content-box .tabcontent .text1 {
+  margin-top: 15%;
+  padding-right: 50%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text1 {
+    padding-right: 60%;
+  }
+}
+
+.content-box .tabcontent .text2 {
+  margin-top: 80%;
+  padding-left: 40%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text2 {
+    margin-top: 55%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text2 {
+    margin-top: 90%;
+  }
+}
+
+.content-box .tabcontent .text3 {
+  margin-top: 15%;
+  padding-right: 40%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text3 {
+    margin-top: 10%;
+    padding-right: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text3 {
+    margin-top: 15%;
+  }
+}
+
+.content-box .tabcontent .text4 {
+  margin-top: 80%;
+  padding-right: 30%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text4 {
+    margin-top: 60%;
+    padding-right: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text4 {
+    margin-top: 95%;
+    padding-right: 30%;
+  }
+}
+
+.content-box .tabcontent .text5 {
+  margin-top: 10%;
+  padding-right: 10%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text5 {
+    margin-top: 10%;
+    padding-right: 0%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text5 {
+    margin-top: 15%;
+  }
+}
+
+.content-box .tabcontent .text6 {
+  margin-top: 10%;
+  padding-right: 10%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text6 {
+    margin-top: 10%;
+    padding-right: 0%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text6 {
+    margin-top: 15%;
+  }
+}
+
+.content-box .tabcontent .text7 {
+  margin-top: 10%;
+  padding-right: 10%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text7 {
+    margin-top: 62%;
+    padding-right: 0%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text7 {
+    margin-top: 100%;
+    padding-right: 0%;
+  }
+}
+
+.content-box .tabcontent .text8 {
+  margin-top: 80%;
+  padding-right: 60%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text8 {
+    margin-top: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text8 {
+    margin-top: 80%;
+  }
+}
+
+.content-box .tabcontent .text9 {
+  margin-top: 50%;
+  padding-right: 0%;
+}
+
+@media (max-width: 768px) {
+  .content-box .tabcontent .text9 {
+    margin-top: 35%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-box .tabcontent .text9 {
+    margin-top: 50%;
+  }
 }
 
 .content-box .tab1 {

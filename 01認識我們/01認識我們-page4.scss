@@ -92,35 +92,39 @@ body {
     height: 100vh;
     position: fixed;
     top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    @media (max-width: 768px){
+        flex-direction: column-reverse;
+    }
     .tab {
         padding: 3% 0;
-        float: right;
-        width: 30%;
         height: 100%;
-        padding-top: 40vh;
         background-image: url(../img/認識四島/認識四嶼的右邊底圖.png);
         background-size: cover;
         position: relative;
         @media (max-width: 768px){
             display: flex;
-            padding-top: 20vh;
         }
-        a{
+        @media (max-width: 576px){
+            padding: 0;
+        }
+        .logo-box{
+            width: 100%;
             @media (max-width: 768px){
-                    display: none;
-                }
+                width: 50%;
+                display: none;
+            }
             .logo {
-                width:30%;
+                width:45%;
                 position: absolute;
-                top: 10%;
-                right: 36%;
-                @media (max-width: 1600px){
-                    width: 45%;
-                    right:29%;
-
-                }
-                @media (max-width: 576px){
-                    display: none;
+                top: 8%;
+                right: 28%;
+                @media (max-width: 768px){
+                    right: 0;
+                    top: 4%;
+                    left: 5%;
+                    width: 30%;
                 }
             }
         }
@@ -130,8 +134,13 @@ body {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            padding-top: 40vh;
             width: 100%;
             height: 100%;
+            @media (max-width: 768px){
+                width: 100%;
+                padding-top: 0;
+            }
             .tablinks {
                 width: 25%;
                 height: 25%;
@@ -145,7 +154,9 @@ body {
                 background-color:rgb(41, 82, 116);
                 position: relative;
                 z-index: 99;
-
+                @media (max-width: 576px){
+                    height: 20%;
+                }
                 h2 {
                     position: absolute;
                     top: calc(50% - 10px);
@@ -154,6 +165,13 @@ body {
                     transition: 0.4s;
                     font-size: 26px;
                     font-weight: 800;
+                    color: rgb(41, 82, 116);
+                    @media (max-width: 768px){
+                        font-size: 20px;
+                    }
+                     @media (max-width: 576px){
+                         font-size: 14px;
+                    }
                 }
                 &:hover::before {
                     background-color: rgb(28, 153, 175);
@@ -164,6 +182,12 @@ body {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    @media (max-width: 768px){
+                        font-size: 18px;
+                    }
+                    @media (max-width: 576px){
+                        font-size: 12px;
+                    }
                 }
                 .active {
                     background-color: #ccc;
@@ -184,7 +208,6 @@ body {
         }
     }
     .tabcontent {
-        float: left;
         width: 100%;
         height: 100%;
         border-left: none;
@@ -193,23 +216,139 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        @media (max-width: 768px){
+            height: 200vh;
+        }
+        @media (max-width: 576px){
+            height:200vh;
+        }
         .text {
-            margin-top: 65vh;
             @media (max-width: 768px){
-                margin-top: 20vh;
+                margin-top: 10vh;
+            }
+            @media (max-width: 576px){
+                margin-top: 0;
             }
             .text-box {
-                margin: auto;
                 width: 70%;
                 border-radius: 10px;
                 align-items: center;
                 text-align: center;
                 background-color: rgba(41, 82, 116, 0.7);
                 padding: 10px;
+                @media (max-width: 576px){
+                    width: 90%;
+                }
+                h3{
+                    @media (max-width: 576px){
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                    }
+                }
                 p {
                     // width: 50%;
                     text-align: justify;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    margin-bottom: 0;
+                    @media (max-width: 576px){
+                        font-size: 13px;
+                    }
                 }
+            }
+        }
+        .text1{
+            margin-top: 15%;
+            padding-right: 50%;
+            @media (max-width: 768px){
+                padding-right: 60%;
+            }
+        }
+        .text2{
+            margin-top: 80%;
+            padding-left: 40%;
+            @media (max-width: 768px){
+                margin-top: 55%;
+            }
+            @media (max-width: 576px){
+                margin-top: 90%;
+            }
+        }
+        .text3{
+            margin-top: 15%;
+            padding-right: 40%;
+            @media (max-width: 768px){
+                margin-top: 10%;
+                padding-right: 50%;
+            }
+            @media (max-width: 576px){
+                margin-top: 15%;
+            }
+        }
+        .text4{
+            margin-top: 80%;
+            padding-right: 30%;
+            @media (max-width: 768px){
+                margin-top: 60%;
+                padding-right: 30%;
+            }
+            @media (max-width: 576px){
+                margin-top: 95%;
+                padding-right: 30%;
+            }
+        }
+        .text5{
+            margin-top: 10%;
+            padding-right: 10%;
+            @media (max-width: 768px){
+                margin-top: 10%;
+                padding-right: 0%;
+            }
+            @media (max-width: 576px){
+                margin-top: 15%;
+            }
+        }
+        .text6{
+            margin-top: 10%;
+            padding-right: 10%;
+            @media (max-width: 768px){
+                margin-top: 10%;
+                padding-right: 0%;
+            }
+            @media (max-width: 576px){
+                margin-top: 15%;
+            }
+        }
+        .text7{
+            margin-top: 10%;
+            padding-right: 10%;
+            @media (max-width: 768px){
+                margin-top: 62%;
+                padding-right: 0%;
+            }
+            @media (max-width: 576px){
+                margin-top: 100%;
+                padding-right: 0%;
+            }
+        }
+        .text8{
+            margin-top: 80%;
+            padding-right: 60%;
+            @media (max-width: 768px){
+                margin-top: 50%;
+            }
+            @media (max-width: 576px){
+                margin-top: 80%;
+            }
+        }
+        .text9{
+            margin-top: 50%;
+            padding-right: 0%;
+            @media (max-width: 768px){
+                margin-top: 35%;
+            }
+            @media (max-width: 576px){
+                margin-top: 50%;
             }
         }
     }

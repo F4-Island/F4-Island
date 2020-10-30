@@ -609,6 +609,13 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .unit .row .history:hover,
+  .unit .row .development:hover {
+    height: 45vh;
+  }
+}
+
 .unit .row .history:hover h2,
 .unit .row .development:hover h2 {
   display: none;
@@ -705,6 +712,12 @@ body {
 @media (max-width: 992px) {
   .unit .row .development .text {
     background-size: 500%;
+  }
+}
+
+@media (max-width: 576px) {
+  .unit .row .development .text h3 {
+    margin-bottom: 0;
   }
 }
 
