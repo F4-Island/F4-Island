@@ -1364,8 +1364,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .rock {
-    position: fixed;
-    bottom: 17%;
+    bottom: 150px;
     left: 8%;
     width: 59px;
   }
@@ -1485,7 +1484,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .animal {
-    bottom: 18%;
+    bottom: 159px;
     left: 30%;
     width: 76px;
   }
@@ -1618,7 +1617,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .plant {
-    bottom: 17%;
+    bottom: 150px;
     left: 55%;
     width: 62px;
   }
@@ -1751,7 +1750,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .carol {
-    bottom: 17%;
+    bottom: 150px;
     left: 76%;
     width: 67px;
   }
@@ -1961,7 +1960,7 @@ body {
 @media (max-width: 576px) {
   .wholeMap .bottom-group .img-group {
     width: 250px;
-    bottom: 10px;
+    bottom: -10px;
   }
 }
 

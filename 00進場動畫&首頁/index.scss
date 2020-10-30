@@ -705,8 +705,7 @@ body {
             left: 3%;
         }
         @media (max-width: 576px) {
-            position: fixed;
-            bottom: 17%;
+            bottom: 150px;
             left: 8%;
             width: 59px;
         }
@@ -778,7 +777,7 @@ body {
             left: 17.5%;
         }
         @media (max-width: 576px) {
-            bottom: 18%;
+            bottom: 159px;
             left: 30%;
             width: 76px;
         }
@@ -857,7 +856,7 @@ body {
             left: 35%;
         }
         @media (max-width: 576px) {
-            bottom: 17%;
+            bottom: 150px;
             left: 55%;
             width: 62px;
         }
@@ -936,7 +935,7 @@ body {
             left: 50%;
         }
         @media (max-width: 576px) {
-            bottom: 17%;
+            bottom: 150px;
             left: 76%;
             width: 67px;
         }
@@ -1102,7 +1101,7 @@ body {
             }
             @media (max-width: 576px) {
                 width: 250px;
-                bottom: 10px;
+                bottom: -10px;
             }
             @keyframes bannermove {
                 0% {
