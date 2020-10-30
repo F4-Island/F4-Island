@@ -690,6 +690,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .unit .row .development {
+    margin: 10% 0 20% 0;
+  }
+}
+
 .unit .row .development .text {
   background-image: url(../img/01認識我們/02歷史與發展/發展大.png);
   background-position: center;
