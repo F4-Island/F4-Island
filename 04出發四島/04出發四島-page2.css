@@ -493,6 +493,7 @@ body {
   opacity: 0.5;
   text-align: center;
   margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
@@ -545,6 +546,12 @@ h3 {
   font-size: 21px;
   margin-top: 10px;
   letter-spacing: 2px;
+}
+
+@media (max-width: 576px) {
+  .content-box ul .title-p {
+    font-size: 18px;
+  }
 }
 
 .content {
@@ -616,24 +623,24 @@ h3 {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 75px;
-  margin-bottom: 275px;
+  margin-bottom: 200px;
 }
 
 .wave {
   width: 100vw;
   position: fixed;
   bottom: 0;
+  z-index: 99;
 }
 
 @media (max-width: 1200px) {

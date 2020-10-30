@@ -510,6 +510,7 @@ body {
 .Sub-standard h3 {
   opacity: 0.5;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .content-box {
@@ -558,6 +559,18 @@ body {
   line-height: 35px;
 }
 
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title {
+    font-size: 16px;
+  }
+}
+
 .text-box {
   width: 100%;
 }
@@ -576,16 +589,83 @@ h2 {
   font-size: 45px;
   font-weight: 600;
   margin-top: 40px;
+  color: #24999F;
+  display: inline-block;
+  align-items: center;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-weight: 600;
 }
 
-h4 {
+@media (max-width: 992px) {
+  h2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+}
+
+.h3 {
+  color: #24999F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: Arno Pro;
+  opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .h3 {
+    font-size: 16px;
+  }
+}
+
+.text-box h4 {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .text-box h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-box h4 {
+    font-size: 16px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-box .p {
+    font-size: 18px;
+  }
 }
 
 .service p {
   font-size: 22px;
   letter-spacing: 3px;
   line-height: 35px;
+}
+
+@media (max-width: 768px) {
+  .service p {
+    font-size: 20px;
+  }
 }
 
 .hole {

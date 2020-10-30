@@ -134,7 +134,7 @@
 
         </ul>
 
-        <div class="application" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+        <div class="application" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <div><a class="" onclick="" href="https://reurl.cc/5qRX2y"  target="_blank">申請書下載 ▸▸ </a></div>
 
             <p class="title-p">澎湖縣野生動物保護區及自然保留區進入申請表</p>
@@ -146,7 +146,7 @@
     </div>
 
     <!-- 這裡是下方swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container d-none d-lg-block">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic01-01.png" alt=""></div>
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic02-01.png" alt=""></div>
@@ -156,7 +156,6 @@
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic06-01.png" alt=""></div>
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic07-01.png" alt=""></div>
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic08-01.png" alt=""></div>
-
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic09-01.png" alt=""></div>
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic10-01.png" alt=""></div>
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic11-01.png" alt=""></div>
@@ -168,7 +167,31 @@
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic17-01.png" alt=""></div>
           <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic18-01.png" alt=""></div>
         </div>
+    </div>
 
+    <!-- swiper for mobile -->
+    <div class="swiper-container swiper-container-mobile d-lg-none">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic01-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic02-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic03-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic04-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic05-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic06-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic07-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic08-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic09-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic10-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic11-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic12-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic13-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic14-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic15-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic16-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic17-01.png" alt=""></div>
+          <div class="swiper-slide"><img src="./img/04出發四島/02注意事項/pic18-01.png" alt=""></div>
+        </div>
+    </div>
     <!-- 波浪 -->
     <img class="wave d-none d-lg-block" src="./img/01認識我們/小波浪.png" alt="">
     <img class="wave d-none d-lg-block" src="./img/01認識我們/波浪.png" alt="">
@@ -259,6 +282,22 @@
         clickable: true,
       },
     });
+
+
+    var swiper = new Swiper('.swiper-container-mobile', {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination-mobile',
+        clickable: true,
+      },
+    });
+
   </script>
 
 </body>

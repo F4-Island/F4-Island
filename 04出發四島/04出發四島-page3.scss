@@ -100,6 +100,7 @@ body {
     h3{
     opacity: 0.5;
     margin-top: 5px;
+    margin-bottom: 5px;
     }
     
 }
@@ -129,7 +130,12 @@ body {
      font-size: 22px;
      letter-spacing: 3px;
      line-height: 35px;
-
+     @media (max-width: 768px){
+         font-size: 20px;
+     }
+     @media (max-width: 576px){
+        font-size: 16px;
+     }
 }
 
 
@@ -138,7 +144,6 @@ body {
     width: 100%;
     img{
         width: 100%;
-
     }
 }
 h2{
@@ -149,17 +154,37 @@ h2{
     font-size: 45px;
     font-weight: 600;
     margin-top: 40px;
+    @include page-title-style;
+}
+.h3{
+    @include Sub-standard-style;
+}
+.text-box{
+    h4{
+        font-weight: 600;
+        @media (max-width: 768px){
+            font-size: 20px;
+        }
+        @media (max-width: 576px){
+            font-size: 16px;
+            width: 50%;
+        }
+    }
+    .p{
+        @media (max-width: 576px){
+            font-size: 18px;
+        } 
+    }
 }
 
-h4{
-    font-weight: 600;
-}
 
 .service p{
     font-size: 22px;
     letter-spacing: 3px;
     line-height: 35px;
-
+    @media (max-width: 768px){
+        font-size: 20px;
+    }
 }
 
 .hole {

@@ -548,9 +548,21 @@ h3 {
   letter-spacing: 2px;
 }
 
+@media (max-width: 576px) {
+  .content-box .title-p {
+    font-size: 18px;
+  }
+}
+
 .ar {
   font-size: 21px;
   letter-spacing: 2px;
+}
+
+@media (max-width: 576px) {
+  .ar {
+    font-size: 18px;
+  }
 }
 
 .content {
@@ -564,6 +576,12 @@ h3 {
   text-align: justify;
 }
 
+@media (max-width: 576px) {
+  .content .text-box p {
+    font-size: 18px;
+  }
+}
+
 h2 {
   color: #24999F;
   display: inline-block;
@@ -573,6 +591,25 @@ h2 {
   letter-spacing: 1px;
   font-size: 45px;
   font-weight: 600;
+  color: #24999F;
+  display: inline-block;
+  align-items: center;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
 }
 
 h4 {
