@@ -728,7 +728,7 @@ body {
 
 @media (max-width: 576px) {
   .content-box .tabcontent .text1 {
-    margin-top: 100%;
+    margin-top: 90%;
   }
 }
 
@@ -747,7 +747,7 @@ body {
 @media (max-width: 576px) {
   .content-box .tabcontent .text2 {
     padding-right: 0%;
-    margin-top: 100%;
+    margin-top: 90%;
   }
 }
 
