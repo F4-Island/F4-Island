@@ -1069,42 +1069,50 @@ body {
     // }
     // 船船移動
     .img-group {
-        width: 100%;
+        width: 535px;
         position: fixed;
         bottom: -20px;
         left: 0px;
         overflow: hidden;
         white-space: nowrap;
         animation: bannermove 10s linear infinite;
-        .img-group img {
-            margin: 0 0.5em;
+        // .img-group img {
+        //     margin: 0 0.5em;
+        // }
+        img{
+            width: 100%;
+        }
+        @media (max-width: 1600px){
+            width: 400px;
+            bottom: -10px;
         }
         @media (max-width: 1280px) {
-            bottom: -50px;
+            bottom: -15px;
         }
-        @media (max-width: 1080px) {
+        @media (max-width: 992px){
+            width: 350px;
+            bottom: -20px;
         }
         @media (max-width: 768px) {
-            width: 100vw;
-            bottom: -6%;
+            bottom: -25px;
         }
         @media (max-width: 576px) {
-            bottom: -2%;
+            width: 250px;
         }
         @keyframes bannermove {
             0% {
-                transform: translate(100%, 0);
+                transform: translate(300%, 0);
             }
 
             100% {
-                transform: translate(-50%, 0);
+                transform: translate(-100%, 0);
             }
         }
-        img {
-            @media (max-width: 768px) {
-                width: 50%;
-            }
-        }
+        // img {
+        //     @media (max-width: 768px) {
+        //         width: 50%;
+        //     }
+        // }
     }
 
     .email {
@@ -1150,7 +1158,7 @@ body {
     }
     .wave {
         width: 100vw;
-        position: absolute;
+        position: fixed;
         bottom: 0;
     }
 
