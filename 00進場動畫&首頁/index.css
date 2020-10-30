@@ -1364,7 +1364,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .rock {
-    bottom: 150px;
+    bottom: 170px;
     left: 8%;
     width: 59px;
   }
@@ -1484,7 +1484,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .animal {
-    bottom: 159px;
+    bottom: 179px;
     left: 30%;
     width: 76px;
   }
@@ -1617,7 +1617,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .plant {
-    bottom: 150px;
+    bottom: 170px;
     left: 55%;
     width: 62px;
   }
@@ -1750,7 +1750,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .carol {
-    bottom: 150px;
+    bottom: 170px;
     left: 76%;
     width: 67px;
   }
