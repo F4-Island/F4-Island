@@ -1364,6 +1364,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .rock {
+    position: fixed;
     bottom: 17%;
     left: 8%;
     width: 59px;
@@ -1999,6 +2000,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .wholeMap .bottom-group .wave {
+    height: 50px;
+  }
+}
+
 .wholeMap .email {
   position: absolute;
   bottom: 15%;
@@ -2014,6 +2021,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .email {
+    position: fixed;
     bottom: unset;
     right: unset;
     top: 5px;
@@ -2053,6 +2061,7 @@ body {
 
 @media (max-width: 576px) {
   .wholeMap .fb {
+    position: fixed;
     right: unset;
     bottom: unset;
     top: 5px;
