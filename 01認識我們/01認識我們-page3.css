@@ -499,6 +499,7 @@ body {
 @media (max-width: 576px) {
   .content-box .tab {
     padding: 0;
+    height: 50%;
   }
 }
 
