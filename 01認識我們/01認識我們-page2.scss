@@ -297,21 +297,16 @@ body {
 footer{
     position: relative;
     @include footer;
-    .boat-img{
-            position: absolute;
-            right: 5%;
-            bottom: 40px;
+    .boat {
+        position: absolute;
+        right: 5%;
+        bottom: 40px;
         @media (max-width: 992px){
             width: 180px;
         }
-        @media (max-width: 992px){
-            width: 150px;
+        @media (max-width: 576px){
+            width: 100px;
         }
-       .boat {
-            @media (max-width: 992px){
-                width: 100%;
-            }
-        } 
+        
     }
-    
-}
+} 

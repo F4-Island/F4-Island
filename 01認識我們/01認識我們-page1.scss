@@ -108,10 +108,8 @@ body {
 // 地理位置
 .position {
     background-image: url(../img/01認識我們/地理位置-pic.png);
-    // background-color:white;
     background-size: 140%;
     background-position: center;
-    background-color: white;
     width: 60%;
     height: 60vh;
     margin: 100px auto;
@@ -119,10 +117,6 @@ body {
     color: white;
     border-radius: 50px;
     // min-height: 200px;
-    @media (max-width: 1600px){
-        background-size: 140%;
-        height: 55vh;
-    }
     @media (max-width: 1280px){
         background-size: 130%;
         border-radius: 50px;
@@ -132,7 +126,6 @@ body {
         background-size: 160%;
         height: 40vh;
         letter-spacing: 8px;
-        
     }
     @media (max-width:768px){
         height: 200px;
@@ -174,7 +167,7 @@ body {
             top: 8%;
             width: 40%;
             padding: 10px;
-            z-index: 2;
+            z-index: 0;
             border-radius: 10px;
             
             @media (max-width: 1600px){
@@ -187,26 +180,24 @@ body {
             @media (max-width: 1024px){
                 top: 120%;
                 width: 90%;
-                margin-bottom: 100px;
-            }
-            @media (max-width: 768px){
-                top: 120%;
-                width: 90%;
-                margin-bottom: 100px;
+                margin-bottom: 25%;
             }
 
             h3{
-                color: #24999F;
-                span{
-                    font-family: Arno Pro ;
+                @include page-title-style;
+                @media (max-width: 576px){
+                    padding-top: 10px;
                 }
+            }
+            h4{
+                @include Sub-standard-style ;
             }
         }
         .position-text2 {
             // 藍色對話框
             // background-color: rgba(4, 9, 27, 0.4);
             position: absolute;
-            right: 2%;
+            right: 0%;
             bottom: 2%;
             width: 30%;
             height: 250px;
@@ -223,6 +214,11 @@ body {
             }
             @media (max-width: 1024px){
                 background-image: none;
+                right: 0;
+                bottom: 40%;
+            }
+            @media (max-width: 576px){
+                bottom: 110%;
             }
             span {
                 width: 70%;
@@ -236,8 +232,8 @@ body {
                     display: none;
                 }
             }
-            // 小船
-            .boat {
+            // 魚
+            .fish {
                 position: absolute;
                 right: -20%;
                 bottom: -10%;

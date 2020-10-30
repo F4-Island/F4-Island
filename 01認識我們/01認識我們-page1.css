@@ -501,20 +501,12 @@ body {
   background-image: url(../img/01認識我們/地理位置-pic.png);
   background-size: 140%;
   background-position: center;
-  background-color: white;
   width: 60%;
   height: 60vh;
   margin: 100px auto;
   position: relative;
   color: white;
   border-radius: 50px;
-}
-
-@media (max-width: 1600px) {
-  .position {
-    background-size: 140%;
-    height: 55vh;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -580,7 +572,7 @@ body {
   top: 8%;
   width: 40%;
   padding: 10px;
-  z-index: 2;
+  z-index: 0;
   border-radius: 10px;
 }
 
@@ -601,29 +593,66 @@ body {
   .position .position-text1 {
     top: 120%;
     width: 90%;
-    margin-bottom: 100px;
-  }
-}
-
-@media (max-width: 768px) {
-  .position .position-text1 {
-    top: 120%;
-    width: 90%;
-    margin-bottom: 100px;
+    margin-bottom: 25%;
   }
 }
 
 .position .position-text1 h3 {
   color: #24999F;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-weight: 600;
 }
 
-.position .position-text1 h3 span {
+@media (max-width: 992px) {
+  .position .position-text1 h3 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .position .position-text1 h3 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .position .position-text1 h3 {
+    padding-top: 10px;
+  }
+}
+
+.position .position-text1 h4 {
+  color: #24999F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  font-size: 25px;
   font-family: Arno Pro;
+  opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .position .position-text1 h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .position .position-text1 h4 {
+    font-size: 16px;
+  }
 }
 
 .position .position-text2 {
   position: absolute;
-  right: 2%;
+  right: 0%;
   bottom: 2%;
   width: 30%;
   height: 250px;
@@ -649,6 +678,14 @@ body {
 @media (max-width: 1024px) {
   .position .position-text2 {
     background-image: none;
+    right: 0;
+    bottom: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .position .position-text2 {
+    bottom: 110%;
   }
 }
 
@@ -671,14 +708,14 @@ body {
   }
 }
 
-.position .position-text2 .boat {
+.position .position-text2 .fish {
   position: absolute;
   right: -20%;
   bottom: -10%;
 }
 
 @media (max-width: 1024px) {
-  .position .position-text2 .boat {
+  .position .position-text2 .fish {
     bottom: -100%;
     width: 30%;
     left: 5%;

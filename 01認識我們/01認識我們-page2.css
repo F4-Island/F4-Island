@@ -752,27 +752,21 @@ footer p {
   margin: 0.5% 0;
 }
 
-footer .boat-img {
+footer .boat {
   position: absolute;
   right: 5%;
   bottom: 40px;
 }
 
 @media (max-width: 992px) {
-  footer .boat-img {
+  footer .boat {
     width: 180px;
   }
 }
 
-@media (max-width: 992px) {
-  footer .boat-img {
-    width: 150px;
-  }
-}
-
-@media (max-width: 992px) {
-  footer .boat-img .boat {
-    width: 100%;
+@media (max-width: 576px) {
+  footer .boat {
+    width: 100px;
   }
 }
 /*# sourceMappingURL=01認識我們-page2.css.map */
