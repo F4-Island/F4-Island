@@ -512,15 +512,21 @@ body {
   }
 }
 
+.content .content {
+  margin-bottom: 100px;
+}
+
 .content .content .title-p {
   font-size: 21px;
   font-weight: 600;
   margin-top: 30px;
   letter-spacing: 2px;
+  text-align: justify;
 }
 
 .content .content .plant-row {
   width: 100%;
+  margin-left: 0;
 }
 
 .content .content .plant-row .plant-img {

@@ -97,14 +97,17 @@ body {
         }
     }
     .content {
+        margin-bottom: 100px;
         .title-p {
             font-size: 21px;
             font-weight: 600;
             margin-top: 30px;
             letter-spacing: 2px;
+            text-align: justify;
         }
         .plant-row{
             width: 100%;
+            margin-left: 0;
             .plant-img{
                 margin: auto;
                 width: 80%;
