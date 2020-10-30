@@ -345,16 +345,18 @@
     text-align: center;
     font-size: 16px;
     letter-spacing: 1px;
-    p{
-        margin-bottom: 0;
-        margin: 0.5% 0;
-    }
+    
     @media (max-width: 992px){
         font-size: 13px;
     }
     @media (max-width: 576px){
         font-size: 10px;
     }
+    p{
+        margin-bottom: 0;
+        margin: 0.5% 0;
+    }
+    
 }
 
 //00頁首地標
