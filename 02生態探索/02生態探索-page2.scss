@@ -309,6 +309,13 @@ body {
 }
 .swiper-container-mobile{
     margin-bottom: 100px;
+    
+}
+.swiper-button-next,.swiper-button-prev{
+    top: 90%;
+    &::after{
+      font-size: 20px;  
+    }
 }
 
 

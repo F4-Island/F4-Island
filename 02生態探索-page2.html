@@ -237,6 +237,9 @@
         <div class="my-5"></div>
         <!-- Add Pagination -->
         <div class="swiper-pagination swiper-pagination-mobile"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
 
@@ -335,6 +338,10 @@
             pagination: {
                 el: '.swiper-pagination-mobile',
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
 

@@ -791,6 +791,14 @@ body {
   margin-bottom: 100px;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  top: 90%;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 20px;
+}
+
 .seagull {
   position: fixed;
   right: 30%;
